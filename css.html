@@ -1,0 +1,2774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title of your website -->
+    <meta name="title" content="Online Programming Learning: HTML, CSS, JavaScript, Java, MySQL, SQL and More">
+
+    <!-- Description of the website for search engines -->
+    <meta name="description" content="Learn HTML, CSS, JavaScript, Java, MySQL, SQL, and other programming languages with real-world examples. Get hands-on coding experience, tutorials, and blogs to enhance your skills.">
+
+    <!-- Keywords related to your content -->
+    <meta name="keywords" content="Online Learning, Programming Tutorials, HTML, CSS, JavaScript, Java, MySQL, SQL, Coding, Web Development, Real Examples, Blog">
+
+    <!-- Author of the website -->
+    <meta name="author" content="Code Krat">
+
+    <!-- Open Graph tags for social media sharing -->
+    <meta property="og:title" content="Online Programming Learning: HTML, CSS, JavaScript, Java, MySQL, SQL and More">
+    <meta property="og:description" content="Learn HTML, CSS, JavaScript, Java, MySQL, SQL, and other programming languages with real-world examples. Get hands-on coding experience, tutorials, and blogs.">
+    <meta property="og:image" content="URL of an image representing your website">
+    <meta property="og:url" content="URL of your website">
+
+    <!-- Twitter Card meta tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Online Programming Learning: HTML, CSS, JavaScript, Java, MySQL, SQL and More">
+    <meta name="twitter:description" content="Learn HTML, CSS, JavaScript, Java, MySQL, SQL, and other programming languages with real-world examples. Get hands-on coding experience, tutorials, and blogs.">
+    <meta name="twitter:image" content="URL of an image representing your website">
+    <link rel="icon" href="img/favicon-32x32.png" type="imag/png" sizes="32x32">
+    <title>CSS Programming</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">   
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #2db6d8;
+            color: #333;
+        }
+      /* Reset styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+/* Header styling */
+header {
+    padding: 10px;
+    background-color: white;
+    text-align: center;
+}
+
+/* Logo and search bar row */
+.header-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Logo और सर्च बार को अलग करने के लिए */
+    width: 100%;
+}
+
+/* Logo styling */
+.logo {
+    max-width: 70px; /* Logo का size */
+    margin-left: 10px;
+    border-radius: 50%; /* थोड़ा space देने के लिए */
+}
+
+/* Search bar styling */
+.search-container {
+    flex-grow: 1; /* सर्च बार को सेंटर में फैलाने के लिए */
+    text-align: center;
+}
+
+#searchBar {
+    width: 90%; /* Search bar की चौड़ाई */
+    max-width: 300px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: -10px;
+}
+
+/* Heading styling */
+.heading {
+    margin-top: 15px; /* Heading और logo+search bar के बीच spacing */
+    font-size: 24px;
+    color: #333;
+}
+
+
+
+@media (max-width: 768px) {
+    .header-row {
+        flex-direction: row; /* Logo और search bar को row में रखने के लिए */
+    }
+
+    .logo {
+        margin-left: 0;
+    }
+
+    #searchBar {
+        width: 100%; /* मोबाइल में सर्च बार को पूरी चौड़ाई दे */
+    }
+
+    .heading {
+        font-size: 20px; /* Heading को थोड़ा छोटा करें */
+    }
+}
+.search-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+.search-container input {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}     
+
+   
+
+
+      
+.search-container input {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}     
+
+.suggestions {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 100%;
+    max-width: 300px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    color: red;
+    max-height: 200px; /* Set a max height */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+        
+        .suggestions p {
+            padding: 10px;
+            margin: 0;
+            cursor: pointer;
+            font-size: 0.9rem;
+          
+            
+        }
+
+        .suggestions p:hover {
+            background-color: #007BFF;
+            color: rgb(194, 29, 29);
+            
+        }
+        .he{
+            padding: 20px;
+            background-color: rgb(28, 26, 94);
+           
+        }
+        .he h1{
+            color: whitesmoke;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 40px;
+            border: 1px solid #ddd;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        section h2 {
+            color: #007BFF;
+            border-bottom: 2px solid #007BFF;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+        .code-box, .output-box {
+            background-color: #282c34;
+            color: #ffffff;
+            padding: 15px;
+            margin-top: 10px;
+            border-radius: 8px;
+            font-family: "Courier New", Courier, monospace;
+            overflow-x: auto;
+        }
+        .output-box {
+            background-color: #f9f9f9;
+            color: #333;
+            border-left: 4px solid #28a745;
+        }
+       
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: center;
+            }
+            img {
+                width: 80px;
+                margin-bottom: 15px;
+            }
+            header h1 {
+                font-size: 1.8em;
+                margin-bottom: 10px;
+            }
+            .search-container {
+                width: 100%;
+                margin-top: 10px;
+            }
+        }
+        h3{
+            color: red;
+        }
+      
+        footer {
+            background-color: #222;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+          }
+        
+          .footer-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+          }
+        
+          .footer-links, .footer-social, .footer-contact, .footer-about {
+            width: 23%;
+            padding: 10px;
+            box-sizing: border-box;
+          }
+        
+          h3 {
+            color: #fff;
+            font-size: 20px;
+            margin-bottom: 15px;
+          }
+        
+          ul {
+            list-style: none;
+            padding: 0;
+          }
+        
+          ul li {
+            margin-bottom: 10px;
+          }
+        
+          ul li a {
+            color: #bbb;
+            text-decoration: none;
+            font-size: 16px;
+          }
+        
+          ul li a:hover {
+            color: #fff;
+            text-decoration: underline;
+          }
+        
+          .social-icons a {
+            color: #bbb;
+            font-size: 30px;
+            margin: 0 15px;
+            text-decoration: none;
+          }
+        
+          .social-icons a:hover {
+            color: #fff;
+            transform: scale(1.2);
+          }
+        
+          .footer-bottom {
+            background-color: #222;
+            
+            padding: 20px 0;
+            font-size: 14px;
+          }
+          .footer-bottom p{
+            color: white;
+          }
+        
+          .footer-about p {
+            color: white;
+            font-size: 16px;
+            line-height: 1.8;
+          }
+          
+          /* Responsive Design */
+          @media screen and (max-width: 768px) {
+            .footer-container {
+              flex-direction: column;
+              align-items: center;
+            }
+        
+            .footer-links, .footer-social, .footer-contact, .footer-about {
+              width: 100%;
+              text-align: center;
+              margin-bottom: 20px;
+            }
+        }
+        
+            .social-icons a {
+              font-size: 24px;
+              margin: 0 10px;
+            }
+      
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-row">
+            <img src="img/apple-touch-icon.png" alt="Logo" class="logo">
+            <div class="search-container">
+                <input type="search" id="searchBar" placeholder="Search... CSS topic">
+                <div class="suggestions" id="suggestionsBox"></div>
+
+            </div>
+        </div>
+       
+    </header>
+
+    <div class="he">
+        <h1 class="heading">CSS Programming</h1>
+    </div>
+   
+
+<main>
+    <section id="css-home">
+        <h2>1. CSS Home</h2>
+        <p>CSS is used to style and layout web pages...</p>
+        <div class="code-box">
+            <pre>
+            /* Example: Applying CSS to an element */
+            h1 {
+                color: blue;
+                font-size: 24px;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <h1 style="color: blue; font-size: 24px;">This is a styled heading</h1>
+        </div>
+    </section>
+    
+    <section id="css-introduction">
+        <h2>2. CSS Introduction</h2>
+        <p>CSS (Cascading Style Sheets) is a style sheet language used to describe the presentation of a document...</p>
+        <div class="code-box">
+            <pre>
+            /* CSS Example */
+            p {
+                font-family: Arial, sans-serif;
+                line-height: 1.5;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <p style="font-family: Arial, sans-serif; line-height: 1.5;">This is a paragraph styled with CSS.</p>
+        </div>
+    </section>
+    
+    <section id="css-syntax">
+        <h2>3. CSS Syntax</h2>
+        <p>CSS uses a simple syntax consisting of selectors, properties, and values...</p>
+        <div class="code-box">
+            <pre>
+            /* Syntax Example */
+            selector {
+                property: value;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <p style="color: green;">Example of CSS syntax</p>
+        </div>
+    </section>
+    
+    <section id="css-selectors">
+        <h2>4. CSS Selectors</h2>
+        <p>CSS selectors are patterns used to select the elements you want to style...</p>
+        <div class="code-box">
+            <pre>
+            /* Selector Example */
+            .example {
+                background-color: yellow;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <div class="example" style="background-color: yellow;">This is a styled div.</div>
+        </div>
+    </section>
+    
+    <section id="css-how-to">
+        <h2>5. CSS How To</h2>
+        <p>You can add CSS to your HTML document in three ways: inline, internal, or external...</p>
+        <div class="code-box">
+            <pre >
+            <!-- External CSS Example -->
+            <link rel="stylesheet" href="styles.css">
+            </pre>
+        </div>
+        <div class="output-box">
+            <p>CSS can be added via external stylesheets.</p>
+        </div>
+    </section>
+    
+    <section id="css-comments">
+        <h2>6. CSS Comments</h2>
+        <p>Comments are used to explain the code and are ignored by the browser...</p>
+        <div class="code-box">
+            <pre>
+            /* This is a CSS comment */
+            body {
+                background-color: lightgrey;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <p>The background is styled using CSS.</p>
+        </div>
+    </section>
+    
+    <section id="css-colors">
+        <h2>7. CSS Colors</h2>
+        <p>CSS allows you to define colors using names, HEX codes, RGB, HSL, and more...</p>
+        <div class="code-box">
+            <pre>
+            /* Color Example */
+            h1 {
+                color: red;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <h1 style="color: red;">This is a red heading.</h1>
+        </div>
+    </section>
+    
+    <section id="css-backgrounds">
+        <h2>8. CSS Backgrounds</h2>
+        <p>CSS provides properties to style the background of elements...</p>
+        <div class="code-box">
+            <pre>
+            /* Background Example */
+            body {
+                background-image: url('background.jpg');
+                background-size: cover;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <p>The background is styled with an image.</p>
+        </div>
+    </section>
+    
+    <section id="css-borders">
+        <h2>9. CSS Borders</h2>
+        <p>CSS borders are used to define the boundary of an element...</p>
+        <div class="code-box">
+            <pre>
+            /* Border Example */
+            div {
+                border: 2px solid black;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <div style="border: 2px solid black; padding: 10px;">This is a bordered div.</div>
+        </div>
+    </section>
+    
+    <section id="css-margins">
+        <h2>10. CSS Margins</h2>
+        <p>CSS margins are used to create space around elements outside their border...</p>
+        <div class="code-box">
+            <pre>
+            /* Margin Example */
+            div {
+                margin: 20px;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <div style="margin: 20px;">This div has margins.</div>
+        </div>
+    </section>
+    
+    <section id="css-padding">
+        <h2>11. CSS Padding</h2>
+        <p>CSS padding is used to create space around an element's content, inside its border...</p>
+        <div class="code-box">
+            <pre>
+            /* Padding Example */
+            div {
+                padding: 15px;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <div style="padding: 15px; border: 1px solid black;">This div has padding.</div>
+        </div>
+    </section>
+    <section id="css-height-width">
+        <h2>12. CSS Height/Width</h2>
+        <p>CSS allows you to set the height and width of elements...</p>
+        <div class="code-box">
+            <pre>
+            /* Height and Width Example */
+            div {
+                height: 200px;
+                width: 300px;
+                background-color: lightblue;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <div style="height: 200px; width: 300px; background-color: lightblue;">This div has a specific height and width.</div>
+        </div>
+    </section>
+    
+    <section id="css-box-model">
+        <h2>13. CSS Box Model</h2>
+        <p>The CSS Box Model describes the rectangular boxes generated for elements...</p>
+        <div class="code-box">
+            <pre>
+            /* Box Model Example */
+            div {
+                margin: 10px;
+                border: 5px solid black;
+                padding: 20px;
+                width: 200px;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <div style="margin: 10px; border: 5px solid black; padding: 20px; width: 200px;">This is a box model example.</div>
+        </div>
+    </section>
+    
+    <section id="css-outline">
+        <h2>14. CSS Outline</h2>
+        <p>CSS outlines are lines drawn around elements, outside the border...</p>
+        <div class="code-box">
+            <pre>
+            /* Outline Example */
+            p {
+                outline: 2px dashed red;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <p style="outline: 2px dashed red;">This paragraph has an outline.</p>
+        </div>
+    </section>
+    
+    <section id="css-text">
+        <h2>15. CSS Text</h2>
+        <p>CSS provides properties to control the appearance of text...</p>
+        <div class="code-box">
+            <pre>
+            /* Text Example */
+            p {
+                text-align: center;
+                color: darkgreen;
+                text-decoration: underline;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <p style="text-align: center; color: darkgreen; text-decoration: underline;">This is styled text.</p>
+        </div>
+    </section>
+    
+    <section id="css-fonts">
+        <h2>16. CSS Fonts</h2>
+        <p>CSS allows you to define custom fonts for your content...</p>
+        <div class="code-box">
+            <pre>
+            /* Font Example */
+            p {
+                font-family: 'Arial', sans-serif;
+                font-size: 18px;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <p style="font-family: 'Arial', sans-serif; font-size: 18px;">This paragraph uses custom fonts.</p>
+        </div>
+    </section>
+    
+    <section id="css-icons">
+        <h2>17. CSS Icons</h2>
+        <p>CSS makes it easy to include and style icons in your web pages...</p>
+        <div class="code-box">
+            <pre>
+            /* Icon Example */
+            .icon {
+                font-size: 24px;
+                color: purple;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <i class="icon" style="font-size: 24px; color: purple;">&#9733; Star Icon</i>
+        </div>
+    </section>
+    
+    <section id="css-links">
+        <h2>18. CSS Links</h2>
+        <p>CSS allows you to style links in different states like hover, visited, and active...</p>
+        <div class="code-box">
+            <pre>
+            /* Link Example */
+            a {
+                color: blue;
+                text-decoration: none;
+            }
+            a:hover {
+                color: red;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <a href="#" style="color: blue; text-decoration: none;">Hover over this link</a>
+        </div>
+    </section>
+    
+    <section id="css-lists">
+        <h2>19. CSS Lists</h2>
+        <p>CSS provides properties to style ordered, unordered, and definition lists...</p>
+        <div class="code-box">
+            <pre>
+            /* List Example */
+            ul {
+                list-style-type: square;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <ul style="list-style-type: square;">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+        </div>
+    </section>
+    
+    <section id="css-tables">
+        <h2>20. CSS Tables</h2>
+        <p>CSS allows you to style tables to improve their appearance...</p>
+        <div class="code-box">
+            <pre>
+            /* Table Example */
+            table {
+                border-collapse: collapse;
+                width: 100%;
+            }
+            th, td {
+                border: 1px solid black;
+                padding: 10px;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <table style="border-collapse: collapse; width: 100%;">
+                <tr>
+                    <th>Header 1</th>
+                    <th>Header 2</th>
+                </tr>
+                <tr>
+                    <td>Data 1</td>
+                    <td>Data 2</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    
+    <section id="css-display">
+        <h2>21. CSS Display</h2>
+        <p>CSS display property determines how an element is displayed on the page...</p>
+        <div class="code-box">
+            <pre>
+            /* Display Example */
+            div {
+                display: inline-block;
+                width: 100px;
+                height: 100px;
+                background-color: teal;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <div style="display: inline-block; width: 100px; height: 100px; background-color: teal;"></div>
+        </div>
+    </section>
+    
+    <section id="css-max-width">
+        <h2>22. CSS Max-width</h2>
+        <p>The max-width property specifies the maximum width of an element...</p>
+        <div class="code-box">
+            <pre>
+            /* Max-width Example */
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <img src="example.jpg" alt="Example Image" style="max-width: 100%; height: auto;">
+        </div>
+    </section>
+    
+    <section id="css-position">
+        <h2>23. CSS Position</h2>
+        <p>The position property specifies the type of positioning method used for an element...</p>
+        <div class="code-box">
+            <pre>
+                /* Position Example */
+                .box {
+                    position: absolute;
+                    top: 50px;
+                    left: 100px;
+                }
+            </pre>
+        </div>
+       
+    </section>
+    
+    <section id="css-z-index">
+        <h2>24. CSS Z-index</h2>
+        <p>The z-index property specifies the stack order of elements...</p>
+        <div class="code-box">
+            <pre>
+            /* Z-index Example */
+            .box1 {
+                position: absolute;
+                z-index: 1;
+                background-color: red;
+            }
+            .box2 {
+                position: absolute;
+                z-index: 2;
+                background-color: blue;
+            }
+            </pre>
+        </div>
+       
+    </section>
+    
+    <section id="css-overflow">
+        <h2>25. CSS Overflow</h2>
+        <p>The overflow property specifies what happens if content overflows an element's box...</p>
+        <div class="code-box">
+            <pre>
+            /* Overflow Example */
+            div {
+                width: 150px;
+                height: 100px;
+                overflow: scroll;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <div style="width: 150px; height: 100px; overflow: scroll; border: 1px solid black;">
+                This is a long text that overflows the box and can be scrolled.
+            </div>
+        </div>
+    </section>
+    <section id="css-float">
+        <h2>26. CSS Float</h2>
+        <p>The float property is used for positioning and formatting content...</p>
+        <div class="code-box">
+            <pre>
+            /* Float Example */
+            div {
+                float: left;
+                width: 100px;
+                height: 100px;
+                background-color: lightblue;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <div style="float: left; width: 100px; height: 100px; background-color: lightblue;">Float Box</div>
+        </div>
+    </section>
+    
+    <section id="css-inline-block">
+        <h2>27. CSS Inline-block</h2>
+        <p>The inline-block property allows elements to sit side by side...</p>
+        <div class="code-box">
+            <pre>
+            /* Inline-block Example */
+            div {
+                display: inline-block;
+                width: 100px;
+                height: 100px;
+                background-color: pink;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <div style="display: inline-block; width: 100px; height: 100px; background-color: pink;">Block 1</div>
+            <div style="display: inline-block; width: 100px; height: 100px; background-color: pink;">Block 2</div>
+        </div>
+    </section>
+    
+    <section id="css-align">
+        <h2>28. CSS Align</h2>
+        <p>The CSS align properties help in aligning elements within their containers...</p>
+        <div class="code-box">
+            <pre>
+            /* Align Example */
+            div {
+                text-align: center;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <div style="text-align: center;">This text is center-aligned.</div>
+        </div>
+    </section>
+    
+    <section id="css-combinators">
+        <h2>29. CSS Combinators</h2>
+        <p>CSS combinators explain the relationship between selectors...</p>
+        <div class="code-box">
+            <pre>
+            /* Combinator Example */
+            div > p {
+                color: blue;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <div>
+                <p style="color: blue;">This paragraph is styled using a child combinator.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="css-pseudo-classes">
+        <h2>30. CSS Pseudo-classes</h2>
+        <p>Pseudo-classes define the special state of an element...</p>
+        <div class="code-box">
+            <pre>
+            /* Pseudo-class Example */
+            a:hover {
+                color: red;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <a href="#" style="color: black;">Hover over this link</a>
+        </div>
+    </section>
+    
+    <section id="css-pseudo-elements">
+        <h2>31. CSS Pseudo-elements</h2>
+        <p>Pseudo-elements allow you to style specific parts of an element...</p>
+        <div class="code-box">
+            <pre>
+            /* Pseudo-element Example */
+            p::first-line {
+                font-weight: bold;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <p style="font-weight: bold;">This is a paragraph where the first line is styled.</p>
+        </div>
+    </section>
+    
+    <section id="css-opacity">
+        <h2>32. CSS Opacity</h2>
+        <p>Opacity specifies the transparency of an element...</p>
+        <div class="code-box">
+            <pre>
+            /* Opacity Example */
+            div {
+                opacity: 0.5;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <div style="opacity: 0.5; background-color: teal; width: 100px; height: 100px;">Semi-transparent Box</div>
+        </div>
+    </section>
+    
+    <section id="css-navigation-bar">
+        <h2>33. CSS Navigation Bar</h2>
+        <p>CSS makes it easy to create responsive navigation bars...</p>
+        <div class="code-box">
+            <pre>
+            /* Navigation Bar Example */
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333;
+            }
+            li {
+                float: left;
+            }
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            li a:hover {
+                background-color: #111;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <ul style="list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: #333;">
+                <li style="float: left;"><a href="#" style="color: white; padding: 14px 16px; text-decoration: none;">Home</a></li>
+                <li style="float: left;"><a href="#" style="color: white; padding: 14px 16px; text-decoration: none;">About</a></li>
+            </ul>
+        </div>
+    </section>
+    
+    <section id="css-dropdowns">
+        <h2>34. CSS Dropdowns</h2>
+        <p>CSS allows you to create dropdown menus...</p>
+        <div class="code-box">
+            <pre>
+            /* Dropdown Example */
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f1f1f1;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            }
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <div class="dropdown" style="position: relative; display: inline-block;">
+                <span>Hover me</span>
+                <div class="dropdown-content" style="display: none; position: absolute; background-color: #f1f1f1; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);">
+                    <p>Dropdown Content</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="css-image-gallery">
+        <h2>35. CSS Image Gallery</h2>
+        <p>CSS helps you create stylish image galleries...</p>
+        <div class="code-box">
+            <pre>
+            /* Image Gallery Example */
+            .gallery {
+                display: flex;
+                gap: 10px;
+            }
+            .gallery img {
+                width: 100px;
+                height: auto;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <div class="gallery" style="display: flex; gap: 10px;">
+                <img src="image1.jpg" alt="Image 1" style="width: 100px; height: auto;">
+                <img src="image2.jpg" alt="Image 2" style="width: 100px; height: auto;">
+            </div>
+        </div>
+    </section>
+    
+    <section id="css-image-sprites">
+        <h2>36. CSS Image Sprites</h2>
+        <p>CSS sprites combine multiple images into one...</p>
+        <div class="code-box">
+            <pre>
+            /* Image Sprite Example */
+            .sprite {
+                background: url('sprite.png') no-repeat;
+            }
+            .icon {
+                width: 50px;
+                height: 50px;
+                background-position: -50px -50px;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <div class="sprite icon" style="background: url('sprite.png') no-repeat; width: 50px; height: 50px; background-position: -50px -50px;"></div>
+        </div>
+    </section>
+    <section id="css-attr-selectors">
+        <h2>37. CSS Attribute Selectors</h2>
+        <p>CSS attribute selectors are used to style elements based on their attributes...</p>
+        <div class="code-box">
+            <pre>
+            /* Attribute Selector Example */
+            input[type="text"] {
+                border: 2px solid blue;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <input type="text" style="border: 2px solid blue;" placeholder="Styled input box">
+        </div>
+    </section>
+    
+    <section id="css-forms">
+        <h2>38. CSS Forms</h2>
+        <p>CSS allows you to style form elements for better user experience...</p>
+        <div class="code-box">
+            <pre>
+            /* Form Example */
+            input {
+                padding: 10px;
+                border: 1px solid gray;
+                border-radius: 5px;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <input type="text" style="padding: 10px; border: 1px solid gray; border-radius: 5px;" placeholder="Enter text here">
+        </div>
+    </section>
+    
+    <section id="css-counters">
+        <h2>39. CSS Counters</h2>
+        <p>CSS counters are used to add numbering to elements...</p>
+        <div class="code-box">
+            <pre>
+            /* Counter Example */
+            ol {
+                counter-reset: section;
+            }
+            li::before {
+                counter-increment: section;
+                content: "Section " counter(section) ": ";
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <ol>
+                <li>First item</li>
+                <li>Second item</li>
+            </ol>
+        </div>
+    </section>
+    
+    <section id="css-website-layout">
+        <h2>40. CSS Website Layout</h2>
+        <p>CSS provides properties for creating responsive layouts...</p>
+        <div class="code-box">
+            <pre>
+            /* Layout Example */
+            .container {
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+                gap: 10px;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <div class="container" style="display: grid; grid-template-columns: 1fr 2fr; gap: 10px;">
+                <div style="background-color: lightblue;">Sidebar</div>
+                <div style="background-color: lightgray;">Main Content</div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="css-units">
+        <h2>41. CSS Units</h2>
+        <p>CSS units define measurements such as width, height, margins, etc...</p>
+        <div class="code-box">
+            <pre>
+            /* Unit Example */
+            div {
+                width: 50%;
+                height: 100px;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <div style="width: 50%; height: 100px; background-color: pink;">50% width box</div>
+        </div>
+    </section>
+    
+    <section id="css-specificity">
+        <h2>42. CSS Specificity</h2>
+        <p>CSS specificity determines which rules are applied to an element...</p>
+        <div class="code-box">
+            <pre>
+            /* Specificity Example */
+            #idSelector {
+                color: red;
+            }
+            .classSelector {
+                color: blue;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <p id="idSelector" class="classSelector" style="color: red;">This is styled with specificity rules.</p>
+        </div>
+    </section>
+    
+    <section id="css-important">
+        <h2>43. CSS !important</h2>
+        <p>The !important rule overrides other styles...</p>
+        <div class="code-box">
+            <pre>
+            /* !important Example */
+            p {
+                color: blue !important;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <p style="color: blue !important;">This text uses the !important rule.</p>
+        </div>
+    </section>
+    
+    <section id="css-math-functions">
+        <h2>44. CSS Math Functions</h2>
+        <p>CSS math functions (e.g., calc, min, max, clamp) allow for dynamic calculations...</p>
+        <div class="code-box">
+            <pre>
+            /* Math Functions Example */
+            div {
+                width: calc(100% - 50px);
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <div style="width: calc(100% - 50px); background-color: lightblue;">Dynamic width box</div>
+        </div>
+    </section>
+    
+    <section id="css-advanced">
+        <h2>45. CSS Advanced</h2>
+        <p>CSS provides advanced features like animations, variables, and more...</p>
+        <div class="code-box">
+            <pre>
+            /* Advanced Example */
+            :root {
+                --main-color: coral;
+            }
+            div {
+                background-color: var(--main-color);
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <div style="background-color: coral;">Styled with CSS variable</div>
+        </div>
+    </section>
+    
+    <section id="css-rounded-corners">
+        <h2>46. CSS Rounded Corners</h2>
+        <p>CSS allows you to add rounded corners to elements...</p>
+        <div class="code-box">
+            <pre>
+            /* Rounded Corners Example */
+            div {
+                border-radius: 15px;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <div style="border-radius: 15px; background-color: lightblue; padding: 10px;">Rounded corner box</div>
+        </div>
+    </section>
+    
+    <section id="css-border-images">
+        <h2>47. CSS Border Images</h2>
+        <p>CSS border images allow you to use images as borders...</p>
+        <div class="code-box">
+            <pre>
+            /* Border Image Example */
+            div {
+                border: 10px solid transparent;
+                border-image: url('border.png') 30 round;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <div style="border: 10px solid transparent; border-image: url('border.png') 30 round;">Border image box</div>
+        </div>
+    </section>
+    
+    <section id="css-backgrounds">
+        <h2>48. CSS Backgrounds</h2>
+        <p>CSS backgrounds allow you to style the background of elements...</p>
+        <div class="code-box">
+            <pre>
+            /* Background Example */
+            body {
+                background-image: url('background.jpg');
+                background-size: cover;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <p>The background is styled with an image.</p>
+        </div>
+    </section>
+    
+    <section id="css-colors">
+        <h2>49. CSS Colors</h2>
+        <p>CSS provides various ways to define colors...</p>
+        <div class="code-box">
+            <pre>
+            /* Color Example */
+            p {
+                color: rgb(255, 0, 0);
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <p style="color: rgb(255, 0, 0);">This text is red using RGB.</p>
+        </div>
+    </section>
+    
+    <section id="css-color-keywords">
+        <h2>50. CSS Color Keywords</h2>
+        <p>CSS has predefined color keywords like red, blue, green...</p>
+        <div class="code-box">
+            <pre>
+            /* Color Keywords Example */
+            p {
+                color: crimson;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <p style="color: crimson;">This text uses a color keyword.</p>
+        </div>
+    </section>
+    
+    <section id="css-gradients">
+        <h2>51. CSS Gradients</h2>
+        <p>CSS gradients allow you to create smooth color transitions...</p>
+        <div class="code-box">
+            <pre>
+            /* Gradient Example */
+            div {
+                background: linear-gradient(to right, red, yellow);
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <div style="background: linear-gradient(to right, red, yellow); height: 100px;">Gradient Background</div>
+        </div>
+    </section>
+    
+    <section id="css-shadows">
+        <h2>52. CSS Shadows</h2>
+        <p>CSS provides properties to add shadows to elements...</p>
+        <div class="code-box">
+            <pre>
+            /* Shadow Example */
+            div {
+                box-shadow: 5px 5px 10px gray;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <div style="box-shadow: 5px 5px 10px gray; padding: 10px;">Box with shadow</div>
+        </div>
+    </section>
+    
+    <section id="css-text-effects">
+        <h2>53. CSS Text Effects</h2>
+        <p>CSS provides text effects like shadows, transformations, etc...</p>
+        <div class="code-box">
+            <pre>
+            /* Text Effect Example */
+            p {
+                text-shadow: 2px 2px 5px red;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <p style="text-shadow: 2px 2px 5px red;">This text has a shadow.</p>
+        </div>
+    </section>
+    
+    <section id="css-web-fonts">
+        <h2>54. CSS Web Fonts</h2>
+        <p>CSS web fonts allow you to use custom fonts...</p>
+        <div class="code-box">
+            <pre>
+            /* Web Fonts Example */
+            @font-face {
+                font-family: 'MyFont';
+                src: url('myfont.woff');
+            }
+            p {
+                font-family: 'MyFont', sans-serif;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <p style="font-family: 'Arial', sans-serif;">This text uses a custom web font.</p>
+        </div>
+    </section>
+    <section id="css-2d-transforms">
+        <h2>55. CSS 2D Transforms</h2>
+        <p>CSS 2D transforms allow you to rotate, scale, move, or skew an element...</p>
+        <div class="code-box">
+            <pre>
+            /* 2D Transform Example */
+            div {
+                transform: rotate(45deg);
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <div style="transform: rotate(45deg); background-color: lightblue; width: 100px; height: 100px;">2D Transform</div>
+        </div>
+    </section>
+    
+    <section id="css-3d-transforms">
+        <h2>56. CSS 3D Transforms</h2>
+        <p>CSS 3D transforms add depth to elements using the perspective property...</p>
+        <div class="code-box">
+            <pre>
+            /* 3D Transform Example */
+            div {
+                transform: rotateY(45deg);
+                perspective: 500px;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <div style="transform: rotateY(45deg); perspective: 500px; background-color: lightcoral; width: 100px; height: 100px;">3D Transform</div>
+        </div>
+    </section>
+    
+    <section id="css-transitions">
+        <h2>57. CSS Transitions</h2>
+        <p>CSS transitions allow smooth changes between property values...</p>
+        <div class="code-box">
+            <pre>
+            /* Transition Example */
+            div {
+                transition: background-color 0.5s ease;
+            }
+            div:hover {
+                background-color: lightgreen;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <div style="transition: background-color 0.5s ease; background-color: lightblue; width: 100px; height: 100px;">Hover me</div>
+        </div>
+    </section>
+    
+    <section id="css-animations">
+        <h2>58. CSS Animations</h2>
+        <p>CSS animations allow you to create moving elements...</p>
+        <div class="code-box">
+            <pre>
+            /* Animation Example */
+            @keyframes example {
+                0% { transform: translateX(0); }
+                100% { transform: translateX(100px); }
+            }
+            div {
+                animation: example 2s infinite alternate;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <div style="animation: example 2s infinite alternate; background-color: lightcoral; width: 50px; height: 50px;">Animation</div>
+        </div>
+    </section>
+    
+    <section id="css-tooltips">
+        <h2>59. CSS Tooltips</h2>
+        <p>CSS tooltips display informative text when users hover over an element...</p>
+        <div class="code-box">
+            <pre>
+            /* Tooltip Example */
+            .tooltip {
+                position: relative;
+                display: inline-block;
+            }
+            .tooltip .tooltiptext {
+                visibility: hidden;
+                background-color: black;
+                color: #fff;
+                text-align: center;
+                padding: 5px;
+                border-radius: 5px;
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            .tooltip:hover .tooltiptext {
+                visibility: visible;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <div class="tooltip" style="position: relative; display: inline-block;">
+                Hover me
+                <span class="tooltiptext" style="visibility: hidden; background-color: black; color: #fff; position: absolute; padding: 5px; border-radius: 5px;">Tooltip text</span>
+            </div>
+        </div>
+    </section>
+    
+    <section id="css-image-styling">
+        <h2>60. CSS Image Styling</h2>
+        <p>CSS provides various ways to style images...</p>
+        <div class="code-box">
+            <pre>
+            /* Image Styling Example */
+            img {
+                border: 5px solid black;
+                border-radius: 10px;
+                box-shadow: 5px 5px 10px gray;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <img src="example.jpg" alt="Styled Image" style="border: 5px solid black; border-radius: 10px; box-shadow: 5px 5px 10px gray;">
+        </div>
+    </section>
+    
+    <section id="css-image-centering">
+        <h2>61. CSS Image Centering</h2>
+        <p>CSS makes it easy to center images within containers...</p>
+        <div class="code-box">
+            <pre>
+            /* Image Centering Example */
+            .container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 300px;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <div class="container" style="display: flex; justify-content: center; align-items: center; height: 300px; border: 1px solid gray;">
+                <img src="example.jpg" alt="Centered Image" style="max-width: 100%; height: auto;">
+            </div>
+        </div>
+    </section>
+    
+    <section id="css-image-filters">
+        <h2>62. CSS Image Filters</h2>
+        <p>CSS filters allow you to apply effects to images...</p>
+        <div class="code-box">
+            <pre>
+            /* Image Filter Example */
+            img {
+                filter: grayscale(100%);
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <img src="example.jpg" alt="Filtered Image" style="filter: grayscale(100%);">
+        </div>
+    </section>
+    
+    <section id="css-image-shapes">
+        <h2>63. CSS Image Shapes</h2>
+        <p>CSS lets you create unique image shapes using clip-path...</p>
+        <div class="code-box">
+            <pre>
+            /* Image Shape Example */
+            img {
+                clip-path: circle(50%);
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <img src="example.jpg" alt="Circular Image" style="clip-path: circle(50%);">
+        </div>
+    </section>
+    
+    <section id="css-object-fit">
+        <h2>64. CSS Object-fit</h2>
+        <p>The object-fit property controls how content fits in a container...</p>
+        <div class="code-box">
+            <pre>
+            /* Object-fit Example */
+            img {
+                object-fit: cover;
+                width: 300px;
+                height: 200px;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <img src="example.jpg" alt="Object Fit Example" style="object-fit: cover; width: 300px; height: 200px;">
+        </div>
+    </section>
+    
+    <section id="css-object-position">
+        <h2>65. CSS Object-position</h2>
+        <p>Object-position controls the position of content within a container...</p>
+        <div class="code-box">
+            <pre>
+            /* Object-position Example */
+            img {
+                object-fit: none;
+                object-position: center top;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <img src="example.jpg" alt="Object Position Example" style="object-fit: none; object-position: center top; width: 300px; height: 200px;">
+        </div>
+    </section>
+    
+    <section id="css-masking">
+        <h2>66. CSS Masking</h2>
+        <p>CSS masking allows you to hide parts of an element using a mask...</p>
+        <div class="code-box">
+            <pre>
+            /* Masking Example */
+            div {
+                mask-image: url('mask.png');
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <div style="mask-image: url('mask.png'); background-color: lightblue; width: 200px; height: 200px;">Masked Box</div>
+        </div>
+    </section>
+    
+    <section id="css-buttons">
+        <h2>67. CSS Buttons</h2>
+        <p>CSS buttons can be styled with hover effects, borders, and more...</p>
+        <div class="code-box">
+            <pre>
+            /* Button Example */
+            button {
+                background-color: blue;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                cursor: pointer;
+            }
+            button:hover {
+                background-color: darkblue;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <button style="background-color: blue; color: white; padding: 10px 20px; border: none; cursor: pointer;">Click Me</button>
+        </div>
+    </section>
+    <section id="css-pagination">
+        <h2>68. CSS Pagination</h2>
+        <p>CSS allows you to style pagination for navigation between pages...</p>
+        <div class="code-box">
+            <pre>
+            /* Pagination Example */
+            .pagination {
+                display: flex;
+                list-style-type: none;
+                padding: 0;
+            }
+            .pagination li {
+                margin: 0 5px;
+            }
+            .pagination a {
+                text-decoration: none;
+                color: black;
+                padding: 5px 10px;
+                border: 1px solid gray;
+                border-radius: 5px;
+            }
+            .pagination a:hover {
+                background-color: lightgray;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <ul class="pagination" style="display: flex; list-style-type: none; padding: 0;">
+                <li><a href="#" style="text-decoration: none; color: black; padding: 5px 10px; border: 1px solid gray; border-radius: 5px;">1</a></li>
+                <li><a href="#" style="text-decoration: none; color: black; padding: 5px 10px; border: 1px solid gray; border-radius: 5px;">2</a></li>
+            </ul>
+        </div>
+    </section>
+    
+    <section id="css-multiple-columns">
+        <h2>69. CSS Multiple Columns</h2>
+        <p>CSS multiple columns property lets you create newspaper-style layouts...</p>
+        <div class="code-box">
+            <pre>
+            /* Multiple Columns Example */
+            div {
+                column-count: 3;
+                column-gap: 20px;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <div style="column-count: 3; column-gap: 20px;">
+                <p>This is an example of multiple columns.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="css-user-interface">
+        <h2>70. CSS User Interface</h2>
+        <p>CSS provides properties to enhance user interface elements...</p>
+        <div class="code-box">
+            <pre>
+            /* User Interface Example */
+            button {
+                appearance: none;
+                outline: none;
+                cursor: pointer;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <button style="appearance: none; outline: none; cursor: pointer;">Custom Button</button>
+        </div>
+    </section>
+    
+    <section id="css-variables">
+        <h2>71. CSS Variables</h2>
+        <p>CSS variables allow you to reuse values throughout your stylesheet...</p>
+        <div class="code-box">
+            <pre>
+            /* Variables Example */
+            :root {
+                --main-color: teal;
+                --padding: 10px;
+            }
+            div {
+                background-color: var(--main-color);
+                padding: var(--padding);
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <div style="background-color: teal; padding: 10px;">This uses CSS variables.</div>
+        </div>
+    </section>
+    
+    <section id="css-property">
+        <h2>72. CSS @property</h2>
+        <p>CSS @property allows you to register custom properties with specific behavior...</p>
+        <div class="code-box">
+            <pre>
+            /* @property Example */
+            @property --custom-color {
+                syntax: '<color>';
+                inherits: false;
+                initial-value: blue;
+            }
+            div {
+                background-color: var(--custom-color);
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <div style="background-color: blue;">Custom property example</div>
+        </div>
+    </section>
+    
+    <section id="css-box-sizing">
+        <h2>73. CSS Box Sizing</h2>
+        <p>The box-sizing property defines how the total width and height of an element are calculated...</p>
+        <div class="code-box">
+            <pre>
+            /* Box Sizing Example */
+            div {
+                box-sizing: border-box;
+                width: 100px;
+                padding: 10px;
+                border: 2px solid black;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <div style="box-sizing: border-box; width: 100px; padding: 10px; border: 2px solid black;">Box Sizing</div>
+        </div>
+    </section>
+    
+    <section id="css-media-queries">
+        <h2>74. CSS Media Queries</h2>
+        <p>Media queries are used to apply styles based on device characteristics...</p>
+        <div class="code-box">
+            <pre>
+            /* Media Query Example */
+            @media (max-width: 600px) {
+                div {
+                    background-color: lightblue;
+                }
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <p>Resize the browser to see media query effects.</p>
+        </div>
+    </section>
+    
+    <section id="css-mq-examples">
+        <h2>75. CSS MQ Examples</h2>
+        <p>CSS media query examples demonstrate responsive design techniques...</p>
+        <div class="code-box">
+            <pre>
+            /* Media Query Example */
+            @media (min-width: 768px) {
+                body {
+                    font-size: 18px;
+                }
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <p>View this on different devices for responsiveness.</p>
+        </div>
+    </section>
+    
+    <section id="css-flexbox">
+        <h2>76. CSS Flexbox</h2>
+        <p>CSS Flexbox provides a layout model for arranging items in rows or columns...</p>
+        <div class="code-box">
+            <pre>
+            /* Flexbox Example */
+            .container {
+                display: flex;
+                justify-content: space-between;
+            }
+            .item {
+                width: 100px;
+                height: 100px;
+                background-color: lightcoral;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <div class="container" style="display: flex; justify-content: space-between;">
+                <div class="item" style="width: 100px; height: 100px; background-color: lightcoral;">Item 1</div>
+                <div class="item" style="width: 100px; height: 100px; background-color: lightcoral;">Item 2</div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="css-responsive">
+        <h2>77. CSS Responsive</h2>
+        <p>CSS responsiveness ensures that websites adapt to different screen sizes...</p>
+        <div class="code-box">
+            <pre>
+            /* Responsive Example */
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <img src="example.jpg" alt="Responsive Image" style="max-width: 100%; height: auto;">
+        </div>
+    </section>
+    
+    <section id="rwd-intro">
+        <h2>78. RWD Intro</h2>
+        <p>Responsive Web Design (RWD) is an approach to web design aimed at building mobile-friendly sites...</p>
+        <div class="code-box">
+            <pre>
+            /* RWD Intro Example */
+            body {
+                font-size: 16px;
+            }
+            @media (max-width: 600px) {
+                body {
+                    font-size: 14px;
+                }
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <p>Resize the browser to see font size changes.</p>
+        </div>
+    </section>
+    
+    <section id="rwd-viewport">
+        <h2>79. RWD Viewport</h2>
+        <p>The viewport meta tag allows you to control the layout on mobile devices...</p>
+        <div class="code-box">
+            <pre>
+            <!-- Viewport Meta Tag -->
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            </pre>
+        </div>
+        <div class="output-box">
+            <p>This page is mobile-friendly.</p>
+        </div>
+    </section>
+    
+    <section id="rwd-grid-view">
+        <h2>80. RWD Grid View</h2>
+        <p>Responsive grid layouts use CSS Grid to create flexible designs...</p>
+        <div class="code-box">
+            <pre>
+            /* Grid View Example */
+            .grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <div class="grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px;">
+                <div style="background-color: lightblue;">Grid Item 1</div>
+                <div style="background-color: lightblue;">Grid Item 2</div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="rwd-media-queries">
+        <h2>81. RWD Media Queries</h2>
+        <p>Media queries help make responsive designs adaptable to different screen sizes...</p>
+        <div class="code-box">
+            <pre>
+            /* Media Queries Example */
+            @media (max-width: 768px) {
+                div {
+                    background-color: lightcoral;
+                }
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <div style="background-color: lightcoral;">Resize browser to see the effect.</div>
+        </div>
+    </section>
+    
+    <section id="rwd-images">
+        <h2>82. RWD Images</h2>
+        <p>Responsive images adjust automatically to fit different screen sizes...</p>
+        <div class="code-box">
+            <pre>
+            /* Responsive Images Example */
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <img src="example.jpg" alt="Responsive Image" style="max-width: 100%; height: auto;">
+        </div>
+    </section>
+    <section id="rwd-videos">
+        <h2>83. RWD Videos</h2>
+        <p>Responsive videos adapt to different screen sizes using CSS...</p>
+        <div class="code-box">
+            <pre>
+            /* RWD Videos Example */
+            .video-container {
+                position: relative;
+                padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+                height: 0;
+                overflow: hidden;
+            }
+            .video-container iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                <iframe src="https://www.youtube.com/embed/example" frameborder="0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+            </div>
+        </div>
+    </section>
+    
+    <section id="rwd-frameworks">
+        <h2>84. RWD Frameworks</h2>
+        <p>Responsive web design frameworks like Bootstrap provide ready-made solutions for responsive layouts...</p>
+        <div class="code-box">
+            <pre>
+            <!-- Example using Bootstrap -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">Column 1</div>
+                    <div class="col-sm">Column 2</div>
+                </div>
+            </div>
+            </pre>
+        </div>
+        <div class="output-box">
+            <p>Bootstrap framework example.</p>
+        </div>
+    </section>
+    
+    <section id="rwd-templates">
+        <h2>85. RWD Templates</h2>
+        <p>RWD templates are pre-designed responsive layouts for websites...</p>
+        <div class="code-box">
+            <pre>
+            <!-- Template Example -->
+            <header>Header</header>
+            <main>Main Content</main>
+            <footer>Footer</footer>
+            </pre>
+        </div>
+        <div class="output-box">
+            <p>Responsive website template example.</p>
+        </div>
+    </section>
+    
+    <section id="css-grid">
+        <h2>86. CSS Grid</h2>
+        <p>CSS Grid Layout is a powerful tool for creating two-dimensional layouts...</p>
+        <div class="code-box">
+            <pre>
+            /* Grid Example */
+            .grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 10px;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <div class="grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
+                <div style="background-color: lightblue;">Item 1</div>
+                <div style="background-color: lightblue;">Item 2</div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="grid-intro">
+        <h2>87. Grid Intro</h2>
+        <p>Grid Layout introduces a new system for creating flexible layouts...</p>
+        <div class="code-box">
+            <pre>
+            /* Grid Intro Example */
+            .grid {
+                display: grid;
+                grid-template-rows: 1fr 2fr;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <div class="grid" style="display: grid; grid-template-rows: 1fr 2fr;">
+                <div style="background-color: lightcoral;">Row 1</div>
+                <div style="background-color: lightcoral;">Row 2</div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="grid-container">
+        <h2>88. Grid Container</h2>
+        <p>The grid container defines the grid structure and its behavior...</p>
+        <div class="code-box">
+            <pre>
+            /* Grid Container Example */
+            .grid-container {
+                display: grid;
+                grid-template-columns: auto auto;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <div class="grid-container" style="display: grid; grid-template-columns: auto auto;">
+                <div style="background-color: lightgreen;">Item 1</div>
+                <div style="background-color: lightgreen;">Item 2</div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="grid-item">
+        <h2>89. Grid Item</h2>
+        <p>Grid items are the children of a grid container and are automatically placed...</p>
+        <div class="code-box">
+            <pre>
+            /* Grid Item Example */
+            .grid-item {
+                grid-column: span 2;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <div class="grid" style="display: grid; grid-template-columns: 1fr 1fr;">
+                <div class="grid-item" style="grid-column: span 2; background-color: lightyellow;">Spanning Item</div>
+                <div style="background-color: lightyellow;">Item 1</div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="css-sass">
+        <h2>90. CSS SASS</h2>
+        <p>SASS (Syntactically Awesome Stylesheets) is a CSS preprocessor that adds features...</p>
+        <div class="code-box">
+            <pre>
+            /* SASS Example */
+            $primary-color: blue;
+            body {
+                background-color: $primary-color;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <p>Example of a SASS preprocessor.</p>
+        </div>
+    </section>
+    
+    <section id="sass-tutorial">
+        <h2>91. SASS Tutorial</h2>
+        <p>A detailed tutorial on how to use SASS for advanced CSS...</p>
+        <div class="code-box">
+            <pre>
+            /* SASS Example */
+            $padding: 10px;
+            div {
+                padding: $padding;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <div style="padding: 10px;">SASS Tutorial Example</div>
+        </div>
+    </section>
+    
+    <section id="css-examples">
+        <h2>92. CSS Examples</h2>
+        <p>Explore practical examples to learn CSS...</p>
+        <div class="code-box">
+            <pre>
+            /* CSS Example */
+            h1 {
+                color: darkblue;
+                text-align: center;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <h1 style="color: darkblue; text-align: center;">CSS Example Heading</h1>
+        </div>
+    </section>
+    
+    <section id="css-templates">
+        <h2>93. CSS Templates</h2>
+        <p>Pre-designed CSS templates for creating stylish websites...</p>
+        <div class="code-box">
+            <pre>
+            <!-- Example Template -->
+            <header>Header</header>
+            <main>Main Section</main>
+            <footer>Footer</footer>
+            </pre>
+        </div>
+        <div class="output-box">
+            <p>CSS Template Example.</p>
+        </div>
+    </section>
+    
+    <section id="css-editor">
+        <h2>94. CSS Editor</h2>
+        <p>Explore online CSS editors to try and test your code...</p>
+        <div class="code-box">
+            <pre>
+            /* Editor Example */
+            body {
+                font-family: Arial, sans-serif;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <p>Try the code in an online CSS editor.</p>
+        </div>
+    </section>
+    
+    <section id="css-snippets">
+        <h2>95. CSS Snippets</h2>
+        <p>CSS snippets are reusable code examples for common styles...</p>
+        <div class="code-box">
+            <pre>
+            /* Snippet Example */
+            .btn {
+                background-color: blue;
+                color: white;
+                padding: 10px 15px;
+                border: none;
+                border-radius: 5px;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <button class="btn" style="background-color: blue; color: white; padding: 10px 15px; border-radius: 5px;">Snippet Button</button>
+        </div>
+    </section>
+    
+    <section id="css-quiz">
+        <h2>96. CSS Quiz</h2>
+        <p>Interactive quizzes to test your CSS knowledge...</p>
+        <div class="code-box">
+            <pre>
+            /* Quiz Example */
+            What does "color: red;" do?
+            a) Sets the background color
+            b) Changes the text color
+            c) Changes the border color
+            </pre>
+        </div>
+        <div class="output-box">
+            <p>Answer: b) Changes the text color.</p>
+        </div>
+    </section>
+    
+    <section id="css-exercises">
+        <h2>97. CSS Exercises</h2>
+        <p>Practice CSS with hands-on exercises...</p>
+        <div class="code-box">
+            <pre>
+            /* Exercise Example */
+            Style a button with rounded corners and a shadow.
+            </pre>
+        </div>
+        <div class="output-box">
+            <button style="border-radius: 10px; box-shadow: 2px 2px 5px gray; padding: 10px;">Exercise Button</button>
+        </div>
+    </section>
+    
+    <section id="css-website">
+        <h2>98. CSS Website</h2>
+        <p>Learn how to build a complete website using CSS...</p>
+        <div class="code-box">
+            <pre>
+            <!-- Website Example -->
+            <header>Header</header>
+            <main>Content</main>
+            <footer>Footer</footer>
+            </pre>
+        </div>
+        <div class="output-box">
+            <p>CSS Website Example.</p>
+        </div>
+    </section>
+    <section id="css-syllabus">
+        <h2>99. CSS Syllabus</h2>
+        <p>Understand the comprehensive syllabus for mastering CSS...</p>
+        <div class="code-box">
+            <pre>
+            /* Syllabus Example */
+            1. Introduction to CSS
+            2. CSS Basics
+            3. Advanced CSS Topics
+            </pre>
+        </div>
+        <div class="output-box">
+            <p>CSS syllabus includes topics from basics to advanced levels.</p>
+        </div>
+    </section>
+    
+    <section id="css-study-plan">
+        <h2>100. CSS Study Plan</h2>
+        <p>Plan your CSS learning with a structured study plan...</p>
+        <div class="code-box">
+            <pre>
+            /* Study Plan Example */
+            Week 1: Basics of CSS
+            Week 2: CSS Layouts
+            Week 3: Advanced CSS and Responsive Design
+            </pre>
+        </div>
+        <div class="output-box">
+            <p>Follow this study plan for learning CSS effectively.</p>
+        </div>
+    </section>
+    
+    <section id="css-interview-prep">
+        <h2>101. CSS Interview Prep</h2>
+        <p>Prepare for CSS-related questions asked in technical interviews...</p>
+        <div class="code-box">
+            <pre>
+            /* Sample Interview Question */
+            Q: What is the difference between "absolute" and "relative" positioning in CSS?
+            </pre>
+        </div>
+        <div class="output-box">
+            <p>Review common CSS interview questions and their answers.</p>
+        </div>
+    </section>
+    
+    <section id="css-bootcamp">
+        <h2>102. CSS Bootcamp</h2>
+        <p>Join a CSS bootcamp to get hands-on training...</p>
+        <div class="code-box">
+            <pre>
+            /* Bootcamp Topics */
+            1. Basics of CSS
+            2. Responsive Web Design
+            3. Advanced Animations
+            </pre>
+        </div>
+        <div class="output-box">
+            <p>A bootcamp focuses on practical CSS skills.</p>
+        </div>
+    </section>
+    
+    <section id="css-certificate">
+        <h2>103. CSS Certificate</h2>
+        <p>Earn a certification in CSS to showcase your skills...</p>
+        <div class="code-box">
+            <pre>
+            /* Certificate Program */
+            Learn and complete projects to qualify for a CSS certification.
+            </pre>
+        </div>
+        <div class="output-box">
+            <p>Get certified in CSS and improve your portfolio.</p>
+        </div>
+    </section>
+    
+    <section id="css-references">
+        <h2>104. CSS References</h2>
+        <p>Comprehensive CSS references for properties, functions, and selectors...</p>
+        <div class="code-box">
+            <pre>
+            /* Reference Example */
+            color: Defines the text color.
+            background-color: Sets the background color.
+            </pre>
+        </div>
+        <div class="output-box">
+            <p>Check CSS references to understand every property and value.</p>
+        </div>
+    </section>
+    
+    <section id="css-selectors">
+        <h2>105. CSS Selectors</h2>
+        <p>Selectors are used to target HTML elements for styling...</p>
+        <div class="code-box">
+            <pre>
+            /* Selector Example */
+            div {
+                color: red;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <div style="color: red;">This is styled using a selector.</div>
+        </div>
+    </section>
+    
+    <section id="css-combinators">
+        <h2>106. CSS Combinators</h2>
+        <p>CSS combinators define relationships between selectors...</p>
+        <div class="code-box">
+            <pre>
+            /* Combinator Example */
+            div > p {
+                font-size: 16px;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <div>
+                <p style="font-size: 16px;">This paragraph uses a child combinator.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="css-pseudo-classes">
+        <h2>107. CSS Pseudo-classes</h2>
+        <p>Pseudo-classes style elements based on their state...</p>
+        <div class="code-box">
+            <pre>
+            /* Pseudo-class Example */
+            a:hover {
+                text-decoration: underline;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <a href="#" style="text-decoration: none;">Hover over me</a>
+        </div>
+    </section>
+    
+    <section id="css-pseudo-elements">
+        <h2>108. CSS Pseudo-elements</h2>
+        <p>Pseudo-elements allow styling of specific parts of an element...</p>
+        <div class="code-box">
+            <pre>
+            /* Pseudo-element Example */
+            p::first-letter {
+                font-size: 20px;
+                font-weight: bold;
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <p style="font-size: 20px; font-weight: bold;">This is a styled first letter.</p>
+        </div>
+    </section>
+    
+    <section id="css-at-rules">
+        <h2>109. CSS At-rules</h2>
+        <p>At-rules like @media, @keyframes, and @import control CSS behavior...</p>
+        <div class="code-box">
+            <pre>
+            /* At-rule Example */
+            @media (max-width: 600px) {
+                body {
+                    font-size: 14px;
+                }
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <p>Resize the browser to see the media query effect.</p>
+        </div>
+    </section>
+    
+    <section id="css-functions">
+        <h2>110. CSS Functions</h2>
+        <p>CSS functions like calc(), var(), and url() enhance CSS capabilities...</p>
+        <div class="code-box">
+            <pre>
+            /* Function Example */
+            div {
+                width: calc(100% - 50px);
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <div style="width: calc(100% - 50px); background-color: lightblue;">Dynamic width</div>
+        </div>
+    </section>
+    
+    <section id="css-reference-aural">
+        <h2>111. CSS Reference Aural</h2>
+        <p>Aural CSS properties control how content is spoken...</p>
+        <div class="code-box">
+            <pre>
+            /* Aural Example */
+            @media speech {
+                body {
+                    speak: always;
+                }
+            }
+            </pre>
+        </div>
+        <div class="output-box">
+            <p>Aural styles are used for screen readers.</p>
+        </div>
+    </section>
+    <section id="css-web-safe-fonts">
+        <h2>112. CSS Web Safe Fonts</h2>
+        <p>Learn about commonly used web-safe fonts that work across all browsers...</p>
+        <div class="code-box">
+            <pre>
+            /* Quiz Example */
+            Which of these is a web-safe font?
+            a) Arial
+            b) Comic Sans MS
+            c) Both a and b
+            </pre>
+        </div>
+        <div class="output-box">
+            <p>Answer: c) Both a and b.</p>
+        </div>
+    </section>
+    
+    <section id="css-animatable">
+        <h2>113. CSS Animatable</h2>
+        <p>Understand which CSS properties can be animated using CSS animations...</p>
+        <div class="code-box">
+            <pre>
+            /* Quiz Example */
+            Which property is not animatable in CSS?
+            a) background-color
+            b) width
+            c) display
+            </pre>
+        </div>
+        <div class="output-box">
+            <p>Answer: c) display.</p>
+        </div>
+    </section>
+    
+    <section id="css-units">
+        <h2>114. CSS Units</h2>
+        <p>Learn about different CSS units like px, em, rem, %, etc...</p>
+        <div class="code-box">
+            <pre>
+            /* Quiz Example */
+            What does "em" unit represent in CSS?
+            a) A fixed pixel value
+            b) Relative to the parent element's font size
+            c) Relative to the viewport
+            </pre>
+        </div>
+        <div class="output-box">
+            <p>Answer: b) Relative to the parent element's font size.</p>
+        </div>
+    </section>
+    
+    <section id="css-px-em-converter">
+        <h2>115. CSS PX-EM Converter</h2>
+        <p>Learn how to convert between px and em units in CSS...</p>
+        <div class="code-box">
+            <pre>
+            /* Quiz Example */
+            How many "em"s are equal to 16px if the font size of the parent element is 16px?
+            a) 0.5em
+            b) 1em
+            c) 2em
+            </pre>
+        </div>
+        <div class="output-box">
+            <p>Answer: b) 1em.</p>
+        </div>
+    </section>
+    
+    <section id="css-colors">
+        <h2>116. CSS Colors</h2>
+        <p>Understand how to use colors in CSS with different notations...</p>
+        <div class="code-box">
+            <pre>
+            /* Quiz Example */
+            Which of these is a valid way to define a color in CSS?
+            a) #ff5733
+            b) rgb(255, 87, 51)
+            c) Both a and b
+            </pre>
+        </div>
+        <div class="output-box">
+            <p>Answer: c) Both a and b.</p>
+        </div>
+    </section>
+    
+    <section id="css-color-values">
+        <h2>117. CSS Color Values</h2>
+        <p>Learn the different ways to represent color values in CSS...</p>
+        <div class="code-box">
+            <pre>
+            /* Quiz Example */
+            Which color value is used for transparent colors in CSS?
+            a) rgba()
+            b) hex
+            c) hsl()
+            </pre>
+        </div>
+        <div class="output-box">
+            <p>Answer: a) rgba().</p>
+        </div>
+    </section>
+    
+    <section id="css-default-values">
+        <h2>118. CSS Default Values</h2>
+        <p>Learn about the default values of various CSS properties...</p>
+        <div class="code-box">
+            <pre>
+            /* Quiz Example */
+            What is the default value of the "display" property in a div element?
+            a) block
+            b) inline
+            c) flex
+            </pre>
+        </div>
+        <div class="output-box">
+            <p>Answer: a) block.</p>
+        </div>
+    </section>
+    
+    <section id="css-browser-support">
+        <h2>119. CSS Browser Support</h2>
+        <p>Understand browser support for various CSS properties...</p>
+        <div class="code-box">
+            <pre>
+            /* Quiz Example */
+            Which CSS property has the best browser support?
+            a) border-radius
+            b) flexbox
+            c) grid
+            </pre>
+        </div>
+        <div class="output-box">
+            <p>Answer: a) border-radius.</p>
+        </div>
+    </section>
+                    
+    <!-- Continue the same format for remaining topics -->
+    
+    
+    
+</main>
+
+
+
+
+  
+    <footer>
+        <div class="footer-container">
+          <!-- Programming Courses Links -->
+          <div class="footer-links">
+            <h3>Programming Courses</h3>
+            <ul>
+              <li><a href="#">Python</a></li>
+              <li><a href="#">JavaScript</a></li>
+              <li><a href="#">Java</a></li>
+              <li><a href="#">C++</a></li>
+              <li><a href="#">PHP</a></li>
+              <li><a href="#">Machine Learning</a></li>
+            </ul>
+          </div>
+          
+          <!-- Social Media Links -->
+          <div class="footer-social">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+    
+          <!-- Contact Information -->
+          <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <ul>
+              <li><i class="fas fa-phone"></i> 9302984613</li>
+              <li><i class="fas fa-envelope"></i><a href="mailto:codekraft1325@gmail.com">Email Us :codekraft1325@gmail.com</a>
+              </li>
+              <li><i class="fas fa-map-marker-alt"></i> katangi,balaghat(M.P)</li>
+            </ul>
+          </div>
+    
+          <!-- About Us Section -->
+          <div class="footer-about">
+            <h3>About Us</h3>
+            <p>We are a leading provider of online programming courses, helping individuals from all around the world to enhance their skills. Whether you are a beginner or an expert, we offer a wide range of courses to cater to every learning need. Our courses are designed to be interactive, fun, and easy to follow.</p>
+          </div>
+        </div>
+    
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+          <p>&copy; 2025 Online Programming Courses | All Rights Reserved</p>
+          <p ><a href="#" style="color: red;">Privacy Policy</a> | <a href="#" style="color: red;">Terms of Service</a></p>
+        </div>
+      </footer> 
+ 
+  
+    
+
+    <script>
+        const searchBar = document.getElementById('searchBar');
+        const suggestionsBox = document.getElementById('suggestionsBox');
+
+
+       
+
+        const topics = [
+        
+        { name: 'CSS Tutorial', id: 'css-tutorial' },
+        { name: 'CSS HOME', id: 'css-home' },
+        { name: 'CSS Introduction', id: 'css-introduction' },
+        { name: 'CSS Syntax', id: 'css-syntax' },
+        { name: 'CSS Selectors', id: 'css-selectors' },
+        { name: 'CSS How To', id: 'css-how-to' },
+        { name: 'CSS Comments', id: 'css-comments' },
+        { name: 'CSS Colors', id: 'css-colors' },
+        { name: 'CSS Backgrounds', id: 'css-backgrounds' },
+        { name: 'CSS Borders', id: 'css-borders' },
+        { name: 'CSS Margins', id: 'css-margins' },
+        { name: 'CSS Padding', id: 'css-padding' },
+    
+       
+    { name: 'CSS Height/Width', id: 'css-height-width' },
+    { name: 'CSS Box Model', id: 'css-box-model' },
+    { name: 'CSS Outline', id: 'css-outline' },
+    { name: 'CSS Text', id: 'css-text' },
+    { name: 'CSS Fonts', id: 'css-fonts' },
+    { name: 'CSS Icons', id: 'css-icons' },
+    { name: 'CSS Links', id: 'css-links' },
+    { name: 'CSS Lists', id: 'css-lists' },
+    { name: 'CSS Tables', id: 'css-tables' },
+    { name: 'CSS Display', id: 'css-display' },
+    { name: 'CSS Max-width', id: 'css-max-width' },
+    { name: 'CSS Position', id: 'css-position' },
+    { name: 'CSS Z-index', id: 'css-z-index' },
+    { name: 'CSS Overflow', id: 'css-overflow' },
+    
+    { name: 'CSS Float', id: 'css-float' },
+    { name: 'CSS Inline-block', id: 'css-inline-block' },
+    { name: 'CSS Align', id: 'css-align' },
+    { name: 'CSS Combinators', id: 'css-combinators' },
+    { name: 'CSS Pseudo-classes', id: 'css-pseudo-classes' },
+    { name: 'CSS Pseudo-elements', id: 'css-pseudo-elements' },
+    { name: 'CSS Opacity', id: 'css-opacity' },
+    { name: 'CSS Navigation Bar', id: 'css-navigation-bar' },
+    { name: 'CSS Dropdowns', id: 'css-dropdowns' },
+    { name: 'CSS Image Gallery', id: 'css-image-gallery' },
+    { name: 'CSS Image Sprites', id: 'css-image-sprites' },
+    { name: 'CSS Attr Selectors', id: 'css-attr-selectors' },
+    { name: 'CSS Forms', id: 'css-forms' },
+    { name: 'CSS Counters', id: 'css-counters' },
+    { name: 'CSS Website Layout', id: 'css-website-layout' },
+    { name: 'CSS Units', id: 'css-units' },
+    
+    { name: 'CSS Attr Selectors', id: 'css-attr-selectors' },
+    { name: 'CSS Forms', id: 'css-forms' },
+    { name: 'CSS Counters', id: 'css-counters' },
+    { name: 'CSS Website Layout', id: 'css-website-layout' },
+    { name: 'CSS Units', id: 'css-units' },
+    { name: 'CSS Specificity', id: 'css-specificity' },
+    { name: 'CSS !important', id: 'css-important' },
+    { name: 'CSS Math Functions', id: 'css-math-functions' },
+    { name: 'CSS Advanced', id: 'css-advanced' },
+    { name: 'CSS Rounded Corners', id: 'css-rounded-corners' },
+    { name: 'CSS Border Images', id: 'css-border-images' },
+    { name: 'CSS Backgrounds', id: 'css-backgrounds' },
+    { name: 'CSS Colors', id: 'css-colors' },
+    { name: 'CSS Color Keywords', id: 'css-color-keywords' },
+    { name: 'CSS Gradients', id: 'css-gradients' },
+    { name: 'CSS Shadows', id: 'css-shadows' },
+    { name: 'CSS Text Effects', id: 'css-text-effects' },
+    { name: 'CSS Web Fonts', id: 'css-web-fonts' },
+    
+    { name: 'CSS 2D Transforms', id: 'css-2d-transforms' },
+    { name: 'CSS 3D Transforms', id: 'css-3d-transforms' },
+    { name: 'CSS Transitions', id: 'css-transitions' },
+    { name: 'CSS Animations', id: 'css-animations' },
+    { name: 'CSS Tooltips', id: 'css-tooltips' },
+    { name: 'CSS Image Styling', id: 'css-image-styling' },
+    { name: 'CSS Image Centering', id: 'css-image-centering' },
+    { name: 'CSS Image Filters', id: 'css-image-filters' },
+    { name: 'CSS Image Shapes', id: 'css-image-shapes' },
+    { name: 'CSS object-fit', id: 'css-object-fit' },
+    { name: 'CSS object-position', id: 'css-object-position' },
+    { name: 'CSS Masking', id: 'css-masking' },
+    { name: 'CSS Buttons', id: 'css-buttons' },
+    { name: 'CSS Pagination', id: 'css-pagination' },
+    { name: 'CSS Multiple Columns', id: 'css-multiple-columns' },
+    { name: 'CSS User Interface', id: 'css-user-interface' },
+    { name: 'CSS Variables', id: 'css-variables' },
+    { name: 'CSS @property', id: 'css-property' },
+    { name: 'CSS Box Sizing', id: 'css-box-sizing' },
+    
+    { name: 'RWD Videos', id: 'rwd-videos' },
+    { name: 'RWD Frameworks', id: 'rwd-frameworks' },
+    { name: 'RWD Templates', id: 'rwd-templates' },
+    { name: 'CSS Grid', id: 'css-grid' },
+    { name: 'Grid Intro', id: 'grid-intro' },
+    { name: 'Grid Container', id: 'grid-container' },
+    { name: 'Grid Item', id: 'grid-item' },
+    { name: 'CSS SASS', id: 'css-sass' },
+    { name: 'SASS Tutorial', id: 'sass-tutorial' },
+    { name: 'CSS Examples', id: 'css-examples' },
+    { name: 'CSS Templates', id: 'css-templates' },
+    { name: 'CSS Examples', id: 'css-examples' },
+    { name: 'CSS Editor', id: 'css-editor' },
+    { name: 'CSS Snippets', id: 'css-snippets' },
+    { name: 'CSS Quiz', id: 'css-quiz' },
+    { name: 'CSS Exercises', id: 'css-exercises' },
+    { name: 'CSS Website', id: 'css-website' },
+    
+    { name: 'CSS Syllabus', id: 'css-syllabus' },
+    { name: 'CSS Study Plan', id: 'css-study-plan' },
+    { name: 'CSS Interview Prep', id: 'css-interview-prep' },
+    { name: 'CSS Bootcamp', id: 'css-bootcamp' },
+    { name: 'CSS Certificate', id: 'css-certificate' },
+    { name: 'CSS References', id: 'css-references' },
+    { name: 'CSS Reference', id: 'css-reference' },
+    { name: 'CSS Selectors', id: 'css-selectors' },
+    { name: 'CSS Combinators', id: 'css-combinators' },
+    { name: 'CSS Pseudo-classes', id: 'css-pseudo-classes' },
+    { name: 'CSS Pseudo-elements', id: 'css-pseudo-elements' },
+    { name: 'CSS At-rules', id: 'css-at-rules' },
+    { name: 'CSS Functions', id: 'css-functions' },
+    { name: 'CSS Reference Aural', id: 'css-reference-aural' },
+    
+    { name: 'CSS Web Safe Fonts', id: 'css-web-safe-fonts' },
+    { name: 'CSS Animatable', id: 'css-animatable' },
+    { name: 'CSS Units', id: 'css-units' },
+    { name: 'CSS PX-EM Converter', id: 'css-px-em-converter' },
+    { name: 'CSS Colors', id: 'css-colors' },
+    { name: 'CSS Color Values', id: 'css-color-values' },
+    { name: 'CSS Default Values', id: 'css-default-values' },
+    { name: 'CSS Browser Support', id: 'css-browser-support' }
+
+        ];
+
+  // Handle input for suggestions
+ // सर्च बार के "input" इवेंट को हैंडल करना
+searchBar.addEventListener('input', function () {
+    const query = searchBar.value.toLowerCase(); // यूज़र का इनपुट लोअरकेस में बदलें
+    suggestionsBox.innerHTML = ''; // पहले से मौजूद सुझाव हटाएं
+
+    if (query.length > 0) {
+        const filteredTopics = topics.filter(topic => topic.name.toLowerCase().includes(query)); // मैच खोजें
+        filteredTopics.forEach(topic => {
+            const suggestionElement = document.createElement('p'); // नया सुझाव एलीमेंट बनाएं
+            suggestionElement.textContent = topic.name; // सुझाव में टॉपिक का नाम डालें
+
+            // सुझाव पर क्लिक करने पर नेविगेशन
+            suggestionElement.addEventListener('click', () => {
+                document.getElementById(topic.id).scrollIntoView({ behavior: 'smooth' }); // संबंधित सेक्शन पर स्क्रॉल करें
+                searchBar.value = topic.name; // सर्च बार में चुना गया नाम दिखाएं
+                suggestionsBox.innerHTML = ''; // सुझाव बॉक्स को साफ करें
+            });
+
+            suggestionsBox.appendChild(suggestionElement); // सुझाव बॉक्स में सुझाव जोड़ें
+        });
+    }
+});
+
+// सर्च बार के "keypress" इवेंट को हैंडल करना
+searchBar.addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') { // यदि यूज़र "Enter" दबाता है
+        const query = searchBar.value.toLowerCase();
+        const match = topics.find(topic => topic.name.toLowerCase().includes(query)); // पहला मैच खोजें
+
+        if (match) {
+            document.getElementById(match.id).scrollIntoView({ behavior: 'smooth' }); // संबंधित सेक्शन पर स्क्रॉल करें
+            suggestionsBox.innerHTML = ''; // सुझाव बॉक्स साफ करें
+        }
+    }
+});
+
+    
+       
+     
+    </script>
+</body>
+</html>

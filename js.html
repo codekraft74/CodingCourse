@@ -1,0 +1,3223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Programming</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">   
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-row">
+            <img src="img/apple-touch-icon.png" alt="Logo" class="logo">
+            <div class="search-container">
+                <input type="search" id="searchBar" placeholder="Search... HTML topic">
+                <div class="suggestions" id="suggestionsBox"></div>
+            </div>
+        </div>
+    </header>
+
+    <div class="he">
+        <h1 class="heading">JavaScript</h1>
+    </div>
+
+    <main>
+        <section id="js-home">
+            <h2>1. JS Home</h2>
+            <p>JavaScript is a versatile language used to create dynamic web content...</p>
+        </section>
+        
+        <section id="js-introduction">
+            <h2>2. JS Introduction</h2>
+            <p>JavaScript is a programming language that allows you to implement complex features on web pages...</p>
+        </section>
+        
+        <section id="js-where-to">
+            <h2>3. JS Where To</h2>
+            <p>JavaScript can be included in HTML using the <code>&lt;script&gt;</code> tag...</p>
+        </section>
+        
+        <section id="js-output">
+            <h2>4. JS Output</h2>
+            <p>The output of JavaScript code can be displayed using <code>console.log()</code>...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;console.log("Hello World");<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Hello World</p>
+            </div>
+        </section>
+        
+        <section id="js-statements">
+            <h2>5. JS Statements</h2>
+            <p>JavaScript statements are the building blocks of JavaScript programs...</p>
+        </section>
+        
+        <section id="js-syntax">
+            <h2>6. JS Syntax</h2>
+            <p>JavaScript syntax defines the set of rules that guide the structure of JavaScript code...</p>
+        </section>
+        
+        <section id="js-comments">
+            <h2>7. JS Comments</h2>
+            <p>JavaScript comments help to explain the code and are ignored during execution...</p>
+            <div class="code-box">
+                // This is a single-line comment<br>
+                /* This is a multi-line comment */
+            </div>
+            <div class="output-box">
+                <p>Output: Comments are ignored by the browser.</p>
+            </div>
+        </section>
+        
+        <section id="js-variables">
+            <h2>8. JS Variables</h2>
+            <p>Variables are used to store data values...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let message = "Hello, JavaScript!";<br>
+                &nbsp;&nbsp;console.log(message);<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Hello, JavaScript!</p>
+            </div>
+        </section>
+        
+        <section id="js-let">
+            <h2>9. JS Let</h2>
+            <p><code>let</code> is used to declare variables that can be reassigned...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let x = 10;<br>
+                &nbsp;&nbsp;x = 20;<br>
+                &nbsp;&nbsp;console.log(x);<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: 20</p>
+            </div>
+        </section>
+        
+        <section id="js-const">
+            <h2>10. JS Const</h2>
+            <p><code>const</code> is used to declare constants that cannot be reassigned...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;const PI = 3.14;<br>
+                &nbsp;&nbsp;console.log(PI);<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: 3.14</p>
+            </div>
+        </section>
+        
+        <section id="js-operators">
+            <h2>11. JS Operators</h2>
+            <p>Operators are used to perform operations on variables and values...</p>
+        </section>
+        
+        <section id="js-arithmetic">
+            <h2>12. JS Arithmetic</h2>
+            <p>Arithmetic operators perform basic mathematical operations...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let result = 5 + 3;<br>
+                &nbsp;&nbsp;console.log(result);<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: 8</p>
+            </div>
+        </section>
+        
+        <section id="js-assignment">
+            <h2>13. JS Assignment</h2>
+            <p>Assignment operators assign values to variables...</p>
+        </section>
+        
+        <section id="js-data-types">
+            <h2>14. JS Data Types</h2>
+            <p>JavaScript has different data types like string, number, boolean, etc...</p>
+        </section>
+        
+        <section id="js-functions">
+            <h2>15. JS Functions</h2>
+            <p>Functions are reusable blocks of code that can be called to execute...</p>
+        </section>
+        
+        <section id="js-objects">
+            <h2>16. JS Objects</h2>
+            <p>Objects are collections of properties and methods...</p>
+        </section>
+        
+        <section id="js-object-properties">
+            <h2>17. JS Object Properties</h2>
+            <p>Object properties are values associated with an object...</p>
+        </section>
+        
+        <section id="js-object-methods">
+            <h2>18. JS Object Methods</h2>
+            <p>Object methods are functions that are associated with an object...</p>
+        </section>
+        
+        <section id="js-object-display">
+            <h2>19. JS Object Display</h2>
+            <p>You can display object properties using <code>console.log()</code>...</p>
+        </section>
+        
+        <section id="js-object-constructors">
+            <h2>20. JS Object Constructors</h2>
+            <p>Constructors are functions that are used to create and initialize objects...</p>
+        </section>
+        <section id="js-events">
+            <h2>21. JS Events</h2>
+            <p>Events allow JavaScript to react to user interactions...</p>
+            <div class="code-box">
+                &lt;button onclick="alert('Button Clicked!')"&gt;Click Me&lt;/button&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: An alert will pop up when the button is clicked.</p>
+            </div>
+        </section>
+        
+        <section id="js-strings">
+            <h2>22. JS Strings</h2>
+            <p>Strings are used to store text values in JavaScript...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let text = "Hello, JavaScript!";<br>
+                &nbsp;&nbsp;console.log(text);<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Hello, JavaScript!</p>
+            </div>
+        </section>
+        
+        <section id="js-string-methods">
+            <h2>23. JS String Methods</h2>
+            <p>String methods are used to manipulate strings...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let text = "Hello, World!";<br>
+                &nbsp;&nbsp;console.log(text.toUpperCase());<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: HELLO, WORLD!</p>
+            </div>
+        </section>
+        
+        <section id="js-string-search">
+            <h2>24. JS String Search</h2>
+            <p>String search methods are used to find a substring within a string...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let text = "Hello, World!";<br>
+                &nbsp;&nbsp;console.log(text.indexOf("World"));<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: 7</p>
+            </div>
+        </section>
+        
+        <section id="js-string-templates">
+            <h2>25. JS String Templates</h2>
+            <p>Template literals allow embedded expressions and multi-line strings...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let name = "JavaScript";<br>
+                &nbsp;&nbsp;let text = `Welcome to ${name}!`;<br>
+                &nbsp;&nbsp;console.log(text);<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Welcome to JavaScript!</p>
+            </div>
+        </section>
+        
+        <section id="js-numbers">
+            <h2>26. JS Numbers</h2>
+            <p>Numbers are used to represent numeric values...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let number = 42;<br>
+                &nbsp;&nbsp;console.log(number);<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: 42</p>
+            </div>
+        </section>
+        
+        <section id="js-bigint">
+            <h2>27. JS BigInt</h2>
+            <p>BigInt is used to handle large integers that are beyond the Number limit...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let bigInt = 1234567890123456789012345678901234567890n;<br>
+                &nbsp;&nbsp;console.log(bigInt);<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: 1234567890123456789012345678901234567890n</p>
+            </div>
+        </section>
+        
+        <section id="js-number-methods">
+            <h2>28. JS Number Methods</h2>
+            <p>Number methods are used to work with numeric values...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let num = 4.7;<br>
+                &nbsp;&nbsp;console.log(Math.round(num));<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: 5</p>
+            </div>
+        </section>
+        
+        <section id="js-number-properties">
+            <h2>29. JS Number Properties</h2>
+            <p>Number properties allow access to number-related constants...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;console.log(Number.MAX_VALUE);<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: 1.7976931348623157e+308</p>
+            </div>
+        </section>
+        
+        <section id="js-arrays">
+            <h2>30. JS Arrays</h2>
+            <p>Arrays are used to store multiple values in a single variable...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let fruits = ["Apple", "Banana", "Cherry"];<br>
+                &nbsp;&nbsp;console.log(fruits);<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: ["Apple", "Banana", "Cherry"]</p>
+            </div>
+        </section>
+        
+        <section id="js-array-methods">
+            <h2>31. JS Array Methods</h2>
+            <p>Array methods allow you to manipulate arrays...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let fruits = ["Apple", "Banana", "Cherry"];<br>
+                &nbsp;&nbsp;fruits.push("Orange");<br>
+                &nbsp;&nbsp;console.log(fruits);<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: ["Apple", "Banana", "Cherry", "Orange"]</p>
+            </div>
+        </section>
+        
+        <section id="js-array-search">
+            <h2>32. JS Array Search</h2>
+            <p>Array search methods help you find elements in an array...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let fruits = ["Apple", "Banana", "Cherry"];<br>
+                &nbsp;&nbsp;console.log(fruits.indexOf("Banana"));<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: 1</p>
+            </div>
+        </section>
+        
+        <section id="js-array-sort">
+            <h2>33. JS Array Sort</h2>
+            <p>Array sort methods allow you to arrange elements in a specific order...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let fruits = ["Banana", "Apple", "Cherry"];<br>
+                &nbsp;&nbsp;fruits.sort();<br>
+                &nbsp;&nbsp;console.log(fruits);<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: ["Apple", "Banana", "Cherry"]</p>
+            </div>
+        </section>
+        
+        <section id="js-array-iteration">
+            <h2>34. JS Array Iteration</h2>
+            <p>Array iteration methods allow you to loop over elements in an array...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let fruits = ["Apple", "Banana", "Cherry"];<br>
+                &nbsp;&nbsp;fruits.forEach(function(fruit) {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;console.log(fruit);<br>
+                &nbsp;&nbsp;});<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Apple<br>Banana<br>Cherry</p>
+            </div>
+        </section>
+        
+        <section id="js-array-const">
+            <h2>35. JS Array Const</h2>
+            <p>Arrays declared with <code>const</code> cannot be reassigned, but their contents can be modified...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;const fruits = ["Apple", "Banana", "Cherry"];<br>
+                &nbsp;&nbsp;fruits[0] = "Orange";<br>
+                &nbsp;&nbsp;console.log(fruits);<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: ["Orange", "Banana", "Cherry"]</p>
+            </div>
+        </section>
+        <section id="js-dates">
+            <h2>36. JS Dates</h2>
+            <p>The Date object in JavaScript is used to handle dates and times...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let date = new Date();<br>
+                &nbsp;&nbsp;console.log(date);<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Current date and time (depends on the system time)</p>
+            </div>
+        </section>
+        
+        <section id="js-date-formats">
+            <h2>37. JS Date Formats</h2>
+            <p>JavaScript provides various ways to format dates...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let date = new Date();<br>
+                &nbsp;&nbsp;console.log(date.toLocaleDateString());<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Date in local format (varies by system)</p>
+            </div>
+        </section>
+        
+        <section id="js-date-get-methods">
+            <h2>38. JS Date Get Methods</h2>
+            <p>Get methods in JavaScript allow you to retrieve parts of a Date object...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let date = new Date();<br>
+                &nbsp;&nbsp;console.log(date.getFullYear());<br>
+                &nbsp;&nbsp;console.log(date.getMonth());<br>
+                &nbsp;&nbsp;console.log(date.getDate());<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Current year, month, and date</p>
+            </div>
+        </section>
+        
+        <section id="js-date-set-methods">
+            <h2>39. JS Date Set Methods</h2>
+            <p>Set methods allow you to modify a Date object in JavaScript...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let date = new Date();<br>
+                &nbsp;&nbsp;date.setFullYear(2025);<br>
+                &nbsp;&nbsp;console.log(date);<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Date with year set to 2025</p>
+            </div>
+        </section>
+        
+        <section id="js-math">
+            <h2>40. JS Math</h2>
+            <p>The Math object provides basic mathematical functionality...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;console.log(Math.max(1, 2, 3));<br>
+                &nbsp;&nbsp;console.log(Math.min(1, 2, 3));<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: 3, 1</p>
+            </div>
+        </section>
+        
+        <section id="js-random">
+            <h2>41. JS Random</h2>
+            <p>The Math.random() method generates a random number between 0 and 1...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;console.log(Math.random());<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: A random decimal number between 0 and 1</p>
+            </div>
+        </section>
+        
+        <section id="js-booleans">
+            <h2>42. JS Booleans</h2>
+            <p>Booleans are used to represent truth values, either true or false...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let isTrue = true;<br>
+                &nbsp;&nbsp;console.log(isTrue);<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: true</p>
+            </div>
+        </section>
+        
+        <section id="js-comparisons">
+            <h2>43. JS Comparisons</h2>
+            <p>Comparison operators are used to compare values...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;console.log(5 == 5); // true<br>
+                &nbsp;&nbsp;console.log(5 != 3); // true<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: true, true</p>
+            </div>
+        </section>
+        
+        <section id="js-if-else">
+            <h2>44. JS If Else</h2>
+            <p>If...else statements are used for conditional execution...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let age = 18;<br>
+                &nbsp;&nbsp;if (age >= 18) {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;console.log("Adult");<br>
+                &nbsp;&nbsp;} else {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;console.log("Not Adult");<br>
+                &nbsp;&nbsp;}<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Adult</p>
+            </div>
+        </section>
+        
+        <section id="js-switch">
+            <h2>45. JS Switch</h2>
+            <p>Switch statements are used to execute one of many blocks of code...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let day = 2;<br>
+                &nbsp;&nbsp;switch(day) {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;case 1:<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log("Monday");<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;case 2:<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log("Tuesday");<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;default:<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log("Weekend");<br>
+                &nbsp;&nbsp;}<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Tuesday</p>
+            </div>
+        </section>
+        
+        <section id="js-loop-for">
+            <h2>46. JS Loop For</h2>
+            <p>The for loop is used to repeat a block of code a specified number of times...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;for (let i = 0; i < 3; i++) {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;console.log(i);<br>
+                &nbsp;&nbsp;}<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: 0, 1, 2</p>
+            </div>
+        </section>
+        
+        <section id="js-loop-for-in">
+            <h2>47. JS Loop For In</h2>
+            <p>The for...in loop is used to iterate over the properties of an object...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let person = { name: "John", age: 30 };<br>
+                &nbsp;&nbsp;for (let key in person) {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;console.log(key + ": " + person[key]);<br>
+                &nbsp;&nbsp;}<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: name: John, age: 30</p>
+            </div>
+        </section>
+        
+        <section id="js-loop-for-of">
+            <h2>48. JS Loop For Of</h2>
+            <p>The for...of loop is used to iterate over iterable objects like arrays...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let fruits = ["Apple", "Banana", "Cherry"];<br>
+                &nbsp;&nbsp;for (let fruit of fruits) {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;console.log(fruit);<br>
+                &nbsp;&nbsp;}<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Apple, Banana, Cherry</p>
+            </div>
+        </section>
+        
+        <section id="js-loop-while">
+            <h2>49. JS Loop While</h2>
+            <p>The while loop repeats a block of code as long as a specified condition is true...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let i = 0;<br>
+                &nbsp;&nbsp;while (i < 3) {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;console.log(i);<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;i++;<br>
+                &nbsp;&nbsp;}<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: 0, 1, 2</p>
+            </div>
+        </section>
+        
+        <section id="js-break">
+            <h2>50. JS Break</h2>
+            <p>The break statement is used to exit a loop or switch statement...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;for (let i = 0; i < 5; i++) {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;if (i == 3) break;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;console.log(i);<br>
+                &nbsp;&nbsp;}<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: 0, 1, 2</p>
+            </div>
+        </section>
+        
+        <section id="js-iterables">
+            <h2>51. JS Iterables</h2>
+            <p>Iterables are objects that can be iterated over, like arrays...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let iterable = [1, 2, 3];<br>
+                &nbsp;&nbsp;for (let value of iterable) {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;console.log(value);<br>
+                &nbsp;&nbsp;}<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: 1, 2, 3</p>
+            </div>
+        </section>
+        
+        <section id="js-sets">
+            <h2>52. JS Sets</h2>
+            <p>A set is a collection of unique values...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let set = new Set([1, 2, 3]);<br>
+                &nbsp;&nbsp;set.add(4);<br>
+                &nbsp;&nbsp;console.log(set);<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Set {1, 2, 3, 4}</p>
+            </div>
+        </section>
+        
+        <section id="js-set-methods">
+            <h2>53. JS Set Methods</h2>
+            <p>Set methods allow us to add, remove, and check elements in a set...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let set = new Set([1, 2, 3]);<br>
+                &nbsp;&nbsp;set.delete(2);<br>
+                &nbsp;&nbsp;console.log(set.has(2));<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: false</p>
+            </div>
+        </section>
+        
+        <section id="js-maps">
+            <h2>54. JS Maps</h2>
+            <p>Maps are collections of key-value pairs...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let map = new Map();<br>
+                &nbsp;&nbsp;map.set("name", "John");<br>
+                &nbsp;&nbsp;console.log(map);<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Map {"name" => "John"}</p>
+            </div>
+        </section>
+        
+        <section id="js-map-methods">
+            <h2>55. JS Map Methods</h2>
+            <p>Map methods provide functionality to manage key-value pairs...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let map = new Map();<br>
+                &nbsp;&nbsp;map.set("name", "John");<br>
+                &nbsp;&nbsp;map.delete("name");<br>
+                &nbsp;&nbsp;console.log(map.has("name"));<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: false</p>
+            </div>
+        </section>
+        <section id="js-typeof">
+            <h2>56. JS Typeof</h2>
+            <p>The `typeof` operator is used to check the type of a variable...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let x = 10;<br>
+                &nbsp;&nbsp;console.log(typeof x);<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: number</p>
+            </div>
+        </section>
+        
+        <section id="js-type-conversion">
+            <h2>57. JS Type Conversion</h2>
+            <p>JavaScript automatically converts between different types, but you can also convert manually...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let num = "5";<br>
+                &nbsp;&nbsp;console.log(Number(num)); // Converts to number<br>
+                &nbsp;&nbsp;let str = 5;<br>
+                &nbsp;&nbsp;console.log(String(str)); // Converts to string<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: 5, "5"</p>
+            </div>
+        </section>
+        
+        <section id="js-destructuring">
+            <h2>58. JS Destructuring</h2>
+            <p>Destructuring allows you to unpack values from arrays or objects into distinct variables...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let [a, b] = [1, 2];<br>
+                &nbsp;&nbsp;console.log(a, b);<br>
+                &nbsp;&nbsp;let person = { name: "John", age: 30 };<br>
+                &nbsp;&nbsp;let { name, age } = person;<br>
+                &nbsp;&nbsp;console.log(name, age);<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: 1 2, John 30</p>
+            </div>
+        </section>
+        
+        <section id="js-bitwise">
+            <h2>59. JS Bitwise</h2>
+            <p>Bitwise operators allow manipulation of individual bits of numbers...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;console.log(5 & 1); // AND operation<br>
+                &nbsp;&nbsp;console.log(5 | 1); // OR operation<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: 1, 5</p>
+            </div>
+        </section>
+        
+        <section id="js-regexp">
+            <h2>60. JS RegExp</h2>
+            <p>Regular expressions are patterns used to match character combinations in strings...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let regex = /abc/;<br>
+                &nbsp;&nbsp;console.log(regex.test("abcdef")); // true<br>
+                &nbsp;&nbsp;console.log(regex.test("defabc")); // false<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: true, false</p>
+            </div>
+        </section>
+        
+        <section id="js-precedence">
+            <h2>61. JS Precedence</h2>
+            <p>Operator precedence defines the order in which operators are evaluated...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;console.log(5 + 2 * 3); // 11 (multiplication has higher precedence)<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: 11</p>
+            </div>
+        </section>
+        
+        <section id="js-errors">
+            <h2>62. JS Errors</h2>
+            <p>JavaScript has built-in error types that help handle exceptions in the code...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;try {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;let x = y + 1; // ReferenceError<br>
+                &nbsp;&nbsp;} catch (e) {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;console.log(e.message);<br>
+                &nbsp;&nbsp;}<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: y is not defined</p>
+            </div>
+        </section>
+        
+        <section id="js-scope">
+            <h2>63. JS Scope</h2>
+            <p>Scope defines where variables are accessible within your code...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let x = 5;<br>
+                &nbsp;&nbsp;function test() {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;let y = 10;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;console.log(x, y);<br>
+                &nbsp;&nbsp;}<br>
+                &nbsp;&nbsp;test();<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: 5 10</p>
+            </div>
+        </section>
+        
+        <section id="js-hoisting">
+            <h2>64. JS Hoisting</h2>
+            <p>Hoisting is JavaScript's default behavior of moving declarations to the top...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;console.log(x); // undefined<br>
+                &nbsp;&nbsp;var x = 5;<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: undefined</p>
+            </div>
+        </section>
+        
+        <section id="js-strict-mode">
+            <h2>65. JS Strict Mode</h2>
+            <p>Strict mode is a way to opt into a restricted version of JavaScript...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;"use strict";<br>
+                &nbsp;&nbsp;let x = 5;<br>
+                &nbsp;&nbsp;console.log(x);<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: 5</p>
+            </div>
+        </section>
+        
+        <section id="js-this-keyword">
+            <h2>66. JS this Keyword</h2>
+            <p>The `this` keyword refers to the context in which a function is called...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let person = {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;name: "John",<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;greet: function() {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log(this.name);<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                &nbsp;&nbsp;}<br>
+                &nbsp;&nbsp;person.greet();<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: John</p>
+            </div>
+        </section>
+        
+        <section id="js-arrow-function">
+            <h2>67. JS Arrow Function</h2>
+            <p>Arrow functions provide a shorter syntax for writing functions...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let sum = (a, b) =&gt; a + b;<br>
+                &nbsp;&nbsp;console.log(sum(2, 3));<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: 5</p>
+            </div>
+        </section>
+        
+        <section id="js-classes">
+            <h2>68. JS Classes</h2>
+            <p>Classes provide a blueprint for creating objects with shared properties...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;class Person {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;constructor(name) {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.name = name;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;sayHello() {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log("Hello, " + this.name);<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                &nbsp;&nbsp;}<br>
+                &nbsp;&nbsp;let person = new Person("John");<br>
+                &nbsp;&nbsp;person.sayHello();<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Hello, John</p>
+            </div>
+        </section>
+        
+        <section id="js-modules">
+            <h2>69. JS Modules</h2>
+            <p>Modules allow you to break your JavaScript code into smaller, reusable pieces...</p>
+            <div class="code-box">
+                &lt;script type="module"&gt;<br>
+                &nbsp;&nbsp;import { greet } from './greet.js';<br>
+                &nbsp;&nbsp;greet();<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Hello from the module</p>
+            </div>
+        </section>
+        
+        <section id="js-json">
+            <h2>70. JS JSON</h2>
+            <p>JSON (JavaScript Object Notation) is a format for storing and exchanging data...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let json = '{"name": "John", "age": 30}';<br>
+                &nbsp;&nbsp;let obj = JSON.parse(json);<br>
+                &nbsp;&nbsp;console.log(obj.name);<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: John</p>
+            </div>
+        </section>
+        
+        <section id="js-debugging">
+            <h2>71. JS Debugging</h2>
+            <p>Debugging helps you identify and fix errors in your code...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let x = 10;<br>
+                &nbsp;&nbsp;console.log(x);<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: 10</p>
+            </div>
+        </section>
+        
+        <section id="js-style-guide">
+            <h2>72. JS Style Guide</h2>
+            <p>Following a style guide ensures that your JavaScript code is readable and consistent...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let sum = (a, b) =&gt; a + b;<br>
+                &nbsp;&nbsp;console.log(sum(2, 3));<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: 5</p>
+            </div>
+        </section>
+        <section id="js-best-practices">
+            <h2>73. JS Best Practices</h2>
+            <p>Best practices in JavaScript help write clean, efficient, and maintainable code...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let name = "John";<br>
+                &nbsp;&nbsp;const greet = () =&gt; console.log(`Hello, ${name}`);<br>
+                &nbsp;&nbsp;greet();<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Hello, John</p>
+            </div>
+        </section>
+        
+        <section id="js-mistakes">
+            <h2>74. JS Mistakes</h2>
+            <p>Common mistakes in JavaScript include variable hoisting, incorrect scope usage, and others...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;console.log(x); // ReferenceError<br>
+                &nbsp;&nbsp;let x = 5;<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: ReferenceError: x is not defined</p>
+            </div>
+        </section>
+        
+        <section id="js-performance">
+            <h2>75. JS Performance</h2>
+            <p>Improving JavaScript performance involves optimizing algorithms, reducing DOM manipulations, and more...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let numbers = [1, 2, 3, 4, 5];<br>
+                &nbsp;&nbsp;let sum = numbers.reduce((acc, val) =&gt; acc + val, 0);<br>
+                &nbsp;&nbsp;console.log(sum);<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: 15</p>
+            </div>
+        </section>
+        
+        <section id="js-reserved-words">
+            <h2>76. JS Reserved Words</h2>
+            <p>Reserved words in JavaScript are words that have special meanings and cannot be used as identifiers...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let function = "test"; // SyntaxError: Unexpected reserved word<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: SyntaxError: Unexpected reserved word</p>
+            </div>
+        </section>
+        
+        <section id="js-versions">
+            <h2>77. JS Versions</h2>
+            <p>JavaScript has evolved through multiple versions, each introducing new features and functionalities...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;console.log("JavaScript Version History");<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: JavaScript Version History</p>
+            </div>
+        </section>
+        
+        <section id="js-2009">
+            <h2>78. JS 2009 (ES5)</h2>
+            <p>ECMAScript 5 (ES5) introduced many features like strict mode, getters/setters, and better handling of arrays...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;"use strict";<br>
+                &nbsp;&nbsp;let x = 5;<br>
+                &nbsp;&nbsp;console.log(x);<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: 5</p>
+            </div>
+        </section>
+        
+        <section id="js-2015">
+            <h2>79. JS 2015 (ES6)</h2>
+            <p>ES6 (ECMAScript 2015) introduced major features like classes, modules, template literals, and more...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;class Person {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;constructor(name) {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.name = name;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;sayHello() {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log(`Hello, ${this.name}`);<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                &nbsp;&nbsp;}<br>
+                &nbsp;&nbsp;let person = new Person("John");<br>
+                &nbsp;&nbsp;person.sayHello();<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Hello, John</p>
+            </div>
+        </section>
+        
+        <section id="js-2016">
+            <h2>80. JS 2016</h2>
+            <p>ES7 (2016) added the exponentiation operator and Array.prototype.includes...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;console.log(2 ** 3); // 8<br>
+                &nbsp;&nbsp;let arr = [1, 2, 3];<br>
+                &nbsp;&nbsp;console.log(arr.includes(2)); // true<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: 8, true</p>
+            </div>
+        </section>
+        
+        <section id="js-2017">
+            <h2>81. JS 2017</h2>
+            <p>ES8 (2017) introduced async/await, Object.entries, and Object.values...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;async function fetchData() {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;let result = await fetch("https://api.example.com");<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;console.log(result);<br>
+                &nbsp;&nbsp;}<br>
+                &nbsp;&nbsp;fetchData();<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Fetching result from API...</p>
+            </div>
+        </section>
+        
+        <section id="js-2018">
+            <h2>82. JS 2018</h2>
+            <p>ES9 (2018) introduced asynchronous iteration and rest/spread properties...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let arr = [1, 2, 3];<br>
+                &nbsp;&nbsp;for await (let num of arr) {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;console.log(num);<br>
+                &nbsp;&nbsp;}<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: 1, 2, 3</p>
+            </div>
+        </section>
+        
+        <section id="js-2019">
+            <h2>83. JS 2019</h2>
+            <p>ES10 (2019) introduced methods like Array.prototype.flat and Object.fromEntries...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let arr = [1, [2, 3], [4, 5]];<br>
+                &nbsp;&nbsp;console.log(arr.flat());<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: [1, 2, 3, 4, 5]</p>
+            </div>
+        </section>
+        
+        <section id="js-2020">
+            <h2>84. JS 2020</h2>
+            <p>ES11 (2020) brought in features like BigInt and nullish coalescing operator...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let a = 5;<br>
+                &nbsp;&nbsp;let b = null;<br>
+                &nbsp;&nbsp;console.log(a ?? b); // 5<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: 5</p>
+            </div>
+        </section>
+        
+        <section id="js-2021">
+            <h2>85. JS 2021</h2>
+            <p>ES12 (2021) added features like logical assignment operators and private class fields...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let x = null;<br>
+                &nbsp;&nbsp;x ??= 10;<br>
+                &nbsp;&nbsp;console.log(x);<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: 10</p>
+            </div>
+        </section>
+        
+        <section id="js-2022">
+            <h2>86. JS 2022</h2>
+            <p>ES13 (2022) introduced the top-level await and other improvements...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let result = await fetch("https://api.example.com");<br>
+                &nbsp;&nbsp;console.log(result);<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Fetching result from API...</p>
+            </div>
+        </section>
+        
+        <section id="js-2023">
+            <h2>87. JS 2023</h2>
+            <p>ES14 (2023) introduced new features for better developer experience...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let x = 10;<br>
+                &nbsp;&nbsp;console.log(x);<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: 10</p>
+            </div>
+        </section>
+        
+        <section id="js-2024">
+            <h2>88. JS 2024</h2>
+            <p>ES15 (2024) will bring in new enhancements and features to improve coding...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;console.log("JS 2024 features coming soon...");<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: JS 2024 features coming soon...</p>
+            </div>
+        </section>
+        
+        <section id="js-ie-edge">
+            <h2>89. JS IE/Edge</h2>
+            <p>Internet Explorer and Edge support specific features in JavaScript...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;console.log("IE/Edge specific features...");<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: IE/Edge specific features...</p>
+            </div>
+        </section>
+        
+        <section id="js-history">
+            <h2>90. JS History</h2>
+            <p>JavaScript has evolved over the years, from its creation to becoming a powerful language...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;console.log("JavaScript history...");<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: JavaScript history...</p>
+            </div>
+        </section>
+        
+        <section id="js-objects">
+            <h2>91. JS Objects</h2>
+            <p>JavaScript objects are collections of key-value pairs...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let person = {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;name: "John",<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;age: 30<br>
+                &nbsp;&nbsp;};<br>
+                &nbsp;&nbsp;console.log(person.name);<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: John</p>
+            </div>
+        </section>
+        <section id="js-objects">
+            <h2>91. JS Objects</h2>
+            <p>JavaScript objects are collections of key-value pairs...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let person = {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;name: "John",<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;age: 30<br>
+                &nbsp;&nbsp;};<br>
+                &nbsp;&nbsp;console.log(person.name);<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: John</p>
+            </div>
+        </section>
+        
+        <section id="object-definitions">
+            <h2>92. Object Definitions</h2>
+            <p>In JavaScript, an object is defined using curly braces, and properties are specified as key-value pairs...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let person = {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;name: "Jane",<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;age: 25<br>
+                &nbsp;&nbsp;};<br>
+                &nbsp;&nbsp;console.log(person);<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: {name: "Jane", age: 25}</p>
+            </div>
+        </section>
+        
+        <section id="object-prototypes">
+            <h2>93. Object Prototypes</h2>
+            <p>Objects in JavaScript have prototypes, which are objects that act as templates for other objects...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;function Person(name, age) {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;this.name = name;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;this.age = age;<br>
+                &nbsp;&nbsp;}<br>
+                &nbsp;&nbsp;let person1 = new Person("John", 30);<br>
+                &nbsp;&nbsp;console.log(person1.constructor);<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: function Person(name, age) {...}</p>
+            </div>
+        </section>
+        
+        <section id="object-methods">
+            <h2>94. Object Methods</h2>
+            <p>Object methods are functions defined inside an object. They allow objects to perform specific actions...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let person = {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;name: "John",<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;sayHello: function() {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log("Hello, " + this.name);<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                &nbsp;&nbsp;};<br>
+                &nbsp;&nbsp;person.sayHello();<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Hello, John</p>
+            </div>
+        </section>
+        
+        <section id="object-properties">
+            <h2>95. Object Properties</h2>
+            <p>Object properties are the values associated with an object. They can be accessed using dot or bracket notation...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let person = {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;name: "John",<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;age: 30<br>
+                &nbsp;&nbsp;};<br>
+                &nbsp;&nbsp;console.log(person.name);<br>
+                &nbsp;&nbsp;console.log(person["age"]);<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: John, 30</p>
+            </div>
+        </section>
+        
+        <section id="object-get-set">
+            <h2>96. Object Get / Set</h2>
+            <p>Getters and setters allow you to access and modify object properties in a controlled way...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let person = {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;firstName: "John",<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;lastName: "Doe",<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;get fullName() {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return this.firstName + " " + this.lastName;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;},<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;set fullName(name) {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;let names = name.split(" ");<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.firstName = names[0];<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.lastName = names[1];<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                &nbsp;&nbsp;};<br>
+                &nbsp;&nbsp;person.fullName = "Jane Doe";<br>
+                &nbsp;&nbsp;console.log(person.firstName);<br>
+                &nbsp;&nbsp;console.log(person.lastName);<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Jane, Doe</p>
+            </div>
+        </section>
+        
+        <section id="object-protection">
+            <h2>97. Object Protection</h2>
+            <p>Objects can be protected by freezing them (Object.freeze) or sealing them (Object.seal)...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let person = {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;name: "John",<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;age: 30<br>
+                &nbsp;&nbsp;};<br>
+                &nbsp;&nbsp;Object.freeze(person);<br>
+                &nbsp;&nbsp;person.age = 35;<br>
+                &nbsp;&nbsp;console.log(person.age);<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: 30 (Object cannot be modified after freezing)</p>
+            </div>
+        </section>
+        
+        <section id="js-functions">
+            <h2>98. JS Functions</h2>
+            <p>Functions in JavaScript are reusable blocks of code that perform specific tasks...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;function greet(name) {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;console.log("Hello, " + name);<br>
+                &nbsp;&nbsp;}<br>
+                &nbsp;&nbsp;greet("John");<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Hello, John</p>
+            </div>
+        </section>
+        
+        <section id="function-definitions">
+            <h2>99. Function Definitions</h2>
+            <p>Function definitions in JavaScript are made with the function keyword...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;function multiply(a, b) {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;return a * b;<br>
+                &nbsp;&nbsp;}<br>
+                &nbsp;&nbsp;console.log(multiply(2, 3));<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: 6</p>
+            </div>
+        </section>
+        
+        <section id="function-parameters">
+            <h2>100. Function Parameters</h2>
+            <p>Function parameters are the variables that are passed into the function when called...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;function sum(a, b) {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;return a + b;<br>
+                &nbsp;&nbsp;}<br>
+                &nbsp;&nbsp;console.log(sum(5, 10));<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: 15</p>
+            </div>
+        </section>
+        
+        <section id="function-invocation">
+            <h2>101. Function Invocation</h2>
+            <p>Function invocation refers to calling a function in JavaScript...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;function greet(name) {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;console.log("Hi, " + name);<br>
+                &nbsp;&nbsp;}<br>
+                &nbsp;&nbsp;greet("Jane");<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Hi, Jane</p>
+            </div>
+        </section>
+        
+        <!-- Continue for other function sections... -->
+        
+        <section id="function-call">
+            <h2>102. Function Call</h2>
+            <p>The <code>call()</code> method calls a function with a specified <code>this</code> value and arguments...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;function greet(message) {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;console.log(message + ", " + this.name);<br>
+                &nbsp;&nbsp;}<br>
+                &nbsp;&nbsp;let person = { name: "John" };<br>
+                &nbsp;&nbsp;greet.call(person, "Hello");<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Hello, John</p>
+            </div>
+        </section>
+        
+        <section id="function-apply">
+            <h2>103. Function Apply</h2>
+            <p>The <code>apply()</code> method is similar to <code>call()</code>, but the arguments are passed as an array...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;function greet(message) {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;console.log(message + ", " + this.name);<br>
+                &nbsp;&nbsp;}<br>
+                &nbsp;&nbsp;let person = { name: "Jane" };<br>
+                &nbsp;&nbsp;greet.apply(person, ["Hello"]);<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Hello, Jane</p>
+            </div>
+        </section>
+        
+        <section id="function-bind">
+            <h2>104. Function Bind</h2>
+            <p>The <code>bind()</code> method creates a new function that, when invoked, has its <code>this</code> value set to the provided value...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;function greet(message) {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;console.log(message + ", " + this.name);<br>
+                &nbsp;&nbsp;}<br>
+                &nbsp;&nbsp;let person = { name: "Jake" };<br>
+                &nbsp;&nbsp;let greetJake = greet.bind(person);<br>
+                &nbsp;&nbsp;greetJake("Hello");<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Hello, Jake</p>
+            </div>
+        </section>
+        
+        <section id="function-closures">
+            <h2>105. Function Closures</h2>
+            <p>A closure is a function that retains access to its lexical environment, even after the function it was created in has finished execution...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;function outer() {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;let name = "Alice";<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;function inner() {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log(name);<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;return inner;<br>
+                &nbsp;&nbsp;}<br>
+                &nbsp;&nbsp;let greet = outer();<br>
+                &nbsp;&nbsp;greet();<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Alice</p>
+            </div>
+        </section>
+        
+        <section id="js-classes">
+            <h2>106. JS Classes</h2>
+            <p>Classes are a blueprint for creating objects in JavaScript. They are syntactic sugar over the existing prototype-based inheritance...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;class Person {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;constructor(name, age) {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.name = name;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.age = age;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;sayHello() {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log("Hello, " + this.name);<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                &nbsp;&nbsp;}<br>
+                &nbsp;&nbsp;let person1 = new Person("John", 30);<br>
+                &nbsp;&nbsp;person1.sayHello();<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Hello, John</p>
+            </div>
+        </section>
+        <section id="class-intro">
+            <h2>107. Class Introduction</h2>
+            <p>Classes in JavaScript provide a way to define objects and their behaviors in a cleaner, more understandable way...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;class Person {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;constructor(name) {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.name = name;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;sayHello() {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log("Hello, " + this.name);<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                &nbsp;&nbsp;}<br>
+                &nbsp;&nbsp;let person = new Person("John");<br>
+                &nbsp;&nbsp;person.sayHello();<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Hello, John</p>
+            </div>
+        </section>
+        
+        <section id="class-inheritance">
+            <h2>108. Class Inheritance</h2>
+            <p>Inheritance in JavaScript allows one class to inherit properties and methods from another class...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;class Animal {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;constructor(name) {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.name = name;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;speak() {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log(this.name + " makes a sound.");<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                &nbsp;&nbsp;}<br>
+                &nbsp;&nbsp;class Dog extends Animal {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;speak() {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log(this.name + " barks.");<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                &nbsp;&nbsp;}<br>
+                &nbsp;&nbsp;let dog = new Dog("Buddy");<br>
+                &nbsp;&nbsp;dog.speak();<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Buddy barks.</p>
+            </div>
+        </section>
+        
+        <section id="class-static">
+            <h2>109. Class Static</h2>
+            <p>Static methods are called on the class itself, rather than instances of the class...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;class Calculator {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;static add(x, y) {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return x + y;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                &nbsp;&nbsp;}<br>
+                &nbsp;&nbsp;console.log(Calculator.add(5, 3));<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: 8</p>
+            </div>
+        </section>
+        
+        <section id="js-async">
+            <h2>110. JS Async</h2>
+            <p>Asynchronous programming allows for non-blocking operations in JavaScript...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;setTimeout(() => {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;console.log("This message is displayed after 2 seconds.");<br>
+                &nbsp;&nbsp;}, 2000);<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: This message is displayed after 2 seconds.</p>
+            </div>
+        </section>
+        
+        <section id="js-callbacks">
+            <h2>111. JS Callbacks</h2>
+            <p>A callback is a function passed into another function as an argument...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;function fetchData(callback) {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;setTimeout(() => {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;callback("Data fetched!");<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;}, 2000);<br>
+                &nbsp;&nbsp;}<br>
+                &nbsp;&nbsp;fetchData((message) => {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;console.log(message);<br>
+                &nbsp;&nbsp;});<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Data fetched!</p>
+            </div>
+        </section>
+        
+        <section id="js-asynchronous">
+            <h2>112. JS Asynchronous</h2>
+            <p>Asynchronous functions allow other code to run while waiting for a task to complete...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;async function fetchData() {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;let result = await fetch('https://jsonplaceholder.typicode.com/posts');<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;let data = await result.json();<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;console.log(data);<br>
+                &nbsp;&nbsp;}<br>
+                &nbsp;&nbsp;fetchData();<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Array of data from the API</p>
+            </div>
+        </section>
+        
+        <section id="js-promises">
+            <h2>113. JS Promises</h2>
+            <p>A Promise is an object representing the eventual completion or failure of an asynchronous operation...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let promise = new Promise((resolve, reject) => {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;let success = true;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;if (success) {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resolve("Operation successful!");<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;} else {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reject("Operation failed!");<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                &nbsp;&nbsp;});<br>
+                &nbsp;&nbsp;promise.then((message) => {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;console.log(message);<br>
+                &nbsp;&nbsp;}).catch((message) => {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;console.log(message);<br>
+                &nbsp;&nbsp;});<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Operation successful!</p>
+            </div>
+        </section>
+        
+        <section id="js-async-await">
+            <h2>114. JS Async/Await</h2>
+            <p>Async/await is syntactic sugar for working with Promises...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;async function fetchData() {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;let response = await fetch('https://jsonplaceholder.typicode.com/posts');<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;let data = await response.json();<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;console.log(data);<br>
+                &nbsp;&nbsp;}<br>
+                &nbsp;&nbsp;fetchData();<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Array of data from the API</p>
+            </div>
+        </section>
+        
+        <section id="js-html-dom">
+            <h2>115. JS HTML DOM</h2>
+            <p>The DOM (Document Object Model) represents the structure of an HTML document...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;document.getElementById("demo").innerHTML = "Hello, World!";<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Hello, World!</p>
+            </div>
+        </section>
+        
+        <section id="dom-intro">
+            <h2>116. DOM Introduction</h2>
+            <p>The DOM provides methods to interact with HTML elements...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;console.log(document.title);<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: The title of the current HTML document</p>
+            </div>
+        </section>
+        
+        <section id="dom-methods">
+            <h2>117. DOM Methods</h2>
+            <p>DOM methods allow us to manipulate the HTML structure dynamically...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let element = document.getElementById("demo");<br>
+                &nbsp;&nbsp;element.style.color = "red";<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Changes text color to red</p>
+            </div>
+        </section>
+        
+        <section id="dom-elements">
+            <h2>118. DOM Elements</h2>
+            <p>DOM elements represent the various nodes in the document's HTML structure...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let element = document.createElement("p");<br>
+                &nbsp;&nbsp;element.textContent = "New paragraph created."; <br>
+                &nbsp;&nbsp;document.body.appendChild(element);<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: A new paragraph element added to the document</p>
+            </div>
+        </section>
+        
+        <section id="dom-html">
+            <h2>119. DOM HTML</h2>
+            <p>DOM HTML methods help in accessing and modifying HTML content...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let htmlContent = document.body.innerHTML;<br>
+                &nbsp;&nbsp;console.log(htmlContent);<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: The HTML content of the body element</p>
+            </div>
+        </section>
+        
+        <section id="dom-forms">
+            <h2>120. DOM Forms</h2>
+            <p>DOM allows you to interact with HTML forms dynamically...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let formElement = document.getElementById("myForm");<br>
+                &nbsp;&nbsp;formElement.submit();<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Submitting the form programmatically</p>
+            </div>
+        </section>
+        
+        <section id="dom-css">
+            <h2>121. DOM CSS</h2>
+            <p>DOM methods allow you to manipulate the CSS styles of HTML elements...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;document.body.style.backgroundColor = "lightblue";<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Changes the background color of the body to light blue</p>
+            </div>
+        </section>
+        
+        <section id="dom-animations">
+            <h2>122. DOM Animations</h2>
+            <p>The DOM allows creating animations on elements...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let elem = document.getElementById("animate");<br>
+                &nbsp;&nbsp;elem.style.transition = "all 2s";<br>
+                &nbsp;&nbsp;elem.style.transform = "rotate(360deg)";<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Rotate animation applied to the element</p>
+            </div>
+        </section>
+        
+        <section id="dom-events">
+            <h2>123. DOM Events</h2>
+            <p>DOM events allow interaction with user actions like clicks, key presses, etc...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let btn = document.getElementById("myButton");<br>
+                &nbsp;&nbsp;btn.addEventListener("click", function() {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;alert("Button clicked!");<br>
+                &nbsp;&nbsp;});<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Button click triggers an alert</p>
+            </div>
+        </section>
+        
+        <section id="dom-event-listener">
+            <h2>124. DOM Event Listener</h2>
+            <p>Event listeners are used to bind event handlers to elements...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;document.getElementById("myButton").addEventListener("click", () => {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;alert("Event triggered!");<br>
+                &nbsp;&nbsp;});<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Alert appears when the button is clicked</p>
+            </div>
+        </section>
+        <section id="dom-navigation">
+            <h2>125. DOM Navigation</h2>
+            <p>DOM navigation allows you to access and manipulate different elements in the DOM...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let parent = document.getElementById("parent");<br>
+                &nbsp;&nbsp;let firstChild = parent.firstElementChild;<br>
+                &nbsp;&nbsp;console.log(firstChild);<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: The first child element of the parent element</p>
+            </div>
+        </section>
+        
+        <section id="dom-nodes">
+            <h2>126. DOM Nodes</h2>
+            <p>Nodes are the building blocks of the DOM, representing elements, attributes, and text...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let node = document.createTextNode("Hello, world!");<br>
+                &nbsp;&nbsp;document.body.appendChild(node);<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: "Hello, world!" is added to the document as a text node</p>
+            </div>
+        </section>
+        
+        <section id="dom-collections">
+            <h2>127. DOM Collections</h2>
+            <p>DOM collections are a list of DOM nodes that can be accessed and manipulated...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let collection = document.getElementsByTagName("p");<br>
+                &nbsp;&nbsp;console.log(collection[0]);<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: The first paragraph element in the document</p>
+            </div>
+        </section>
+        
+        <section id="dom-node-lists">
+            <h2>128. DOM Node Lists</h2>
+            <p>Node lists are similar to collections, but they represent all nodes matching a query...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let nodeList = document.querySelectorAll("p");<br>
+                &nbsp;&nbsp;nodeList.forEach(node => console.log(node));<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: All paragraph elements in the document</p>
+            </div>
+        </section>
+        
+        <section id="js-browser-bom">
+            <h2>129. JS Browser BOM</h2>
+            <p>The Browser Object Model (BOM) allows interaction with the browser...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;console.log(window.innerWidth);<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: The width of the browser window</p>
+            </div>
+        </section>
+        
+        <section id="js-window">
+            <h2>130. JS Window</h2>
+            <p>The Window object represents the browser window and provides methods to interact with it...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;window.alert("Hello, world!");<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: An alert box with "Hello, world!"</p>
+            </div>
+        </section>
+        
+        <section id="js-screen">
+            <h2>131. JS Screen</h2>
+            <p>The Screen object contains information about the user's screen...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;console.log(screen.width);<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: The width of the user's screen</p>
+            </div>
+        </section>
+        
+        <section id="js-location">
+            <h2>132. JS Location</h2>
+            <p>The Location object allows access to the URL of the browser...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;console.log(location.href);<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: The current URL of the document</p>
+            </div>
+        </section>
+        
+        <section id="js-history">
+            <h2>133. JS History</h2>
+            <p>The History object allows navigation through the browser's history...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;history.back();<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Navigates to the previous page in history</p>
+            </div>
+        </section>
+        
+        <section id="js-navigator">
+            <h2>134. JS Navigator</h2>
+            <p>The Navigator object provides information about the browser...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;console.log(navigator.userAgent);<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: The user agent string of the browser</p>
+            </div>
+        </section>
+        
+        <section id="js-popup-alert">
+            <h2>135. JS Popup Alert</h2>
+            <p>The alert() function is used to display an alert box to the user...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;alert("This is an alert message!");<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: An alert box with the message "This is an alert message!"</p>
+            </div>
+        </section>
+        
+        <section id="js-timing">
+            <h2>136. JS Timing</h2>
+            <p>JavaScript provides methods for timing functions, such as setTimeout and setInterval...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;setTimeout(() => {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;alert("This alert appears after 3 seconds");<br>
+                &nbsp;&nbsp;}, 3000);<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Alert appears after 3 seconds</p>
+            </div>
+        </section>
+        
+        <section id="js-cookies">
+            <h2>137. JS Cookies</h2>
+            <p>Cookies are small pieces of data stored by the browser for tracking and personalization...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;document.cookie = "username=John Doe";<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: A cookie is set with the name "username" and value "John Doe"</p>
+            </div>
+        </section>
+        
+        <section id="js-web-apis">
+            <h2>138. JS Web APIs</h2>
+            <p>Web APIs provide browser-based methods and functionality for web developers...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;console.log(navigator.geolocation);<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Information about the geolocation Web API</p>
+            </div>
+        </section>
+        
+        <section id="web-api-intro">
+            <h2>139. Web API Introduction</h2>
+            <p>Web APIs allow web developers to interact with various browser functionalities...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;console.log(window.localStorage);<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Information about the localStorage Web API</p>
+            </div>
+        </section>
+        
+        <section id="web-forms-api">
+            <h2>140. Web Forms API</h2>
+            <p>The Web Forms API allows interaction with form elements in the DOM...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let form = document.getElementById("myForm");<br>
+                &nbsp;&nbsp;form.reset();<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Resets the form</p>
+            </div>
+        </section>
+        
+        <section id="web-history-api">
+            <h2>141. Web History API</h2>
+            <p>The Web History API allows for manipulation of the browser's session history...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;history.pushState({},"","newPage");<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Adds a new state to the browser's history</p>
+            </div>
+        </section>
+        
+        <section id="web-storage-api">
+            <h2>142. Web Storage API</h2>
+            <p>The Web Storage API provides storage for data within the browser...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;localStorage.setItem("name", "John");<br>
+                &nbsp;&nbsp;console.log(localStorage.getItem("name"));<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Saves and retrieves the "name" item from localStorage</p>
+            </div>
+        </section>
+        
+        <section id="web-worker-api">
+            <h2>143. Web Worker API</h2>
+            <p>The Web Worker API allows running JavaScript in background threads...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let worker = new Worker("worker.js");<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: A web worker is created to run a script in the background</p>
+            </div>
+        </section>
+        <section id="web-fetch-api">
+            <h2>144. Web Fetch API</h2>
+            <p>The Fetch API provides a way to make network requests similar to XMLHttpRequest...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;fetch("https://jsonplaceholder.typicode.com/posts")<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;.then(response =&gt; response.json())<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;.then(data =&gt; console.log(data));<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Fetches data from an API and logs it to the console</p>
+            </div>
+        </section>
+        
+        <section id="web-geolocation-api">
+            <h2>145. Web Geolocation API</h2>
+            <p>The Geolocation API allows you to get the user's geographical position...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;navigator.geolocation.getCurrentPosition(function(position) {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;console.log(position.coords.latitude, position.coords.longitude);<br>
+                &nbsp;&nbsp;});<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Logs the user's latitude and longitude</p>
+            </div>
+        </section>
+        
+        <section id="js-ajax">
+            <h2>146. JS AJAX</h2>
+            <p>AJAX (Asynchronous JavaScript and XML) allows asynchronous communication between the client and server...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let xhr = new XMLHttpRequest();<br>
+                &nbsp;&nbsp;xhr.open("GET", "https://jsonplaceholder.typicode.com/posts", true);<br>
+                &nbsp;&nbsp;xhr.onload = function() {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;if (xhr.status === 200) {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log(JSON.parse(xhr.responseText));<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                &nbsp;&nbsp;};<br>
+                &nbsp;&nbsp;xhr.send();<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Fetches data asynchronously from an API and logs it to the console</p>
+            </div>
+        </section>
+        
+        <section id="ajax-intro">
+            <h2>147. AJAX Intro</h2>
+            <p>AJAX enables web pages to be updated asynchronously by exchanging small amounts of data...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let xhr = new XMLHttpRequest();<br>
+                &nbsp;&nbsp;xhr.open("GET", "https://jsonplaceholder.typicode.com/posts", true);<br>
+                &nbsp;&nbsp;xhr.onload = function() {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;console.log(xhr.responseText);<br>
+                &nbsp;&nbsp;};<br>
+                &nbsp;&nbsp;xhr.send();<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Sends an AJAX request to fetch data</p>
+            </div>
+        </section>
+        
+        <section id="ajax-xmlhttp">
+            <h2>148. AJAX XMLHttp</h2>
+            <p>The XMLHttpRequest object is used in AJAX to send and receive data...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let xhr = new XMLHttpRequest();<br>
+                &nbsp;&nbsp;xhr.open("GET", "https://jsonplaceholder.typicode.com/posts", true);<br>
+                &nbsp;&nbsp;xhr.onreadystatechange = function() {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;if (xhr.readyState == 4 &amp;&amp; xhr.status == 200) {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log(JSON.parse(xhr.responseText));<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                &nbsp;&nbsp;};<br>
+                &nbsp;&nbsp;xhr.send();<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Fetches data using XMLHttpRequest and logs it</p>
+            </div>
+        </section>
+        
+        <section id="ajax-request">
+            <h2>149. AJAX Request</h2>
+            <p>AJAX requests allow you to send data to a server without refreshing the page...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let xhr = new XMLHttpRequest();<br>
+                &nbsp;&nbsp;xhr.open("POST", "https://jsonplaceholder.typicode.com/posts", true);<br>
+                &nbsp;&nbsp;xhr.setRequestHeader("Content-Type", "application/json");<br>
+                &nbsp;&nbsp;xhr.send(JSON.stringify({title: "New Post", body: "Post body"}));<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Sends a POST request with JSON data</p>
+            </div>
+        </section>
+        
+        <section id="ajax-response">
+            <h2>150. AJAX Response</h2>
+            <p>The response from an AJAX request is processed asynchronously...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let xhr = new XMLHttpRequest();<br>
+                &nbsp;&nbsp;xhr.open("GET", "https://jsonplaceholder.typicode.com/posts", true);<br>
+                &nbsp;&nbsp;xhr.onload = function() {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;console.log(xhr.responseText);<br>
+                &nbsp;&nbsp;};<br>
+                &nbsp;&nbsp;xhr.send();<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Logs the response from the server</p>
+            </div>
+        </section>
+        
+        <section id="ajax-xml-file">
+            <h2>151. AJAX XML File</h2>
+            <p>AJAX can also be used to fetch XML files and parse them...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let xhr = new XMLHttpRequest();<br>
+                &nbsp;&nbsp;xhr.open("GET", "data.xml", true);<br>
+                &nbsp;&nbsp;xhr.onload = function() {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;let xmlDoc = xhr.responseXML;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;let items = xmlDoc.getElementsByTagName("item");<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;console.log(items);<br>
+                &nbsp;&nbsp;};<br>
+                &nbsp;&nbsp;xhr.send();<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Fetches an XML file and logs its contents</p>
+            </div>
+        </section>
+        
+        <section id="ajax-php">
+            <h2>152. AJAX PHP</h2>
+            <p>AJAX can be used with PHP to send and receive data asynchronously...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let xhr = new XMLHttpRequest();<br>
+                &nbsp;&nbsp;xhr.open("GET", "process.php", true);<br>
+                &nbsp;&nbsp;xhr.onload = function() {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;console.log(xhr.responseText);<br>
+                &nbsp;&nbsp;};<br>
+                &nbsp;&nbsp;xhr.send();<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Sends an AJAX request to a PHP script and logs the response</p>
+            </div>
+        </section>
+        
+        <section id="ajax-asp">
+            <h2>153. AJAX ASP</h2>
+            <p>AJAX can also be used with ASP (Active Server Pages) to handle asynchronous requests...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let xhr = new XMLHttpRequest();<br>
+                &nbsp;&nbsp;xhr.open("GET", "process.asp", true);<br>
+                &nbsp;&nbsp;xhr.onload = function() {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;console.log(xhr.responseText);<br>
+                &nbsp;&nbsp;};<br>
+                &nbsp;&nbsp;xhr.send();<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Sends an AJAX request to an ASP script and logs the response</p>
+            </div>
+        </section>
+        
+        <section id="ajax-database">
+            <h2>154. AJAX Database</h2>
+            <p>AJAX can be used to interact with a database asynchronously...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let xhr = new XMLHttpRequest();<br>
+                &nbsp;&nbsp;xhr.open("GET", "fetchData.php", true);<br>
+                &nbsp;&nbsp;xhr.onload = function() {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;console.log(xhr.responseText);<br>
+                &nbsp;&nbsp;};<br>
+                &nbsp;&nbsp;xhr.send();<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Sends an AJAX request to fetch data from a database</p>
+            </div>
+        </section>
+        
+        <section id="ajax-applications">
+            <h2>155. AJAX Applications</h2>
+            <p>AJAX is commonly used in real-time applications like social media, chats, and more...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let xhr = new XMLHttpRequest();<br>
+                &nbsp;&nbsp;xhr.open("GET", "https://jsonplaceholder.typicode.com/posts", true);<br>
+                &nbsp;&nbsp;xhr.onload = function() {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;console.log(xhr.responseText);<br>
+                &nbsp;&nbsp;};<br>
+                &nbsp;&nbsp;xhr.send();<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Example of using AJAX in a web application</p>
+            </div>
+        </section>
+        
+        <section id="ajax-examples">
+            <h2>156. AJAX Examples</h2>
+            <p>Various practical examples of AJAX requests...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let xhr = new XMLHttpRequest();<br>
+                &nbsp;&nbsp;xhr.open("GET", "https://jsonplaceholder.typicode.com/posts", true);<br>
+                &nbsp;&nbsp;xhr.onload = function() {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;console.log(xhr.responseText);<br>
+                &nbsp;&nbsp;};<br>
+                &nbsp;&nbsp;xhr.send();<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Demonstrates AJAX examples</p>
+            </div>
+        </section>
+        
+        <section id="js-json">
+            <h2>157. JS JSON</h2>
+            <p>JSON (JavaScript Object Notation) is a lightweight data-interchange format...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let person = {"name": "John", "age": 30};<br>
+                &nbsp;&nbsp;let jsonString = JSON.stringify(person);<br>
+                &nbsp;&nbsp;console.log(jsonString);<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Converts an object into a JSON string</p>
+            </div>
+        </section>
+        
+        <section id="json-intro">
+            <h2>158. JSON Intro</h2>
+            <p>JSON is a lightweight data format that is easy to read and write...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let person = {"name": "John", "age": 30};<br>
+                &nbsp;&nbsp;let jsonString = JSON.stringify(person);<br>
+                &nbsp;&nbsp;console.log(jsonString);<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Introduction to JSON</p>
+            </div>
+        </section>
+        
+        <section id="json-syntax">
+            <h2>159. JSON Syntax</h2>
+            <p>JSON syntax is a collection of key-value pairs...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let person = {"name": "John", "age": 30};<br>
+                &nbsp;&nbsp;let jsonString = JSON.stringify(person);<br>
+                &nbsp;&nbsp;console.log(jsonString);<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Example of JSON syntax</p>
+            </div>
+        </section>
+        <section id="json-vs-xml">
+            <h2>160. JSON vs XML</h2>
+            <p>JSON and XML are both data formats used for storing and exchanging data...</p>
+            <div class="code-box">
+                <h3>JSON Example:</h3>
+                <pre>
+        {
+            "name": "John",
+            "age": 30,
+            "city": "New York"
+        }
+                </pre>
+                <h3>XML Example:</h3>
+                <pre>
+        &lt;person&gt;
+            &lt;name&gt;John&lt;/name&gt;
+            &lt;age&gt;30&lt;/age&gt;
+            &lt;city&gt;New York&lt;/city&gt;
+        &lt;/person&gt;
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: JSON is more compact and easier to read, while XML is more verbose and uses tags for structure.</p>
+            </div>
+        </section>
+        
+        <section id="json-data-types">
+            <h2>161. JSON Data Types</h2>
+            <p>JSON supports the following data types: String, Number, Object, Array, Boolean, and Null...</p>
+            <div class="code-box">
+                <pre>
+        {
+            "string": "Hello, world!",
+            "number": 123,
+            "object": {"key": "value"},
+            "array": [1, 2, 3],
+            "boolean": true,
+            "nullValue": null
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Shows JSON data types including strings, numbers, objects, arrays, booleans, and null values.</p>
+            </div>
+        </section>
+        
+        <section id="json-parse">
+            <h2>162. JSON Parse</h2>
+            <p>JSON.parse() is used to convert a JSON string into a JavaScript object...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let jsonString = '{"name": "John", "age": 30, "city": "New York"}';<br>
+                &nbsp;&nbsp;let obj = JSON.parse(jsonString);<br>
+                &nbsp;&nbsp;console.log(obj.name);  // Output: John<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Converts JSON string into a JavaScript object, and accesses its properties.</p>
+            </div>
+        </section>
+        <section id="json-stringify">
+            <h2>163. JSON Stringify</h2>
+            <p>JSON.stringify() converts a JavaScript object into a JSON string...</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;let person = { "name": "John", "age": 30 };<br>
+                &nbsp;&nbsp;let jsonString = JSON.stringify(person);<br>
+                &nbsp;&nbsp;console.log(jsonString);  // Output: '{"name":"John","age":30}'<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <p>Output: Converts a JavaScript object into a JSON string.</p>
+            </div>
+        </section>
+        
+        <section id="json-objects">
+            <h2>164. JSON Objects</h2>
+            <p>JSON objects are collections of key-value pairs...</p>
+            <div class="code-box">
+                <pre>
+        {
+            "name": "John",
+            "age": 30,
+            "city": "New York"
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: A simple JSON object representing a person.</p>
+            </div>
+        </section>
+        
+        <section id="json-arrays">
+            <h2>165. JSON Arrays</h2>
+            <p>JSON arrays are ordered lists of values...</p>
+            <div class="code-box">
+                <pre>
+        {
+            "names": ["John", "Jane", "Jim"]
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: A JSON array containing names.</p>
+            </div>
+        </section>
+        
+        <section id="json-server">
+            <h2>166. JSON Server</h2>
+            <p>JSON Server is a package that helps in setting up a mock REST API server...</p>
+            <div class="code-box">
+                <pre>
+        json-server --watch db.json --port 5000
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Running a JSON Server on port 5000 to serve a mock database.</p>
+            </div>
+        </section>
+        
+        <section id="json-php">
+            <h2>167. JSON PHP</h2>
+            <p>JSON in PHP is used to encode and decode JSON data...</p>
+            <div class="code-box">
+                <pre>
+        <?php
+            $data = '{"name": "John", "age": 30}';
+            $decodedData = json_decode($data);
+            echo $decodedData->name;  // Output: John
+        ?>
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Decoding JSON data in PHP and accessing its property.</p>
+            </div>
+        </section>
+        
+        <section id="json-html">
+            <h2>168. JSON HTML</h2>
+            <p>Embedding JSON data in HTML can be done using JavaScript...</p>
+            <div class="code-box">
+                <pre>
+        <script>
+            let person = { "name": "John", "age": 30 };
+            document.getElementById("output").innerHTML = JSON.stringify(person);
+        </script>
+                </pre>
+            </div>
+            <div class="output-box" id="output">
+                <p>Output: Displays the JSON string in the HTML element.</p>
+            </div>
+        </section>
+        
+        <section id="json-jsonp">
+            <h2>169. JSON JSONP</h2>
+            <p>JSONP is a method used to overcome cross-origin restrictions...</p>
+            <div class="code-box">
+                <pre>
+        function handleData(data) {
+            console.log(data);
+        }
+        <script src="https://example.com/data?callback=handleData"></script>
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Fetches JSON data using JSONP to overcome CORS restrictions.</p>
+            </div>
+        </section>
+        
+        <section id="js-vs-jquery">
+            <h2>170. JS vs jQuery</h2>
+            <p>JavaScript is the core language, while jQuery is a library that simplifies JavaScript usage...</p>
+            <div class="code-box">
+                <pre>
+        <!-- JavaScript -->
+        let element = document.getElementById("myElement");
+        element.style.color = "blue";
+        
+        // jQuery
+        $("#myElement").css("color", "blue");
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Comparison of standard JavaScript and jQuery syntax for manipulating DOM elements.</p>
+            </div>
+        </section>
+        
+        <section id="jquery-selectors">
+            <h2>171. jQuery Selectors</h2>
+            <p>jQuery selectors are used to select and manipulate HTML elements...</p>
+            <div class="code-box">
+                <pre>
+        $("#id").css("color", "red");
+        $(".class").hide();
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Select elements by ID and class using jQuery and apply styles or actions.</p>
+            </div>
+        </section>
+        
+        <section id="jquery-html">
+            <h2>172. jQuery HTML</h2>
+            <p>jQuery can be used to manipulate HTML content...</p>
+            <div class="code-box">
+                <pre>
+        $("#element").html("New HTML Content");
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Changes the HTML content of an element using jQuery.</p>
+            </div>
+        </section>
+        
+        <section id="jquery-css">
+            <h2>173. jQuery CSS</h2>
+            <p>jQuery can be used to manipulate the CSS styles of elements...</p>
+            <div class="code-box">
+                <pre>
+        $("#element").css("color", "green");
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Changes the CSS style of an element using jQuery.</p>
+            </div>
+        </section>
+        
+        <section id="jquery-dom">
+            <h2>174. jQuery DOM</h2>
+            <p>jQuery simplifies DOM manipulation...</p>
+            <div class="code-box">
+                <pre>
+        $("#element").append("<p>New paragraph added!</p>");
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Appends new content to an element using jQuery.</p>
+            </div>
+        </section>
+        
+        <section id="js-graphics">
+            <h2>175. JS Graphics</h2>
+            <p>JavaScript can be used for creating graphics on a web page...</p>
+            <div class="code-box">
+                <pre>
+        <canvas id="myCanvas" width="500" height="500"></canvas>
+        <script>
+            let canvas = document.getElementById("myCanvas");
+            let ctx = canvas.getContext("2d");
+            ctx.fillStyle = "red";
+            ctx.fillRect(50, 50, 200, 100);
+        </script>
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Draws a red rectangle on a canvas element using JavaScript.</p>
+            </div>
+        </section>
+        
+        <section id="js-canvas">
+            <h2>176. JS Canvas</h2>
+            <p>The canvas element allows for dynamic graphics rendering...</p>
+            <div class="code-box">
+                <pre>
+        <canvas id="myCanvas" width="500" height="500"></canvas>
+        <script>
+            let canvas = document.getElementById("myCanvas");
+            let ctx = canvas.getContext("2d");
+            ctx.beginPath();
+            ctx.arc(200, 200, 100, 0, 2 * Math.PI);
+            ctx.stroke();
+        </script>
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Draws a circle on a canvas element using JavaScript.</p>
+            </div>
+        </section>
+        
+        <section id="js-plotly">
+            <h2>177. JS Plotly</h2>
+            <p>Plotly is a JavaScript library for creating interactive graphs...</p>
+            <div class="code-box">
+                <pre>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <div id="plot"></div>
+        <script>
+            var trace1 = {
+                x: [1, 2, 3, 4],
+                y: [10, 11, 12, 13],
+                type: "scatter"
+            };
+            var data = [trace1];
+            Plotly.newPlot("plot", data);
+        </script>
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Creates an interactive scatter plot using Plotly.</p>
+            </div>
+        </section>
+        
+        <section id="js-chartjs">
+            <h2>178. JS Chart.js</h2>
+            <p>Chart.js is a popular JavaScript library for making charts...</p>
+            <div class="code-box">
+                <pre>
+        <canvas id="myChart"></canvas>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script>
+            var ctx = document.getElementById('myChart').getContext('2d');
+            var myChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Red', 'Blue', 'Yellow', 'Green'],
+                    datasets: [{
+                        label: '# of Votes',
+                        data: [12, 19, 3, 5],
+                        backgroundColor: ['red', 'blue', 'yellow', 'green'],
+                        borderColor: ['red', 'blue', 'yellow', 'green'],
+                        borderWidth: 1
+                    }]
+                }
+            });
+        </script>
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Creates a bar chart using Chart.js.</p>
+            </div>
+        </section>
+                
+        <section id="js-google-chart">
+            <h2>179. JS Google Chart</h2>
+            <p>Google Charts is a powerful, simple to use tool for creating interactive charts...</p>
+            <div class="code-box">
+                <pre>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+            google.charts.load('current', {'packages':['corechart', 'bar']});
+            google.charts.setOnLoadCallback(drawStuff);
+        
+            function drawStuff() {
+                var data = new google.visualization.arrayToDataTable([
+                    ['Year', 'Sales', 'Expenses'],
+                    ['2013',  1000,      400],
+                    ['2014',  1170,      460],
+                    ['2015',  660,       1120],
+                    ['2016',  1030,      540]
+                ]);
+                var options = {
+                    title: 'Company Performance',
+                    chartArea: {width: '50%'},
+                    hAxis: {
+                        title: 'Total Sales',
+                        minValue: 0
+                    },
+                    vAxis: {
+                        title: 'Year'
+                    }
+                };
+                var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+                chart.draw(data, options);
+            }
+        </script>
+        <div id="chart_div"></div>
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Creates an interactive bar chart using Google Charts.</p>
+            </div>
+        </section>
+        
+        <section id="js-d3js">
+            <h2>180. JS D3.js</h2>
+            <p>D3.js is a JavaScript library for manipulating documents based on data...</p>
+            <div class="code-box">
+                <pre>
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <script>
+            var data = [4, 8, 15, 16, 23, 42];
+            var svg = d3.select("body").append("svg")
+                .attr("width", 500)
+                .attr("height", 500);
+            svg.selectAll("circle")
+                .data(data)
+                .enter().append("circle")
+                .attr("cx", function(d, i) { return (i + 1) * 50; })
+                .attr("cy", 50)
+                .attr("r", function(d) { return d; })
+                .style("fill", "blue");
+        </script>
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Creates a circle chart using D3.js where the radius depends on the data.</p>
+            </div>
+        </section>
+        
+        <section id="js-examples">
+            <h2>181. JS Examples</h2>
+            <p>Explore various examples of JavaScript concepts...</p>
+            <div class="code-box">
+                <pre>
+        function greeting() {
+            alert("Hello, World!");
+        }
+        greeting();  // Calls the function and alerts "Hello, World!"
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Alerts "Hello, World!"</p>
+            </div>
+        </section>
+        
+        <section id="js-html-dom">
+            <h2>182. JS HTML DOM</h2>
+            <p>The HTML DOM allows you to interact with the elements on a web page...</p>
+            <div class="code-box">
+                <pre>
+        document.getElementById("myElement").innerHTML = "New content!";
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Changes the inner HTML content of the specified element.</p>
+            </div>
+        </section>
+        
+        <section id="js-html-input">
+            <h2>183. JS HTML Input</h2>
+            <p>Handling input fields in HTML with JavaScript...</p>
+            <div class="code-box">
+                <pre>
+        <input type="text" id="inputField" placeholder="Enter text">
+        <button onclick="displayInput()">Submit</button>
+        <script>
+            function displayInput() {
+                let inputValue = document.getElementById("inputField").value;
+                alert("You entered: " + inputValue);
+            }
+        </script>
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Displays the input entered by the user.</p>
+            </div>
+        </section>
+        
+        <section id="js-html-objects">
+            <h2>184. JS HTML Objects</h2>
+            <p>In JavaScript, HTML elements can be treated as objects...</p>
+            <div class="code-box">
+                <pre>
+        let element = document.getElementById("myElement");
+        console.log(element.innerHTML);
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Retrieves the inner HTML of the specified element.</p>
+            </div>
+        </section>
+        
+        <section id="js-html-events">
+            <h2>185. JS HTML Events</h2>
+            <p>Handling HTML events using JavaScript...</p>
+            <div class="code-box">
+                <pre>
+        <button onclick="alert('Button clicked!')">Click Me</button>
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Shows an alert when the button is clicked.</p>
+            </div>
+        </section>
+        
+        <section id="js-browser">
+            <h2>186. JS Browser</h2>
+            <p>JavaScript allows interaction with the browser environment...</p>
+            <div class="code-box">
+                <pre>
+        console.log(navigator.userAgent);
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Logs the user agent string of the browser.</p>
+            </div>
+        </section>
+        
+        <section id="js-editor">
+            <h2>187. JS Editor</h2>
+            <p>Choosing the right JavaScript editor for coding...</p>
+            <div class="code-box">
+                <pre>
+        console.log("Hello, JS Editor!");
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Simple console log output in your JS editor.</p>
+            </div>
+        </section>
+        
+        <section id="js-exercises">
+            <h2>188. JS Exercises</h2>
+            <p>Practicing JavaScript through exercises can help solidify concepts...</p>
+            <div class="code-box">
+                <pre>
+        let x = 5;
+        let y = 10;
+        console.log(x + y);
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Logs the sum of x and y.</p>
+            </div>
+        </section>
+        
+        <section id="js-quiz">
+            <h2>189. JS Quiz</h2>
+            <p>Test your knowledge of JavaScript with quizzes...</p>
+            <div class="code-box">
+                <pre>
+        let answer = prompt("What is 2 + 2?");
+        if (answer == "4") {
+            alert("Correct!");
+        } else {
+            alert("Wrong!");
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Shows an alert based on the quiz answer.</p>
+            </div>
+        </section>
+    
+     
+    </main>
+    <footer>
+        <div class="footer-container">
+          <!-- Programming Courses Links -->
+          <div class="footer-links">
+            <h3>Programming Courses</h3>
+            <ul>
+              <li><a href="#">Python</a></li>
+              <li><a href="#">JavaScript</a></li>
+              <li><a href="#">Java</a></li>
+              <li><a href="#">C++</a></li>
+              <li><a href="#">PHP</a></li>
+              <li><a href="#">Machine Learning</a></li>
+            </ul>
+          </div>
+          
+          <!-- Social Media Links -->
+          <div class="footer-social">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+    
+          <!-- Contact Information -->
+          <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <ul>
+              <li><i class="fas fa-phone"></i> 9302984613</li>
+              <li><i class="fas fa-envelope"></i><a href="mailto:codekraft1325@gmail.com">Email Us :codekraft1325@gmail.com</a>
+              </li>
+              <li><i class="fas fa-map-marker-alt"></i> katangi,balaghat(M.P)</li>
+            </ul>
+          </div>
+    
+          <!-- About Us Section -->
+          <div class="footer-about">
+            <h3>About Us</h3>
+            <p>We are a leading provider of online programming courses, helping individuals from all around the world to enhance their skills. Whether you are a beginner or an expert, we offer a wide range of courses to cater to every learning need. Our courses are designed to be interactive, fun, and easy to follow.</p>
+          </div>
+        </div>
+    
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+          <p>&copy; 2025 Online Programming Courses | All Rights Reserved</p>
+          <p ><a href="#" style="color: red;">Privacy Policy</a> | <a href="#" style="color: red;">Terms of Service</a></p>
+        </div>
+      </footer> 
+ 
+  
+    
+
+
+    <script >
+     
+        const searchBar = document.getElementById('searchBar');
+const suggestionsBox = document.getElementById('suggestionsBox');
+const topics = [
+{ name: 'JS HOME', id: 'js-home' },
+{ name: 'JS Introduction', id: 'js-introduction' },
+{ name: 'JS Where To', id: 'js-where-to' },
+{ name: 'JS Output', id: 'js-output' },
+{ name: 'JS Statements', id: 'js-statements' },
+{ name: 'JS Syntax', id: 'js-syntax' },
+{ name: 'JS Comments', id: 'js-comments' },
+{ name: 'JS Variables', id: 'js-variables' },
+{ name: 'JS Let', id: 'js-let' },
+{ name: 'JS Const', id: 'js-const' },
+{ name: 'JS Operators', id: 'js-operators' },
+{ name: 'JS Arithmetic', id: 'js-arithmetic' },
+{ name: 'JS Assignment', id: 'js-assignment' },
+{ name: 'JS Data Types', id: 'js-data-types' },
+{ name: 'JS Functions', id: 'js-functions' },
+{ name: 'JS Objects', id: 'js-objects' },
+{ name: 'JS Object Properties', id: 'js-object-properties' },
+{ name: 'JS Object Methods', id: 'js-object-methods' },
+{ name: 'JS Object Display', id: 'js-object-display' },
+{ name: 'JS Constructors', id: 'js-constructors' },
+{ name: 'JS Events', id: 'js-events' },
+{ name: 'JS Strings', id: 'js-strings' },
+{ name: 'JS String Methods', id: 'js-string-methods' },
+{ name: 'JS String Search', id: 'js-string-search' },
+{ name: 'JS String Templates', id: 'js-string-templates' },
+{ name: 'JS Numbers', id: 'js-numbers' },
+{ name: 'JS BigInt', id: 'js-bigint' },
+{ name: 'JS Number Methods', id: 'js-number-methods' },
+{ name: 'JS Number Properties', id: 'js-number-properties' },
+{ name: 'JS Arrays', id: 'js-arrays' },
+{ name: 'JS Array Methods', id: 'js-array-methods' },
+{ name: 'JS Array Search', id: 'js-array-search' },
+{ name: 'JS Array Sort', id: 'js-array-sort' },
+{ name: 'JS Array Iteration', id: 'js-array-iteration' },
+{ name: 'JS Array Const', id: 'js-array-const' },
+{ name: 'JS Dates', id: 'js-dates' },
+{ name: 'JS Date Formats', id: 'js-date-formats' },
+{ name: 'JS Date Get Methods', id: 'js-date-get-methods' },
+{ name: 'JS Date Set Methods', id: 'js-date-set-methods' },
+{ name: 'JS Math', id: 'js-math' },
+{ name: 'JS Random', id: 'js-random' },
+{ name: 'JS Booleans', id: 'js-booleans' },
+{ name: 'JS Comparisons', id: 'js-comparisons' },
+{ name: 'JS If Else', id: 'js-if-else' },
+{ name: 'JS Switch', id: 'js-switch' },
+{ name: 'JS Loop For', id: 'js-loop-for' },
+{ name: 'JS Loop For In', id: 'js-loop-for-in' },
+{ name: 'JS Loop For Of', id: 'js-loop-for-of' },
+{ name: 'JS Loop While', id: 'js-loop-while' },
+{ name: 'JS Break', id: 'js-break' },
+{ name: 'JS Iterables', id: 'js-iterables' },
+{ name: 'JS Sets', id: 'js-sets' },
+{ name: 'JS Set Methods', id: 'js-set-methods' },
+{ name: 'JS Maps', id: 'js-maps' },
+{ name: 'JS Map Methods', id: 'js-map-methods' },
+{ name: 'JS Typeof', id: 'js-typeof' },
+{ name: 'JS Type Conversion', id: 'js-type-conversion' },
+{ name: 'JS Destructuring', id: 'js-destructuring' },
+{ name: 'JS Bitwise', id: 'js-bitwise' },
+{ name: 'JS RegExp', id: 'js-regexp' },
+{ name: 'JS Precedence', id: 'js-precedence' },
+{ name: 'JS Errors', id: 'js-errors' },
+{ name: 'JS Scope', id: 'js-scope' },
+{ name: 'JS Hoisting', id: 'js-hoisting' },
+{ name: 'JS Strict Mode', id: 'js-strict-mode' },
+{ name: 'JS this Keyword', id: 'js-this-keyword' },
+{ name: 'JS Arrow Function', id: 'js-arrow-function' },
+{ name: 'JS Classes', id: 'js-classes' },
+{ name: 'JS Modules', id: 'js-modules' },
+{ name: 'JS JSON', id: 'js-json' },
+{ name: 'JS Debugging', id: 'js-debugging' },
+{ name: 'JS Style Guide', id: 'js-style-guide' },
+{ name: 'JS Best Practices', id: 'js-best-practices' },
+{ name: 'JS Mistakes', id: 'js-mistakes' },
+{ name: 'JS Performance', id: 'js-performance' },
+{ name: 'JS Reserved Words', id: 'js-reserved-words' },
+{ name: 'JS Versions', id: 'js-versions' },
+{ name: 'JS 2009 (ES5)', id: 'js-2009-es5' },
+{ name: 'JS 2015 (ES6)', id: 'js-2015-es6' },
+{ name: 'JS 2016', id: 'js-2016' },
+{ name: 'JS 2017', id: 'js-2017' },
+{ name: 'JS 2018', id: 'js-2018' },
+{ name: 'JS 2019', id: 'js-2019' },
+{ name: 'JS 2020', id: 'js-2020' },
+{ name: 'JS 2021', id: 'js-2021' },
+{ name: 'JS 2022', id: 'js-2022' },
+{ name: 'JS 2023', id: 'js-2023' },
+{ name: 'JS 2024', id: 'js-2024' },
+{ name: 'JS IE/Edge', id: 'js-ie-edge' },
+{ name: 'JS History', id: 'js-history' },
+{ name: 'JS Objects', id: 'js-objects' },
+{ name: 'JS Objects', id: 'js-objects' },
+{ name: 'Object Definitions', id: 'object-definitions' },
+{ name: 'Object Prototypes', id: 'object-prototypes' },
+{ name: 'Object Methods', id: 'object-methods' },
+{ name: 'Object Properties', id: 'object-properties' },
+{ name: 'Object Get / Set', id: 'object-get-set' },
+{ name: 'Object Protection', id: 'object-protection' },
+{ name: 'JS Functions', id: 'js-functions' },
+{ name: 'Function Definitions', id: 'function-definitions' },
+{ name: 'Function Parameters', id: 'function-parameters' },
+{ name: 'Function Invocation', id: 'function-invocation' },
+{ name: 'Function Call', id: 'function-call' },
+{ name: 'Function Apply', id: 'function-apply' },
+{ name: 'Function Bind', id: 'function-bind' },
+{ name: 'Function Closures', id: 'function-closures' },
+{ name: 'JS Classes', id: 'js-classes' },
+{ name: 'Class Intro', id: 'class-intro' },
+{ name: 'Class Inheritance', id: 'class-inheritance' },
+{ name: 'Class Static', id: 'class-static' },
+{ name: 'JS Async', id: 'js-async' },
+{ name: 'JS Callbacks', id: 'js-callbacks' },
+{ name: 'JS Asynchronous', id: 'js-asynchronous' },
+{ name: 'JS Promises', id: 'js-promises' },
+{ name: 'JS Async/Await', id: 'js-async-await' },
+{ name: 'JS HTML DOM', id: 'js-html-dom' },
+{ name: 'DOM Intro', id: 'dom-intro' },
+{ name: 'DOM Methods', id: 'dom-methods' },
+{ name: 'DOM Document', id: 'dom-document' },
+{ name: 'DOM Elements', id: 'dom-elements' },
+{ name: 'DOM HTML', id: 'dom-html' },
+{ name: 'DOM Forms', id: 'dom-forms' },
+{ name: 'DOM CSS', id: 'dom-css' },
+{ name: 'DOM Animations', id: 'dom-animations' },
+{ name: 'DOM Events', id: 'dom-events' },
+{ name: 'DOM Event Listener', id: 'dom-event-listener' },
+{ name: 'DOM Navigation', id: 'dom-navigation' },
+{ name: 'DOM Nodes', id: 'dom-nodes' },
+{ name: 'DOM Collections', id: 'dom-collections' },
+{ name: 'DOM Node Lists', id: 'dom-node-lists' },
+{ name: 'JS Browser BOM', id: 'js-browser-bom' },
+{ name: 'JS Window', id: 'js-window' },
+{ name: 'JS Screen', id: 'js-screen' },
+{ name: 'JS Location', id: 'js-location' },
+{ name: 'JS History', id: 'js-history' },
+{ name: 'JS Navigator', id: 'js-navigator' },
+{ name: 'JS Popup Alert', id: 'js-popup-alert' },
+{ name: 'JS Timing', id: 'js-timing' },
+{ name: 'JS Cookies', id: 'js-cookies' },
+{ name: 'JS Web APIS', id: 'js-web-apis' },
+{ name: 'Web API Intro', id: 'web-api-intro' },
+{ name: 'Web Forms API', id: 'web-forms-api' },
+{ name: 'Web History API', id: 'web-history-api' },
+{ name: 'Web Storage API', id: 'web-storage-api' },
+{ name: 'Web Worker API', id: 'web-worker-api' },
+{ name: 'Web Fetch API', id: 'web-fetch-api' },
+{ name: 'Web Geolocation API', id: 'web-geolocation-api' },
+{ name: 'JS AJAX', id: 'js-ajax' },
+{ name: 'AJAX Intro', id: 'ajax-intro' },
+{ name: 'AJAX XMLHttp', id: 'ajax-xmlhttp' },
+{ name: 'AJAX Request', id: 'ajax-request' },
+{ name: 'AJAX Response', id: 'ajax-response' },
+{ name: 'AJAX XML File', id: 'ajax-xml-file' },
+{ name: 'AJAX PHP', id: 'ajax-php' },
+{ name: 'AJAX ASP', id: 'ajax-asp' },
+{ name: 'AJAX Database', id: 'ajax-database' },
+{ name: 'AJAX Applications', id: 'ajax-applications' },
+{ name: 'AJAX Examples', id: 'ajax-examples' },
+{ name: 'JS JSON', id: 'js-json' },
+{ name: 'JSON Intro', id: 'json-intro' },
+{ name: 'JSON Syntax', id: 'json-syntax' },
+{ name: 'JSON vs XML', id: 'json-vs-xml' },
+{ name: 'JSON Data Types', id: 'json-data-types' },
+{ name: 'JSON Parse', id: 'json-parse' },
+{ name: 'JSON Stringify', id: 'json-stringify' },
+{ name: 'JSON Objects', id: 'json-objects' },
+{ name: 'JSON Arrays', id: 'json-arrays' },
+{ name: 'JSON Server', id: 'json-server' },
+{ name: 'JSON PHP', id: 'json-php' },
+{ name: 'JSON HTML', id: 'json-html' },
+{ name: 'JSON JSONP', id: 'json-jsonp' },
+{ name: 'JS vs jQuery', id: 'js-vs-jquery' },
+{ name: 'jQuery Selectors', id: 'jquery-selectors' },
+{ name: 'jQuery HTML', id: 'jquery-html' },
+{ name: 'jQuery CSS', id: 'jquery-css' },
+{ name: 'jQuery DOM', id: 'jquery-dom' },
+{ name: 'JS Graphics', id: 'js-graphics' },
+{ name: 'JS Canvas', id: 'js-canvas' },
+{ name: 'JS Plotly', id: 'js-plotly' },
+{ name: 'JS Chart.js', id: 'js-chartjs' },
+{ name: 'JS Google Chart', id: 'js-google-chart' },
+{ name: 'JS D3.js', id: 'js-d3js' },
+{ name: 'JS Examples', id: 'js-examples' },
+{ name: 'JS HTML DOM', id: 'js-html-dom' },
+{ name: 'JS HTML Input', id: 'js-html-input' },
+{ name: 'JS HTML Objects', id: 'js-html-objects' },
+{ name: 'JS HTML Events', id: 'js-html-events' },
+{ name: 'JS Browser', id: 'js-browser' },
+{ name: 'JS Editor', id: 'js-editor' },
+{ name: 'JS Exercises', id: 'js-exercises' },
+{ name: 'JS Quiz', id: 'js-quiz' },
+{ name: 'JS Website', id: 'js-website' },
+{ name: 'JS Syllabus', id: 'js-syllabus' },
+{ name: 'JS Study Plan', id: 'js-study-plan' },
+{ name: 'JS Interview Prep', id: 'js-interview-prep' },
+{ name: 'JS Bootcamp', id: 'js-bootcamp' },
+{ name: 'JS Certificate', id: 'js-certificate' },
+
+
+
+
+
+
+
+
+
+
+
+
+    ];
+
+// Handle input for suggestions
+// सर्च बार के "input" इवेंट को हैंडल करना
+searchBar.addEventListener('input', function () {
+const query = searchBar.value.toLowerCase(); // यूज़र का इनपुट लोअरकेस में बदलें
+suggestionsBox.innerHTML = ''; // पहले से मौजूद सुझाव हटाएं
+
+if (query.length > 0) {
+const filteredTopics = topics.filter(topic => topic.name.toLowerCase().includes(query)); // मैच खोजें
+filteredTopics.forEach(topic => {
+    const suggestionElement = document.createElement('p'); // नया सुझाव एलीमेंट बनाएं
+    suggestionElement.textContent = topic.name; // सुझाव में टॉपिक का नाम डालें
+
+    // सुझाव पर क्लिक करने पर नेविगेशन
+    suggestionElement.addEventListener('click', () => {
+        document.getElementById(topic.id).scrollIntoView({ behavior: 'smooth' }); // संबंधित सेक्शन पर स्क्रॉल करें
+        searchBar.value = topic.name; // सर्च बार में चुना गया नाम दिखाएं
+        suggestionsBox.innerHTML = ''; // सुझाव बॉक्स को साफ करें
+    });
+
+    suggestionsBox.appendChild(suggestionElement); // सुझाव बॉक्स में सुझाव जोड़ें
+});
+}
+});
+
+// सर्च बार के "keypress" इवेंट को हैंडल करना
+searchBar.addEventListener('keypress', function (e) {
+if (e.key === 'Enter') { // यदि यूज़र "Enter" दबाता है
+const query = searchBar.value.toLowerCase();
+const match = topics.find(topic => topic.name.toLowerCase().includes(query)); // पहला मैच खोजें
+
+if (match) {
+    document.getElementById(match.id).scrollIntoView({ behavior: 'smooth' }); // संबंधित सेक्शन पर स्क्रॉल करें
+    suggestionsBox.innerHTML = ''; // सुझाव बॉक्स साफ करें
+}
+}
+});
+
+    </script>
+  
+</body>
+</html>

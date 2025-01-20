@@ -1,0 +1,263 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2db6d8;
+    color: #333;
+}
+/* Reset styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header styling */
+header {
+    padding: 10px;
+    background-color: white;
+    text-align: center;
+}
+
+/* Logo and search bar row */
+.header-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Logo और सर्च बार को अलग करने के लिए */
+    width: 100%;
+}
+
+/* Logo styling */
+.logo {
+    max-width: 70px; /* Logo का size */
+    margin-left: 10px;
+    border-radius: 50%; /* थोड़ा space देने के लिए */
+}
+
+/* Search bar styling */
+.search-container {
+    flex-grow: 1; /* सर्च बार को सेंटर में फैलाने के लिए */
+    text-align: center;
+}
+
+#searchBar {
+    width: 90%; /* Search bar की चौड़ाई */
+    max-width: 300px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: -10px;
+}
+
+/* Heading styling */
+.heading {
+    margin-top: 15px; /* Heading और logo+search bar के बीच spacing */
+    font-size: 24px;
+    color: #333;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .header-row {
+        flex-direction: row; /* Logo और search bar को row में रखने के लिए */
+    }
+
+    .logo {
+        margin-left: 0;
+    }
+
+    #searchBar {
+        width: 100%; /* मोबाइल में सर्च बार को पूरी चौड़ाई दे */
+    }
+
+    .heading {
+        font-size: 20px; /* Heading को थोड़ा छोटा करें */
+    }
+}
+
+.search-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.search-container input {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.suggestions {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 100%;
+    max-width: 300px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    color: red;
+    max-height: 200px; /* Set a max height */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.suggestions p {
+    padding: 10px;
+    margin: 0;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.suggestions p:hover {
+    background-color: #007BFF;
+    color: rgb(194, 29, 29);
+}
+
+.he {
+    padding: 20px;
+    background-color: rgb(28, 26, 94);
+}
+
+.he h1 {
+    color: whitesmoke;
+    font-size: 30px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #007BFF;
+    border-bottom: 2px solid #007BFF;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.code-box, .output-box {
+    background-color: #282c34;
+    color: #ffffff;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 8px;
+    font-family: "Courier New", Courier, monospace;
+    overflow-x: auto;
+}
+
+.output-box {
+    background-color: #f9f9f9;
+    color: #333;
+    border-left: 4px solid #28a745;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.footer-links, .footer-social, .footer-contact, .footer-about {
+    width: 23%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+h3 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li a {
+    color: #bbb;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.social-icons a {
+    color: #bbb;
+    font-size: 30px;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #fff;
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    background-color: #222;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+.footer-bottom p {
+    color: white;
+}
+
+.footer-about p {
+    color: white;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links, .footer-social, .footer-contact, .footer-about {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+.social-icons a {
+    font-size: 24px;
+    margin: 0 10px;
+}

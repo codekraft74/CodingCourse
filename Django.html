@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Programming</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">   
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-row">
+            <img src="img/apple-touch-icon.png" alt="Logo" class="logo">
+            <div class="search-container">
+                <input type="search" id="searchBar" placeholder="Search... HTML topic">
+                <div class="suggestions" id="suggestionsBox"></div>
+            </div>
+        </div>
+    </header>
+
+    <div class="he">
+        <h1 class="heading">Django Programming</h1>
+    </div>
+
+    <main>
+       
+            <section id="django-home">
+                <h2>1. Django Home</h2>
+                <p>Django is a high-level Python web framework that promotes rapid development and clean, pragmatic design. It focuses on automating as much as possible, providing reusable components for building web applications.</p>
+            </section>
+            
+            <section id="django-intro">
+                <h2>2. Django Intro</h2>
+                <p>Django is a robust, full-stack web framework for Python, designed to simplify the creation of web applications by providing tools for everything from database management to user authentication.</p>
+            </section>
+            
+            <section id="django-get-started">
+                <h2>3. Django Get Started</h2>
+                <p>To get started with Django, you need to install it and create a virtual environment. Django helps you build web applications quickly and includes built-in tools for common tasks such as authentication, database migrations, and URL routing.</p>
+            </section>
+            
+            <section id="create-virtual-environment">
+                <h2>4. Create Virtual Environment</h2>
+                <p>A virtual environment allows you to isolate your project’s dependencies, making it easier to manage different Python libraries. Use the following command to create a virtual environment:</p>
+                <div class="code-box">
+                    <code>python -m venv myenv</code><br>
+                    <code>source myenv/bin/activate  # For Mac/Linux</code><br>
+                    <code>myenv\Scripts\activate  # For Windows</code><br>
+                </div>
+            </section>
+            
+            <section id="install-django">
+                <h2>5. Install Django</h2>
+                <p>To install Django in your virtual environment, use pip to install the Django package. This will install the latest version of Django.</p>
+                <div class="code-box">
+                    <code>pip install django</code><br>
+                </div>
+            </section>
+            
+            <section id="django-create-project">
+                <h2>6. Django Create Project</h2>
+                <p>After installing Django, create a new project by running the following command. This will set up the necessary folder structure for your project.</p>
+                <div class="code-box">
+                    <code>django-admin startproject myproject</code><br>
+                </div>
+            </section>
+            
+            <section id="django-create-app">
+                <h2>7. Django Create App</h2>
+                <p>After creating a project, the next step is to create an app within that project. Apps are components of your Django project that handle specific tasks, such as managing user authentication or handling blog posts.</p>
+                <div class="code-box">
+                    <code>python manage.py startapp myapp</code><br>
+                </div>
+            </section>
+            
+            <section id="django-views">
+                <h2>8. Django Views</h2>
+                <p>Views in Django are Python functions that receive a web request and return a web response. A view can return HTML, a redirect, or JSON data.</p>
+                <div class="code-box">
+                    <code>from django.http import HttpResponse</code><br>
+                    <code>def my_view(request):</code><br>
+                    <code>&nbsp;&nbsp;return HttpResponse("Hello, World!")</code><br>
+                </div>
+            </section>
+            
+            <section id="django-urls">
+                <h2>9. Django URLs</h2>
+                <p>Django uses a URL configuration system that maps a URL to a specific view. The <code>urls.py</code> file contains all the URL patterns for your app.</p>
+                <div class="code-box">
+                    <code>from django.urls import path</code><br>
+                    <code>from . import views</code><br>
+                    <code>urlpatterns = [</code><br>
+                    <code>&nbsp;&nbsp;path('home/', views.home, name='home'),</code><br>
+                    <code>]</code><br>
+                </div>
+            </section>
+            
+            <section id="django-templates">
+                <h2>10. Django Templates</h2>
+                <p>Templates in Django allow you to separate your HTML from your Python code. They are used to dynamically generate HTML pages with data passed from views.</p>
+                <div class="code-box">
+                    <code>&lt;h1&gt;Hello, {{ name }}&lt;/h1&gt;</code><br>
+                </div>
+            </section>
+            
+            <section id="django-models">
+                <h2>11. Django Models</h2>
+                <p>Models in Django define the structure of your database. They are Python classes that map to database tables and allow you to interact with the data using Django's ORM.</p>
+                <div class="code-box">
+                    <code>from django.db import models</code><br>
+                    <code>class Post(models.Model):</code><br>
+                    <code>&nbsp;&nbsp;title = models.CharField(max_length=100)</code><br>
+                    <code>&nbsp;&nbsp;content = models.TextField()</code><br>
+                </div>
+            </section>
+            
+            <section id="django-insert-data">
+                <h2>12. Django Insert Data</h2>
+                <p>To insert data into the database, you can create a new instance of a model and call the <code>save()</code> method to store it in the database.</p>
+                <div class="code-box">
+                    <code>post = Post(title='My First Post', content='This is the content of my first post')</code><br>
+                    <code>post.save()</code><br>
+                </div>
+            </section>
+            
+            <section id="django-update-data">
+                <h2>13. Django Update Data</h2>
+                <p>To update data in the database, retrieve the model instance, modify its fields, and then call the <code>save()</code> method.</p>
+                <div class="code-box">
+                    <code>post = Post.objects.get(id=1)</code><br>
+                    <code>post.title = 'Updated Title'</code><br>
+                    <code>post.save()</code><br>
+                </div>
+            </section>
+            
+            <section id="django-delete-data">
+                <h2>14. Django Delete Data</h2>
+                <p>To delete data, use the <code>delete()</code> method on a model instance.</p>
+                <div class="code-box">
+                    <code>post = Post.objects.get(id=1)</code><br>
+                    <code>post.delete()</code><br>
+                </div>
+            </section>
+            
+            <section id="django-update-model">
+                <h2>15. Django Update Model</h2>
+                <p>To update your database schema, modify the model and then create and apply migrations using the <code>makemigrations</code> and <code>migrate</code> commands.</p>
+                <div class="code-box">
+                    <code>python manage.py makemigrations</code><br>
+                    <code>python manage.py migrate</code><br>
+                </div>
+            </section>
+            
+            <section id="display-data">
+                <h2>16. Display Data</h2>
+                <p>To display data in templates, pass context from views to templates and use template tags to display the values.</p>
+                <div class="code-box">
+                    <code>def post_list(request):</code><br>
+                    <code>&nbsp;&nbsp;posts = Post.objects.all()</code><br>
+                    <code>&nbsp;&nbsp;return render(request, 'post_list.html', {'posts': posts})</code><br>
+                </div>
+            </section>
+            
+            <section id="prep-template-and-view">
+                <h2>17. Prep Template and View</h2>
+                <p>Before displaying data, ensure that the template is correctly set up and the view is passing the right context. The template should access the context variables using {{ variable_name }} syntax.</p>
+            </section>
+            
+            <section id="add-link-to-details">
+                <h2>18. Add Link to Details</h2>
+                <p>To add a link to detail pages, use the <code>url</code> tag in templates and link to the view that shows more detailed information about a specific item.</p>
+                <div class="code-box">
+                    <code>&lt;a href="{% url 'post_detail' post.id %}"&gt;View Details&lt;/a&gt;</code><br>
+                </div>
+            </section>
+            <section id="add-master-template">
+                <h2>19. Add Master Template</h2>
+                <p>A master template in Django is a base template that contains common elements (like headers, footers, and navigation) shared by other templates. Use the {% block %} tag to define sections that can be replaced in child templates.</p>
+                <div class="code-box">
+                    <code>&lt;!DOCTYPE html&gt;</code><br>
+                    <code>&lt;html&gt;</code><br>
+                    <code>&nbsp;&nbsp;&lt;head&gt;</code><br>
+                    <code>&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;My Django Project&lt;/title&gt;</code><br>
+                    <code>&nbsp;&nbsp;&lt;/head&gt;</code><br>
+                    <code>&nbsp;&nbsp;&lt;body&gt;</code><br>
+                    <code>&nbsp;&nbsp;&nbsp;&nbsp;&lt;header&gt;Header Content&lt;/header&gt;</code><br>
+                    <code>&nbsp;&nbsp;&nbsp;&nbsp;&lt;main&gt;</code><br>
+                    <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{% block content %}{% endblock %}</code><br>
+                    <code>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/main&gt;</code><br>
+                    <code>&nbsp;&nbsp;&lt;/body&gt;</code><br>
+                    <code>&lt;/html&gt;</code><br>
+                </div>
+            </section>
+            
+            <section id="add-main-index-page">
+                <h2>20. Add Main Index Page</h2>
+                <p>The main index page is typically the homepage of your site. You can define it by creating a view that renders a template (e.g., <code>index.html</code>) for the homepage.</p>
+                <div class="code-box">
+                    <code>from django.shortcuts import render</code><br>
+                    <code>def index(request):</code><br>
+                    <code>&nbsp;&nbsp;return render(request, 'index.html')</code><br>
+                </div>
+            </section>
+            
+            <section id="django-404-template">
+                <h2>21. Django 404 Template</h2>
+                <p>The 404 template in Django is used to display a custom error page when a user tries to access a non-existent page. Create a <code>404.html</code> template to handle these errors.</p>
+                <div class="code-box">
+                    <code>&lt;h1&gt;Page Not Found&lt;/h1&gt;</code><br>
+                    <code>&lt;p&gt;Sorry, the page you are looking for does not exist.&lt;/p&gt;</code><br>
+                </div>
+            </section>
+            
+            <section id="add-test-view">
+                <h2>22. Add Test View</h2>
+                <p>A test view can be created to check that your views are rendering correctly. For example, you can create a simple view that returns a plain text response or an HTML page.</p>
+                <div class="code-box">
+                    <code>from django.http import HttpResponse</code><br>
+                    <code>def test_view(request):</code><br>
+                    <code>&nbsp;&nbsp;return HttpResponse("This is a test view!")</code><br>
+                </div>
+            </section>
+            
+            <section id="django-admin">
+                <h2>23. Django Admin</h2>
+                <p>Django provides an admin interface to manage your website’s data. You can access it by navigating to the <code>/admin/</code> URL after creating a superuser account.</p>
+                <div class="code-box">
+                    <code>python manage.py createsuperuser</code><br>
+                </div>
+            </section>
+            
+            <section id="create-user">
+                <h2>24. Create User</h2>
+                <p>To create a user, use the Django admin interface or the <code>createsuperuser</code> command to generate a superuser who has access to the admin panel.</p>
+                <div class="code-box">
+                    <code>python manage.py createsuperuser</code><br>
+                    <code>Username: admin</code><br>
+                    <code>Email: admin@example.com</code><br>
+                    <code>Password: ********</code><br>
+                </div>
+            </section>
+            
+            <section id="include-models">
+                <h2>25. Include Models</h2>
+                <p>Models are the heart of any Django application. To make a model accessible in the admin interface, register it in the <code>admin.py</code> file.</p>
+                <div class="code-box">
+                    <code>from django.contrib import admin</code><br>
+                    <code>from .models import Post</code><br>
+                    <code>admin.site.register(Post)</code><br>
+                </div>
+            </section>
+            
+            <section id="set-list-display">
+                <h2>26. Set List Display</h2>
+                <p>In the Django admin interface, you can customize how models are displayed by setting the <code>list_display</code> attribute in the model's admin class.</p>
+                <div class="code-box">
+                    <code>class PostAdmin(admin.ModelAdmin):</code><br>
+                    <code>&nbsp;&nbsp;list_display = ('title', 'author', 'date_posted')</code><br>
+                    <code>admin.site.register(Post, PostAdmin)</code><br>
+                </div>
+            </section>
+            
+            <section id="update-members">
+                <h2>27. Update Members</h2>
+                <p>To update a model instance in the admin panel, you can navigate to the detail page for the instance and modify its fields.</p>
+            </section>
+            
+            <section id="add-members">
+                <h2>28. Add Members</h2>
+                <p>To add new members to the database, you can create new instances of the model in the Django admin interface or through the Django shell.</p>
+            </section>
+            
+            <section id="delete-members">
+                <h2>29. Delete Members</h2>
+                <p>To delete members, navigate to the admin interface and click on the delete option for the specific model instance. Alternatively, you can use the <code>delete()</code> method in your views or models.</p>
+                <div class="code-box">
+                    <code>post = Post.objects.get(id=1)</code><br>
+                    <code>post.delete()</code><br>
+                </div>
+            </section>
+            <section id="django-syntax">
+                <h2>30. Django Syntax</h2>
+                <p>Django templates use a special syntax that is a mix of HTML and Python. The core components of the syntax include variables, tags, filters, and logic structures like loops and conditionals.</p>
+            </section>
+            
+            <section id="django-variables">
+                <h2>31. Django Variables</h2>
+                <p>Django variables are placeholders used in templates that will be replaced by actual values during rendering. These variables are passed from the view to the template.</p>
+                <div class="code-box">
+                    <code>{{ user.username }}</code><br>
+                    <code>{{ post.title }}</code><br>
+                </div>
+            </section>
+            
+            <section id="django-tags">
+                <h2>32. Django Tags</h2>
+                <p>Django tags are used to implement logic in templates, such as loops, conditionals, and includes. Tags are written inside curly braces and percentage signs.</p>
+                <div class="code-box">
+                    <code>{% if user.is_authenticated %}</code><br>
+                    <code>&nbsp;&nbsp;&nbsp;&nbsp;Welcome, {{ user.username }}!</code><br>
+                    <code>{% endif %}</code><br>
+                </div>
+            </section>
+            
+            <section id="django-if-else">
+                <h2>33. Django If Else</h2>
+                <p>The <code>{% if %}</code> tag in Django is used to check a condition and render content accordingly. The <code>{% else %}</code> tag is used to provide an alternative when the condition is false.</p>
+                <div class="code-box">
+                    <code>{% if user.is_authenticated %}</code><br>
+                    <code>&nbsp;&nbsp;&nbsp;&nbsp;Welcome back, {{ user.username }}!</code><br>
+                    <code>{% else %}</code><br>
+                    <code>&nbsp;&nbsp;&nbsp;&nbsp;Please log in.</code><br>
+                    <code>{% endif %}</code><br>
+                </div>
+            </section>
+            
+            <section id="django-for-loop">
+                <h2>34. Django For Loop</h2>
+                <p>The <code>{% for %}</code> tag is used for iterating over lists or querysets. This tag allows you to generate dynamic content based on a collection of items.</p>
+                <div class="code-box">
+                    <code>{% for post in posts %}</code><br>
+                    <code>&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;{{ post.title }}&lt;/li&gt;</code><br>
+                    <code>{% endfor %}</code><br>
+                </div>
+            </section>
+            
+            <section id="django-comment">
+                <h2>35. Django Comment</h2>
+                <p>Comments in Django templates are written inside <code>{# #}</code> tags. These are useful for adding non-executing notes in templates.</p>
+                <div class="code-box">
+                    <code>{# This is a comment #}</code><br>
+                </div>
+            </section>
+            
+            <section id="django-include">
+                <h2>36. Django Include</h2>
+                <p>The <code>{% include %}</code> tag is used to include the content of another template file within a template. This is helpful for reusing parts of templates, such as headers or footers.</p>
+                <div class="code-box">
+                    <code>{% include 'header.html' %}</code><br>
+                </div>
+            </section>
+            
+            <section id="querysets">
+                <h2>37. QuerySets</h2>
+                <p>QuerySets in Django represent a collection of database objects. They allow you to retrieve, filter, and manipulate data stored in the database using Python.</p>
+            </section>
+            
+            <section id="queryset-introduction">
+                <h2>38. QuerySet Introduction</h2>
+                <p>A QuerySet is a list-like object in Django that represents a collection of database records. It is lazy, meaning that it doesn’t hit the database until it is evaluated.</p>
+            </section>
+            
+            <section id="queryset-get">
+                <h2>39. QuerySet Get</h2>
+                <p>The <code>get()</code> method is used to retrieve a single object from the database that matches the given query. It raises an exception if no object or more than one object is found.</p>
+                <div class="code-box">
+                    <code>post = Post.objects.get(id=1)</code><br>
+                </div>
+            </section>
+            
+            <section id="queryset-filter">
+                <h2>40. QuerySet Filter</h2>
+                <p>The <code>filter()</code> method is used to retrieve a list of objects that match the given filter criteria.</p>
+                <div class="code-box">
+                    <code>posts = Post.objects.filter(author='John')</code><br>
+                </div>
+            </section>
+            
+            <section id="queryset-order-by">
+                <h2>41. QuerySet Order By</h2>
+                <p>The <code>order_by()</code> method is used to sort the QuerySet based on one or more fields. You can use <code>-</code> to reverse the order.</p>
+                <div class="code-box">
+                    <code>posts = Post.objects.order_by('-date_posted')</code><br>
+                </div>
+            </section>
+            
+            <section id="static-files">
+                <h2>42. Static Files</h2>
+                <p>Static files in Django are used to serve CSS, JavaScript, and image files. These files are stored in a directory and referenced in templates using the <code>static</code> tag.</p>
+            </section>
+            
+            <section id="add-static-files">
+                <h2>43. Add Static Files</h2>
+                <p>To add static files in Django, create a <code>static</code> directory within each app and reference it in your templates using the <code>{% static %}</code> tag.</p>
+                <div class="code-box">
+                    <code>&lt;link rel="stylesheet" href="{% static 'css/style.css' %}"&gt;</code><br>
+                </div>
+            </section>
+            
+            <section id="install-whitenoise">
+                <h2>44. Install WhiteNoise</h2>
+                <p>WhiteNoise is a Django package that helps you serve static files efficiently. Install it using <code>pip install whitenoise</code> and configure it in your <code>settings.py</code>.</p>
+                <div class="code-box">
+                    <code>INSTALLED_APPS = ['whitenoise.runserver_nostatic', ...]</code><br>
+                </div>
+            </section>
+            
+            <section id="collect-static-files">
+                <h2>45. Collect Static Files</h2>
+                <p>The <code>collectstatic</code> command is used to gather all static files into one directory, which can then be served in production.</p>
+                <div class="code-box">
+                    <code>python manage.py collectstatic</code><br>
+                </div>
+            </section>
+            
+            <section id="add-global-static-files">
+                <h2>46. Add Global Static Files</h2>
+                <p>To include global static files (e.g., CSS and JS files used throughout your site), place them in a <code>static</code> directory in the project root and configure Django to serve them.</p>
+            </section>
+            <section id="add-styles-to-the-project">
+                <h2>47. Add Styles to the Project</h2>
+                <p>Incorporating styles into your Django project helps improve the user interface. You can use external CSS frameworks like Bootstrap or write custom CSS to enhance the look of your application.</p>
+                <div class="code-box">
+                    <code>&lt;link rel="stylesheet" href="{% static 'css/style.css' %}"&gt;</code><br>
+                </div>
+            </section>
+            
+            <section id="postgresql">
+                <h2>48. PostgreSQL</h2>
+                <p>PostgreSQL is a powerful, open-source relational database system. It is used to store and manage your application's data in a structured format, offering advanced features like transactions, indexing, and more.</p>
+            </section>
+            
+            <section id="postgresql-intro">
+                <h2>49. PostgreSQL Intro</h2>
+                <p>PostgreSQL is known for its extensibility and standards compliance. It supports a wide range of data types and is highly performant for large-scale applications.</p>
+            </section>
+            
+            <section id="create-aws-account">
+                <h2>50. Create AWS Account</h2>
+                <p>To work with AWS services such as RDS for hosting your PostgreSQL database, you first need to create an account on AWS. Visit <a href="https://aws.amazon.com" target="_blank">AWS</a> to sign up.</p>
+            </section>
+            
+            <section id="create-database-in-rds">
+                <h2>51. Create Database in RDS</h2>
+                <p>In AWS RDS (Relational Database Service), you can create a PostgreSQL database. This managed service takes care of backups, patches, and scaling automatically.</p>
+            </section>
+            
+            <section id="connect-to-database">
+                <h2>52. Connect to Database</h2>
+                <p>Once your database is set up in RDS, you can connect to it using Django by configuring your <code>settings.py</code> file with the database credentials.</p>
+                <div class="code-box">
+                    <code>DATABASES = {</code><br>
+                    <code>&nbsp;&nbsp;&nbsp;&nbsp;'default': {</code><br>
+                    <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'ENGINE': 'django.db.backends.postgresql',</code><br>
+                    <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'NAME': 'your_db_name',</code><br>
+                    <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'USER': 'your_username',</code><br>
+                    <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'PASSWORD': 'your_password',</code><br>
+                    <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'HOST': 'your_db_host',</code><br>
+                    <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'PORT': '5432',</code><br>
+                    <code>&nbsp;&nbsp;&nbsp;&nbsp;}</code><br>
+                    <code>}</code><br>
+                </div>
+            </section>
+            
+            <section id="add-members">
+                <h2>53. Add Members</h2>
+                <p>In Django, adding members typically involves creating a model to store member data and using Django forms or admin interface to add entries to the database.</p>
+            </section>
+            
+            <section id="deploy-django">
+                <h2>54. Deploy Django</h2>
+                <p>Deploying a Django application involves moving it from your local environment to a live server, such as AWS or DigitalOcean, where it can be accessed publicly.</p>
+            </section>
+            
+            <section id="elastic-beanstalk">
+                <h2>55. Elastic Beanstalk (EB)</h2>
+                <p>AWS Elastic Beanstalk simplifies the deployment of web applications by managing the infrastructure for you. It supports multiple programming languages, including Python and Django.</p>
+            </section>
+            
+            <section id="create-requirements-txt">
+                <h2>56. Create requirements.txt</h2>
+                <p>The <code>requirements.txt</code> file contains a list of all the dependencies required for your Django project to run. It’s used by pip to install these dependencies on a different environment.</p>
+                <div class="code-box">
+                    <code>pip freeze > requirements.txt</code><br>
+                </div>
+            </section>
+            
+            <section id="create-django-config">
+                <h2>57. Create django.config</h2>
+                <p>In AWS Elastic Beanstalk, you can create a <code>django.config</code> file to configure settings specific to your Django application. This file is placed in the <code>.ebextensions</code> directory.</p>
+            </section>
+            
+            <section id="create-zip-file">
+                <h2>58. Create .zip File</h2>
+                <p>When deploying Django with Elastic Beanstalk, your project must be packaged into a .zip file that contains all your project files, including the <code>requirements.txt</code> and <code>django.config</code>.</p>
+            </section>
+            
+            <section id="deploy-with-eb">
+                <h2>59. Deploy with EB</h2>
+                <p>Deploy your Django project to Elastic Beanstalk by uploading the .zip file through the EB CLI or AWS Management Console. Elastic Beanstalk handles the rest.</p>
+                <div class="code-box">
+                    <code>eb init</code><br>
+                    <code>eb create</code><br>
+                    <code>eb deploy</code><br>
+                </div>
+            </section>
+            
+            <section id="update-project">
+                <h2>60. Update Project</h2>
+                <p>Once your project is deployed, you can update it by making changes to your code locally and redeploying it to AWS Elastic Beanstalk using the EB CLI.</p>
+            </section>
+            
+            <section id="more-django">
+                <h2>61. More Django</h2>
+                <p>Django provides a wide array of additional features to help you build powerful web applications, including authentication, REST API support, security features, and more.</p>
+            </section>
+            
+            <section id="add-slug-field">
+                <h2>62. Add Slug Field</h2>
+                <p>In Django, a slug is a URL-friendly version of a string, typically used in URLs for article titles or page names. You can add a slug field to your model and automatically generate it using Django’s <code>slugify</code> method.</p>
+                <div class="code-box">
+                    <code>slug = models.SlugField(unique=True)</code><br>
+                </div>
+            </section>
+            
+            <section id="add-bootstrap-5">
+                <h2>63. Add Bootstrap 5</h2>
+                <p>Bootstrap 5 is a popular CSS framework that helps you design responsive and modern web pages quickly. To integrate Bootstrap 5 into your Django project, you can include the Bootstrap CDN in your templates or download the files locally.</p>
+                <div class="code-box">
+                    <code>&lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"&gt;</code><br>
+                </div>
+            </section>
+            <section id="django-references">
+                <h2>64. Django References</h2>
+                <p>Django documentation contains detailed references for all aspects of Django development, including models, views, templates, and more. It serves as a guide to understanding Django's functionality.</p>
+            </section>
+            
+            <section id="template-tag-reference">
+                <h2>65. Template Tag Reference</h2>
+                <p>Django's template tags provide the logic for displaying dynamic content in templates. The Template Tag Reference includes all the available tags you can use in your templates to add functionality like loops, conditionals, and more.</p>
+            </section>
+            
+            <section id="filter-reference">
+                <h2>66. Filter Reference</h2>
+                <p>Filters in Django templates allow you to modify the display of variables. The Filter Reference provides a complete list of filters like <code>date</code>, <code>default</code>, and <code>length</code> for customizing the output.</p>
+            </section>
+            
+            <section id="field-lookups-reference">
+                <h2>67. Field Lookups Reference</h2>
+                <p>Django's QuerySets allow filtering data based on field lookups, such as exact matching, range filters, and more. The Field Lookups Reference includes the complete list of options available for querying and filtering data from the database.</p>
+            </section>
+            
+            <section id="django-exercises">
+                <h2>68. Django Exercises</h2>
+                <p>Django Exercises provide practical challenges for developers to practice and solidify their understanding of Django concepts such as models, views, templates, forms, and more. These exercises help reinforce your learning.</p>
+            </section>
+            
+            <section id="django-compiler">
+                <h2>69. Django Compiler</h2>
+                <p>The Django Compiler is a tool used for compiling templates, static files, and other resources within the Django project. This helps prepare the application for production and reduces errors during deployment.</p>
+            </section>
+            
+            <section id="django-quiz">
+                <h2>70. Django Quiz</h2>
+                <p>The Django Quiz tests your knowledge of Django's concepts, including models, views, templates, and other core features. It is a great way to assess your understanding and identify areas for improvement.</p>
+            </section>
+            
+            <section id="django-syllabus">
+                <h2>71. Django Syllabus</h2>
+                <p>The Django Syllabus provides a comprehensive outline of the topics you will cover while learning Django. It includes fundamental concepts, intermediate features, and advanced techniques for developing web applications.</p>
+            </section>
+            
+            <section id="django-study-plan">
+                <h2>72. Django Study Plan</h2>
+                <p>The Django Study Plan is a structured approach to learning Django. It breaks down topics into manageable chunks, ensuring you learn at a steady pace and master key aspects of Django development.</p>
+            </section>
+            
+            <section id="django-server">
+                <h2>73. Django Server</h2>
+                <p>Django Server refers to the development server that comes built-in with Django. It allows you to run and test your Django application locally before deploying it to a production environment.</p>
+            </section>
+                                                            
+        
+    </main>
+    <footer>
+        <div class="footer-container">
+          <!-- Programming Courses Links -->
+          <div class="footer-links">
+            <h3>Programming Courses</h3>
+            <ul>
+              <li><a href="#">Python</a></li>
+              <li><a href="#">JavaScript</a></li>
+              <li><a href="#">Java</a></li>
+              <li><a href="#">C++</a></li>
+              <li><a href="#">PHP</a></li>
+              <li><a href="#">Machine Learning</a></li>
+            </ul>
+          </div>
+          
+          <!-- Social Media Links -->
+          <div class="footer-social">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+    
+          <!-- Contact Information -->
+          <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <ul>
+              <li><i class="fas fa-phone"></i> 9302984613</li>
+              <li><i class="fas fa-envelope"></i><a href="mailto:codekraft1325@gmail.com">Email Us :codekraft1325@gmail.com</a>
+              </li>
+              <li><i class="fas fa-map-marker-alt"></i> katangi,balaghat(M.P)</li>
+            </ul>
+          </div>
+    
+          <!-- About Us Section -->
+          <div class="footer-about">
+            <h3>About Us</h3>
+            <p>We are a leading provider of online programming courses, helping individuals from all around the world to enhance their skills. Whether you are a beginner or an expert, we offer a wide range of courses to cater to every learning need. Our courses are designed to be interactive, fun, and easy to follow.</p>
+          </div>
+        </div>
+    
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+          <p>&copy; 2025 Online Programming Courses | All Rights Reserved</p>
+          <p ><a href="#" style="color: red;">Privacy Policy</a> | <a href="#" style="color: red;">Terms of Service</a></p>
+        </div>
+      </footer> 
+ 
+    <script >
+     
+        const searchBar = document.getElementById('searchBar');
+const suggestionsBox = document.getElementById('suggestionsBox');
+const topics = [
+{ name: 'Django Tutorial', id: 'django-tutorial' },
+{ name: 'Django Home', id: 'django-home' },
+{ name: 'Django Intro', id: 'django-intro' },
+{ name: 'Django Get Started', id: 'django-get-started' },
+{ name: 'Create Virtual Environment', id: 'create-virtual-environment' },
+{ name: 'Install Django', id: 'install-django' },
+{ name: 'Django Create Project', id: 'django-create-project' },
+{ name: 'Django Create App', id: 'django-create-app' },
+{ name: 'Django Views', id: 'django-views' },
+{ name: 'Django URLs', id: 'django-urls' },
+{ name: 'Django Templates', id: 'django-templates' },
+{ name: 'Django Models', id: 'django-models' },
+{ name: 'Django Insert Data', id: 'django-insert-data' },
+{ name: 'Django Update Data', id: 'django-update-data' },
+{ name: 'Django Delete Data', id: 'django-delete-data' },
+{ name: 'Django Update Model', id: 'django-update-model' },
+{ name: 'Display Data', id: 'display-data' },
+{ name: 'Prep Template and View', id: 'prep-template-and-view' },
+{ name: 'Add Link to Details', id: 'add-link-to-details' },
+{ name: 'Django Add Master Template', id: 'django-add-master-template' },
+{ name: 'Django Add Main Index Page', id: 'django-add-main-index-page' },
+{ name: 'Django 404 Template', id: 'django-404-template' },
+{ name: 'Django Add Test View', id: 'django-add-test-view' },
+{ name: 'Django Admin', id: 'django-admin' },
+{ name: 'Django Create User', id: 'django-create-user' },
+{ name: 'Django Include Models', id: 'django-include-models' },
+{ name: 'Django Set List Display', id: 'django-set-list-display' },
+{ name: 'Django Update Members', id: 'django-update-members' },
+{ name: 'Django Add Members', id: 'django-add-members' },
+{ name: 'Django Delete Members', id: 'django-delete-members' },
+{ name: 'Django Syntax', id: 'django-syntax' },
+{ name: 'Django Variables', id: 'django-variables' },
+{ name: 'Django Tags', id: 'django-tags' },
+{ name: 'Django If Else', id: 'django-if-else' },
+{ name: 'Django For Loop', id: 'django-for-loop' },
+{ name: 'Django Comment', id: 'django-comment' },
+{ name: 'Django Include', id: 'django-include' },
+{ name: 'QuerySets', id: 'querysets' },
+{ name: 'QuerySet Introduction', id: 'queryset-introduction' },
+{ name: 'QuerySet Get', id: 'queryset-get' },
+{ name: 'QuerySet Filter', id: 'queryset-filter' },
+{ name: 'QuerySet Order By', id: 'queryset-order-by' },
+{ name: 'Static Files', id: 'static-files' },
+{ name: 'Add Static Files', id: 'add-static-files' },
+{ name: 'Install WhiteNoise', id: 'install-whitenoise' },
+{ name: 'Collect Static Files', id: 'collect-static-files' },
+{ name: 'Add Global Static Files', id: 'add-global-static-files' },
+{ name: 'Add Styles to the Project', id: 'add-styles-to-the-project' },
+{ name: 'PostgreSQL', id: 'postgresql' },
+{ name: 'PostgreSQL Intro', id: 'postgresql-intro' },
+{ name: 'Create AWS Account', id: 'create-aws-account' },
+{ name: 'Create Database in RDS', id: 'create-database-in-rds' },
+{ name: 'Connect to Database', id: 'connect-to-database' },
+{ name: 'Add Members', id: 'add-members' },
+{ name: 'Deploy Django', id: 'deploy-django' },
+{ name: 'Elastic Beanstalk (EB)', id: 'elastic-beanstalk-eb' },
+{ name: 'Create requirements.txt', id: 'create-requirements-txt' },
+{ name: 'Create django.config', id: 'create-django-config' },
+{ name: 'Create .zip File', id: 'create-zip-file' },
+{ name: 'Deploy with EB', id: 'deploy-with-eb' },
+{ name: 'Update Project', id: 'update-project' },
+{ name: 'More Django', id: 'more-django' },
+{ name: 'Add Slug Field', id: 'add-slug-field' },
+{ name: 'Add Bootstrap 5', id: 'add-bootstrap-5' },
+{ name: 'Django References', id: 'django-references' },
+{ name: 'Template Tag Reference', id: 'template-tag-reference' },
+{ name: 'Filter Reference', id: 'filter-reference' },
+{ name: 'Field lookups Reference', id: 'field-lookups-reference' },
+{ name: 'Django Exercises', id: 'django-exercises' },
+{ name: 'Django Compiler', id: 'django-compiler' },
+{ name: 'Django Quiz', id: 'django-quiz' },
+{ name: 'Django Syllabus', id: 'django-syllabus' },
+{ name: 'Django Study Plan', id: 'django-study-plan' },
+{ name: 'Django Server', id: 'django-server' },
+
+    ];
+
+// Handle input for suggestions
+// सर्च बार के "input" इवेंट को हैंडल करना
+searchBar.addEventListener('input', function () {
+const query = searchBar.value.toLowerCase(); // यूज़र का इनपुट लोअरकेस में बदलें
+suggestionsBox.innerHTML = ''; // पहले से मौजूद सुझाव हटाएं
+
+if (query.length > 0) {
+const filteredTopics = topics.filter(topic => topic.name.toLowerCase().includes(query)); // मैच खोजें
+filteredTopics.forEach(topic => {
+    const suggestionElement = document.createElement('p'); // नया सुझाव एलीमेंट बनाएं
+    suggestionElement.textContent = topic.name; // सुझाव में टॉपिक का नाम डालें
+
+    // सुझाव पर क्लिक करने पर नेविगेशन
+    suggestionElement.addEventListener('click', () => {
+        document.getElementById(topic.id).scrollIntoView({ behavior: 'smooth' }); // संबंधित सेक्शन पर स्क्रॉल करें
+        searchBar.value = topic.name; // सर्च बार में चुना गया नाम दिखाएं
+        suggestionsBox.innerHTML = ''; // सुझाव बॉक्स को साफ करें
+    });
+
+    suggestionsBox.appendChild(suggestionElement); // सुझाव बॉक्स में सुझाव जोड़ें
+});
+}
+});
+
+// सर्च बार के "keypress" इवेंट को हैंडल करना
+searchBar.addEventListener('keypress', function (e) {
+if (e.key === 'Enter') { // यदि यूज़र "Enter" दबाता है
+const query = searchBar.value.toLowerCase();
+const match = topics.find(topic => topic.name.toLowerCase().includes(query)); // पहला मैच खोजें
+
+if (match) {
+    document.getElementById(match.id).scrollIntoView({ behavior: 'smooth' }); // संबंधित सेक्शन पर स्क्रॉल करें
+    suggestionsBox.innerHTML = ''; // सुझाव बॉक्स साफ करें
+}
+}
+});
+
+    </script>
+  
+</body>
+</html>

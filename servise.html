@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title of your website -->
+    <meta name="title" content="Online Programming Learning: HTML, CSS, JavaScript, Java, MySQL, SQL and More">
+
+    <!-- Description of the website for search engines -->
+    <meta name="description" content="Learn HTML, CSS, JavaScript, Java, MySQL, SQL, and other programming languages with real-world examples. Get hands-on coding experience, tutorials, and blogs to enhance your skills.">
+
+    <!-- Keywords related to your content -->
+    <meta name="keywords" content="Online Learning, Programming Tutorials, HTML, CSS, JavaScript, Java, MySQL, SQL, Coding, Web Development, Real Examples, Blog">
+
+    <!-- Author of the website -->
+    <meta name="author" content="Code Krat">
+
+    <!-- Open Graph tags for social media sharing -->
+    <meta property="og:title" content="Online Programming Learning: HTML, CSS, JavaScript, Java, MySQL, SQL and More">
+    <meta property="og:description" content="Learn HTML, CSS, JavaScript, Java, MySQL, SQL, and other programming languages with real-world examples. Get hands-on coding experience, tutorials, and blogs.">
+    <meta property="og:image" content="URL of an image representing your website">
+    <meta property="og:url" content="URL of your website">
+
+    <!-- Twitter Card meta tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Online Programming Learning: HTML, CSS, JavaScript, Java, MySQL, SQL and More">
+    <meta name="twitter:description" content="Learn HTML, CSS, JavaScript, Java, MySQL, SQL, and other programming languages with real-world examples. Get hands-on coding experience, tutorials, and blogs.">
+    <meta name="twitter:image" content="URL of an image representing your website">
+    <link rel="icon" href="img/favicon-32x32.png" type="imag/png" sizes="32x32">
+    <title>Programming Courses - Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            transition: background-color 0.3s ease;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            transform: translateY(0);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 12px 25px rgba(15, 14, 17, 0.3);
+
+        }
+
+        header:hover {
+            transform: translateY(-10px);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 39px;
+            font-weight: 700;
+            transition: color 0.3s ease;
+            
+        }
+
+        header:hover h1 {
+            color: #007bff;
+        }
+
+        .services-section {
+            padding: 60px 10%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            justify-items: center;
+            transition: transform 0.3s ease;
+        }
+
+        .service-card {
+            background-color: white;
+            padding: 40px 20px;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transform: translateY(0);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            width: 100%;
+            max-width: 320px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .service-card i {
+            font-size: 50px;
+            color: #007bff;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover i {
+            transform: rotate(360deg);
+        }
+
+        .service-card h2 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .service-card p {
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .cta-btn {
+            background-color: #007bff;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Animation for fade-in */
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+
+.f{
+    text-align: center;
+    padding: 5px;
+    font-size: 30px;
+    
+}
+
+
+
+        /* Features Section */
+        .features {
+            padding: 60px 10%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .feature-card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 28%;
+            margin: 10px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: fadeInLeft 1s ease-out;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .feature-card i {
+            font-size: 40px;
+            color: #007bff;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover i {
+            transform: rotate(360deg);
+        }
+
+        .feature-card h3 {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .feature-card p {
+            color: #666;
+            font-size: 16px;
+        }
+
+        /* Animation for left-in */
+        @keyframes fadeInLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* Additional sections for extended content */
+        .about-us, .testimonials, .faq-section {
+            padding: 60px 10%;
+            text-align: center;
+        }
+
+        .about-us h2, .testimonials h2, .faq-section h2 {
+            font-size: 28px;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .testimonial-card {
+            display: inline-block;
+            width: 30%;
+            margin: 20px;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transform: translateY(0);
+            transition: transform 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .faq {
+            background-color: white;
+            margin: 15px 0;
+            padding: 20px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .faq:hover {
+            background-color: #e8f1ff;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .services-section {
+                grid-template-columns: 1fr;
+                padding: 40px 5%;
+            }
+
+            .feature-card {
+                width: 80%;
+            }
+
+            .testimonial-card {
+                width: 80%;
+            }
+
+            .faq-section {
+                padding: 20px 5%;
+            }
+        }
+
+/* Footer Styles */
+footer {
+    background-color: #222;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+
+  .footer-links, .footer-social, .footer-contact, .footer-about {
+    width: 23%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  h3 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  ul li {
+    margin-bottom: 10px;
+  }
+
+  ul li a {
+    color: #bbb;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+  ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+
+  .social-icons a {
+    color: #bbb;
+    font-size: 30px;
+    margin: 0 15px;
+    text-decoration: none;
+  }
+
+  .social-icons a:hover {
+    color: #fff;
+    transform: scale(1.2);
+  }
+
+  .footer-bottom {
+    background-color: #222;
+    
+    padding: 20px 0;
+    font-size: 14px;
+  }
+  .footer-bottom p{
+    color: white;
+  }
+
+  .footer-about p {
+    color: white;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .footer-links, .footer-social, .footer-contact, .footer-about {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+}
+
+    .social-icons a {
+      font-size: 24px;
+      margin: 0 10px;
+    }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Our Services</h1>
+</header>
+
+<!-- Services Section -->
+<section class="services-section">
+    <div class="service-card">
+        <i class="fas fa-code"></i>
+        <h2>Python Programming</h2>
+        <p>Master Python with interactive lessons and real-world projects. Learn the basics to advanced concepts with hands-on coding.</p>
+        <a href="#" class="cta-btn">Join Now</a>
+    </div>
+    <div class="service-card">
+        <i class="fas fa-laptop-code"></i>
+        <h2>Web Development</h2>
+        <p>Learn how to build websites using HTML, CSS, JavaScript, and frameworks. Create stunning, responsive websites from scratch.</p>
+        <a href="#" class="cta-btn">Join Now</a>
+    </div>
+    <div class="service-card">
+        <i class="fas fa-database"></i>
+        <h2>Data Science</h2>
+        <p>Learn data analysis, machine learning, and data visualization tools. Explore powerful techniques to unlock insights from data.</p>
+        <a href="#" class="cta-btn">Join Now</a>
+    </div>
+    <div class="service-card">
+        <i class="fas fa-mobile-alt"></i>
+        <h2>Mobile App Development</h2>
+        <p>Learn how to build mobile applications using tools like Flutter and React Native. Create apps for iOS and Android.</p>
+        <a href="#" class="cta-btn">Start Learning</a>
+    </div>
+    <div class="service-card">
+        <i class="fas fa-cloud"></i>
+        <h2>Cloud Computing</h2>
+        <p>Learn about cloud platforms like AWS, Azure, and Google Cloud. Build scalable applications with cloud services.</p>
+        <a href="#" class="cta-btn">Explore Courses</a>
+    </div>
+</section>
+
+<div class="f"><h2> Our Features</h2></div>
+
+<!-- Features Section -->
+<section class="features">
+    <div class="feature-card">
+        <i class="fas fa-user-graduate"></i>
+        <h3>Expert Mentors</h3>
+        <p>Our courses are taught by experienced professionals in the field, ensuring you get high-quality instruction.</p>
+    </div>
+    <div class="feature-card">
+        <i class="fas fa-chalkboard-teacher"></i>
+        <h3>Interactive Lessons</h3>
+        <p>Engage with interactive coding challenges and quizzes to test your knowledge as you learn.</p>
+    </div>
+    <div class="feature-card">
+        <i class="fas fa-certificate"></i>
+        <h3>Certificates</h3>
+        <p>Earn a certificate for each course you complete, showcasing your skills and adding credibility to your profile.</p>
+    </div>
+    <div class="feature-card">
+        <i class="fas fa-users"></i>
+        <h3>Community Support</h3>
+        <p>Join our active online community where you can ask questions, share knowledge, and learn with others.</p>
+    </div>
+</section>
+
+<!-- About Us, Testimonials, and FAQ sections -->
+<section class="about-us">
+    <h2>Why Choose Us?</h2>
+    <p>Our platform offers a unique blend of interactive coding lessons, expert mentorship, and real-world projects, ensuring that you not only learn but also apply your skills in real scenarios.</p>
+</section>
+
+<section class="testimonials">
+    <h2>What Our Students Say</h2>
+    <div class="testimonial-card">
+        <p>"The Python course helped me transition to a career in data science. The mentors were fantastic!" - John Doe</p>
+    </div>
+    <div class="testimonial-card">
+        <p>"I learned web development from scratch and now I’m building websites for clients. Amazing experience!" - Jane Smith</p>
+    </div>
+</section>
+
+<section class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq">
+        <h3>What languages do you teach?</h3>
+        <p>We offer courses in Python, JavaScript, HTML/CSS, React, and more.</p>
+    </div>
+    <div class="faq">
+        <h3>How do I access the courses?</h3>
+        <p>Once enrolled, you get lifetime access to all materials online.</p>
+    </div>
+</section>
+
+
+<footer>
+    <div class="footer-container">
+      <!-- Programming Courses Links -->
+      <div class="footer-links">
+        <h3>Programming Courses</h3>
+        <ul>
+          <li><a href="#">Python</a></li>
+          <li><a href="#">JavaScript</a></li>
+          <li><a href="#">Java</a></li>
+          <li><a href="#">C++</a></li>
+          <li><a href="#">PHP</a></li>
+          <li><a href="#">Machine Learning</a></li>
+        </ul>
+      </div>
+      
+      <!-- Social Media Links -->
+      <div class="footer-social">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <!-- Contact Information -->
+      <div class="footer-contact">
+        <h3>Contact Us</h3>
+        <ul>
+          <li><i class="fas fa-phone"></i> 9302984613</li>
+          <li><i class="fas fa-envelope"></i><a href="mailto:codekraft1325@gmail.com">Email Us :codekraft1325@gmail.com</a>
+          </li>
+          <li><i class="fas fa-map-marker-alt"></i> katangi,balaghat(M.P)</li>
+        </ul>
+      </div>
+
+      <!-- About Us Section -->
+      <div class="footer-about">
+        <h3>About Us</h3>
+        <p>We are a leading provider of online programming courses, helping individuals from all around the world to enhance their skills. Whether you are a beginner or an expert, we offer a wide range of courses to cater to every learning need. Our courses are designed to be interactive, fun, and easy to follow.</p>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <p>&copy; 2025 Online Programming Courses | All Rights Reserved</p>
+      <p ><a href="#" style="color: red;">Privacy Policy</a> | <a href="#" style="color: red;">Terms of Service</a></p>
+    </div>
+  </footer> 
+</body>
+</html>

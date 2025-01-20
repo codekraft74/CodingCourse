@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Title of your website -->
+  <meta name="title" content="Online Programming Learning: HTML, CSS, JavaScript, Java, MySQL, SQL and More">
+
+  <!-- Description of the website for search engines -->
+  <meta name="description" content="Learn HTML, CSS, JavaScript, Java, MySQL, SQL, and other programming languages with real-world examples. Get hands-on coding experience, tutorials, and blogs to enhance your skills.">
+
+  <!-- Keywords related to your content -->
+  <meta name="keywords" content="Online Learning, Programming Tutorials, HTML, CSS, JavaScript, Java, MySQL, SQL, Coding, Web Development, Real Examples, Blog">
+
+  <!-- Author of the website -->
+  <meta name="author" content="Code Krat">
+
+  <!-- Open Graph tags for social media sharing -->
+  <meta property="og:title" content="Online Programming Learning: HTML, CSS, JavaScript, Java, MySQL, SQL and More">
+  <meta property="og:description" content="Learn HTML, CSS, JavaScript, Java, MySQL, SQL, and other programming languages with real-world examples. Get hands-on coding experience, tutorials, and blogs.">
+  <meta property="og:image" content="URL of an image representing your website">
+  <meta property="og:url" content="URL of your website">
+
+  <!-- Twitter Card meta tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Online Programming Learning: HTML, CSS, JavaScript, Java, MySQL, SQL and More">
+  <meta name="twitter:description" content="Learn HTML, CSS, JavaScript, Java, MySQL, SQL, and other programming languages with real-world examples. Get hands-on coding experience, tutorials, and blogs.">
+  <meta name="twitter:image" content="URL of an image representing your website">
+  <link rel="icon" href="img/favicon-32x32.png" type="imag/png" sizes="32x32">
+    <title>Courses - Code Craft</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #192129;
+            color: white;
+            padding: 40px;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        /* Main Content */
+        .courses-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 40px 20px;
+        }
+
+        .course {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 280px;
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .course:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .course .icon {
+            font-size: 50px;
+            color: #0a74da;
+            margin-bottom: 10px;
+            transition: transform 0.3s;
+        }
+
+        .course .icon:hover {
+            transform: scale(1.1);
+        }
+
+        .course h3 {
+            font-size: 22px;
+            margin: 10px 0;
+            color: black;
+        }
+
+        .course p {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .course .learn-more {
+            background-color: #0a74da;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .course .learn-more:hover {
+            background-color: #005f8d;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .courses-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .course {
+                width: 100%;
+                max-width: 350px;
+            }
+
+            nav {
+                font-size: 20px;
+            }
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+          }
+        
+          .footer-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+          }
+        
+          .footer-links, .footer-social, .footer-contact, .footer-about {
+            width: 23%;
+            padding: 10px;
+            box-sizing: border-box;
+          }
+        
+          h3 {
+            color: #fff;
+            font-size: 20px;
+            margin-bottom: 15px;
+          }
+        
+          ul {
+            list-style: none;
+            padding: 0;
+          }
+        
+          ul li {
+            margin-bottom: 10px;
+          }
+        
+          ul li a {
+            color: #bbb;
+            text-decoration: none;
+            font-size: 16px;
+          }
+        
+          ul li a:hover {
+            color: #fff;
+            text-decoration: underline;
+          }
+        
+          .social-icons a {
+            color: #bbb;
+            font-size: 30px;
+            margin: 0 15px;
+            text-decoration: none;
+          }
+        
+          .social-icons a:hover {
+            color: #fff;
+            transform: scale(1.2);
+          }
+        
+          .footer-bottom {
+            background-color: #222;
+            
+            padding: 20px 0;
+            font-size: 14px;
+          }
+          .footer-bottom p{
+            color: white;
+          }
+        
+          .footer-about p {
+            color: white;
+            font-size: 16px;
+            line-height: 1.8;
+          }
+          
+          /* Responsive Design */
+          @media screen and (max-width: 768px) {
+            .footer-container {
+              flex-direction: column;
+              align-items: center;
+            }
+        
+            .footer-links, .footer-social, .footer-contact, .footer-about {
+              width: 100%;
+              text-align: center;
+              margin-bottom: 20px;
+            }
+        }
+        
+            .social-icons a {
+              font-size: 24px;
+              margin: 0 10px;
+            }
+      
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+       <h1>Courses</h1>
+    </nav>
+
+    <!-- Courses Section -->
+    <div class="courses-container">
+        <!-- Course 1: Python -->
+        <div class="course">
+            <div class="icon">
+                <i class="fab fa-python"></i>
+            </div>
+            <h3>Python Programming</h3>
+            <p>Learn Python and unlock the world of automation, data analysis, and web development with this versatile language.</p>
+            <a href="#" class="learn-more">Learn More</a>
+        </div>
+
+        <!-- Course 2: Web Development -->
+        <div class="course">
+            <div class="icon">
+                <i class="fab fa-html5"></i>
+            </div>
+            <h3>HTML Programming</h3>
+            <p>Master web development with HTML, CSS, and JavaScript to build modern, dynamic websites.</p>
+            <a href="h1.html" class="learn-more">Learn More</a>
+        </div>
+        <div class="course">
+            <div class="icon">
+                <i class="fab fa-css3-alt"></i>
+            </div>
+            <h3>CSS Programming</h3>
+            <p>Master CSS to style and layout modern web pages with powerful tools and techniques.</p>
+            <a href="#" class="learn-more">Learn More</a>
+        </div>
+        
+        <!-- Course 3: JavaScript -->
+        <div class="course">
+            <div class="icon">
+                <i class="fab fa-js-square"></i>
+            </div>
+            <h3>JavaScript Mastery</h3>
+            <p>Dive deep into JavaScript to build interactive websites and learn full-stack development.</p>
+            <a href="#" class="learn-more">Learn More</a>
+        </div>
+
+        <!-- Course 4: Java -->
+        <div class="course">
+            <div class="icon">
+                <i class="fab fa-java"></i>
+            </div>
+            <h3>Java Programming</h3>
+            <p>Learn Java to develop enterprise-level applications, Android apps, and more.</p>
+            <a href="#" class="learn-more">Learn More</a>
+        </div>
+
+        <!-- Course 5: C++ -->
+        <div class="course">
+            <div class="icon">
+                <i class="fab fa-cuttlefish"></i>
+            </div>
+            <h3>C++ Programming</h3>
+            <p>Master C++ for high-performance applications and gain a strong foundation in programming concepts.</p>
+            <a href="#" class="learn-more">Learn More</a>
+        </div>
+        <div class="course">
+            <div class="icon">
+                <i class="fab fa-php"></i>
+            </div>
+            <h3>PHP Programming</h3>
+            <p>Learn PHP and build dynamic websites, web applications, and manage databases with ease.</p>
+            <a href="#" class="learn-more">Learn More</a>
+        </div>
+        
+    </div>
+   
+   
+
+
+
+    <footer>
+        <div class="footer-container">
+          <!-- Programming Courses Links -->
+          <div class="footer-links">
+            <h3>Programming Courses</h3>
+            <ul>
+              <li><a href="#">Python</a></li>
+              <li><a href="#">JavaScript</a></li>
+              <li><a href="#">Java</a></li>
+              <li><a href="#">C++</a></li>
+              <li><a href="#">PHP</a></li>
+              <li><a href="#">Machine Learning</a></li>
+            </ul>
+          </div>
+          
+          <!-- Social Media Links -->
+          <div class="footer-social">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+    
+          <!-- Contact Information -->
+          <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <ul>
+              <li><i class="fas fa-phone"></i> 9302984613</li>
+              <li><i class="fas fa-envelope"></i><a href="mailto:codekraft1325@gmail.com">Email Us :codekraft1325@gmail.com</a>
+              </li>
+              <li><i class="fas fa-map-marker-alt"></i> katangi,balaghat(M.P)</li>
+            </ul>
+          </div>
+    
+          <!-- About Us Section -->
+          <div class="footer-about">
+            <h3>About Us</h3>
+            <p>We are a leading provider of online programming courses, helping individuals from all around the world to enhance their skills. Whether you are a beginner or an expert, we offer a wide range of courses to cater to every learning need. Our courses are designed to be interactive, fun, and easy to follow.</p>
+          </div>
+        </div>
+    
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+          <p>&copy; 2025 Online Programming Courses | All Rights Reserved</p>
+          <p ><a href="#" style="color: red;">Privacy Policy</a> | <a href="#" style="color: red;">Terms of Service</a></p>
+        </div>
+      </footer> 
+ 
+  
+</body>
+</html>

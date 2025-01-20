@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Programming</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">   
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-row">
+            <img src="img/apple-touch-icon.png" alt="Logo" class="logo">
+            <div class="search-container">
+                <input type="search" id="searchBar" placeholder="Search... HTML topic">
+                <div class="suggestions" id="suggestionsBox"></div>
+            </div>
+        </div>
+    </header>
+
+    <div class="he">
+        <h1 class="heading">Pandas Programming</h1>
+    </div>
+
+    <main>
+       
+          <section id="pandas-home">
+            <h2>1. Pandas HOME</h2>
+            <p>Pandas is a fast, powerful, flexible, and easy-to-use open-source data analysis and manipulation library for Python.</p>
+            <div class="code-box">
+                <code>import pandas as pd</code><br>
+                <code>data = {'Name': ['Tom', 'Nick', 'John'], 'Age': [20, 21, 19]}</code><br>
+                <code>df = pd.DataFrame(data)</code><br>
+                <code>print(df)</code>
+            </div>
+            <div class="output-box">
+                <pre>
+                   Name  Age
+                0   Tom   20
+                1  Nick   21
+                2  John   19
+                </pre>
+            </div>
+        </section>
+        
+        <section id="pandas-intro">
+            <h2>2. Pandas Intro</h2>
+            <p>Pandas helps to manipulate, analyze and clean the data in a simple manner. It provides two main structures: Series and DataFrame.</p>
+            <div class="code-box">
+                <code>import pandas as pd</code><br>
+                <code>data = {'Product': ['A', 'B', 'C'], 'Price': [10, 20, 30]}</code><br>
+                <code>df = pd.DataFrame(data)</code><br>
+                <code>print(df)</code>
+            </div>
+            <div class="output-box">
+                <pre>
+                   Product  Price
+                0       A     10
+                1       B     20
+                2       C     30
+                </pre>
+            </div>
+        </section>
+        
+        <section id="pandas-getting-started">
+            <h2>3. Pandas Getting Started</h2>
+            <p>Start by importing pandas as follows to use it in your Python programs.</p>
+            <div class="code-box">
+                <code>import pandas as pd</code><br>
+                <code>data = {'City': ['Delhi', 'Mumbai', 'Bangalore'], 'Population': [1000000, 1200000, 800000]}</code><br>
+                <code>df = pd.DataFrame(data)</code><br>
+                <code>print(df)</code>
+            </div>
+            <div class="output-box">
+                <pre>
+                   City  Population
+                0  Delhi     1000000
+                1  Mumbai    1200000
+                2  Bangalore 800000
+                </pre>
+            </div>
+        </section>
+        
+        <section id="pandas-series">
+            <h2>4. Pandas Series</h2>
+            <p>A Series is a one-dimensional array-like object that holds data of any type.</p>
+            <div class="code-box">
+                <code>import pandas as pd</code><br>
+                <code>data = [1, 2, 3, 4, 5]</code><br>
+                <code>series = pd.Series(data)</code><br>
+                <code>print(series)</code>
+            </div>
+            <div class="output-box">
+                <pre>
+                0    1
+                1    2
+                2    3
+                3    4
+                4    5
+                dtype: int64
+                </pre>
+            </div>
+        </section>
+        
+        <section id="pandas-dataframes">
+            <h2>5. Pandas DataFrames</h2>
+            <p>DataFrame is a two-dimensional size-mutable, potentially heterogeneous tabular data structure.</p>
+            <div class="code-box">
+                <code>import pandas as pd</code><br>
+                <code>data = {'Name': ['John', 'Doe'], 'Age': [23, 29]}</code><br>
+                <code>df = pd.DataFrame(data)</code><br>
+                <code>print(df)</code>
+            </div>
+            <div class="output-box">
+                <pre>
+                   Name  Age
+                0  John   23
+                1   Doe   29
+                </pre>
+            </div>
+        </section>
+        
+        <section id="pandas-read-csv">
+            <h2>6. Pandas Read CSV</h2>
+            <p>Read data from CSV files using pandas' read_csv() function.</p>
+            <div class="code-box">
+                <code>import pandas as pd</code><br>
+                <code>df = pd.read_csv('data.csv')</code><br>
+                <code>print(df)</code>
+            </div>
+            <div class="output-box">
+                <pre>
+                (Assuming 'data.csv' has similar data)
+                   Name   Age
+                0   Alice  30
+                1   Bob    25
+                2   Carol  22
+                </pre>
+            </div>
+        </section>
+        
+        <section id="pandas-read-json">
+            <h2>7. Pandas Read JSON</h2>
+            <p>Read data from JSON files using pandas' read_json() function.</p>
+            <div class="code-box">
+                <code>import pandas as pd</code><br>
+                <code>df = pd.read_json('data.json')</code><br>
+                <code>print(df)</code>
+            </div>
+            <div class="output-box">
+                <pre>
+                (Assuming 'data.json' has similar data)
+                   Name   Age
+                0   Alice  30
+                1   Bob    25
+                2   Carol  22
+                </pre>
+            </div>
+        </section>
+        
+        <section id="pandas-analyzing-data">
+            <h2>8. Pandas Analyzing Data</h2>
+            <p>Use pandas to analyze data easily, such as calculating the mean, sum, and other statistics.</p>
+            <div class="code-box">
+                <code>import pandas as pd</code><br>
+                <code>data = {'Name': ['Alice', 'Bob', 'Carol'], 'Age': [30, 25, 22]}</code><br>
+                <code>df = pd.DataFrame(data)</code><br>
+                <code>print(df.mean())</code>
+            </div>
+            <div class="output-box">
+                <pre>
+                Age    25.666667
+                dtype: float64
+                </pre>
+            </div>
+        </section>
+        
+        <section id="cleaning-data">
+            <h2>9. Cleaning Data</h2>
+            <p>Data cleaning involves removing or fixing bad data.</p>
+            <div class="code-box">
+                <code>import pandas as pd</code><br>
+                <code>data = {'Name': ['Alice', 'Bob', None], 'Age': [30, None, 25]}</code><br>
+                <code>df = pd.DataFrame(data)</code><br>
+                <code>df = df.dropna()</code><br>
+                <code>print(df)</code>
+            </div>
+            <div class="output-box">
+                <pre>
+                   Name   Age
+                0  Alice  30.0
+                </pre>
+            </div>
+        </section>
+        
+        <section id="cleaning-empty-cells">
+            <h2>10. Cleaning Empty Cells</h2>
+            <p>Remove empty cells (NaN) using dropna() or fill them with a specific value.</p>
+            <div class="code-box">
+                <code>import pandas as pd</code><br>
+                <code>data = {'Name': ['Alice', None, 'Carol'], 'Age': [30, 25, None]}</code><br>
+                <code>df = pd.DataFrame(data)</code><br>
+                <code>df.fillna('Unknown', inplace=True)</code><br>
+                <code>print(df)</code>
+            </div>
+            <div class="output-box">
+                <pre>
+                   Name     Age
+                0  Alice     30.0
+                1  Unknown  25.0
+                2  Carol    Unknown
+                </pre>
+            </div>
+        </section>
+        
+        <section id="cleaning-wrong-format">
+            <h2>11. Cleaning Wrong Format</h2>
+            <p>Fix incorrect data formats such as date formatting.</p>
+            <div class="code-box">
+                <code>import pandas as pd</code><br>
+                <code>data = {'Date': ['2025-01-01', '2025-01-02']}</code><br>
+                <code>df = pd.DataFrame(data)</code><br>
+                <code>df['Date'] = pd.to_datetime(df['Date'])</code><br>
+                <code>print(df)</code>
+            </div>
+            <div class="output-box">
+                <pre>
+                   Date
+                0 2025-01-01
+                1 2025-01-02
+                </pre>
+            </div>
+        </section>
+        
+        <section id="cleaning-wrong-data">
+            <h2>12. Cleaning Wrong Data</h2>
+            <p>Remove rows with incorrect data based on certain conditions.</p>
+            <div class="code-box">
+                <code>import pandas as pd</code><br>
+                <code>data = {'Age': [25, -30, 22]}</code><br>
+                <code>df = pd.DataFrame(data)</code><br>
+                <code>df = df[df['Age'] > 0]</code><br>
+                <code>print(df)</code>
+            </div>
+            <div class="output-box">
+                <pre>
+                   Age
+                0   25
+                2   22
+                </pre>
+            </div>
+        </section>
+        
+        <section id="removing-duplicates">
+            <h2>13. Removing Duplicates</h2>
+            <p>Remove duplicate rows in the data.</p>
+            <div class="code-box">
+                <code>import pandas as pd</code><br>
+                <code>data = {'Name': ['Alice', 'Bob', 'Alice'], 'Age': [30, 25, 30]}</code><br>
+                <code>df = pd.DataFrame(data)</code><br>
+                <code>df = df.drop_duplicates()</code><br>
+                <code>print(df)</code>
+            </div>
+            <div class="output-box">
+                <pre>
+                   Name   Age
+                0  Alice  30
+                1   Bob   25
+                </pre>
+            </div>
+        </section>
+        
+        <section id="pandas-correlations">
+            <h2>14. Pandas Correlations</h2>
+            <p>Find correlations between numerical columns using pandas.</p>
+            <div class="code-box">
+                <code>import pandas as pd</code><br>
+                <code>data = {'A': [1, 2, 3], 'B': [4, 5, 6]}</code><br>
+                <code>df = pd.DataFrame(data)</code><br>
+                <code>print(df.corr())</code>
+            </div>
+            <div class="output-box">
+                <pre>
+                   A    B
+                A  1.0  1.0
+                B  1.0  1.0
+                </pre>
+            </div>
+        </section>
+        <section id="pandas-plotting">
+          <h2>15. Pandas Plotting</h2>
+          <p>Pandas allows you to plot data directly from DataFrames or Series using the `.plot()` method. It is built on Matplotlib.</p>
+          <div class="code-box">
+              <code>import pandas as pd</code><br>
+              <code>import matplotlib.pyplot as plt</code><br>
+              <code>data = {'x': [1, 2, 3, 4, 5], 'y': [5, 4, 3, 2, 1]}</code><br>
+              <code>df = pd.DataFrame(data)</code><br>
+              <code>df.plot(x='x', y='y', kind='line')</code><br>
+              <code>plt.show()</code>
+          </div>
+          <div class="output-box">
+              <p>(A line plot will be displayed with the given data)</p>
+          </div>
+      </section>
+      
+      <section id="pandas-plotting">
+          <h2>16. Pandas Plotting</h2>
+          <p>Creating different types of plots with pandas' built-in plotting functionalities.</p>
+          <div class="code-box">
+              <code>import pandas as pd</code><br>
+              <code>data = {'x': [1, 2, 3, 4, 5], 'y': [2, 4, 6, 8, 10]}</code><br>
+              <code>df = pd.DataFrame(data)</code><br>
+              <code>df.plot(kind='bar')</code><br>
+              <code>plt.show()</code>
+          </div>
+          <div class="output-box">
+              <p>(A bar plot will be displayed based on the given data)</p>
+          </div>
+      </section>
+      
+      <section id="pandas-quiz-exercises">
+          <h2>17. Pandas Quiz/Exercises</h2>
+          <p>Here are some quizzes and exercises for you to practice Pandas concepts:</p>
+          <ul>
+              <li>What is the difference between DataFrame and Series?</li>
+              <li>Write a program to clean the data by removing missing values.</li>
+              <li>How would you read a CSV file in pandas and display the first 5 rows?</li>
+          </ul>
+          <div class="output-box">
+              <p>(No code output, this section is for practice)</p>
+          </div>
+      </section>
+      
+      <section id="pandas-editor">
+          <h2>18. Pandas Editor</h2>
+          <p>You can use online editors like <a href="https://www.jupyter.org" target="_blank">Jupyter Notebooks</a> or <a href="https://www.replit.com" target="_blank">Replit</a> for coding in pandas.</p>
+          <div class="output-box">
+              <p>Access Jupyter Notebook: <a href="https://www.jupyter.org" target="_blank">Jupyter Notebook</a></p>
+          </div>
+      </section>
+      
+      <section id="pandas-quiz">
+          <h2>19. Pandas Quiz</h2>
+          <p>This quiz will test your knowledge on pandas. Answer the following questions:</p>
+          <ul>
+              <li>How do you import pandas?</li>
+              <li>What does the function `df.head()` do?</li>
+              <li>How do you remove duplicates from a DataFrame?</li>
+          </ul>
+          <div class="output-box">
+              <p>(Answers can be discussed in practice sessions)</p>
+          </div>
+      </section>
+      
+      <section id="pandas-exercises">
+          <h2>20. Pandas Exercises</h2>
+          <p>Try these exercises to enhance your understanding of pandas:</p>
+          <ul>
+              <li>Load a CSV file into a pandas DataFrame and find the mean of a numerical column.</li>
+              <li>Clean a dataset by filling missing values with the median.</li>
+              <li>Sort the DataFrame by a specific column.</li>
+          </ul>
+          <div class="output-box">
+              <p>(These are practical exercises to be performed in your pandas environment)</p>
+          </div>
+      </section>
+      
+      <section id="pandas-syllabus">
+          <h2>21. Pandas Syllabus</h2>
+          <p>The syllabus for learning pandas includes topics such as:</p>
+          <ul>
+              <li>Introduction to pandas</li>
+              <li>DataFrames and Series</li>
+              <li>Handling Missing Data</li>
+              <li>Data Operations: Sorting, Filtering, and Grouping</li>
+              <li>Plotting with pandas</li>
+              <li>Data Cleaning</li>
+          </ul>
+          <div class="output-box">
+              <p>Follow a structured approach for each topic in pandas to build a strong foundation.</p>
+          </div>
+      </section>
+      
+      <section id="pandas-study-plan">
+          <h2>22. Pandas Study Plan</h2>
+          <p>Here's a study plan to learn pandas efficiently:</p>
+          <ol>
+              <li>Start with understanding the basic concepts: Series and DataFrames.</li>
+              <li>Move on to operations like filtering, grouping, and sorting data.</li>
+              <li>Learn about handling missing data, duplicates, and cleaning your data.</li>
+              <li>Practice plotting data and working with different file formats (CSV, Excel, JSON).</li>
+          </ol>
+          <div class="output-box">
+              <p>Consistency is key. Practice regularly and apply your knowledge to real-world datasets.</p>
+          </div>
+      </section>
+      
+      <section id="pandas-certificate">
+          <h2>23. Pandas Certificate</h2>
+          <p>After completing the pandas tutorial and exercises, you can earn a certificate from platforms like:</p>
+          <ul>
+              <li><a href="https://www.coursera.org" target="_blank">Coursera</a></li>
+              <li><a href="https://www.udemy.com" target="_blank">Udemy</a></li>
+              <li><a href="https://www.datacamp.com" target="_blank">DataCamp</a></li>
+          </ul>
+          <div class="output-box">
+              <p>These certificates can help boost your profile and career.</p>
+          </div>
+      </section>
+      
+      <section id="references">
+          <h2>24. References</h2>
+          <p>For further learning, refer to these resources:</p>
+          <ul>
+              <li><a href="https://pandas.pydata.org/" target="_blank">Official Pandas Documentation</a></li>
+              <li><a href="https://realpython.com/tutorials/pandas/" target="_blank">Real Python Pandas Tutorials</a></li>
+              <li><a href="https://www.kaggle.com/learn/pandas" target="_blank">Kaggle Pandas Courses</a></li>
+          </ul>
+          <div class="output-box">
+              <p>These references provide in-depth knowledge and tutorials to master pandas.</p>
+          </div>
+      </section>
+      
+      <section id="dataframes-reference">
+          <h2>25. DataFrames Reference</h2>
+          <p>For quick reference on DataFrame methods, check the following:</p>
+          <ul>
+              <li><a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html" target="_blank">DataFrame API Reference</a></li>
+              <li><a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html" target="_blank">`head()` Method</a></li>
+              <li><a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.dropna.html" target="_blank">`dropna()` Method</a></li>
+          </ul>
+          <div class="output-box">
+              <p>These references will help you learn specific methods and functions related to DataFrames.</p>
+          </div>
+      </section>
+      
+         
+       
+    </main>
+    <footer>
+        <div class="footer-container">
+          <!-- Programming Courses Links -->
+          <div class="footer-links">
+            <h3>Programming Courses</h3>
+            <ul>
+              <li><a href="#">Python</a></li>
+              <li><a href="#">JavaScript</a></li>
+              <li><a href="#">Java</a></li>
+              <li><a href="#">C++</a></li>
+              <li><a href="#">PHP</a></li>
+              <li><a href="#">Machine Learning</a></li>
+            </ul>
+          </div>
+          
+          <!-- Social Media Links -->
+          <div class="footer-social">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+    
+          <!-- Contact Information -->
+          <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <ul>
+              <li><i class="fas fa-phone"></i> 9302984613</li>
+              <li><i class="fas fa-envelope"></i><a href="mailto:codekraft1325@gmail.com">Email Us :codekraft1325@gmail.com</a>
+              </li>
+              <li><i class="fas fa-map-marker-alt"></i> katangi,balaghat(M.P)</li>
+            </ul>
+          </div>
+    
+          <!-- About Us Section -->
+          <div class="footer-about">
+            <h3>About Us</h3>
+            <p>We are a leading provider of online programming courses, helping individuals from all around the world to enhance their skills. Whether you are a beginner or an expert, we offer a wide range of courses to cater to every learning need. Our courses are designed to be interactive, fun, and easy to follow.</p>
+          </div>
+        </div>
+    
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+          <p>&copy; 2025 Online Programming Courses | All Rights Reserved</p>
+          <p ><a href="#" style="color: red;">Privacy Policy</a> | <a href="#" style="color: red;">Terms of Service</a></p>
+        </div>
+      </footer> 
+ 
+  
+    
+
+
+    <script >
+     
+        const searchBar = document.getElementById('searchBar');
+const suggestionsBox = document.getElementById('suggestionsBox');
+const topics = [
+{ name: 'Pandas Tutorial', id: 'pandas-tutorial' },
+{ name: 'Pandas HOME', id: 'pandas-home' },
+{ name: 'Pandas Intro', id: 'pandas-intro' },
+{ name: 'Pandas Getting Started', id: 'pandas-getting-started' },
+{ name: 'Pandas Series', id: 'pandas-series' },
+{ name: 'Pandas DataFrames', id: 'pandas-dataframes' },
+{ name: 'Pandas Read CSV', id: 'pandas-read-csv' },
+{ name: 'Pandas Read JSON', id: 'pandas-read-json' },
+{ name: 'Pandas Analyzing Data', id: 'pandas-analyzing-data' },
+{ name: 'Cleaning Data', id: 'cleaning-data' },
+{ name: 'Cleaning Empty Cells', id: 'cleaning-empty-cells' },
+{ name: 'Cleaning Wrong Format', id: 'cleaning-wrong-format' },
+{ name: 'Cleaning Wrong Data', id: 'cleaning-wrong-data' },
+{ name: 'Removing Duplicates', id: 'removing-duplicates' },
+{ name: 'Pandas Correlations', id: 'pandas-correlations' },
+{ name: 'Pandas Plotting', id: 'pandas-plotting' },
+{ name: 'Pandas Quiz/Exercises', id: 'pandas-quiz-exercises' },
+{ name: 'Pandas Editor', id: 'pandas-editor' },
+{ name: 'Pandas Quiz', id: 'pandas-quiz' },
+{ name: 'Pandas Exercises', id: 'pandas-exercises' },
+{ name: 'Pandas Syllabus', id: 'pandas-syllabus' },
+{ name: 'Pandas Study Plan', id: 'pandas-study-plan' },
+{ name: 'Pandas Certificate', id: 'pandas-certificate' },
+{ name: 'DataFrames Reference', id: 'dataframes-reference' },
+
+    ];
+
+// Handle input for suggestions
+// सर्च बार के "input" इवेंट को हैंडल करना
+searchBar.addEventListener('input', function () {
+const query = searchBar.value.toLowerCase(); // यूज़र का इनपुट लोअरकेस में बदलें
+suggestionsBox.innerHTML = ''; // पहले से मौजूद सुझाव हटाएं
+
+if (query.length > 0) {
+const filteredTopics = topics.filter(topic => topic.name.toLowerCase().includes(query)); // मैच खोजें
+filteredTopics.forEach(topic => {
+    const suggestionElement = document.createElement('p'); // नया सुझाव एलीमेंट बनाएं
+    suggestionElement.textContent = topic.name; // सुझाव में टॉपिक का नाम डालें
+
+    // सुझाव पर क्लिक करने पर नेविगेशन
+    suggestionElement.addEventListener('click', () => {
+        document.getElementById(topic.id).scrollIntoView({ behavior: 'smooth' }); // संबंधित सेक्शन पर स्क्रॉल करें
+        searchBar.value = topic.name; // सर्च बार में चुना गया नाम दिखाएं
+        suggestionsBox.innerHTML = ''; // सुझाव बॉक्स को साफ करें
+    });
+
+    suggestionsBox.appendChild(suggestionElement); // सुझाव बॉक्स में सुझाव जोड़ें
+});
+}
+});
+
+// सर्च बार के "keypress" इवेंट को हैंडल करना
+searchBar.addEventListener('keypress', function (e) {
+if (e.key === 'Enter') { // यदि यूज़र "Enter" दबाता है
+const query = searchBar.value.toLowerCase();
+const match = topics.find(topic => topic.name.toLowerCase().includes(query)); // पहला मैच खोजें
+
+if (match) {
+    document.getElementById(match.id).scrollIntoView({ behavior: 'smooth' }); // संबंधित सेक्शन पर स्क्रॉल करें
+    suggestionsBox.innerHTML = ''; // सुझाव बॉक्स साफ करें
+}
+}
+});
+
+    </script>
+  
+</body>
+</html>

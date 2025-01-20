@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Programming</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">   
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-row">
+            <img src="img/apple-touch-icon.png" alt="Logo" class="logo">
+            <div class="search-container">
+                <input type="search" id="searchBar" placeholder="Search... HTML topic">
+                <div class="suggestions" id="suggestionsBox"></div>
+            </div>
+        </div>
+    </header>
+
+    <div class="he">
+        <h1 class="heading">MySQL</h1>
+    </div>
+
+    <main>
+       
+        <section id="mysql-home">
+            <h2>1. MySQL HOME</h2>
+            <p>Welcome to the MySQL tutorial. Start your journey to learn MySQL here.</p>
+        </section>
+        
+        <section id="mysql-intro">
+            <h2>2. MySQL Intro</h2>
+            <p>MySQL is an open-source relational database management system...</p>
+        </section>
+        
+        <section id="mysql-rdbms">
+            <h2>3. MySQL RDBMS</h2>
+            <p>RDBMS stands for Relational Database Management System...</p>
+        </section>
+        
+        <section id="mysql-sql">
+            <h2>4. MySQL SQL</h2>
+            <p>SQL stands for Structured Query Language. It is used to communicate with databases...</p>
+        </section>
+        
+        <section id="mysql-select">
+            <h2>5. MySQL SELECT</h2>
+            <p>The SELECT statement is used to select data from a database...</p>
+            <div class="code-box">
+                SELECT * FROM Students;<br>
+            </div>
+            <div class="output-box">
+                <table border="1">
+                    <tr>
+                        <th>StudentID</th>
+                        <th>StudentName</th>
+                        <th>Age</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>John</td>
+                        <td>22</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Jane</td>
+                        <td>20</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        
+        <section id="mysql-where">
+            <h2>6. MySQL WHERE</h2>
+            <p>The WHERE clause is used to filter records...</p>
+            <div class="code-box">
+                SELECT * FROM Students WHERE Age = 22;<br>
+            </div>
+            <div class="output-box">
+                <table border="1">
+                    <tr>
+                        <th>StudentID</th>
+                        <th>StudentName</th>
+                        <th>Age</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>John</td>
+                        <td>22</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        
+        <section id="mysql-and-or-not">
+            <h2>7. MySQL AND, OR, NOT</h2>
+            <p>AND, OR, and NOT are logical operators used to filter records based on multiple conditions...</p>
+            <div class="code-box">
+                SELECT * FROM Students WHERE Age > 18 AND Age < 25;<br>
+            </div>
+            <div class="output-box">
+                <table border="1">
+                    <tr>
+                        <th>StudentID</th>
+                        <th>StudentName</th>
+                        <th>Age</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>John</td>
+                        <td>22</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Jane</td>
+                        <td>20</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        
+        <section id="mysql-order-by">
+            <h2>8. MySQL ORDER BY</h2>
+            <p>The ORDER BY clause is used to sort the result-set in ascending or descending order...</p>
+            <div class="code-box">
+                SELECT * FROM Students ORDER BY Age DESC;<br>
+            </div>
+            <div class="output-box">
+                <table border="1">
+                    <tr>
+                        <th>StudentID</th>
+                        <th>StudentName</th>
+                        <th>Age</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>John</td>
+                        <td>22</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Jane</td>
+                        <td>20</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section id="mysql-insert-into">
+            <h2>9. MySQL INSERT INTO</h2>
+            <p>The INSERT INTO statement is used to insert new records into a table...</p>
+            <div class="code-box">
+                INSERT INTO Students (StudentName, Age) VALUES ('Alice', 23);<br>
+            </div>
+        </section>
+        
+        <section id="mysql-null-values">
+            <h2>10. MySQL NULL Values</h2>
+            <p>NULL represents a missing value in a database...</p>
+            <div class="code-box">
+                SELECT * FROM Students WHERE Age IS NULL;<br>
+            </div>
+            <div class="output-box">
+                <p>No records found where Age is NULL.</p>
+            </div>
+        </section>
+        
+        <section id="mysql-update">
+            <h2>11. MySQL UPDATE</h2>
+            <p>The UPDATE statement is used to modify existing records in a table...</p>
+            <div class="code-box">
+                UPDATE Students SET Age = 24 WHERE StudentID = 1;<br>
+            </div>
+        </section>
+        
+        <section id="mysql-delete">
+            <h2>12. MySQL DELETE</h2>
+            <p>The DELETE statement is used to remove records from a table...</p>
+            <div class="code-box">
+                DELETE FROM Students WHERE Age < 20;<br>
+            </div>
+        </section>
+        
+        <section id="mysql-limit">
+            <h2>13. MySQL LIMIT</h2>
+            <p>The LIMIT clause is used to specify the number of records to return...</p>
+            <div class="code-box">
+                SELECT * FROM Students LIMIT 3;<br>
+            </div>
+        </section>
+        
+        <section id="mysql-min-max">
+            <h2>14. MySQL MIN and MAX</h2>
+            <p>The MIN() function returns the smallest value, and MAX() returns the largest value...</p>
+            <div class="code-box">
+                SELECT MIN(Age) AS MinimumAge, MAX(Age) AS MaximumAge FROM Students;<br>
+            </div>
+        </section>
+        
+        <section id="mysql-count-avg-sum">
+            <h2>15. MySQL COUNT, AVG, SUM</h2>
+            <p>The COUNT(), AVG(), and SUM() functions are used for aggregate calculations...</p>
+            <div class="code-box">
+                SELECT COUNT(*) AS TotalStudents, AVG(Age) AS AverageAge, SUM(Age) AS TotalAge FROM Students;<br>
+            </div>
+        </section>
+        
+        <section id="mysql-like">
+            <h2>16. MySQL LIKE</h2>
+            <p>The LIKE operator is used to search for a specified pattern in a column...</p>
+            <div class="code-box">
+                SELECT * FROM Students WHERE StudentName LIKE 'A%';<br>
+            </div>
+        </section>
+        
+        <section id="mysql-wildcards">
+            <h2>17. MySQL Wildcards</h2>
+            <p>Wildcards are used with the LIKE operator to substitute one or more characters...</p>
+            <div class="code-box">
+                SELECT * FROM Students WHERE StudentName LIKE '_l%';<br>
+            </div>
+        </section>
+        <section id="mysql-in">
+            <h2>18. MySQL IN</h2>
+            <p>The IN operator allows you to specify multiple values in a WHERE clause...</p>
+            <div class="code-box">
+                SELECT * FROM Students WHERE Age IN (20, 22, 24);<br>
+            </div>
+        </section>
+        
+        <section id="mysql-between">
+            <h2>19. MySQL BETWEEN</h2>
+            <p>The BETWEEN operator selects values within a range...</p>
+            <div class="code-box">
+                SELECT * FROM Students WHERE Age BETWEEN 20 AND 25;<br>
+            </div>
+        </section>
+        
+        <section id="mysql-aliases">
+            <h2>20. MySQL Aliases</h2>
+            <p>Aliases are used to give a table or a column a temporary name...</p>
+            <div class="code-box">
+                SELECT StudentName AS Name, Age AS Years FROM Students;<br>
+            </div>
+        </section>
+        
+        <section id="mysql-joins">
+            <h2>21. MySQL Joins</h2>
+            <p>Joins are used to combine rows from two or more tables...</p>
+        </section>
+        
+        <section id="mysql-inner-join">
+            <h2>22. MySQL INNER JOIN</h2>
+            <p>The INNER JOIN selects records that have matching values in both tables...</p>
+            <div class="code-box">
+                SELECT Students.StudentName, Courses.CourseName 
+                FROM Students 
+                INNER JOIN Courses ON Students.CourseID = Courses.CourseID;<br>
+            </div>
+        </section>
+        
+        <section id="mysql-left-join">
+            <h2>23. MySQL LEFT JOIN</h2>
+            <p>The LEFT JOIN returns all records from the left table, and the matched records from the right table...</p>
+            <div class="code-box">
+                SELECT Students.StudentName, Courses.CourseName 
+                FROM Students 
+                LEFT JOIN Courses ON Students.CourseID = Courses.CourseID;<br>
+            </div>
+        </section>
+        
+        <section id="mysql-right-join">
+            <h2>24. MySQL RIGHT JOIN</h2>
+            <p>The RIGHT JOIN returns all records from the right table, and the matched records from the left table...</p>
+            <div class="code-box">
+                SELECT Students.StudentName, Courses.CourseName 
+                FROM Students 
+                RIGHT JOIN Courses ON Students.CourseID = Courses.CourseID;<br>
+            </div>
+        </section>
+        
+        <section id="mysql-cross-join">
+            <h2>25. MySQL CROSS JOIN</h2>
+            <p>The CROSS JOIN returns the Cartesian product of two tables...</p>
+            <div class="code-box">
+                SELECT Students.StudentName, Courses.CourseName 
+                FROM Students 
+                CROSS JOIN Courses;<br>
+            </div>
+        </section>
+        
+        <section id="mysql-self-join">
+            <h2>26. MySQL Self Join</h2>
+            <p>A self join is a regular join but the table is joined with itself...</p>
+            <div class="code-box">
+                SELECT A.StudentName AS Student1, B.StudentName AS Student2 
+                FROM Students A, Students B 
+                WHERE A.StudentID <> B.StudentID;<br>
+            </div>
+        </section>
+        <section id="mysql-database">
+            <h2>28. MySQL Database</h2>
+            <p>A MySQL database is used to store data in tables...</p>
+        </section>
+        
+        <section id="mysql-create-db">
+            <h2>29. MySQL Create DB</h2>
+            <p>The CREATE DATABASE statement is used to create a new database...</p>
+            <div class="code-box">
+                CREATE DATABASE SchoolDB;<br>
+            </div>
+        </section>
+        
+        <section id="mysql-drop-db">
+            <h2>30. MySQL Drop DB</h2>
+            <p>The DROP DATABASE statement is used to delete a database...</p>
+            <div class="code-box">
+                DROP DATABASE SchoolDB;<br>
+            </div>
+        </section>
+        
+        <section id="mysql-create-table">
+            <h2>31. MySQL Create Table</h2>
+            <p>The CREATE TABLE statement is used to create a new table in the database...</p>
+            <div class="code-box">
+                CREATE TABLE Students (
+                    StudentID INT AUTO_INCREMENT,
+                    StudentName VARCHAR(255),
+                    Age INT,
+                    PRIMARY KEY (StudentID)
+                );<br>
+            </div>
+        </section>
+        
+        <section id="mysql-drop-table">
+            <h2>32. MySQL Drop Table</h2>
+            <p>The DROP TABLE statement is used to delete an existing table...</p>
+            <div class="code-box">
+                DROP TABLE Students;<br>
+            </div>
+        </section>
+        
+        <section id="mysql-alter-table">
+            <h2>33. MySQL Alter Table</h2>
+            <p>The ALTER TABLE statement is used to add, delete, or modify columns in a table...</p>
+            <div class="code-box">
+                ALTER TABLE Students ADD Gender VARCHAR(10);<br>
+            </div>
+        </section>
+        
+        <section id="mysql-constraints">
+            <h2>34. MySQL Constraints</h2>
+            <p>Constraints are used to specify rules for data in a table...</p>
+        </section>
+        
+        <section id="mysql-not-null">
+            <h2>35. MySQL Not Null</h2>
+            <p>The NOT NULL constraint ensures that a column cannot have a NULL value...</p>
+            <div class="code-box">
+                CREATE TABLE Students (
+                    StudentID INT NOT NULL,
+                    StudentName VARCHAR(255) NOT NULL
+                );<br>
+            </div>
+        </section>
+        
+        <section id="mysql-unique">
+            <h2>36. MySQL Unique</h2>
+            <p>The UNIQUE constraint ensures that all values in a column are different...</p>
+            <div class="code-box">
+                CREATE TABLE Students (
+                    Email VARCHAR(255) UNIQUE
+                );<br>
+            </div>
+        </section>
+        
+        <section id="mysql-primary-key">
+            <h2>37. MySQL Primary Key</h2>
+            <p>The PRIMARY KEY uniquely identifies each record in a table...</p>
+            <div class="code-box">
+                CREATE TABLE Students (
+                    StudentID INT PRIMARY KEY
+                );<br>
+            </div>
+        </section>
+        
+        <section id="mysql-foreign-key">
+            <h2>38. MySQL Foreign Key</h2>
+            <p>The FOREIGN KEY is used to link two tables together...</p>
+            <div class="code-box">
+                CREATE TABLE Orders (
+                    OrderID INT PRIMARY KEY,
+                    StudentID INT,
+                    FOREIGN KEY (StudentID) REFERENCES Students(StudentID)
+                );<br>
+            </div>
+        </section>
+        
+        <section id="mysql-check">
+            <h2>39. MySQL Check</h2>
+            <p>The CHECK constraint ensures that a column meets a specific condition...</p>
+            <div class="code-box">
+                CREATE TABLE Students (
+                    Age INT CHECK (Age >= 18)
+                );<br>
+            </div>
+        </section>
+        
+        <section id="mysql-default">
+            <h2>40. MySQL Default</h2>
+            <p>The DEFAULT constraint provides a default value for a column when none is specified...</p>
+            <div class="code-box">
+                CREATE TABLE Students (
+                    EnrollmentStatus VARCHAR(50) DEFAULT 'Active'
+                );<br>
+            </div>
+        </section>
+        
+        <section id="mysql-create-index">
+            <h2>41. MySQL Create Index</h2>
+            <p>The CREATE INDEX statement is used to create an index in a table...</p>
+            <div class="code-box">
+                CREATE INDEX idx_studentname ON Students(StudentName);<br>
+            </div>
+        </section>
+        
+        <section id="mysql-auto-increment">
+            <h2>42. MySQL Auto Increment</h2>
+            <p>The AUTO_INCREMENT attribute allows a unique number to be generated automatically for new records...</p>
+            <div class="code-box">
+                CREATE TABLE Students (
+                    StudentID INT AUTO_INCREMENT PRIMARY KEY
+                );<br>
+            </div>
+        </section>
+        
+        <section id="mysql-dates">
+            <h2>43. MySQL Dates</h2>
+            <p>MySQL provides various functions to work with date and time values...</p>
+            <div class="code-box">
+                SELECT CURDATE(), NOW();<br>
+            </div>
+        </section>
+        
+        <section id="mysql-views">
+            <h2>44. MySQL Views</h2>
+            <p>A view is a virtual table based on the result-set of an SQL statement...</p>
+            <div class="code-box">
+                CREATE VIEW StudentView AS
+                SELECT StudentName, Age FROM Students;<br>
+            </div>
+        </section>
+        
+        <section id="mysql-references">
+            <h2>45. MySQL References</h2>
+            <p>References are used to define relationships between tables...</p>
+        </section>
+        
+        <section id="mysql-data-types">
+            <h2>46. MySQL Data Types</h2>
+            <p>MySQL supports various data types for storing different kinds of data...</p>
+            <div class="code-box">
+                CREATE TABLE Students (
+                    StudentID INT,
+                    StudentName VARCHAR(255),
+                    EnrollmentDate DATE
+                );<br>
+            </div>
+        </section>
+        
+        
+        
+                
+           
+    </main>
+    <footer>
+        <div class="footer-container">
+          <!-- Programming Courses Links -->
+          <div class="footer-links">
+            <h3>Programming Courses</h3>
+            <ul>
+              <li><a href="#">Python</a></li>
+              <li><a href="#">JavaScript</a></li>
+              <li><a href="#">Java</a></li>
+              <li><a href="#">C++</a></li>
+              <li><a href="#">PHP</a></li>
+              <li><a href="#">Machine Learning</a></li>
+            </ul>
+          </div>
+          
+          <!-- Social Media Links -->
+          <div class="footer-social">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+    
+          <!-- Contact Information -->
+          <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <ul>
+              <li><i class="fas fa-phone"></i> 9302984613</li>
+              <li><i class="fas fa-envelope"></i><a href="mailto:codekraft1325@gmail.com">Email Us :codekraft1325@gmail.com</a>
+              </li>
+              <li><i class="fas fa-map-marker-alt"></i> katangi,balaghat(M.P)</li>
+            </ul>
+          </div>
+    
+          <!-- About Us Section -->
+          <div class="footer-about">
+            <h3>About Us</h3>
+            <p>We are a leading provider of online programming courses, helping individuals from all around the world to enhance their skills. Whether you are a beginner or an expert, we offer a wide range of courses to cater to every learning need. Our courses are designed to be interactive, fun, and easy to follow.</p>
+          </div>
+        </div>
+    
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+          <p>&copy; 2025 Online Programming Courses | All Rights Reserved</p>
+          <p ><a href="#" style="color: red;">Privacy Policy</a> | <a href="#" style="color: red;">Terms of Service</a></p>
+        </div>
+      </footer> 
+ 
+  
+    
+
+
+    <script >
+     
+        const searchBar = document.getElementById('searchBar');
+const suggestionsBox = document.getElementById('suggestionsBox');
+const topics = [
+{ name: 'MySQL Tutorial', id: 'mysql-tutorial' },
+{ name: 'MySQL HOME', id: 'mysql-home' },
+{ name: 'MySQL Intro', id: 'mysql-intro' },
+{ name: 'MySQL RDBMS', id: 'mysql-rdbms' },
+{ name: 'MySQL SQL', id: 'mysql-sql' },
+{ name: 'MySQL SELECT', id: 'mysql-select' },
+{ name: 'MySQL WHERE', id: 'mysql-where' },
+{ name: 'MySQL AND, OR, NOT', id: 'mysql-and-or-not' },
+{ name: 'MySQL ORDER BY', id: 'mysql-order-by' },
+{ name: 'MySQL INSERT INTO', id: 'mysql-insert-into' },
+{ name: 'MySQL NULL Values', id: 'mysql-null-values' },
+{ name: 'MySQL UPDATE', id: 'mysql-update' },
+{ name: 'MySQL DELETE', id: 'mysql-delete' },
+{ name: 'MySQL LIMIT', id: 'mysql-limit' },
+{ name: 'MySQL MIN and MAX', id: 'mysql-min-max' },
+{ name: 'MySQL COUNT, AVG, SUM', id: 'mysql-count-avg-sum' },
+{ name: 'MySQL LIKE', id: 'mysql-like' },
+{ name: 'MySQL Wildcards', id: 'mysql-wildcards' },
+{ name: 'MySQL IN', id: 'mysql-in' },
+{ name: 'MySQL BETWEEN', id: 'mysql-between' },
+{ name: 'MySQL Aliases', id: 'mysql-aliases' },
+{ name: 'MySQL Joins', id: 'mysql-joins' },
+{ name: 'MySQL INNER JOIN', id: 'mysql-inner-join' },
+{ name: 'MySQL LEFT JOIN', id: 'mysql-left-join' },
+{ name: 'MySQL RIGHT JOIN', id: 'mysql-right-join' },
+{ name: 'MySQL CROSS JOIN', id: 'mysql-cross-join' },
+{ name: 'MySQL Self Join', id: 'mysql-self-join' },
+{ name: 'MySQL UNION', id: 'mysql-union' },
+{ name: 'MySQL GROUP BY', id: 'mysql-group-by' },
+{ name: 'MySQL HAVING', id: 'mysql-having' },
+{ name: 'MySQL EXISTS', id: 'mysql-exists' },
+{ name: 'MySQL ANY, ALL', id: 'mysql-any-all' },
+{ name: 'MySQL INSERT SELECT', id: 'mysql-insert-select' },
+{ name: 'MySQL CASE', id: 'mysql-case' },
+{ name: 'MySQL Null Functions', id: 'mysql-null-functions' },
+{ name: 'MySQL Comments', id: 'mysql-comments' },
+{ name: 'MySQL Operators', id: 'mysql-operators' },
+{ name: 'MySQL Database', id: 'mysql-database' },
+{ name: 'MySQL Create DB', id: 'mysql-create-db' },
+{ name: 'MySQL Drop DB', id: 'mysql-drop-db' },
+{ name: 'MySQL Create Table', id: 'mysql-create-table' },
+{ name: 'MySQL Drop Table', id: 'mysql-drop-table' },
+{ name: 'MySQL Alter Table', id: 'mysql-alter-table' },
+{ name: 'MySQL Constraints', id: 'mysql-constraints' },
+{ name: 'MySQL Not Null', id: 'mysql-not-null' },
+{ name: 'MySQL Unique', id: 'mysql-unique' },
+{ name: 'MySQL Primary Key', id: 'mysql-primary-key' },
+{ name: 'MySQL Foreign Key', id: 'mysql-foreign-key' },
+{ name: 'MySQL Check', id: 'mysql-check' },
+{ name: 'MySQL Default', id: 'mysql-default' },
+{ name: 'MySQL Create Index', id: 'mysql-create-index' },
+{ name: 'MySQL Auto Increment', id: 'mysql-auto-increment' },
+{ name: 'MySQL Dates', id: 'mysql-dates' },
+{ name: 'MySQL Views', id: 'mysql-views' },
+{ name: 'MySQL References', id: 'mysql-references' },
+{ name: 'MySQL Data Types', id: 'mysql-data-types' },
+
+
+
+    ];
+
+// Handle input for suggestions
+// सर्च बार के "input" इवेंट को हैंडल करना
+searchBar.addEventListener('input', function () {
+const query = searchBar.value.toLowerCase(); // यूज़र का इनपुट लोअरकेस में बदलें
+suggestionsBox.innerHTML = ''; // पहले से मौजूद सुझाव हटाएं
+
+if (query.length > 0) {
+const filteredTopics = topics.filter(topic => topic.name.toLowerCase().includes(query)); // मैच खोजें
+filteredTopics.forEach(topic => {
+    const suggestionElement = document.createElement('p'); // नया सुझाव एलीमेंट बनाएं
+    suggestionElement.textContent = topic.name; // सुझाव में टॉपिक का नाम डालें
+
+    // सुझाव पर क्लिक करने पर नेविगेशन
+    suggestionElement.addEventListener('click', () => {
+        document.getElementById(topic.id).scrollIntoView({ behavior: 'smooth' }); // संबंधित सेक्शन पर स्क्रॉल करें
+        searchBar.value = topic.name; // सर्च बार में चुना गया नाम दिखाएं
+        suggestionsBox.innerHTML = ''; // सुझाव बॉक्स को साफ करें
+    });
+
+    suggestionsBox.appendChild(suggestionElement); // सुझाव बॉक्स में सुझाव जोड़ें
+});
+}
+});
+
+// सर्च बार के "keypress" इवेंट को हैंडल करना
+searchBar.addEventListener('keypress', function (e) {
+if (e.key === 'Enter') { // यदि यूज़र "Enter" दबाता है
+const query = searchBar.value.toLowerCase();
+const match = topics.find(topic => topic.name.toLowerCase().includes(query)); // पहला मैच खोजें
+
+if (match) {
+    document.getElementById(match.id).scrollIntoView({ behavior: 'smooth' }); // संबंधित सेक्शन पर स्क्रॉल करें
+    suggestionsBox.innerHTML = ''; // सुझाव बॉक्स साफ करें
+}
+}
+});
+
+    </script>
+  
+</body>
+</html>

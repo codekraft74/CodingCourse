@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Programming</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">   
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-row">
+            <img src="img/apple-touch-icon.png" alt="Logo" class="logo">
+            <div class="search-container">
+                <input type="search" id="searchBar" placeholder="Search... HTML topic">
+                <div class="suggestions" id="suggestionsBox"></div>
+            </div>
+        </div>
+    </header>
+
+    <div class="he">
+        <h1 class="heading">Python Tkinter</h1>
+    </div>
+
+    <main>
+        <section id="tkinter-introduction">
+            <h2>1. Tkinter Introduction</h2>
+            <p>Tkinter is the standard Python interface for building graphical user interfaces (GUIs). It is built on top of the Tk GUI toolkit and provides various widgets to help build interactive applications.</p>
+        </section>
+        
+        <section id="tkinter-getting-started">
+            <h2>2. Tkinter Getting Started</h2>
+            <p>To get started with Tkinter, you need to import the Tkinter module and create a window where the GUI will be displayed. Here is a simple example:</p>
+            <div class="code-box">
+                <code>import tkinter as tk</code><br>
+                <code>window = tk.Tk()</code><br>
+                <code>window.title("Tkinter Example")</code><br>
+                <code>window.mainloop()</code>
+            </div>
+            <div class="output-box">
+                <pre>A simple Tkinter window appears.</pre>
+            </div>
+        </section>
+        
+        <section id="tkinter-widgets-overview">
+            <h2>3. Tkinter Widgets Overview</h2>
+            <p>Widgets are the building blocks of any Tkinter application. Tkinter provides a variety of widgets, such as buttons, labels, text boxes, etc., which can be added to the window to create the user interface.</p>
+        </section>
+        
+        <section id="buttons">
+            <h2>4. Buttons</h2>
+            <p>Buttons are commonly used to perform an action when clicked. Here’s how you can create a button in Tkinter:</p>
+            <div class="code-box">
+                <code>button = tk.Button(window, text="Click Me", command=some_function)</code><br>
+                <code>button.pack()</code>
+            </div>
+            <div class="output-box">
+                <pre>A button labeled "Click Me" will appear.</pre>
+            </div>
+        </section>
+        
+        <section id="labels">
+            <h2>5. Labels</h2>
+            <p>Labels are used to display text or images in a Tkinter window. Here's an example:</p>
+            <div class="code-box">
+                <code>label = tk.Label(window, text="Welcome to Tkinter!")</code><br>
+                <code>label.pack()</code>
+            </div>
+            <div class="output-box">
+                <pre>A label with text "Welcome to Tkinter!" will appear.</pre>
+            </div>
+        </section>
+        
+        <section id="entry-widgets">
+            <h2>6. Entry Widgets</h2>
+            <p>Entry widgets allow users to enter a single line of text. Here is an example:</p>
+            <div class="code-box">
+                <code>entry = tk.Entry(window)</code><br>
+                <code>entry.pack()</code>
+            </div>
+            <div class="output-box">
+                <pre>A text input field will appear.</pre>
+            </div>
+        </section>
+        
+        <section id="text-widgets">
+            <h2>7. Text Widgets</h2>
+            <p>Text widgets allow for multi-line text input or display. Here’s an example:</p>
+            <div class="code-box">
+                <code>text = tk.Text(window)</code><br>
+                <code>text.pack()</code>
+            </div>
+            <div class="output-box">
+                <pre>A multi-line text box will appear.</pre>
+            </div>
+        </section>
+        
+        <section id="frames">
+            <h2>8. Frames</h2>
+            <p>Frames are used to group widgets together within a window. Here’s how you can create a frame:</p>
+            <div class="code-box">
+                <code>frame = tk.Frame(window)</code><br>
+                <code>frame.pack()</code>
+            </div>
+            <div class="output-box">
+                <pre>A frame container will appear, holding other widgets.</pre>
+            </div>
+        </section>
+        
+        <section id="checkbuttons">
+            <h2>9. Checkbuttons</h2>
+            <p>Checkbuttons are used to allow the user to select multiple options. Example:</p>
+            <div class="code-box">
+                <code>checkbutton = tk.Checkbutton(window, text="Accept Terms and Conditions")</code><br>
+                <code>checkbutton.pack()</code>
+            </div>
+            <div class="output-box">
+                <pre>A checkbox will appear with the text "Accept Terms and Conditions".</pre>
+            </div>
+        </section>
+        
+        <section id="radiobuttons">
+            <h2>10. Radiobuttons</h2>
+            <p>Radiobuttons allow the user to select only one option from a set of choices. Example:</p>
+            <div class="code-box">
+                <code>radio = tk.Radiobutton(window, text="Option 1", value=1)</code><br>
+                <code>radio.pack()</code>
+            </div>
+            <div class="output-box">
+                <pre>A radio button will appear with the text "Option 1".</pre>
+            </div>
+        </section>
+        
+        <section id="listboxes">
+            <h2>11. Listboxes</h2>
+            <p>Listboxes allow the user to select multiple items from a list. Example:</p>
+            <div class="code-box">
+                <code>listbox = tk.Listbox(window)</code><br>
+                <code>listbox.insert(1, "Item 1")</code><br>
+                <code>listbox.insert(2, "Item 2")</code><br>
+                <code>listbox.pack()</code>
+            </div>
+            <div class="output-box">
+                <pre>A listbox with "Item 1" and "Item 2" will appear.</pre>
+            </div>
+        </section>
+        
+        <section id="canvas">
+            <h2>12. Canvas</h2>
+            <p>Canvas is used to draw shapes and graphics in Tkinter. Example:</p>
+            <div class="code-box">
+                <code>canvas = tk.Canvas(window, width=200, height=200)</code><br>
+                <code>canvas.create_rectangle(50, 50, 150, 150, fill="blue")</code><br>
+                <code>canvas.pack()</code>
+            </div>
+            <div class="output-box">
+                <pre>A blue rectangle will be drawn on the canvas.</pre>
+            </div>
+        </section>
+        
+        <section id="tkinter-geometry-management">
+            <h2>13. Tkinter Geometry Management</h2>
+            <p>Geometry management is used to control the placement of widgets in the window. Tkinter offers three methods: `pack()`, `grid()`, and `place()`.</p>
+        </section>
+        
+        <section id="pack-method">
+            <h2>14. pack() Method</h2>
+            <p>The `pack()` method organizes widgets by stacking them vertically or horizontally.</p>
+            <div class="code-box">
+                <code>label = tk.Label(window, text="This is a label")</code><br>
+                <code>label.pack()</code>
+            </div>
+            <div class="output-box">
+                <pre>The label will be packed into the window.</pre>
+            </div>
+        </section>
+        
+        <section id="grid-method">
+            <h2>15. grid() Method</h2>
+            <p>The `grid()` method places widgets in a table-like structure.</p>
+            <div class="code-box">
+                <code>label = tk.Label(window, text="This is a label")</code><br>
+                <code>label.grid(row=0, column=0)</code>
+            </div>
+            <div class="output-box">
+                <pre>The label will be placed at row 0, column 0.</pre>
+            </div>
+        </section>
+        
+        <section id="place-method">
+            <h2>16. place() Method</h2>
+            <p>The `place()` method places widgets at an absolute position within the window.</p>
+            <div class="code-box">
+                <code>label = tk.Label(window, text="This is a label")</code><br>
+                <code>label.place(x=50, y=50)</code>
+            </div>
+            <div class="output-box">
+                <pre>The label will be placed at coordinates (50, 50).</pre>
+            </div>
+        </section>
+        
+        <section id="tkinter-event-handling">
+            <h2>17. Tkinter Event Handling</h2>
+            <p>Event handling in Tkinter is used to capture events such as mouse clicks or keyboard input. Example:</p>
+            <div class="code-box">
+                <code>window.bind("<Button-1>", on_click)</code>
+            </div>
+            <div class="output-box">
+                <pre>The on_click function will be triggered when the user clicks the mouse button.</pre>
+            </div>
+        </section>
+        <section id="tkinter-canvas-advanced-features">
+            <h2>18. Tkinter Canvas Advanced Features</h2>
+            <p>The Tkinter Canvas widget can be used for advanced graphics tasks such as animations, dynamic drawing, and more. It allows for better interaction with users and more control over drawing and visual features.</p>
+        </section>
+        
+        <section id="animations">
+            <h2>19. Animations</h2>
+            <p>Animations in Tkinter can be created using the `after()` method to schedule updates on the canvas or widgets over time. Here's an example:</p>
+            <div class="code-box">
+                <code>canvas.after(100, move_circle)</code><br>
+                <code>def move_circle():</code><br>
+                <code>&nbsp;&nbsp;canvas.move(circle, 5, 0)</code><br>
+                <code>&nbsp;&nbsp;canvas.after(100, move_circle)</code>
+            </div>
+            <div class="output-box">
+                <pre>A circle moves along the canvas every 100 milliseconds.</pre>
+            </div>
+        </section>
+        
+        <section id="dynamic-drawing">
+            <h2>20. Dynamic Drawing</h2>
+            <p>Dynamic drawing refers to adding elements to a canvas based on user interaction or changes in data. You can update and draw new shapes as needed during runtime.</p>
+        </section>
+        
+        <section id="drag-and-drop">
+            <h2>21. Drag and Drop</h2>
+            <p>Implementing drag-and-drop functionality in Tkinter allows users to interact with objects in a window by dragging and dropping them using the mouse.</p>
+        </section>
+        
+        <section id="tkinter-with-sqlite">
+            <h2>22. Tkinter with SQLite</h2>
+            <p>Integrating Tkinter with SQLite enables you to create databases, perform queries, and display data in a Tkinter-based GUI.</p>
+        </section>
+        
+        <section id="creating-and-connecting-databases">
+            <h2>23. Creating and Connecting Databases</h2>
+            <p>To connect an SQLite database with Tkinter, use the `sqlite3` library to establish connections and interact with the database. Example:</p>
+            <div class="code-box">
+                <code>import sqlite3</code><br>
+                <code>conn = sqlite3.connect('example.db')</code><br>
+                <code>cursor = conn.cursor()</code>
+            </div>
+        </section>
+        
+        <section id="performing-crud-operations">
+            <h2>24. Performing CRUD Operations</h2>
+            <p>CRUD stands for Create, Read, Update, and Delete. You can perform these operations on an SQLite database within Tkinter to manage user data.</p>
+        </section>
+        
+        <section id="tkinter-and-multi-threading">
+            <h2>25. Tkinter and Multi-threading</h2>
+            <p>Multi-threading allows you to perform background tasks, such as long-running processes, without freezing the Tkinter interface.</p>
+        </section>
+        
+        <section id="handling-background-tasks">
+            <h2>26. Handling Background Tasks</h2>
+            <p>Using multi-threading, you can handle background tasks like downloading files or processing data while keeping the user interface responsive.</p>
+        </section>
+        
+        <section id="thread-safety-in-tkinter">
+            <h2>27. Thread Safety in Tkinter</h2>
+            <p>When using multi-threading in Tkinter, ensure thread safety by using appropriate synchronization methods, such as `queue` or `after()` to update the GUI from a thread.</p>
+        </section>
+        
+        <section id="tkinter-and-custom-widgets">
+            <h2>28. Tkinter and Custom Widgets</h2>
+            <p>Custom widgets allow you to extend Tkinter's functionality by creating widgets with custom behaviors and appearances.</p>
+        </section>
+        
+        <section id="creating-custom-widgets">
+            <h2>29. Creating Custom Widgets</h2>
+            <p>To create a custom widget, you can inherit from existing Tkinter widgets and modify their behavior or appearance to suit your needs.</p>
+        </section>
+        
+        <section id="inheriting-from-tkinter-widgets">
+            <h2>30. Inheriting from Tkinter Widgets</h2>
+            <p>Inheriting from Tkinter widgets allows you to add new functionality to existing widgets, while still maintaining their basic structure and properties.</p>
+        </section>
+        
+        <section id="tkinter-for-responsive-designs">
+            <h2>31. Tkinter for Responsive Designs</h2>
+            <p>Responsive designs in Tkinter adjust the window layout automatically when resized. This can be achieved using geometry managers like `grid()` and `pack()` with flexible options.</p>
+        </section>
+        
+        <section id="dynamic-layout-adjustments">
+            <h2>32. Dynamic Layout Adjustments</h2>
+            <p>Dynamic layout adjustments allow the layout to change when the window is resized, ensuring that the interface looks good on different screen sizes.</p>
+        </section>
+        
+        <section id="window-resizing-and-grid-reconfiguration">
+            <h2>33. Window Resizing and Grid Reconfiguration</h2>
+            <p>Window resizing and reconfiguring the grid help in adjusting the placement of widgets when the user resizes the window. Use `columnconfigure()` and `rowconfigure()` to achieve this.</p>
+        </section>
+        
+        <section id="tkinter-with-web-scraping">
+            <h2>34. Tkinter with Web Scraping</h2>
+            <p>Using libraries like `BeautifulSoup` and `requests`, Tkinter can display data fetched from websites directly in the GUI, providing real-time web data.</p>
+        </section>
+        
+        <section id="displaying-web-data-in-tkinter-interface">
+            <h2>35. Displaying Web Data in Tkinter Interface</h2>
+            <p>Once you scrape data, you can display it within Tkinter widgets like `Label`, `Text`, or `Listbox` to present web content to the user.</p>
+        </section>
+        
+        <section id="real-time-updates">
+            <h2>36. Real-time Updates</h2>
+            <p>Real-time updates can be implemented by periodically fetching new data from a web source and updating the Tkinter interface without freezing the application.</p>
+        </section>
+        
+        <section id="tkinter-and-web-requests">
+            <h2>37. Tkinter and Web Requests</h2>
+            <p>Web requests in Tkinter can be made using the `requests` module to fetch data from APIs or websites and present them in the application interface.</p>
+        </section>
+        
+        <section id="fetching-data-from-apis">
+            <h2>38. Fetching Data from APIs</h2>
+            <p>Fetching data from APIs involves making HTTP requests and parsing the returned JSON data to display it in your Tkinter application.</p>
+        </section>
+        
+        <section id="parsing-json-and-xml">
+            <h2>39. Parsing JSON and XML</h2>
+            <p>When working with APIs, the data is often returned in JSON or XML format. Tkinter can handle this data by parsing it using the `json` and `xml` libraries.</p>
+        </section>
+        
+        <section id="tkinter-advanced-event-handling">
+            <h2>40. Tkinter Advanced Event Handling</h2>
+            <p>Advanced event handling allows you to capture specific events such as mouse clicks, keyboard presses, or other user interactions in your application.</p>
+        </section>
+        
+    </main>
+    <footer>
+        <div class="footer-container">
+          <!-- Programming Courses Links -->
+          <div class="footer-links">
+            <h3>Programming Courses</h3>
+            <ul>
+              <li><a href="#">Python</a></li>
+              <li><a href="#">JavaScript</a></li>
+              <li><a href="#">Java</a></li>
+              <li><a href="#">C++</a></li>
+              <li><a href="#">PHP</a></li>
+              <li><a href="#">Machine Learning</a></li>
+            </ul>
+          </div>
+          
+          <!-- Social Media Links -->
+          <div class="footer-social">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+    
+          <!-- Contact Information -->
+          <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <ul>
+              <li><i class="fas fa-phone"></i> 9302984613</li>
+              <li><i class="fas fa-envelope"></i><a href="mailto:codekraft1325@gmail.com">Email Us :codekraft1325@gmail.com</a>
+              </li>
+              <li><i class="fas fa-map-marker-alt"></i> katangi,balaghat(M.P)</li>
+            </ul>
+          </div>
+    
+          <!-- About Us Section -->
+          <div class="footer-about">
+            <h3>About Us</h3>
+            <p>We are a leading provider of online programming courses, helping individuals from all around the world to enhance their skills. Whether you are a beginner or an expert, we offer a wide range of courses to cater to every learning need. Our courses are designed to be interactive, fun, and easy to follow.</p>
+          </div>
+        </div>
+    
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+          <p>&copy; 2025 Online Programming Courses | All Rights Reserved</p>
+          <p ><a href="#" style="color: red;">Privacy Policy</a> | <a href="#" style="color: red;">Terms of Service</a></p>
+        </div>
+      </footer> 
+ 
+  
+    
+
+
+    <script >
+     
+        const searchBar = document.getElementById('searchBar');
+const suggestionsBox = document.getElementById('suggestionsBox');
+const topics = [
+{ name: 'Tkinter Tutorial', id: 'tkinter-tutorial' },
+{ name: 'Tkinter HOME', id: 'tkinter-home' },
+{ name: 'Tkinter Introduction', id: 'tkinter-introduction' },
+{ name: 'Tkinter Getting Started', id: 'tkinter-getting-started' },
+{ name: 'Tkinter Widgets Overview', id: 'tkinter-widgets-overview' },
+{ name: 'Buttons', id: 'buttons' },
+{ name: 'Labels', id: 'labels' },
+{ name: 'Entry Widgets', id: 'entry-widgets' },
+{ name: 'Text Widgets', id: 'text-widgets' },
+{ name: 'Frames', id: 'frames' },
+{ name: 'Checkbuttons', id: 'checkbuttons' },
+{ name: 'Radiobuttons', id: 'radiobuttons' },
+{ name: 'Listboxes', id: 'listboxes' },
+{ name: 'Canvas', id: 'canvas' },
+{ name: 'Tkinter Geometry Management', id: 'tkinter-geometry-management' },
+{ name: 'pack() Method', id: 'pack-method' },
+{ name: 'grid() Method', id: 'grid-method' },
+{ name: 'place() Method', id: 'place-method' },
+{ name: 'Tkinter Event Handling', id: 'tkinter-event-handling' },
+{ name: 'Tkinter Menus', id: 'tkinter-menus' },
+{ name: 'Creating Menus', id: 'creating-menus' },
+{ name: 'Dropdown Menus', id: 'dropdown-menus' },
+{ name: 'Tkinter Messagebox', id: 'tkinter-messagebox' },
+{ name: 'Tkinter Dialog Boxes', id: 'tkinter-dialog-boxes' },
+{ name: 'File Dialog', id: 'file-dialog' },
+{ name: 'Color Chooser', id: 'color-chooser' },
+{ name: 'Tkinter Frames', id: 'tkinter-frames' },
+{ name: 'Tkinter Canvas', id: 'tkinter-canvas' },
+{ name: 'Drawing Shapes', id: 'drawing-shapes' },
+{ name: 'Adding Images', id: 'adding-images' },
+{ name: 'Tkinter Styling Widgets', id: 'tkinter-styling-widgets' },
+{ name: 'Using ttk Module', id: 'using-ttk-module' },
+{ name: 'Customizing Themes', id: 'customizing-themes' },
+{ name: 'Tkinter Handling Forms', id: 'tkinter-handling-forms' },
+{ name: 'Input Validation', id: 'input-validation' },
+{ name: 'Data Binding', id: 'data-binding' },
+{ name: 'Tkinter Projects', id: 'tkinter-projects' },
+{ name: 'Basic Calculator', id: 'basic-calculator' },
+{ name: 'Login Form', id: 'login-form' },
+{ name: 'Tic-Tac-Toe Game', id: 'tic-tac-toe-game' },
+{ name: 'Tkinter Advanced Features', id: 'tkinter-advanced-features' },
+{ name: 'Working with Threads', id: 'working-with-threads' },
+{ name: 'Integrating Databases', id: 'integrating-databases' },
+{ name: 'Tkinter Examples', id: 'tkinter-examples' },
+{ name: 'Tkinter FAQs', id: 'tkinter-faqs' },
+{ name: 'Advanced Tkinter Topics', id: 'advanced-tkinter-topics' },
+{ name: 'Tkinter Canvas Advanced Features', id: 'tkinter-canvas-advanced-features' },
+{ name: 'Animations', id: 'animations' },
+{ name: 'Dynamic Drawing', id: 'dynamic-drawing' },
+{ name: 'Drag and Drop', id: 'drag-and-drop' },
+{ name: 'Tkinter with SQLite', id: 'tkinter-with-sqlite' },
+{ name: 'Creating and Connecting Databases', id: 'creating-and-connecting-databases' },
+{ name: 'Performing CRUD Operations', id: 'performing-crud-operations' },
+{ name: 'Tkinter and Multi-threading', id: 'tkinter-and-multi-threading' },
+{ name: 'Handling Background Tasks', id: 'handling-background-tasks' },
+{ name: 'Thread Safety in Tkinter', id: 'thread-safety-in-tkinter' },
+{ name: 'Tkinter and Custom Widgets', id: 'tkinter-and-custom-widgets' },
+{ name: 'Creating Custom Widgets', id: 'creating-custom-widgets' },
+{ name: 'Inheriting from Tkinter Widgets', id: 'inheriting-from-tkinter-widgets' },
+{ name: 'Tkinter for Responsive Designs', id: 'tkinter-for-responsive-designs' },
+{ name: 'Dynamic Layout Adjustments', id: 'dynamic-layout-adjustments' },
+{ name: 'Window Resizing and Grid Reconfiguration', id: 'window-resizing-and-grid-reconfiguration' },
+{ name: 'Tkinter with Web Scraping', id: 'tkinter-with-web-scraping' },
+{ name: 'Displaying Web Data in Tkinter Interface', id: 'displaying-web-data-in-tkinter-interface' },
+{ name: 'Real-time Updates', id: 'real-time-updates' },
+{ name: 'Tkinter and Web Requests', id: 'tkinter-and-web-requests' },
+{ name: 'Fetching Data from APIs', id: 'fetching-data-from-apis' },
+{ name: 'Parsing JSON and XML', id: 'parsing-json-and-xml' },
+{ name: 'Tkinter Advanced Event Handling', id: 'tkinter-advanced-event-handling' },
+{ name: 'Handling Key Events', id: 'handling-key-events' },
+{ name: 'Mouse Events and Motion Detection', id: 'mouse-events-and-motion-detection' },
+{ name: 'Tkinter Themes and Styles', id: 'tkinter-themes-and-styles' },
+{ name: 'Creating Custom Themes', id: 'creating-custom-themes' },
+{ name: 'Applying Styles to Widgets', id: 'applying-styles-to-widgets' },
+{ name: 'Tkinter and OpenGL', id: 'tkinter-and-opengl' },
+{ name: 'Integrating OpenGL with Tkinter', id: 'integrating-opengl-with-tkinter' },
+{ name: '3D Rendering in Tkinter', id: '3d-rendering-in-tkinter' },
+{ name: 'Tkinter and Data Visualization', id: 'tkinter-and-data-visualization' },
+{ name: 'Integrating Matplotlib with Tkinter', id: 'integrating-matplotlib-with-tkinter' },
+{ name: 'Plotting Data in Tkinter Widgets', id: 'plotting-data-in-tkinter-widgets' },
+{ name: 'Tkinter Animation Techniques', id: 'tkinter-animation-techniques' },
+{ name: 'Creating Smooth Transitions', id: 'creating-smooth-transitions' },
+{ name: 'Timer-based Animations', id: 'timer-based-animations' },
+{ name: 'Tkinter for File Management Applications', id: 'tkinter-for-file-management-applications' },
+{ name: 'File Explorer', id: 'file-explorer' },
+{ name: 'File Browser with Search Functionality', id: 'file-browser-with-search-functionality' },
+{ name: 'Tkinter for Games', id: 'tkinter-for-games' },
+{ name: 'Building 2D Games', id: 'building-2d-games' },
+{ name: 'Real-time Game Updates', id: 'real-time-game-updates' },
+{ name: 'Tkinter for GUI-based Applications', id: 'tkinter-for-gui-based-applications' },
+{ name: 'Building Multi-page Apps', id: 'building-multi-page-apps' },
+{ name: 'Tabbed Interfaces and Notebooks', id: 'tabbed-interfaces-and-notebooks' },
+{ name: 'Tkinter with Web Frameworks', id: 'tkinter-with-web-frameworks' },
+{ name: 'Integrating Flask/Django with Tkinter', id: 'integrating-flask-django-with-tkinter' },
+{ name: 'Sending and Receiving Data from Web Servers', id: 'sending-and-receiving-data-from-web-servers' },
+
+
+    ];
+
+// Handle input for suggestions
+// सर्च बार के "input" इवेंट को हैंडल करना
+searchBar.addEventListener('input', function () {
+const query = searchBar.value.toLowerCase(); // यूज़र का इनपुट लोअरकेस में बदलें
+suggestionsBox.innerHTML = ''; // पहले से मौजूद सुझाव हटाएं
+
+if (query.length > 0) {
+const filteredTopics = topics.filter(topic => topic.name.toLowerCase().includes(query)); // मैच खोजें
+filteredTopics.forEach(topic => {
+    const suggestionElement = document.createElement('p'); // नया सुझाव एलीमेंट बनाएं
+    suggestionElement.textContent = topic.name; // सुझाव में टॉपिक का नाम डालें
+
+    // सुझाव पर क्लिक करने पर नेविगेशन
+    suggestionElement.addEventListener('click', () => {
+        document.getElementById(topic.id).scrollIntoView({ behavior: 'smooth' }); // संबंधित सेक्शन पर स्क्रॉल करें
+        searchBar.value = topic.name; // सर्च बार में चुना गया नाम दिखाएं
+        suggestionsBox.innerHTML = ''; // सुझाव बॉक्स को साफ करें
+    });
+
+    suggestionsBox.appendChild(suggestionElement); // सुझाव बॉक्स में सुझाव जोड़ें
+});
+}
+});
+
+// सर्च बार के "keypress" इवेंट को हैंडल करना
+searchBar.addEventListener('keypress', function (e) {
+if (e.key === 'Enter') { // यदि यूज़र "Enter" दबाता है
+const query = searchBar.value.toLowerCase();
+const match = topics.find(topic => topic.name.toLowerCase().includes(query)); // पहला मैच खोजें
+
+if (match) {
+    document.getElementById(match.id).scrollIntoView({ behavior: 'smooth' }); // संबंधित सेक्शन पर स्क्रॉल करें
+    suggestionsBox.innerHTML = ''; // सुझाव बॉक्स साफ करें
+}
+}
+});
+
+    </script>
+  
+</body>
+</html>

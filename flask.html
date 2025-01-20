@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Programming</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">   
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-row">
+            <img src="img/apple-touch-icon.png" alt="Logo" class="logo">
+            <div class="search-container">
+                <input type="search" id="searchBar" placeholder="Search... HTML topic">
+                <div class="suggestions" id="suggestionsBox"></div>
+            </div>
+        </div>
+    </header>
+
+    <div class="he">
+        <h1 class="heading">PHP Programming</h1>
+    </div>
+
+    <main>
+        <section id="flask-home">
+            <h2>1. Flask - Home</h2>
+            <p>Flask is a lightweight web framework for Python that enables rapid development of web applications. It is designed to be simple, flexible, and extensible. In this section, we'll explore the basic components of Flask and how to set up your first application.</p>
+            <div class="code-box">
+                <!-- Example code for Flask Home -->
+                from flask import Flask<br>
+                app = Flask(__name__)<br>
+                @app.route('/')<br>
+                def home():<br>
+                &nbsp;&nbsp;&nbsp;return 'Welcome to Flask Home!'<br>
+                if __name__ == '__main__':<br>
+                &nbsp;&nbsp;&nbsp;app.run(debug=True)
+            </div>
+            <div class="output-box">
+                Welcome to Flask Home!
+            </div>
+        </section>
+        
+        <section id="flask-overview">
+            <h2>2. Flask - Overview</h2>
+            <p>Flask provides a simple, yet powerful way to build web applications. It allows developers to add only the components they need while leaving out unnecessary features, making it a great option for small to medium-sized projects.</p>
+            <div class="code-box">
+                <!-- Example code for Flask Overview -->
+                from flask import Flask<br>
+                app = Flask(__name__)<br>
+                @app.route('/')<br>
+                def overview():<br>
+                &nbsp;&nbsp;&nbsp;return 'Flask Overview'
+            </div>
+            <div class="output-box">
+                Flask Overview
+            </div>
+        </section>
+        
+        <section id="flask-environment">
+            <h2>3. Flask - Environment</h2>
+            <p>Setting up a proper environment is crucial for running Flask applications. It's recommended to use virtual environments to avoid conflicts between package dependencies.</p>
+            <div class="code-box">
+                <!-- Example code for Flask Environment -->
+                # To set up virtual environment:
+                python -m venv flaskenv<br>
+                # Activate the environment (on Windows)
+                flaskenv\Scripts\activate
+            </div>
+            <div class="output-box">
+                Virtual Environment Setup Complete
+            </div>
+        </section>
+        
+        <section id="flask-application">
+            <h2>4. Flask - Application</h2>
+            <p>Flask applications are created by instantiating the Flask class. Each Flask application is represented by an instance of the Flask class.</p>
+            <div class="code-box">
+                <!-- Example code for Flask Application -->
+                from flask import Flask<br>
+                app = Flask(__name__)<br>
+                @app.route('/')<br>
+                def application():<br>
+                &nbsp;&nbsp;&nbsp;return 'Flask Application'
+            </div>
+            <div class="output-box">
+                Flask Application
+            </div>
+        </section>
+        
+        <section id="flask-routing">
+            <h2>5. Flask - Routing</h2>
+            <p>Routing in Flask allows the developer to map URLs to functions. When a user visits a specific URL, Flask triggers the corresponding function.</p>
+            <div class="code-box">
+                <!-- Example code for Flask Routing -->
+                @app.route('/about')<br>
+                def about():<br>
+                &nbsp;&nbsp;&nbsp;return 'About Page'
+            </div>
+            <div class="output-box">
+                About Page
+            </div>
+        </section>
+        
+        <section id="flask-variable-rules">
+            <h2>6. Flask - Variable Rules</h2>
+            <p>Flask allows the use of variables in URLs. This means you can capture dynamic parts of the URL and pass them to your functions.</p>
+            <div class="code-box">
+                <!-- Example code for Flask Variable Rules -->
+                @app.route('/user/<username>')<br>
+                def user_profile(username):<br>
+                &nbsp;&nbsp;&nbsp;return f'User Profile: {username}'
+            </div>
+            <div class="output-box">
+                User Profile: <username>
+            </div>
+        </section>
+        
+        <section id="flask-url-building">
+            <h2>7. Flask - URL Building</h2>
+            <p>URL Building is an essential Flask feature that allows you to generate URLs dynamically, avoiding hard-coded paths in your code.</p>
+            <div class="code-box">
+                <!-- Example code for Flask URL Building -->
+                from flask import url_for<br>
+                @app.route('/next')<br>
+                def next_page():<br>
+                &nbsp;&nbsp;&nbsp;return url_for('user_profile', username='john')
+            </div>
+            <div class="output-box">
+                /user/john
+            </div>
+        </section>
+        
+        <section id="flask-http-methods">
+            <h2>8. Flask - HTTP Methods</h2>
+            <p>Flask supports different HTTP methods such as GET, POST, PUT, DELETE, etc. These methods are used to handle different types of requests from the client.</p>
+            <div class="code-box">
+                <!-- Example code for Flask HTTP Methods -->
+                @app.route('/submit', methods=['POST'])<br>
+                def submit():<br>
+                &nbsp;&nbsp;&nbsp;return 'Form Submitted'
+            </div>
+            <div class="output-box">
+                Form Submitted
+            </div>
+        </section>
+        
+        <section id="flask-templates">
+            <h2>9. Flask - Templates</h2>
+            <p>Flask uses Jinja2 templates to render dynamic content. This allows you to separate HTML structure from Python code, making the application more maintainable.</p>
+            <div class="code-box">
+                <!-- Example code for Flask Templates -->
+                from flask import render_template<br>
+                @app.route('/home')<br>
+                def home_page():<br>
+                &nbsp;&nbsp;&nbsp;return render_template('home.html')
+            </div>
+            <div class="output-box">
+                <!-- Dynamic content rendered from home.html -->
+            </div>
+        </section>
+        
+        <section id="flask-static-files">
+            <h2>10. Flask - Static Files</h2>
+            <p>Flask provides a way to serve static files (like images, CSS, and JavaScript) to clients. Static files are placed in a special folder named <code>static</code>.</p>
+            <div class="code-box">
+                <!-- Example code for Flask Static Files -->
+                @app.route('/static/<path:filename>')<br>
+                def static_files(filename):<br>
+                &nbsp;&nbsp;&nbsp;return send_from_directory('static', filename)
+            </div>
+            <div class="output-box">
+                Static Files (CSS, JS, images) will be served.
+            </div>
+        </section>
+        <section id="flask-request-object">
+            <h2>11. Flask - Request Object</h2>
+            <p>The Flask Request object allows you to access data sent by the client in HTTP requests. It provides methods to handle data sent via GET, POST, and other HTTP methods.</p>
+            <div class="code-box">
+                <!-- Example code for Flask Request Object -->
+                from flask import request<br>
+                @app.route('/submit', methods=['POST'])<br>
+                def submit():<br>
+                &nbsp;&nbsp;&nbsp;username = request.form['username']<br>
+                &nbsp;&nbsp;&nbsp;return f'Hello {username}'
+            </div>
+            <div class="output-box">
+                Hello <username>
+            </div>
+        </section>
+        
+        <section id="flask-send-form-data-to-template">
+            <h2>12. Sending Form Data to Template</h2>
+            <p>Flask allows you to send form data to templates for rendering dynamic content. This is useful for showing messages or passing values between views and templates.</p>
+            <div class="code-box">
+                <!-- Example code for Sending Form Data to Template -->
+                from flask import render_template, request<br>
+                @app.route('/form', methods=['GET', 'POST'])<br>
+                def form():<br>
+                &nbsp;&nbsp;&nbsp;if request.method == 'POST':<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;username = request.form['username']<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return render_template('result.html', username=username)<br>
+                &nbsp;&nbsp;&nbsp;return render_template('form.html')
+            </div>
+            <div class="output-box">
+                <!-- Dynamic data passed to template -->
+            </div>
+        </section>
+        
+        <section id="flask-cookies">
+            <h2>13. Flask - Cookies</h2>
+            <p>Flask provides the ability to work with cookies, which are small pieces of data stored on the client-side. You can use cookies to store user preferences or session data.</p>
+            <div class="code-box">
+                <!-- Example code for Flask Cookies -->
+                from flask import request, make_response<br>
+                @app.route('/setcookie')<br>
+                def set_cookie():<br>
+                &nbsp;&nbsp;&nbsp;resp = make_response('Cookie Set')<br>
+                &nbsp;&nbsp;&nbsp;resp.set_cookie('username', 'john')<br>
+                &nbsp;&nbsp;&nbsp;return resp
+            </div>
+            <div class="output-box">
+                Cookie Set
+            </div>
+        </section>
+        
+        <section id="flask-sessions">
+            <h2>14. Flask - Sessions</h2>
+            <p>Sessions in Flask allow you to store data across requests for a specific user. Unlike cookies, session data is stored on the server-side but can be accessed by the client via a session ID stored in a cookie.</p>
+            <div class="code-box">
+                <!-- Example code for Flask Sessions -->
+                from flask import session<br>
+                @app.route('/setsession')<br>
+                def set_session():<br>
+                &nbsp;&nbsp;&nbsp;session['username'] = 'john'<br>
+                &nbsp;&nbsp;&nbsp;return 'Session Set'
+            </div>
+            <div class="output-box">
+                Session Set
+            </div>
+        </section>
+        
+        <section id="flask-redirect-error">
+            <h2>15. Flask - Redirect & Error</h2>
+            <p>Flask provides a way to redirect users to different routes and handle errors gracefully. You can use the <code>redirect()</code> function to navigate to another URL and handle errors using custom error pages.</p>
+            <div class="code-box">
+                <!-- Example code for Flask Redirect & Error -->
+                from flask import redirect, url_for<br>
+                @app.route('/redirect')<br>
+                def redirect_to():<br>
+                &nbsp;&nbsp;&nbsp;return redirect(url_for('home'))<br>
+                @app.errorhandler(404)<br>
+                def page_not_found(error):<br>
+                &nbsp;&nbsp;&nbsp;return 'Page not found', 404
+            </div>
+            <div class="output-box">
+                Redirecting to Home page or Error 404
+            </div>
+        </section>
+        
+        <section id="flask-message-flashing">
+            <h2>16. Flask - Message Flashing</h2>
+            <p>Message flashing in Flask allows you to display temporary messages to users, usually after a form submission or other important action.</p>
+            <div class="code-box">
+                <!-- Example code for Flask Message Flashing -->
+                from flask import flash, redirect, url_for<br>
+                @app.route('/flashmessage')<br>
+                def flash_message():<br>
+                &nbsp;&nbsp;&nbsp;flash('Form Submitted Successfully')<br>
+                &nbsp;&nbsp;&nbsp;return redirect(url_for('home'))
+            </div>
+            <div class="output-box">
+                Form Submitted Successfully (flashed message)
+            </div>
+        </section>
+        
+        <section id="flask-file-uploading">
+            <h2>17. Flask - File Uploading</h2>
+            <p>Flask supports file uploading through the use of the <code>request.files</code> object. You can handle user-uploaded files and save them to the server.</p>
+            <div class="code-box">
+                <!-- Example code for Flask File Uploading -->
+                from flask import request<br>
+                @app.route('/upload', methods=['POST'])<br>
+                def upload_file():<br>
+                &nbsp;&nbsp;&nbsp;if 'file' in request.files:<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;file = request.files['file']<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;file.save(f'./uploads/{file.filename}')<br>
+                &nbsp;&nbsp;&nbsp;return 'File Uploaded'
+            </div>
+            <div class="output-box">
+                File Uploaded Successfully
+            </div>
+        </section>
+        
+        <section id="flask-extensions">
+            <h2>18. Flask - Extensions</h2>
+            <p>Flask has a wide range of extensions that add functionality to your application, such as database integration, form validation, and more. These extensions help enhance Flask’s capabilities.</p>
+            <div class="code-box">
+                <!-- Example code for Flask Extensions -->
+                from flask_sqlalchemy import SQLAlchemy<br>
+                app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'<br>
+                db = SQLAlchemy(app)
+            </div>
+            <div class="output-box">
+                Flask SQLAlchemy Extension Initialized
+            </div>
+        </section>
+        
+        <section id="flask-mail">
+            <h2>19. Flask - Mail</h2>
+            <p>Flask-Mail extension provides easy-to-use functionality for sending emails in Flask applications. It integrates seamlessly with Flask to send emails through different mail servers.</p>
+            <div class="code-box">
+                <!-- Example code for Flask Mail -->
+                from flask_mail import Mail, Message<br>
+                mail = Mail(app)<br>
+                @app.route('/sendmail')<br>
+                def send_mail():<br>
+                &nbsp;&nbsp;&nbsp;msg = Message('Hello', recipients=['example@example.com'])<br>
+                &nbsp;&nbsp;&nbsp;msg.body = 'This is a test email'<br>
+                &nbsp;&nbsp;&nbsp;mail.send(msg)<br>
+                &nbsp;&nbsp;&nbsp;return 'Mail Sent'
+            </div>
+            <div class="output-box">
+                Mail Sent
+            </div>
+        </section>
+        <section id="flask-wtf">
+            <h2>20. Flask - WTF</h2>
+            <p>Flask-WTF is an extension that simplifies working with forms in Flask applications. It integrates Flask with WTForms, providing form validation and protection against Cross-Site Request Forgery (CSRF).</p>
+            <div class="code-box">
+                <!-- Example code for Flask WTF -->
+                from flask_wtf import FlaskForm<br>
+                from wtforms import StringField, SubmitField<br>
+                from wtforms.validators import DataRequired<br>
+                class MyForm(FlaskForm):<br>
+                &nbsp;&nbsp;&nbsp;name = StringField('Name', validators=[DataRequired()])<br>
+                &nbsp;&nbsp;&nbsp;submit = SubmitField('Submit')
+            </div>
+            <div class="output-box">
+                <!-- Form rendered using Flask-WTF -->
+            </div>
+        </section>
+        
+        <section id="flask-sqlite">
+            <h2>21. Flask - SQLite</h2>
+            <p>Flask can be easily integrated with SQLite, a lightweight database, for simple applications. SQLite is serverless and stores data in a single file, making it ideal for small-scale applications.</p>
+            <div class="code-box">
+                <!-- Example code for Flask SQLite -->
+                from flask import Flask, g<br>
+                import sqlite3<br>
+                app = Flask(__name__)<br>
+                def get_db():<br>
+                &nbsp;&nbsp;&nbsp;if 'db' not in g:<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;g.db = sqlite3.connect('database.db')<br>
+                &nbsp;&nbsp;&nbsp;return g.db
+            </div>
+            <div class="output-box">
+                SQLite Database Connected
+            </div>
+        </section>
+        
+        <section id="flask-sqlalchemy">
+            <h2>22. Flask - SQLAlchemy</h2>
+            <p>Flask-SQLAlchemy is an extension for Flask that adds support for SQLAlchemy, a powerful ORM (Object Relational Mapper). This makes working with databases simpler by allowing you to work with Python objects rather than writing raw SQL queries.</p>
+            <div class="code-box">
+                <!-- Example code for Flask SQLAlchemy -->
+                from flask_sqlalchemy import SQLAlchemy<br>
+                app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///mydb.db'<br>
+                db = SQLAlchemy(app)<br>
+                class User(db.Model):<br>
+                &nbsp;&nbsp;&nbsp;id = db.Column(db.Integer, primary_key=True)<br>
+                &nbsp;&nbsp;&nbsp;name = db.Column(db.String(50), nullable=False)
+            </div>
+            <div class="output-box">
+                SQLAlchemy Database Initialized
+            </div>
+        </section>
+        
+        <section id="flask-sijax">
+            <h2>23. Flask - Sijax</h2>
+            <p>Flask-Sijax is an extension that allows Flask applications to communicate asynchronously with the client using AJAX. It helps in making applications more interactive by enabling real-time communication between the server and client.</p>
+            <div class="code-box">
+                <!-- Example code for Flask Sijax -->
+                from flask_sijax import Sijax<br>
+                app = Flask(__name__)<br>
+                app.config['SIJAX_STATIC_PATH'] = 'static/'<br>
+                sijax = Sijax(app)
+            </div>
+            <div class="output-box">
+                Flask-Sijax Enabled
+            </div>
+        </section>
+        
+        <section id="flask-deployment">
+            <h2>24. Flask - Deployment</h2>
+            <p>Flask applications can be deployed on various platforms such as Heroku, AWS, and more. Deployment involves setting up the web server, configuring the application, and ensuring it runs in production mode.</p>
+            <div class="code-box">
+                <!-- Example code for Flask Deployment -->
+                # In Heroku environment, use Procfile<br>
+                web: python app.py
+            </div>
+            <div class="output-box">
+                Flask Application Deployed
+            </div>
+        </section>
+        
+        <section id="flask-fastcgi">
+            <h2>25. Flask - FastCGI</h2>
+            <p>FastCGI is a protocol for interfacing interactive programs with a web server. It helps in improving performance for web applications. Flask can be used with FastCGI for handling requests more efficiently.</p>
+            <div class="code-box">
+                <!-- Example code for Flask FastCGI -->
+                # Install flup package for FastCGI<br>
+                pip install flup<br>
+                from flup.server.fcgi import WSGIServer<br>
+                from app import app<br>
+                WSGIServer(app).run()
+            </div>
+            <div class="output-box">
+                Flask Application Running with FastCGI
+            </div>
+        </section>
+        
+        <section id="flask-useful-resources">
+            <h2>26. Flask Useful Resources</h2>
+            <p>There are many useful resources for learning Flask, including official documentation, tutorials, and community forums. These resources help in understanding Flask better and improving development skills.</p>
+            <div class="code-box">
+                <!-- Example resources for Flask -->
+                <ul>
+                    <li><a href="https://flask.palletsprojects.com/">Flask Official Documentation</a></li>
+                    <li><a href="https://realpython.com/tutorials/flask/">Real Python Flask Tutorials</a></li>
+                    <li><a href="https://www.udemy.com/course/python-and-flask-for-beginners/">
+                        Flask Course on Udemy
+                    </a></li>
+                </ul>
+            </div>
+            <div class="output-box">
+                Useful Flask Resources
+            </div>
+        </section>
+        
+        <section id="flask-quick-guide">
+            <h2>27. Flask - Quick Guide</h2>
+            <p>Flask provides a quick guide for developers to set up their first application, covering everything from installation to deployment. A quick guide helps beginners start working with Flask efficiently.</p>
+            <div class="code-box">
+                <!-- Example code for Flask Quick Guide -->
+                # Flask Installation<br>
+                pip install flask<br>
+                # Run the app<br>
+                python app.py
+            </div>
+            <div class="output-box">
+                Flask Quick Setup Completed
+            </div>
+        </section>
+        
+        <section id="flask-useful-resources-2">
+            <h2>28. Flask - Useful Resources</h2>
+            <p>Additional useful resources for Flask developers, including tools, templates, and frameworks that complement Flask for building more complex applications.</p>
+            <div class="code-box">
+                <ul>
+                    <li><a href="https://www.jetbrains.com/pycharm/">PyCharm IDE for Flask</a></li>
+                    <li><a href="https://flask.palletsprojects.com/en/2.0.x/patterns/">Flask Design Patterns</a></li>
+                    <li><a href="https://github.com/pallets/flask/tree/main/examples">Flask Examples</a></li>
+                </ul>
+            </div>
+            <div class="output-box">
+                Flask Developer Resources
+            </div>
+        </section>
+        
+        <section id="flask-discussion">
+            <h2>29. Flask - Discussion</h2>
+            <p>Flask has a vibrant community where developers discuss best practices, troubleshooting, and new features. Participating in discussions helps improve your knowledge and keeps you updated with Flask advancements.</p>
+            <div class="code-box">
+                <!-- Example code for Flask Discussion -->
+                <ul>
+                    <li><a href="https://stackoverflow.com/questions/tagged/flask">Flask Tag on Stack Overflow</a></li>
+                    <li><a href="https://discord.com/invite/PyFlask">Flask Discord Community</a></li>
+                    <li><a href="https://reddit.com/r/flask">Flask Subreddit</a></li>
+                </ul>
+            </div>
+            <div class="output-box">
+                Flask Discussions and Community
+            </div>
+        </section>
+                        
+                
+    </main>
+    <footer>
+        <div class="footer-container">
+          <!-- Programming Courses Links -->
+          <div class="footer-links">
+            <h3>Programming Courses</h3>
+            <ul>
+              <li><a href="#">Python</a></li>
+              <li><a href="#">JavaScript</a></li>
+              <li><a href="#">Java</a></li>
+              <li><a href="#">C++</a></li>
+              <li><a href="#">PHP</a></li>
+              <li><a href="#">Machine Learning</a></li>
+            </ul>
+          </div>
+          
+          <!-- Social Media Links -->
+          <div class="footer-social">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+    
+          <!-- Contact Information -->
+          <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <ul>
+              <li><i class="fas fa-phone"></i> 9302984613</li>
+              <li><i class="fas fa-envelope"></i><a href="mailto:codekraft1325@gmail.com">Email Us :codekraft1325@gmail.com</a>
+              </li>
+              <li><i class="fas fa-map-marker-alt"></i> katangi,balaghat(M.P)</li>
+            </ul>
+          </div>
+    
+          <!-- About Us Section -->
+          <div class="footer-about">
+            <h3>About Us</h3>
+            <p>We are a leading provider of online programming courses, helping individuals from all around the world to enhance their skills. Whether you are a beginner or an expert, we offer a wide range of courses to cater to every learning need. Our courses are designed to be interactive, fun, and easy to follow.</p>
+          </div>
+        </div>
+    
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+          <p>&copy; 2025 Online Programming Courses | All Rights Reserved</p>
+          <p ><a href="#" style="color: red;">Privacy Policy</a> | <a href="#" style="color: red;">Terms of Service</a></p>
+        </div>
+      </footer> 
+ 
+  
+    
+
+
+    <script >
+     
+        const searchBar = document.getElementById('searchBar');
+const suggestionsBox = document.getElementById('suggestionsBox');
+const topics = [
+{ name: 'Flask - Home', id: 'flask-home' },
+{ name: 'Flask - Overview', id: 'flask-overview' },
+{ name: 'Flask - Environment', id: 'flask-environment' },
+{ name: 'Flask - Application', id: 'flask-application' },
+{ name: 'Flask - Routing', id: 'flask-routing' },
+{ name: 'Flask - Variable Rules', id: 'flask-variable-rules' },
+{ name: 'Flask - URL Building', id: 'flask-url-building' },
+{ name: 'Flask - HTTP Methods', id: 'flask-http-methods' },
+{ name: 'Flask - Templates', id: 'flask-templates' },
+{ name: 'Flask - Static Files', id: 'flask-static-files' }
+{ name: 'Flask - Request Object', id: 'flask-request-object' },
+{ name: 'Sending Form Data to Template', id: 'sending-form-data-to-template' },
+{ name: 'Flask - Cookies', id: 'flask-cookies' },
+{ name: 'Flask - Sessions', id: 'flask-sessions' },
+{ name: 'Flask - Redirect & Error', id: 'flask-redirect-error' },
+{ name: 'Flask - Message Flashing', id: 'flask-message-flashing' },
+{ name: 'Flask - File Uploading', id: 'flask-file-uploading' },
+{ name: 'Flask - Extensions', id: 'flask-extensions' },
+{ name: 'Flask - Mail', id: 'flask-mail' },
+{ name: 'Flask - WTF', id: 'flask-wtf' },
+{ name: 'Flask - SQLite', id: 'flask-sqlite' },
+{ name: 'Flask - SQLAlchemy', id: 'flask-sqlalchemy' },
+{ name: 'Flask - Sijax', id: 'flask-sijax' },
+{ name: 'Flask - Deployment', id: 'flask-deployment' },
+{ name: 'Flask - FastCGI', id: 'flask-fastcgi' },
+{ name: 'Flask Useful Resources', id: 'flask-useful-resources' },
+{ name: 'Flask - Quick Guide', id: 'flask-quick-guide' },
+{ name: 'Flask - Useful Resources', id: 'flask-useful-resources' },
+{ name: 'Flask - Discussion', id: 'flask-discussion' },
+
+    ];
+
+// Handle input for suggestions
+// सर्च बार के "input" इवेंट को हैंडल करना
+searchBar.addEventListener('input', function () {
+const query = searchBar.value.toLowerCase(); // यूज़र का इनपुट लोअरकेस में बदलें
+suggestionsBox.innerHTML = ''; // पहले से मौजूद सुझाव हटाएं
+
+if (query.length > 0) {
+const filteredTopics = topics.filter(topic => topic.name.toLowerCase().includes(query)); // मैच खोजें
+filteredTopics.forEach(topic => {
+    const suggestionElement = document.createElement('p'); // नया सुझाव एलीमेंट बनाएं
+    suggestionElement.textContent = topic.name; // सुझाव में टॉपिक का नाम डालें
+
+    // सुझाव पर क्लिक करने पर नेविगेशन
+    suggestionElement.addEventListener('click', () => {
+        document.getElementById(topic.id).scrollIntoView({ behavior: 'smooth' }); // संबंधित सेक्शन पर स्क्रॉल करें
+        searchBar.value = topic.name; // सर्च बार में चुना गया नाम दिखाएं
+        suggestionsBox.innerHTML = ''; // सुझाव बॉक्स को साफ करें
+    });
+
+    suggestionsBox.appendChild(suggestionElement); // सुझाव बॉक्स में सुझाव जोड़ें
+});
+}
+});
+
+// सर्च बार के "keypress" इवेंट को हैंडल करना
+searchBar.addEventListener('keypress', function (e) {
+if (e.key === 'Enter') { // यदि यूज़र "Enter" दबाता है
+const query = searchBar.value.toLowerCase();
+const match = topics.find(topic => topic.name.toLowerCase().includes(query)); // पहला मैच खोजें
+
+if (match) {
+    document.getElementById(match.id).scrollIntoView({ behavior: 'smooth' }); // संबंधित सेक्शन पर स्क्रॉल करें
+    suggestionsBox.innerHTML = ''; // सुझाव बॉक्स साफ करें
+}
+}
+});
+
+    </script>
+  
+</body>
+</html>

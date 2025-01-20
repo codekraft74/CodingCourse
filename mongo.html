@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Programming</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">   
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-row">
+            <img src="img/apple-touch-icon.png" alt="Logo" class="logo">
+            <div class="search-container">
+                <input type="search" id="searchBar" placeholder="Search... HTML topic">
+                <div class="suggestions" id="suggestionsBox"></div>
+            </div>
+        </div>
+    </header>
+
+    <div class="he">
+        <h1 class="heading">PHP Programming</h1>
+    </div>
+
+    <main>
+      
+            <section id="mongodb-home">
+                <h2>1. MongoDB - Home</h2>
+                <p>MongoDB is a popular NoSQL database that provides high performance, high availability, and easy scalability...</p>
+                <div class="code-box">
+                    <!-- Example to connect MongoDB -->
+                    const { MongoClient } = require('mongodb');<br>
+                    const uri = "mongodb://localhost:27017";<br>
+                    const client = new MongoClient(uri);<br><br>
+                    async function run() {<br>
+                    &nbsp;&nbsp;try {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;await client.connect();<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;console.log("Connected to MongoDB!");<br>
+                    &nbsp;&nbsp;} finally {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;await client.close();<br>
+                    &nbsp;&nbsp;}<br>
+                    }<br>
+                    run().catch(console.dir);<br>
+                </div>
+                <div class="output-box">
+                    <h1>Connected to MongoDB!</h1>
+                </div>
+            </section>
+            
+            <section id="mongodb-overview">
+                <h2>2. MongoDB - Overview</h2>
+                <p>MongoDB is a document-oriented NoSQL database designed for scalability and flexibility...</p>
+                <div class="code-box">
+                    <!-- Example MongoDB document -->
+                    {<br>
+                    &nbsp;&nbsp;"name": "John Doe",<br>
+                    &nbsp;&nbsp;"age": 29,<br>
+                    &nbsp;&nbsp;"skills": ["JavaScript", "Node.js", "MongoDB"]<br>
+                    }
+                </div>
+                <div class="output-box">
+                    <h1>{"name": "John Doe", "age": 29, "skills": ["JavaScript", "Node.js", "MongoDB"]}</h1>
+                </div>
+            </section>
+            
+            <section id="mongodb-advantages">
+                <h2>3. MongoDB - Advantages</h2>
+                <p>Advantages of MongoDB include:</p>
+                <ul>
+                    <li>Schema-less design for flexibility.</li>
+                    <li>Horizontal scaling with sharding.</li>
+                    <li>Fast reads and writes due to in-memory storage engine.</li>
+                    <li>Rich query language and aggregation framework.</li>
+                </ul>
+            </section>
+            
+            <section id="mongodb-environment">
+                <h2>4. MongoDB - Environment</h2>
+                <p>To set up MongoDB:</p>
+                <ul>
+                    <li>Download MongoDB from the official website.</li>
+                    <li>Install it on your system and set the bin path in the system variables.</li>
+                    <li>Run <code>mongod</code> to start the MongoDB server.</li>
+                    <li>Run <code>mongo</code> to access the MongoDB shell.</li>
+                </ul>
+            </section>
+            
+            <section id="mongodb-data-modeling">
+                <h2>5. MongoDB - Data Modeling</h2>
+                <p>MongoDB allows flexible and dynamic schemas for documents...</p>
+                <div class="code-box">
+                    <!-- Example of MongoDB Data Modeling -->
+                    {<br>
+                    &nbsp;&nbsp;"_id": 1,<br>
+                    &nbsp;&nbsp;"name": "Library",<br>
+                    &nbsp;&nbsp;"books": [<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;{ "title": "Book A", "author": "Author A" },<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;{ "title": "Book B", "author": "Author B" }<br>
+                    &nbsp;&nbsp;]<br>
+                    }
+                </div>
+            </section>
+            
+            <section id="mongodb-create-database">
+                <h2>6. MongoDB - Create Database</h2>
+                <p>Use the following command to create a database:</p>
+                <div class="code-box">
+                    use myDatabase
+                </div>
+                <div class="output-box">
+                    <h1>Switched to db myDatabase</h1>
+                </div>
+            </section>
+            
+            <section id="mongodb-drop-database">
+                <h2>7. MongoDB - Drop Database</h2>
+                <p>Use the following command to drop a database:</p>
+                <div class="code-box">
+                    db.dropDatabase()
+                </div>
+                <div class="output-box">
+                    <h1>{ "ok": 1 }</h1>
+                </div>
+            </section>
+            
+            <section id="mongodb-create-collection">
+                <h2>8. MongoDB - Create Collection</h2>
+                <p>Use the following command to create a collection:</p>
+                <div class="code-box">
+                    db.createCollection("myCollection")
+                </div>
+                <div class="output-box">
+                    <h1>{ "ok": 1 }</h1>
+                </div>
+            </section>
+            
+            <section id="mongodb-drop-collection">
+                <h2>9. MongoDB - Drop Collection</h2>
+                <p>Use the following command to drop a collection:</p>
+                <div class="code-box">
+                    db.myCollection.drop()
+                </div>
+                <div class="output-box">
+                    <h1>{ "ok": 1 }</h1>
+                </div>
+            </section>
+            
+            <section id="mongodb-data-types">
+                <h2>10. MongoDB - Data Types</h2>
+                <p>MongoDB supports several data types, such as:</p>
+                <ul>
+                    <li>String</li>
+                    <li>Integer</li>
+                    <li>Boolean</li>
+                    <li>Array</li>
+                    <li>Object</li>
+                    <li>Date</li>
+                </ul>
+            </section>
+            
+            <section id="mongodb-insert-document">
+                <h2>11. MongoDB - Insert Document</h2>
+                <p>To insert a document into a collection:</p>
+                <div class="code-box">
+                    db.myCollection.insert({<br>
+                    &nbsp;&nbsp;"name": "John Doe",<br>
+                    &nbsp;&nbsp;"age": 29,<br>
+                    &nbsp;&nbsp;"skills": ["JavaScript", "Node.js", "MongoDB"]<br>
+                    })
+                </div>
+                <div class="output-box">
+                    <h1>{ "acknowledged": true, "insertedId": ObjectId("...") }</h1>
+                </div>
+            </section>
+            <section id="mongodb-query-document">
+                <h2>12. MongoDB - Query Document</h2>
+                <p>To query documents in a collection, use the <code>find()</code> method:</p>
+                <div class="code-box">
+                    db.myCollection.find({ "name": "John Doe" })
+                </div>
+                <div class="output-box">
+                    <h1>[{ "_id": ObjectId("..."), "name": "John Doe", "age": 29, "skills": ["JavaScript", "Node.js", "MongoDB"] }]</h1>
+                </div>
+            </section>
+            
+            <section id="mongodb-update-document">
+                <h2>13. MongoDB - Update Document</h2>
+                <p>To update a document, use the <code>updateOne()</code> or <code>updateMany()</code> method:</p>
+                <div class="code-box">
+                    db.myCollection.updateOne({ "name": "John Doe" }, { $set: { "age": 30 } })
+                </div>
+                <div class="output-box">
+                    <h1>{ "acknowledged": true, "modifiedCount": 1 }</h1>
+                </div>
+            </section>
+            
+            <section id="mongodb-delete-document">
+                <h2>14. MongoDB - Delete Document</h2>
+                <p>To delete a document, use the <code>deleteOne()</code> or <code>deleteMany()</code> method:</p>
+                <div class="code-box">
+                    db.myCollection.deleteOne({ "name": "John Doe" })
+                </div>
+                <div class="output-box">
+                    <h1>{ "acknowledged": true, "deletedCount": 1 }</h1>
+                </div>
+            </section>
+            
+            <section id="mongodb-projection">
+                <h2>15. MongoDB - Projection</h2>
+                <p>Projection is used to include or exclude specific fields in the result:</p>
+                <div class="code-box">
+                    db.myCollection.find({}, { "name": 1, "_id": 0 })
+                </div>
+                <div class="output-box">
+                    <h1>[{ "name": "John Doe" }]</h1>
+                </div>
+            </section>
+            
+            <section id="mongodb-limiting-records">
+                <h2>16. MongoDB - Limiting Records</h2>
+                <p>To limit the number of records returned, use the <code>limit()</code> method:</p>
+                <div class="code-box">
+                    db.myCollection.find().limit(5)
+                </div>
+                <div class="output-box">
+                    <h1>[{ ... }, { ... }, { ... }, { ... }, { ... }]</h1>
+                </div>
+            </section>
+            
+            <section id="mongodb-sorting-records">
+                <h2>17. MongoDB - Sorting Records</h2>
+                <p>To sort records, use the <code>sort()</code> method:</p>
+                <div class="code-box">
+                    db.myCollection.find().sort({ "name": 1 })
+                </div>
+                <div class="output-box">
+                    <h1>[{ "name": "Alice" }, { "name": "John" }, { "name": "Zara" }]</h1>
+                </div>
+            </section>
+            
+            <section id="mongodb-indexing">
+                <h2>18. MongoDB - Indexing</h2>
+                <p>Indexes improve the performance of queries. Create an index using:</p>
+                <div class="code-box">
+                    db.myCollection.createIndex({ "name": 1 })
+                </div>
+                <div class="output-box">
+                    <h1>{ "acknowledged": true, "createdCollectionAutomatically": false, "numIndexesBefore": 1, "numIndexesAfter": 2 }</h1>
+                </div>
+            </section>
+            
+            <section id="mongodb-aggregation">
+                <h2>19. MongoDB - Aggregation</h2>
+                <p>Aggregation is used to process data and return computed results:</p>
+                <div class="code-box">
+                    db.myCollection.aggregate([<br>
+                    &nbsp;&nbsp;{ $match: { "age": { $gt: 25 } } },<br>
+                    &nbsp;&nbsp;{ $group: { "_id": "$skills", "total": { $sum: 1 } } }<br>
+                    ])
+                </div>
+                <div class="output-box">
+                    <h1>[{ "_id": ["JavaScript", "Node.js"], "total": 3 }]</h1>
+                </div>
+            </section>
+            
+            <section id="mongodb-replication">
+                <h2>20. MongoDB - Replication</h2>
+                <p>Replication ensures data availability and redundancy by synchronizing data across multiple servers.</p>
+                <div class="code-box">
+                    <!-- MongoDB Replica Set Configuration -->
+                    rs.initiate({<br>
+                    &nbsp;&nbsp;_id: "replicaSetName",<br>
+                    &nbsp;&nbsp;members: [<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;{ _id: 0, host: "localhost:27017" },<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;{ _id: 1, host: "localhost:27018" },<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;{ _id: 2, host: "localhost:27019" }<br>
+                    &nbsp;&nbsp;]<br>
+                    })
+                </div>
+            </section>
+            
+            <section id="mongodb-sharding">
+                <h2>21. MongoDB - Sharding</h2>
+                <p>Sharding is a method to distribute data across multiple machines for horizontal scalability:</p>
+                <div class="code-box">
+                    <!-- MongoDB Sharding Example -->
+                    sh.enableSharding("myDatabase")<br>
+                    sh.shardCollection("myDatabase.myCollection", { "shardKey": 1 })
+                </div>
+            </section>
+            <section id="mongodb-create-backup">
+                <h2>22. MongoDB - Create Backup</h2>
+                <p>To create a backup of your MongoDB database, you can use the <code>mongodump</code> utility:</p>
+                <div class="code-box">
+                    mongodump --db myDatabase --out /backup/location
+                </div>
+                <div class="output-box">
+                    <h1>Backup created at /backup/location</h1>
+                </div>
+            </section>
+            
+            <section id="mongodb-deployment">
+                <h2>23. MongoDB - Deployment</h2>
+                <p>Deploying MongoDB involves configuring it for production use, such as setting up authentication, replica sets, and sharding.</p>
+                <div class="code-box">
+                    <!-- Example of enabling authentication -->
+                    mongod --auth --replSet "replicaSetName"
+                </div>
+                <div class="output-box">
+                    <h1>MongoDB deployed with authentication and replication enabled.</h1>
+                </div>
+            </section>
+            
+            <section id="mongodb-java">
+                <h2>24. MongoDB - Java</h2>
+                <p>To integrate MongoDB with Java, use the official MongoDB Java Driver:</p>
+                <div class="code-box">
+                    import com.mongodb.MongoClient;<br>
+                    import com.mongodb.client.MongoDatabase;<br><br>
+                    public class Main {<br>
+                    &nbsp;&nbsp;public static void main(String[] args) {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;MongoClient mongoClient = new MongoClient("localhost", 27017);<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;MongoDatabase database = mongoClient.getDatabase("myDatabase");<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Connected to the database!");<br>
+                    &nbsp;&nbsp;}<br>
+                    }
+                </div>
+                <div class="output-box">
+                    <h1>Connected to the database!</h1>
+                </div>
+            </section>
+            
+            <section id="mongodb-php">
+                <h2>25. MongoDB - PHP</h2>
+                <p>To use MongoDB with PHP, install the MongoDB PHP library:</p>
+                <div class="code-box">
+                    <?php<br>
+                    &nbsp;&nbsp;$manager = new MongoDB\Driver\Manager("mongodb://localhost:27017");<br>
+                    &nbsp;&nbsp;echo "Connection to MongoDB established!";<br>
+                    ?>
+                </div>
+                <div class="output-box">
+                    <h1>Connection to MongoDB established!</h1>
+                </div>
+            </section>
+            
+            <section id="advanced-mongodb">
+                <h2>26. Advanced MongoDB</h2>
+                <p>Advanced MongoDB features include aggregation pipelines, advanced indexing, and server-side scripts using JavaScript.</p>
+                <div class="code-box">
+                    db.collection.aggregate([<br>
+                    &nbsp;&nbsp;{ $match: { "status": "active" } },<br>
+                    &nbsp;&nbsp;{ $group: { "_id": "$category", "total": { $sum: 1 } } }<br>
+                    ])
+                </div>
+                <div class="output-box">
+                    <h1>[{ "_id": "books", "total": 15 }]</h1>
+                </div>
+            </section>
+            
+            <section id="mongodb-relationships">
+                <h2>27. MongoDB - Relationships</h2>
+                <p>MongoDB supports relationships through embedding documents or referencing them:</p>
+                <div class="code-box">
+                    <!-- Embedding example -->
+                    {<br>
+                    &nbsp;&nbsp;"_id": 1,<br>
+                    &nbsp;&nbsp;"name": "John",<br>
+                    &nbsp;&nbsp;"address": { "city": "New York", "zip": "10001" }<br>
+                    }
+                </div>
+                <div class="output-box">
+                    <h1>Document with embedded relationship saved successfully.</h1>
+                </div>
+            </section>
+            
+            <section id="mongodb-database-references">
+                <h2>28. MongoDB Database References</h2>
+                <p>Database references allow relationships between collections:</p>
+                <div class="code-box">
+                    { "_id": 1, "book": "Book A", "authorId": ObjectId("5f67c8...") }
+                </div>
+                <div class="output-box">
+                    <h1>Reference stored in the database successfully.</h1>
+                </div>
+            </section>
+            
+            <section id="mongodb-covered-queries">
+                <h2>29. MongoDB - Covered Queries</h2>
+                <p>Covered queries return results using only an index, improving performance:</p>
+                <div class="code-box">
+                    db.myCollection.createIndex({ "name": 1, "age": 1 })<br>
+                    db.myCollection.find({ "name": "John" }, { "name": 1, "age": 1, "_id": 0 })
+                </div>
+                <div class="output-box">
+                    <h1>[{ "name": "John", "age": 29 }]</h1>
+                </div>
+            </section>
+            
+            <section id="mongodb-analyzing-queries">
+                <h2>30. MongoDB Analyzing Queries</h2>
+                <p>To analyze queries, use the <code>explain()</code> method:</p>
+                <div class="code-box">
+                    db.myCollection.find({ "name": "John" }).explain("executionStats")
+                </div>
+                <div class="output-box">
+                    <h1>{ "executionTimeMillis": 2, "totalDocsExamined": 10 }</h1>
+                </div>
+            </section>
+            
+            <section id="mongodb-atomic">
+                <h2>31. MongoDB Atomic</h2>
+                <p>MongoDB ensures atomic operations at the document level, meaning updates to a single document are fully completed or not at all:</p>
+                <div class="code-box">
+                    db.myCollection.updateOne({ "_id": 1 }, { $inc: { "quantity": 1 } })
+                </div>
+                <div class="output-box">
+                    <h1>{ "acknowledged": true, "modifiedCount": 1 }</h1>
+                </div>
+            </section>
+            <section id="mongodb-advanced-indexing">
+                <h2>32. MongoDB - Advanced Indexing</h2>
+                <p>Advanced indexing in MongoDB includes compound indexes, multikey indexes, and text indexes:</p>
+                <div class="code-box">
+                    db.myCollection.createIndex({ "name": 1, "age": -1 })<br>
+                    db.myCollection.createIndex({ "skills": 1 }) // Multikey Index
+                </div>
+                <div class="output-box">
+                    <h1>Indexes created successfully.</h1>
+                </div>
+            </section>
+            
+            <section id="mongodb-indexing-limitations">
+                <h2>33. MongoDB - Indexing Limitations</h2>
+                <p>MongoDB indexing has limitations such as a maximum index key length of 1024 bytes and performance overhead for write operations.</p>
+                <div class="code-box">
+                    <!-- Example showing indexing limitation -->
+                    db.myCollection.createIndex({ "largeField": 1 })
+                </div>
+                <div class="output-box">
+                    <h1>Error: Index key too large.</h1>
+                </div>
+            </section>
+            
+            <section id="mongodb-objectid">
+                <h2>34. MongoDB - ObjectId</h2>
+                <p>ObjectId is a 12-byte identifier that is automatically generated for each document:</p>
+                <div class="code-box">
+                    db.myCollection.insertOne({ "name": "John Doe" })<br>
+                    // Example of ObjectId<br>
+                    { "_id": ObjectId("64fbc25d8e9f4c4a9b6e2fdf") }
+                </div>
+                <div class="output-box">
+                    <h1>Document inserted with ObjectId.</h1>
+                </div>
+            </section>
+            
+            <section id="mongodb-map-reduce">
+                <h2>35. MongoDB - Map Reduce</h2>
+                <p>Map-Reduce is used to process large data sets in MongoDB:</p>
+                <div class="code-box">
+                    db.myCollection.mapReduce(<br>
+                    &nbsp;&nbsp;function() { emit(this.category, this.price); },<br>
+                    &nbsp;&nbsp;function(key, values) { return Array.sum(values); },<br>
+                    &nbsp;&nbsp;{ out: "totalPrices" }<br>
+                    )
+                </div>
+                <div class="output-box">
+                    <h1>Map-Reduce completed. Results saved in 'totalPrices'.</h1>
+                </div>
+            </section>
+            
+            <section id="mongodb-text-search">
+                <h2>36. MongoDB - Text Search</h2>
+                <p>MongoDB supports text search through text indexes:</p>
+                <div class="code-box">
+                    db.myCollection.createIndex({ "description": "text" })<br>
+                    db.myCollection.find({ $text: { $search: "MongoDB tutorial" } })
+                </div>
+                <div class="output-box">
+                    <h1>[{ "name": "MongoDB Tutorial", "description": "Learn MongoDB indexing." }]</h1>
+                </div>
+            </section>
+            
+            <section id="mongodb-regular-expression">
+                <h2>37. MongoDB - Regular Expression</h2>
+                <p>MongoDB allows you to query using regular expressions:</p>
+                <div class="code-box">
+                    db.myCollection.find({ "name": { $regex: /^John/, $options: "i" } })
+                </div>
+                <div class="output-box">
+                    <h1>[{ "name": "John Doe", "age": 29 }]</h1>
+                </div>
+            </section>
+            
+            <section id="working-with-rockmongo">
+                <h2>38. Working with Rockmongo</h2>
+                <p>Rockmongo is a web-based MongoDB administration tool that provides a user-friendly interface:</p>
+                <div class="code-box">
+                    <!-- Example configuration -->
+                    Open your browser and navigate to: <br>
+                    http://localhost/rockmongo
+                </div>
+                <div class="output-box">
+                    <h1>Rockmongo Interface Loaded Successfully!</h1>
+                </div>
+            </section>
+            
+            <section id="mongodb-gridfs">
+                <h2>39. MongoDB - GridFS</h2>
+                <p>GridFS is used to store and retrieve large files in MongoDB:</p>
+                <div class="code-box">
+                    <!-- Example: Storing a file -->
+                    mongofiles -d myDatabase put myfile.txt
+                </div>
+                <div class="output-box">
+                    <h1>File stored in GridFS.</h1>
+                </div>
+            </section>
+            
+            <section id="mongodb-capped-collections">
+                <h2>40. MongoDB - Capped Collections</h2>
+                <p>Capped collections are fixed-size collections that support high-throughput operations:</p>
+                <div class="code-box">
+                    db.createCollection("myCappedCollection", { capped: true, size: 5242880, max: 5000 })
+                </div>
+                <div class="output-box">
+                    <h1>Capped collection created successfully.</h1>
+                </div>
+            </section>
+            <section id="mongodb-auto-increment-sequence">
+                <h2>41. MongoDB - Auto-Increment Sequence</h2>
+                <p>MongoDB does not support auto-increment by default, but you can implement it using a counter collection:</p>
+                <div class="code-box">
+                    db.counters.insert({ "_id": "userId", "seq": 0 })<br>
+                    db.myCollection.insert({ "userId": db.counters.findAndModify({ query: { _id: "userId" }, update: { $inc: { seq: 1 } }, new: true }).seq })
+                </div>
+                <div class="output-box">
+                    <h1>Document inserted with auto-increment userId.</h1>
+                </div>
+            </section>
+            
+            <section id="mongodb-useful-resources">
+                <h2>42. MongoDB Useful Resources</h2>
+                <p>Here are some useful resources to learn more about MongoDB:</p>
+                <div class="code-box">
+                    <ul>
+                        <li><a href="https://www.mongodb.com/what-is-mongodb">Official MongoDB Documentation</a></li>
+                        <li><a href="https://university.mongodb.com/">MongoDB University</a></li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">MDN JavaScript Documentation</a></li>
+                    </ul>
+                </div>
+                <div class="output-box">
+                    <h1>Explore the resources for MongoDB learning.</h1>
+                </div>
+            </section>
+            
+            <section id="mongodb-questions-and-answers">
+                <h2>43. MongoDB - Questions and Answers</h2>
+                <p>Here are some frequently asked questions about MongoDB:</p>
+                <div class="code-box">
+                    <ul>
+                        <li><strong>What is MongoDB?</strong> MongoDB is a NoSQL database that stores data in JSON-like documents.</li>
+                        <li><strong>What is the difference between MongoDB and SQL?</strong> MongoDB is schema-less, and SQL uses structured schemas.</li>
+                        <li><strong>What is a replica set?</strong> A replica set is a group of MongoDB instances that maintain the same data set.</li>
+                    </ul>
+                </div>
+                <div class="output-box">
+                    <h1>FAQs related to MongoDB answered!</h1>
+                </div>
+            </section>
+            
+            <section id="mongodb-quick-guide">
+                <h2>44. MongoDB - Quick Guide</h2>
+                <p>This quick guide covers the most important commands and features in MongoDB:</p>
+                <div class="code-box">
+                    <ul>
+                        <li>Use <code>db.createCollection()</code> to create a collection.</li>
+                        <li>Use <code>db.collection.find()</code> to query data.</li>
+                        <li>Use <code>db.collection.update()</code> to update documents.</li>
+                        <li>Use <code>db.collection.drop()</code> to delete a collection.</li>
+                    </ul>
+                </div>
+                <div class="output-box">
+                    <h1>Quick guide to MongoDB commands and features!</h1>
+                </div>
+            </section>
+            
+            <section id="mongodb-useful-resources">
+                <h2>45. MongoDB - Useful Resources</h2>
+                <p>Additional resources for learning MongoDB:</p>
+                <div class="code-box">
+                    <ul>
+                        <li><a href="https://www.mongodb.com/developer">MongoDB Developer Blog</a></li>
+                        <li><a href="https://www.stackoverflow.com/questions/tagged/mongodb">MongoDB StackOverflow</a></li>
+                        <li><a href="https://www.reddit.com/r/mongodb/">MongoDB Subreddit</a></li>
+                    </ul>
+                </div>
+                <div class="output-box">
+                    <h1>Explore more resources for MongoDB learning!</h1>
+                </div>
+            </section>
+            
+            <section id="mongodb-discussion">
+                <h2>46. MongoDB - Discussion</h2>
+                <p>Let's discuss MongoDB-related topics:</p>
+                <div class="code-box">
+                    <ul>
+                        <li>How MongoDB handles large-scale data storage.</li>
+                        <li>Best practices for MongoDB security and optimization.</li>
+                        <li>How to scale MongoDB for high availability and performance.</li>
+                    </ul>
+                </div>
+                <div class="output-box">
+                    <h1>Join the discussion about MongoDB!</h1>
+                </div>
+            </section>
+            <section id="mongodb-auto-increment-sequence">
+                <h2>47. MongoDB - Auto-Increment Sequence</h2>
+                <p>MongoDB does not support auto-increment by default, but you can implement it using a counter collection:</p>
+                <div class="code-box">
+                    db.counters.insert({ "_id": "userId", "seq": 0 })<br>
+                    db.myCollection.insert({ "userId": db.counters.findAndModify({ query: { _id: "userId" }, update: { $inc: { seq: 1 } }, new: true }).seq })
+                </div>
+                <div class="output-box">
+                    <h1>Document inserted with auto-increment userId.</h1>
+                </div>
+            </section>
+            
+            <section id="mongodb-useful-resources">
+                <h2>48. MongoDB Useful Resources</h2>
+                <p>Here are some useful resources to learn more about MongoDB:</p>
+                <div class="code-box">
+                    <ul>
+                        <li><a href="https://www.mongodb.com/what-is-mongodb">Official MongoDB Documentation</a></li>
+                        <li><a href="https://university.mongodb.com/">MongoDB University</a></li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">MDN JavaScript Documentation</a></li>
+                    </ul>
+                </div>
+                <div class="output-box">
+                    <h1>Explore the resources for MongoDB learning.</h1>
+                </div>
+            </section>
+            
+            <section id="mongodb-questions-and-answers">
+                <h2>49. MongoDB - Questions and Answers</h2>
+                <p>Here are some frequently asked questions about MongoDB:</p>
+                <div class="code-box">
+                    <ul>
+                        <li><strong>What is MongoDB?</strong> MongoDB is a NoSQL database that stores data in JSON-like documents.</li>
+                        <li><strong>What is the difference between MongoDB and SQL?</strong> MongoDB is schema-less, and SQL uses structured schemas.</li>
+                        <li><strong>What is a replica set?</strong> A replica set is a group of MongoDB instances that maintain the same data set.</li>
+                    </ul>
+                </div>
+                <div class="output-box">
+                    <h1>FAQs related to MongoDB answered!</h1>
+                </div>
+            </section>
+            
+            <section id="mongodb-quick-guide">
+                <h2>50. MongoDB - Quick Guide</h2>
+                <p>This quick guide covers the most important commands and features in MongoDB:</p>
+                <div class="code-box">
+                    <ul>
+                        <li>Use <code>db.createCollection()</code> to create a collection.</li>
+                        <li>Use <code>db.collection.find()</code> to query data.</li>
+                        <li>Use <code>db.collection.update()</code> to update documents.</li>
+                        <li>Use <code>db.collection.drop()</code> to delete a collection.</li>
+                    </ul>
+                </div>
+                <div class="output-box">
+                    <h1>Quick guide to MongoDB commands and features!</h1>
+                </div>
+            </section>
+            
+            <section id="mongodb-useful-resources">
+                <h2>51. MongoDB - Useful Resources</h2>
+                <p>Additional resources for learning MongoDB:</p>
+                <div class="code-box">
+                    <ul>
+                        <li><a href="https://www.mongodb.com/developer">MongoDB Developer Blog</a></li>
+                        <li><a href="https://www.stackoverflow.com/questions/tagged/mongodb">MongoDB StackOverflow</a></li>
+                        <li><a href="https://www.reddit.com/r/mongodb/">MongoDB Subreddit</a></li>
+                    </ul>
+                </div>
+                <div class="output-box">
+                    <h1>Explore more resources for MongoDB learning!</h1>
+                </div>
+            </section>
+            
+            <section id="mongodb-discussion">
+                <h2>52. MongoDB - Discussion</h2>
+                <p>Let's discuss MongoDB-related topics:</p>
+                <div class="code-box">
+                    <ul>
+                        <li>How MongoDB handles large-scale data storage.</li>
+                        <li>Best practices for MongoDB security and optimization.</li>
+                        <li>How to scale MongoDB for high availability and performance.</li>
+                    </ul>
+                </div>
+                <div class="output-box">
+                    <h1>Join the discussion about MongoDB!</h1>
+                </div>
+            </section>
+                                                                        
+       
+    </main>
+    <footer>
+        <div class="footer-container">
+          <!-- Programming Courses Links -->
+          <div class="footer-links">
+            <h3>Programming Courses</h3>
+            <ul>
+              <li><a href="#">Python</a></li>
+              <li><a href="#">JavaScript</a></li>
+              <li><a href="#">Java</a></li>
+              <li><a href="#">C++</a></li>
+              <li><a href="#">PHP</a></li>
+              <li><a href="#">Machine Learning</a></li>
+            </ul>
+          </div>
+          
+          <!-- Social Media Links -->
+          <div class="footer-social">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+    
+          <!-- Contact Information -->
+          <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <ul>
+              <li><i class="fas fa-phone"></i> 9302984613</li>
+              <li><i class="fas fa-envelope"></i><a href="mailto:codekraft1325@gmail.com">Email Us :codekraft1325@gmail.com</a>
+              </li>
+              <li><i class="fas fa-map-marker-alt"></i> katangi,balaghat(M.P)</li>
+            </ul>
+          </div>
+    
+          <!-- About Us Section -->
+          <div class="footer-about">
+            <h3>About Us</h3>
+            <p>We are a leading provider of online programming courses, helping individuals from all around the world to enhance their skills. Whether you are a beginner or an expert, we offer a wide range of courses to cater to every learning need. Our courses are designed to be interactive, fun, and easy to follow.</p>
+          </div>
+        </div>
+    
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+          <p>&copy; 2025 Online Programming Courses | All Rights Reserved</p>
+          <p ><a href="#" style="color: red;">Privacy Policy</a> | <a href="#" style="color: red;">Terms of Service</a></p>
+        </div>
+      </footer> 
+ 
+  
+    
+
+
+    <script >
+        const searchBar = document.getElementById('searchBar');
+const suggestionsBox = document.getElementById('suggestionsBox');
+const topics = [
+{ name: 'MongoDB - Home', id: 'mongodb-home' },
+{ name: 'MongoDB - Overview', id: 'mongodb-overview' },
+{ name: 'MongoDB - Advantages', id: 'mongodb-advantages' },
+{ name: 'MongoDB - Environment', id: 'mongodb-environment' },
+{ name: 'MongoDB - Data Modeling', id: 'mongodb-data-modeling' },
+{ name: 'MongoDB - Create Database', id: 'mongodb-create-database' },
+{ name: 'MongoDB Drop Database', id: 'mongodb-drop-database' },
+{ name: 'MongoDB - Create Collection', id: 'mongodb-create-collection' },
+{ name: 'MongoDB - Drop Collection', id: 'mongodb-drop-collection' },
+{ name: 'MongoDB - Data Types', id: 'mongodb-data-types' },
+{ name: 'MongoDB - Insert Document', id: 'mongodb-insert-document' },
+{ name: 'MongoDB - Query Document', id: 'mongodb-query-document' },
+{ name: 'MongoDB - Update Document', id: 'mongodb-update-document' },
+{ name: 'MongoDB - Delete Document', id: 'mongodb-delete-document' },
+{ name: 'MongoDB - Projection', id: 'mongodb-projection' },
+{ name: 'MongoDB - Limiting Records', id: 'mongodb-limiting-records' },
+{ name: 'MongoDB Sorting Records', id: 'mongodb-sorting-records' },
+{ name: 'MongoDB - Indexing', id: 'mongodb-indexing' },
+{ name: 'MongoDB - Aggregation', id: 'mongodb-aggregation' },
+{ name: 'MongoDB - Replication', id: 'mongodb-replication' },
+{ name: 'MongoDB - Sharding', id: 'mongodb-sharding' },
+{ name: 'MongoDB - Create Backup', id: 'mongodb-create-backup' },
+{ name: 'MongoDB - Deployment', id: 'mongodb-deployment' },
+{ name: 'MongoDB - Java', id: 'mongodb-java' },
+{ name: 'MongoDB - PHP', id: 'mongodb-php' },
+{ name: 'Advanced MongoDB', id: 'advanced-mongodb' },
+{ name: 'MongoDB - Relationships', id: 'mongodb-relationships' },
+{ name: 'MongoDB Database References', id: 'mongodb-database-references' },
+{ name: 'MongoDB - Covered Queries', id: 'mongodb-covered-queries' },
+{ name: 'MongoDB Analyzing Queries', id: 'mongodb-analyzing-queries' },
+{ name: 'MongoDB Atomic', id: 'mongodb-atomic' },
+{ name: 'MongoDB - Advanced Indexing', id: 'mongodb-advanced-indexing' },
+{ name: 'MongoDB - Indexing Limitations', id: 'mongodb-indexing-limitations' },
+{ name: 'MongoDB - ObjectId', id: 'mongodb-objectid' },
+{ name: 'MongoDB - Map Reduce', id: 'mongodb-map-reduce' },
+{ name: 'MongoDB - Text Search', id: 'mongodb-text-search' },
+{ name: 'MongoDB - Regular Expression', id: 'mongodb-regular-expression' },
+{ name: 'Working with Rockmongo', id: 'mongodb-rockmongo' },
+{ name: 'MongoDB - GridFS', id: 'mongodb-gridfs' },
+{ name: 'MongoDB - Capped Collections', id: 'mongodb-capped-collections' },
+{ name: 'Auto-Increment Sequence', id: 'auto-increment-sequence' },
+{ name: 'MongoDB Useful Resources', id: 'mongodb-useful-resources' },
+{ name: 'MongoDB - Questions and Answers', id: 'mongodb-questions-answers' },
+{ name: 'MongoDB - Quick Guide', id: 'mongodb-quick-guide' },
+{ name: 'MongoDB - Useful Resources', id: 'mongodb-useful-resources' },
+{ name: 'MongoDB - Discussion', id: 'mongodb-discussion' },
+
+    ];
+
+// Handle input for suggestions
+// सर्च बार के "input" इवेंट को हैंडल करना
+searchBar.addEventListener('input', function () {
+const query = searchBar.value.toLowerCase(); // यूज़र का इनपुट लोअरकेस में बदलें
+suggestionsBox.innerHTML = ''; // पहले से मौजूद सुझाव हटाएं
+
+if (query.length > 0) {
+const filteredTopics = topics.filter(topic => topic.name.toLowerCase().includes(query)); // मैच खोजें
+filteredTopics.forEach(topic => {
+    const suggestionElement = document.createElement('p'); // नया सुझाव एलीमेंट बनाएं
+    suggestionElement.textContent = topic.name; // सुझाव में टॉपिक का नाम डालें
+
+    // सुझाव पर क्लिक करने पर नेविगेशन
+    suggestionElement.addEventListener('click', () => {
+        document.getElementById(topic.id).scrollIntoView({ behavior: 'smooth' }); // संबंधित सेक्शन पर स्क्रॉल करें
+        searchBar.value = topic.name; // सर्च बार में चुना गया नाम दिखाएं
+        suggestionsBox.innerHTML = ''; // सुझाव बॉक्स को साफ करें
+    });
+
+    suggestionsBox.appendChild(suggestionElement); // सुझाव बॉक्स में सुझाव जोड़ें
+});
+}
+});
+
+// सर्च बार के "keypress" इवेंट को हैंडल करना
+searchBar.addEventListener('keypress', function (e) {
+if (e.key === 'Enter') { // यदि यूज़र "Enter" दबाता है
+const query = searchBar.value.toLowerCase();
+const match = topics.find(topic => topic.name.toLowerCase().includes(query)); // पहला मैच खोजें
+
+if (match) {
+    document.getElementById(match.id).scrollIntoView({ behavior: 'smooth' }); // संबंधित सेक्शन पर स्क्रॉल करें
+    suggestionsBox.innerHTML = ''; // सुझाव बॉक्स साफ करें
+}
+}
+});
+
+    </script>
+
+</body>
+</html>

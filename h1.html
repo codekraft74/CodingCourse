@@ -1,0 +1,2642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Title of your website -->
+        <meta name="title" content="Online Programming Learning: HTML, CSS, JavaScript, Java, MySQL, SQL and More">
+    
+        <!-- Description of the website for search engines -->
+        <meta name="description" content="Learn HTML, CSS, JavaScript, Java, MySQL, SQL, and other programming languages with real-world examples. Get hands-on coding experience, tutorials, and blogs to enhance your skills.">
+    
+        <!-- Keywords related to your content -->
+        <meta name="keywords" content="Online Learning, Programming Tutorials, HTML, CSS, JavaScript, Java, MySQL, SQL, Coding, Web Development, Real Examples, Blog">
+    
+        <!-- Author of the website -->
+        <meta name="author" content="Code kraft">
+    
+        <!-- Open Graph tags for social media sharing -->
+        <meta property="og:title" content="Online Programming Learning: HTML, CSS, JavaScript, Java, MySQL, SQL and More">
+        <meta property="og:description" content="Learn HTML, CSS, JavaScript, Java, MySQL, SQL, and other programming languages with real-world examples. Get hands-on coding experience, tutorials, and blogs.">
+        <meta property="og:image" content="img/your-image.jpg">
+        <meta property="og:url" content="URL of your website">
+    
+        <!-- Twitter Card meta tags -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Online Programming Learning: HTML, CSS, JavaScript, Java, MySQL, SQL and More">
+        <meta name="twitter:description" content="Learn HTML, CSS, JavaScript, Java, MySQL, SQL, and other programming languages with real-world examples. Get hands-on coding experience, tutorials, and blogs.">
+        <meta name="twitter:image" content="URL of an image representing your website">
+        <link rel="icon" href="img/favicon-32x32.png" type="imag/png" sizes="32x32">
+
+    </head>
+    
+    <title>HTML Programming</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">   
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #2db6d8;
+            color: #333;
+        }
+      /* Reset styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header styling */
+header {
+    padding: 10px;
+    background-color: white;
+    text-align: center;
+}
+
+/* Logo and search bar row */
+.header-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Logo और सर्च बार को अलग करने के लिए */
+    width: 100%;
+}
+
+/* Logo styling */
+.logo {
+    max-width: 70px; /* Logo का size */
+    margin-left: 10px;
+    border-radius: 50%; /* थोड़ा space देने के लिए */
+}
+
+/* Search bar styling */
+.search-container {
+    flex-grow: 1; /* सर्च बार को सेंटर में फैलाने के लिए */
+    text-align: center;
+}
+
+#searchBar {
+    width: 90%; /* Search bar की चौड़ाई */
+    max-width: 300px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: -10px;
+}
+
+/* Heading styling */
+.heading {
+    margin-top: 15px; /* Heading और logo+search bar के बीच spacing */
+    font-size: 24px;
+    color: #333;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .header-row {
+        flex-direction: row; /* Logo और search bar को row में रखने के लिए */
+    }
+
+    .logo {
+        margin-left: 0;
+    }
+
+    #searchBar {
+        width: 100%; /* मोबाइल में सर्च बार को पूरी चौड़ाई दे */
+    }
+
+    .heading {
+        font-size: 20px; /* Heading को थोड़ा छोटा करें */
+    }
+}
+.search-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+      
+.search-container input {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}     
+
+.suggestions {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 100%;
+    max-width: 300px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    color: red;
+    max-height: 200px; /* Set a max height */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+
+        
+        .suggestions p {
+            padding: 10px;
+            margin: 0;
+            cursor: pointer;
+            font-size: 0.9rem;
+          
+            
+        }
+
+        .suggestions p:hover {
+            background-color: #007BFF;
+            color: rgb(194, 29, 29);
+            
+        }
+        .he{
+            padding: 20px;
+            background-color: rgb(28, 26, 94);
+           
+        }
+        .he h1{
+            color: whitesmoke;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 40px;
+            border: 1px solid #ddd;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        section h2 {
+            color: #007BFF;
+            border-bottom: 2px solid #007BFF;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+        .code-box, .output-box {
+            background-color: #282c34;
+            color: #ffffff;
+            padding: 15px;
+            margin-top: 10px;
+            border-radius: 8px;
+            font-family: "Courier New", Courier, monospace;
+            overflow-x: auto;
+        }
+        .output-box {
+            background-color: #f9f9f9;
+            color: #333;
+            border-left: 4px solid #28a745;
+        }
+       
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: center;
+            }
+            img {
+                width: 80px;
+                margin-bottom: 15px;
+            }
+            header h1 {
+                font-size: 1.8em;
+                margin-bottom: 10px;
+            }
+            .search-container {
+                width: 100%;
+                margin-top: 10px;
+            }
+        }
+        h3{
+            color: red;
+        }
+      
+        footer {
+            background-color: #222;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+          }
+        
+          .footer-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+          }
+        
+          .footer-links, .footer-social, .footer-contact, .footer-about {
+            width: 23%;
+            padding: 10px;
+            box-sizing: border-box;
+          }
+        
+          h3 {
+            color: #fff;
+            font-size: 20px;
+            margin-bottom: 15px;
+          }
+        
+          ul {
+            list-style: none;
+            padding: 0;
+          }
+        
+          ul li {
+            margin-bottom: 10px;
+          }
+        
+          ul li a {
+            color: #bbb;
+            text-decoration: none;
+            font-size: 16px;
+          }
+        
+          ul li a:hover {
+            color: #fff;
+            text-decoration: underline;
+          }
+        
+          .social-icons a {
+            color: #bbb;
+            font-size: 30px;
+            margin: 0 15px;
+            text-decoration: none;
+          }
+        
+          .social-icons a:hover {
+            color: #fff;
+            transform: scale(1.2);
+          }
+        
+          .footer-bottom {
+            background-color: #222;
+            
+            padding: 20px 0;
+            font-size: 14px;
+          }
+          .footer-bottom p{
+            color: white;
+          }
+        
+          .footer-about p {
+            color: white;
+            font-size: 16px;
+            line-height: 1.8;
+          }
+          
+          /* Responsive Design */
+          @media screen and (max-width: 768px) {
+            .footer-container {
+              flex-direction: column;
+              align-items: center;
+            }
+        
+            .footer-links, .footer-social, .footer-contact, .footer-about {
+              width: 100%;
+              text-align: center;
+              margin-bottom: 20px;
+            }
+        }
+        
+            .social-icons a {
+              font-size: 24px;
+              margin: 0 10px;
+            }
+      
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-row">
+            <img src="img/apple-touch-icon.png" alt="Logo" class="logo">
+            <div class="search-container">
+                <input type="search" id="searchBar" placeholder="Search... HTML topic">
+                <div class="suggestions" id="suggestionsBox"></div>
+
+            </div>
+        </div>
+       
+    </header>
+
+    <div class="he">
+        <h1 class="heading">HTML Programming</h1>
+    </div>
+    <main>
+        <section id="html-introduction">
+            <h2>1. Introduction to HTML</h2>
+            <p>HTML (HyperText Markup Language) is the standard language for creating web pages. It provides the basic structure of a webpage.</p>
+            <div class="code-box">
+                &lt;!-- HTML is used to define elements like headings, paragraphs, links, images, and more. --&gt;
+            </div>
+        </section>
+        
+
+        <section id="html-editors">
+            <h2>2. HTML Editors</h2>
+            <p>HTML editors help in writing HTML code easily. Some popular editors are:</p>
+            <div class="code-box">
+                &lt;!-- You can use editors like Sublime Text, Visual Studio Code, or Notepad++ --&gt;
+            </div>
+           
+        </section>
+        
+        <section id="basic-html-structure">
+            <h2>3. Basic HTML Structure</h2>
+            <p>HTML documents have a standard structure...</p>
+            <div class="code-box" >
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html&gt;<br>
+                &nbsp;&nbsp;&lt;head&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;My Page&lt;/title&gt;<br>
+                &nbsp;&nbsp;&lt;/head&gt;<br>
+                &nbsp;&nbsp;&lt;body&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Welcome to HTML!&lt;/h1&gt;<br>
+                &nbsp;&nbsp;&lt;/body&gt;<br>
+                &lt;/html&gt;
+            </div>
+            <div class="output-box">
+                <h1>Welcome to HTML!</h1>
+            </div>
+        </section>
+        <section id="html-comments">
+            <h2>4. HTML Comments</h2>
+            <p>HTML comments are used to add notes in the code that are not visible on the page.</p>
+            <div class="code-box">
+                &lt;!-- This is a comment --&gt;
+            </div>
+           
+        </section>
+
+        <section id="html-elements">
+            <h2>5. HTML Elements</h2>
+            <p>HTML elements are the building blocks of HTML. They consist of a start tag, content, and an end tag.</p>
+            <div class="code-box">
+                &lt;div&gt;Content goes here&lt;/div&gt;<br>
+                &lt;p&gt;This is a paragraph&lt;/p&gt;
+            </div>
+            <div class="output-box">
+                <div>Content goes here</div>
+                <p>This is a paragraph</p>
+            </div>
+        </section>
+        
+
+        <section id="html-headings">
+            <h2>6. HTML Headings</h2>
+            <p>HTML supports six levels of headings, from <code>&lt;h1&gt;</code> (largest) to <code>&lt;h6&gt;</code> (smallest).</p>
+            <div class="code-box">
+                &lt;h1&gt;Heading 1&lt;/h1&gt;<br>
+                &lt;h2&gt;Heading 2&lt;/h2&gt;<br>
+                &lt;h3&gt;Heading 3&lt;/h3&gt;<br>
+                &lt;h4&gt;Heading 4&lt;/h4&gt;<br>
+                &lt;h5&gt;Heading 5&lt;/h5&gt;<br>
+                &lt;h6&gt;Heading 6&lt;/h6&gt;
+            </div>
+            <div class="output-box">
+                <h1>Heading 1</h1>
+                <h2>Heading 2</h2>
+                <h3>Heading 3</h3>
+                <h4>Heading 4</h4>
+                <h5>Heading 5</h5>
+                <h6>Heading 6</h6>
+            </div>
+        </section>
+
+        <section id="html-attributes">
+            <h2>7. HTML Attributes</h2>
+            <p>HTML attributes provide additional information about HTML elements. They are written inside the start tag.</p>
+            <div class="code-box">
+                &lt;a href="https://www.example.com"&gt;Click Here&lt;/a&gt;
+            </div>
+            <div class="output-box">
+                <a href="https://www.example.com">Click Here</a>
+            </div>
+                
+                <section id="html-attributes">
+                    <h3 >Some attributes names with examples</h3>
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th><strong>Attribute Name</strong></th>
+                                    <th><strong>Description</strong></th>
+                                    <th><strong>Example</strong></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>id</code></td>
+                                    <td>Unique identifier for an element.</td>
+                                    <td><code>&lt;div id="header"&gt;&lt;/div&gt;</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>class</code></td>
+                                    <td>Specifies one or more class names for an element (used for CSS/JS).</td>
+                                    <td><code>&lt;p class="text-bold"&gt;&lt;/p&gt;</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>style</code></td>
+                                    <td>Inline CSS styling for the element.</td>
+                                    <td><code>&lt;h1 style="color: red;"&gt;&lt;/h1&gt;</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>title</code></td>
+                                    <td>Tooltip text displayed on hover.</td>
+                                    <td><code>&lt;a title="Click here"&gt;Link&lt;/a&gt;</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>src</code></td>
+                                    <td>Specifies the source URL of an image, video, or script.</td>
+                                    <td><code>&lt;img src="image.jpg"&gt;</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>alt</code></td>
+                                    <td>Alternative text for an image when it cannot be displayed.</td>
+                                    <td><code>&lt;img src="image.jpg" alt="A tree"&gt;</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>href</code></td>
+                                    <td>Hyperlink reference URL for anchor tags.</td>
+                                    <td><code>&lt;a href="https://example.com"&gt;Visit&lt;/a&gt;</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>target</code></td>
+                                    <td>Specifies where to open the linked document (`_blank`, `_self`, etc.).</td>
+                                    <td><code>&lt;a href="#" target="_blank"&gt;&lt;/a&gt;</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>width</code></td>
+                                    <td>Width of an element (commonly images, videos, etc.).</td>
+                                    <td><code>&lt;img src="image.jpg" width="300"&gt;</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>height</code></td>
+                                    <td>Height of an element (commonly images, videos, etc.).</td>
+                                    <td><code>&lt;img src="image.jpg" height="200"&gt;</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>name</code></td>
+                                    <td>Specifies a name for the element (commonly used in forms).</td>
+                                    <td><code>&lt;input name="username"&gt;</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>value</code></td>
+                                    <td>Specifies the value of an input field, button, etc.</td>
+                                    <td><code>&lt;input type="text" value="John"&gt;</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>placeholder</code></td>
+                                    <td>Placeholder text for an input field.</td>
+                                    <td><code>&lt;input placeholder="Enter your name"&gt;</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>type</code></td>
+                                    <td>Specifies the type of input field (`text`, `password`, `email`, etc.).</td>
+                                    <td><code>&lt;input type="email"&gt;</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>readonly</code></td>
+                                    <td>Makes an input field read-only (cannot be edited).</td>
+                                    <td><code>&lt;input type="text" readonly&gt;</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>disabled</code></td>
+                                    <td>Disables an element, preventing interaction.</td>
+                                    <td><code>&lt;button disabled&gt;Click&lt;/button&gt;</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>checked</code></td>
+                                    <td>Indicates whether a checkbox or radio button is checked by default.</td>
+                                    <td><code>&lt;input type="checkbox" checked&gt;</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>multiple</code></td>
+                                    <td>Allows multiple values to be selected (commonly used with `<select>`).</td>
+                                    <td><code>&lt;select multiple&gt;&lt;/select&gt;</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>maxlength</code></td>
+                                    <td>Specifies the maximum number of characters allowed in an input field.</td>
+                                    <td><code>&lt;input type="text" maxlength="10"&gt;</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>min</code></td>
+                                    <td>Specifies the minimum value for numeric inputs.</td>
+                                    <td><code>&lt;input type="number" min="1"&gt;</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>max</code></td>
+                                    <td>Specifies the maximum value for numeric inputs.</td>
+                                    <td><code>&lt;input type="number" max="100"&gt;</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>step</code></td>
+                                    <td>Specifies the interval between valid values in numeric inputs.</td>
+                                    <td><code>&lt;input type="number" step="5"&gt;</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>autocomplete</code></td>
+                                    <td>Enables or disables autocomplete for input fields (`on` or `off`).</td>
+                                    <td><code>&lt;input autocomplete="off"&gt;</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>required</code></td>
+                                    <td>Makes an input field mandatory to fill before form submission.</td>
+                                    <td><code>&lt;input type="text" required&gt;</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>pattern</code></td>
+                                    <td>Specifies a regular expression for input validation.</td>
+                                    <td><code>&lt;input type="text" pattern="[A-Za-z]+"&gt;</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>data-* </code></td>
+                                    <td>Used to define custom data attributes for an element.</td>
+                                    <td><code>&lt;div data-role="admin"&gt;&lt;/div&gt;</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>lang</code></td>
+                                    <td>Specifies the language of the element's content.</td>
+                                    <td><code>&lt;p lang="en"&gt;Hello&lt;/p&gt;</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>dir</code></td>
+                                    <td>Specifies the text direction (`ltr`, `rtl`).</td>
+                                    <td><code>&lt;p dir="rtl"&gt;مرحباً&lt;/p&gt;</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>hidden</code></td>
+                                    <td>Hides the element from the display.</td>
+                                    <td><code>&lt;div hidden&gt;&lt;/div&gt;</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>tabindex</code></td>
+                                    <td>Specifies the tab order of an element.</td>
+                                    <td><code>&lt;button tabindex="1"&gt;&lt;/button&gt;</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>for</code></td>
+                                    <td>Specifies the associated `<label>` element's input ID.</td>
+                                    <td><code>&lt;label for="username"&gt;&lt;/label&gt;</code></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+                
+                <style>
+                    .table-container {
+                        overflow-x: auto;
+                    }
+                    table {
+                        width: 100%;
+                        border-collapse: collapse;
+                    }
+                    th, td {
+                        padding: 8px 12px;
+                        text-align: left;
+                        border: 1px solid #ddd;
+                    }
+                    th {
+                        background-color: #f4f4f4;
+                    }
+                </style>
+                
+                  
+                
+           
+
+        </section>
+        
+        <section id="html-paragraphs">
+            <h2>8. HTML Paragraphs</h2>
+            <p>HTML paragraphs are created using the &lt;p&gt; tag to define text blocks.</p>
+            <div class="code-box">
+                &lt;p&gt;This is a paragraph of text.&lt;/p&gt;
+            </div>
+            <div class="output-box">
+                <p>This is a paragraph of text.</p>
+            </div>
+        </section>
+        
+        <section id="html-styles">
+            <h2>9. HTML Styles</h2>
+            <p>You can apply CSS styles to HTML elements using the &lt;style&gt; tag.</p>
+            <div class="code-box">
+                &lt;style&gt;<br>
+                &nbsp;&nbsp;p { color: red; }<br>
+                &lt;/style&gt;<br>
+                &lt;p&gt;This text is red.&lt;/p&gt;
+            </div>
+            <div class="output-box">
+                <p style="color: red;">This text is red.</p>
+            </div>
+
+
+           
+                <p>HTML styles allow you to customize the appearance of HTML elements using CSS. You can apply styles in three ways:</p>
+                <ul>
+                    <li><strong>Inline Styles:</strong> Applied directly within an HTML element using the <code>style</code> attribute.</li>
+                    <li><strong>Internal Styles:</strong> Defined within the <code>&lt;style&gt;</code> tag in the <code>&lt;head&gt;</code> section of the HTML document.</li>
+                    <li><strong>External Styles:</strong> Linked to an HTML document using an external CSS file.</li>
+                </ul>
+            
+                <h3>1. Inline Style</h3>
+                <p>Inline styles are used to apply styles to individual elements.</p>
+                <div class="code-box">
+                    &lt;p style="color: red; font-size: 20px;"&gt;This is a red colored text with font size 20px.&lt;/p&gt;
+                </div>
+            
+                <h3>2. Internal Style</h3>
+                <p>Internal styles are defined inside the <code>&lt;style&gt;</code> tag in the HTML <code>&lt;head&gt;</code> section.</p>
+                <div class="code-box">
+                    &lt;style&gt;<br>
+                    &nbsp;&nbsp;h1 { color: blue; font-size: 30px; }<br>
+                    &lt;/style&gt;
+                </div>
+            
+                <h3>3. External Style</h3>
+                <p>External styles are defined in a separate CSS file and linked to the HTML document using the <code>&lt;link&gt;</code> tag.</p>
+                <div class="code-box">
+                    &lt;link rel="stylesheet" href="styles.css"&gt;
+                </div>
+            
+                <h3>CSS Properties</h3>
+                <p>Some commonly used CSS properties are:</p>
+                <ul>
+                    <li><code>color</code>: Changes the text color.</li>
+                    <li><code>font-size</code>: Sets the size of the font.</li>
+                    <li><code>background-color</code>: Sets the background color of an element.</li>
+                    <li><code>border</code>: Adds a border around an element.</li>
+                    <li><code>padding</code>: Sets the space between the content and the border.</li>
+                    <li><code>margin</code>: Sets the space outside the border of an element.</li>
+                </ul>
+           
+          
+            
+
+
+        </section>
+        <section id="html-formatting">
+            <h2>10. HTML Formatting</h2>
+            <p>HTML provides tags for formatting text, such as bold, italics, and underlined.</p>
+            <div class="code-box">
+                &lt;b&gt;Bold Text&lt;/b&gt;<br>
+                &lt;i&gt;Italic Text&lt;/i&gt;<br>
+                &lt;u&gt;Underlined Text&lt;/u&gt;
+            </div>
+            <div class="output-box">
+                <b>Bold Text</b><br>
+                <i>Italic Text</i><br>
+                <u>Underlined Text</u>
+            </div>
+
+<h3>Some name and examples of formatting</h3>
+           
+                <p>This table contains various HTML formatting tags, their examples, and the corresponding outputs:</p>
+            
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th><strong>Formatting Tag</strong></th>
+                                <th><strong>Example</strong></th>
+                                <th><strong>Output</strong></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>&lt;p&gt;</code> (Paragraph)</td>
+                                <td>&lt;p&gt;This is a paragraph of text.&lt;/p&gt;</td>
+                                <td>This is a paragraph of text.</td>
+                            </tr>
+                            <tr>
+                                <td><code>&lt;br&gt;</code> (Line Break)</td>
+                                <td>Line 1&lt;br&gt;Line 2</td>
+                                <td>Line 1<br>Line 2</td>
+                            </tr>
+                            <tr>
+                                <td><code>&lt;b&gt;</code> (Bold)</td>
+                                <td>&lt;b&gt;Bold Text&lt;/b&gt;</td>
+                                <td><b>Bold Text</b></td>
+                            </tr>
+                            <tr>
+                                <td><code>&lt;strong&gt;</code> (Important/Bold)</td>
+                                <td>&lt;strong&gt;Important Text&lt;/strong&gt;</td>
+                                <td><strong>Important Text</strong></td>
+                            </tr>
+                            <tr>
+                                <td><code>&lt;i&gt;</code> (Italic)</td>
+                                <td>&lt;i&gt;Italic Text&lt;/i&gt;</td>
+                                <td><i>Italic Text</i></td>
+                            </tr>
+                            <tr>
+                                <td><code>&lt;em&gt;</code> (Emphasis/Italic)</td>
+                                <td>&lt;em&gt;Emphasized Text&lt;/em&gt;</td>
+                                <td><em>Emphasized Text</em></td>
+                            </tr>
+                            <tr>
+                                <td><code>&lt;u&gt;</code> (Underline)</td>
+                                <td>&lt;u&gt;Underlined Text&lt;/u&gt;</td>
+                                <td><u>Underlined Text</u></td>
+                            </tr>
+                            <tr>
+                                <td><code>&lt;s&gt;</code> (Strike-through)</td>
+                                <td>&lt;s&gt;Strikethrough Text&lt;/s&gt;</td>
+                                <td><s>Strikethrough Text</s></td>
+                            </tr>
+                            <tr>
+                                <td><code>&lt;q&gt;</code> (Inline Quotation)</td>
+                                <td>&lt;q&gt;This is a short quote.&lt;/q&gt;</td>
+                                <td><q>This is a short quote.</q></td>
+                            </tr>
+                            <tr>
+                                <td><code>&lt;blockquote&gt;</code> (Block-level Quotation)</td>
+                                <td>&lt;blockquote&gt;This is a longer quote.&lt;/blockquote&gt;</td>
+                                <td><blockquote>This is a longer quote.</blockquote></td>
+                            </tr>
+                            <tr>
+                                <td><code>&lt;mark&gt;</code> (Highlighted Text)</td>
+                                <td>&lt;mark&gt;Highlighted Text&lt;/mark&gt;</td>
+                                <td><mark>Highlighted Text</mark></td>
+                            </tr>
+                            <tr>
+                                <td><code>&lt;del&gt;</code> (Deleted Text)</td>
+                                <td>&lt;del&gt;Deleted Text&lt;/del&gt;</td>
+                                <td><del>Deleted Text</del></td>
+                            </tr>
+                            <tr>
+                                <td><code>&lt;ins&gt;</code> (Inserted Text)</td>
+                                <td>&lt;ins&gt;Inserted Text&lt;/ins&gt;</td>
+                                <td><ins>Inserted Text</ins></td>
+                            </tr>
+                            <tr>
+                                <td><code>&lt;small&gt;</code> (Smaller Text)</td>
+                                <td>&lt;small&gt;Smaller Text&lt;/small&gt;</td>
+                                <td><small>Smaller Text</small></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+           
+            <style>
+                .table-container {
+                    overflow-x: auto;
+                    max-width: 100%;
+                }
+                table {
+                    width: 100%;
+                    border-collapse: collapse;
+                }
+                th, td {
+                    padding: 10px;
+                    text-align: left;
+                    border: 1px solid #ddd;
+                }
+                th {
+                    background-color: #f4f4f4;
+                }
+            </style>
+            
+
+        </section>
+        <section id="html-quotations">
+            <h2>11. HTML Quotations</h2>
+            <p>HTML supports blockquotes for long quotes and inline quotes for short quotes.</p>
+            <div class="code-box">
+                &lt;blockquote&gt;This is a blockquote.&lt;/blockquote&gt;<br>
+                &lt;q&gt;This is an inline quote.&lt;/q&gt;
+            </div>
+            <div class="output-box">
+                <blockquote>This is a blockquote.</blockquote><br>
+                <q>This is an inline quote.</q>
+            </div>
+        </section>
+       
+        <section id="html-colors">
+            <h2>12. HTML Colors</h2>
+            <p>HTML allows you to define colors using names, hexadecimal, or RGB values.</p>
+            <div class="code-box">
+                &lt;body style="background-color: lightblue;"&gt;<br>
+                &nbsp;&nbsp;&lt;p&gt;This page has a light blue background.&lt;/p&gt;<br>
+                &lt;/body&gt;
+            </div>
+            <div class="output-box" style="background-color: lightblue;">
+                <p>This page has a light blue background.</p>
+            </div>
+           
+               
+                <p>In HTML, colors can be applied using various methods such as color names, hex codes, RGB values, and more. Below are the most common ways to use colors in HTML:</p>
+            
+                <h3>1. Color Name</h3>
+                <p>You can use predefined color names in HTML. These are simple and easy to remember.</p>
+                <div class="code-box">
+                    &lt;p style="color: red;"&gt;This text is red.&lt;/p&gt;
+                </div>
+                <p>Output:</p>
+                <p style="color: red;">This text is red.</p>
+            
+                <h3>2. Hexadecimal Color Code</h3>
+                <p>Hex codes are a combination of six digits and letters used to represent colors. The format is <code>#RRGGBB</code>.</p>
+                <div class="code-box">
+                    &lt;p style="color: #00FF00;"&gt;This text is green.&lt;/p&gt;
+                </div>
+                <p>Output:</p>
+                <p style="color: #00FF00;">This text is green.</p>
+            
+                <h3>3. RGB Color</h3>
+                <p>RGB (Red, Green, Blue) defines the intensity of red, green, and blue components in a color. The format is <code>rgb(R, G, B)</code>, where R, G, and B are values from 0 to 255.</p>
+                <div class="code-box">
+                    &lt;p style="color: rgb(0, 0, 255);"&gt;This text is blue.&lt;/p&gt;
+                </div>
+                <p>Output:</p>
+                <p style="color: rgb(0, 0, 255);">This text is blue.</p>
+            
+                <h3>4. RGBA Color</h3>
+                <p>RGBA is similar to RGB but includes an additional <strong>alpha</strong> value, which defines the opacity of the color. The format is <code>rgba(R, G, B, A)</code>, where A is the opacity (from 0 to 1).</p>
+                <div class="code-box">
+                    &lt;p style="color: rgba(255, 0, 0, 0.5);"&gt;This text is semi-transparent red.&lt;/p&gt;
+                </div>
+                <p>Output:</p>
+                <p style="color: rgba(255, 0, 0, 0.5);">This text is semi-transparent red.</p>
+            
+                <h3>5. HSL Color</h3>
+                <p>HSL stands for Hue, Saturation, and Lightness. The format is <code>hsl(H, S%, L%)</code>, where H is the color's hue (0 to 360), S is saturation (0% to 100%), and L is lightness (0% to 100%).</p>
+                <div class="code-box">
+                    &lt;p style="color: hsl(120, 100%, 50%);"&gt;This text is green.&lt;/p&gt;
+                </div>
+                <p>Output:</p>
+                <p style="color: hsl(120, 100%, 50%);">This text is green.</p>
+            </section>
+            
+           
+            
+        </section>
+        <section id="html-css">
+            <h2>13. HTML CSS</h2>
+            <p>CSS can be applied to HTML elements to style them. You can use inline, internal, or external CSS.</p>
+            <div class="code-box">
+                &lt;style&gt;<br>
+                &nbsp;&nbsp;p { color: green; }<br>
+                &lt;/style&gt;<br>
+                &lt;p&gt;This text is green.&lt;/p&gt;
+            </div>
+            <div class="output-box" style="color: green;">
+                <p>This text is green.</p>
+            </div>
+        </section>
+        <section id="html-links">
+            <h2>14. HTML Links</h2>
+            <p>Links in HTML are created using the &lt;a&gt; tag. They allow users to navigate between pages.</p>
+            <div class="code-box">
+                &lt;a href="https://www.example.com"&gt;Go to Example&lt;/a&gt;
+            </div>
+            <div class="output-box">
+                <a href="https://www.example.com">Go to Example</a>
+            </div>
+           
+           
+                <h3>HTML Links with Real-Life Examples</h3>
+                <p>In real life, HTML links can be used for various purposes such as sending emails, calling phone numbers, or navigating to websites. Below are a few practical examples of links:</p>
+            
+                <h3>1. Email Link</h3>
+                <p>This link will open the user's default email client and create a new email to the specified address.</p>
+                <div class="code-box">
+                    &lt;a href="mailto:example@example.com"&gt;Send an email to Example&lt;/a&gt;
+                </div>
+                <p>Output:</p>
+                <div>
+                    <a href="mailto:example@example.com">Send an email to Example</a>
+                </div>
+            
+                <h3>2. Phone Number Link</h3>
+                <p>This link will allow users to dial a phone number directly from a mobile device or supported browser.</p>
+                <div class="code-box">
+                    &lt;a href="tel:+1234567890"&gt;Call Us at +1 (234) 567-890&lt;/a&gt;
+                </div>
+                <p>Output:</p>
+                <div>
+                    <a href="tel:+1234567890">Call Us at +1 (234) 567-890</a>
+                </div>
+            
+                <h3>3. Link to a Website</h3>
+                <p>This is a simple link to navigate to an external website.</p>
+                <div class="code-box">
+                    &lt;a href="https://www.example.com"&gt;Visit Example.com&lt;/a&gt;
+                </div>
+                <p>Output:</p>
+                <div>
+                    <a href="https://www.example.com" target="_blank">Visit Example.com</a>
+                </div>
+            
+                <h3>4. Link to a File (PDF)</h3>
+                <p>This link will allow users to download or view a PDF file from the web.</p>
+                <div class="code-box">
+                    &lt;a href="files/guide.pdf" download&gt;Download the Guide (PDF)&lt;/a&gt;
+                </div>
+                <p>Output:</p>
+                <div>
+                    <a href="files/guide.pdf" download>Download the Guide (PDF)</a>
+                </div>
+            
+                <h3>5. Link to Social Media</h3>
+                <p>This is a link to a social media platform like Twitter.</p>
+                <div class="code-box">
+                    &lt;a href="https://twitter.com/username" target="_blank"&gt;Follow us on Twitter&lt;/a&gt;
+                </div>
+                <p>Output:</p>
+                <div>
+                    <a href="https://twitter.com/username" target="_blank">Follow us on Twitter</a>
+                </div>
+            
+                <h3>6. Link to a Map Location (Google Maps)</h3>
+                <p>This link opens a location on Google Maps.</p>
+                <div class="code-box">
+                    &lt;a href="https://www.google.com/maps?q=37.7749,-122.4194" target="_blank"&gt;View Location on Google Maps&lt;/a&gt;
+                </div>
+                <p>Output:</p>
+                <div>
+                    <a href="https://www.google.com/maps?q=37.7749,-122.4194" target="_blank">View Location on Google Maps</a>
+                </div>
+            
+           
+        </section>
+        <section id="html-images">
+            <h2>15. HTML Images</h2>
+            <p>Images can be added in HTML using the &lt;img&gt; tag. The source is provided using the "src" attribute.</p>
+            <div class="code-box">
+                &lt;img src="image.jpg" alt="Description"&gt;
+            </div>
+            <div class="output-box">
+                <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+            </div>
+
+          
+        </section>
+        <section id="html-favicon">
+            <h2>16. HTML Favicon</h2>
+            <p>Favicon is a small icon displayed in the browser tab. It can be set using the &lt;link&gt; tag in the &lt;head&gt; section.</p>
+            <div class="code-box">
+                &lt;link rel="icon" href="favicon.ico"&gt;
+            </div>
+           
+        </section>
+        <section id="html-page-title">
+            <h2>17. HTML Page Title</h2>
+            <p>The title of an HTML page is defined using the &lt;title&gt; tag inside the &lt;head&gt; section.</p>
+            <div class="code-box">
+                &lt;title&gt;My Awesome Page&lt;/title&gt;
+            </div>
+           
+        </section>
+        <section id="html-tables">
+            <h2>18. HTML Tables</h2>
+            <p>HTML tables are used to display data in a tabular format using the &lt;table&gt;, &lt;tr&gt;, &lt;td&gt;, and &lt;th&gt; tags.</p>
+            <div class="code-box">
+                &lt;table&gt;<br>
+                &nbsp;&nbsp;&lt;tr&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Header 1&lt;/th&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Header 2&lt;/th&gt;<br>
+                &nbsp;&nbsp;&lt;/tr&gt;<br>
+                &nbsp;&nbsp;&lt;tr&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Data 1&lt;/td&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Data 2&lt;/td&gt;<br>
+                &nbsp;&nbsp;&lt;/tr&gt;<br>
+                &lt;/table&gt;
+            </div>
+            <div class="output-box">
+                <table border="1">
+                    <tr>
+                        <th>Header 1</th>
+                        <th>Header 2</th>
+                    </tr>
+                    <tr>
+                        <td>Data 1</td>
+                        <td>Data 2</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+                                                                      
+
+        <section id="html-lists">
+            <h2>19. HTML Lists</h2>
+            <p>You can create ordered (<code>&lt;ol&gt;</code>) and unordered (<code>&lt;ul&gt;</code>) lists:</p>
+            <div class="code-box">
+                &lt;ul&gt;<br>
+                &nbsp;&nbsp;&lt;li&gt;Item 1&lt;/li&gt;<br>
+                &nbsp;&nbsp;&lt;li&gt;Item 2&lt;/li&gt;<br>
+                &nbsp;&nbsp;&lt;li&gt;Item 3&lt;/li&gt;<br>
+                &lt;/ul&gt;<br>
+                &lt;ol&gt;<br>
+                &nbsp;&nbsp;&lt;li&gt;First&lt;/li&gt;<br>
+                &nbsp;&nbsp;&lt;li&gt;Second&lt;/li&gt;<br>
+                &nbsp;&nbsp;&lt;li&gt;Third&lt;/li&gt;<br>
+                &lt;/ol&gt;
+            </div>
+            <div class="output-box">
+                <ul>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ul>
+                <ol>
+                    <li>First</li>
+                    <li>Second</li>
+                    <li>Third</li>
+                </ol>
+            </div>
+        </section>
+        <section id="html-block-inline">
+            <h2>20. HTML Block & Inline</h2>
+            <p>Block elements take up the full width, whereas inline elements take up only the space required by their content.</p>
+            <div class="code-box">
+                &lt;div&gt;This is a block element&lt;/div&gt;<br>
+                &lt;span&gt;This is an inline element&lt;/span&gt;
+            </div>
+            <div class="output-box">
+                <div>This is a block element</div>
+                <span>This is an inline element</span>
+            </div>
+        </section>
+       
+        <section id="html-classes">
+            <h2>21. HTML Classes</h2>
+            <p>Classes are used to group multiple elements with the same styling. You can apply a class to an element using the class attribute.</p>
+            <div class="code-box">
+                &lt;div class="box"&gt;This is a div with a class.&lt;/div&gt;
+            </div>
+            <div class="output-box">
+                <div class="box">This is a div with a class.</div>
+            </div>
+        </section>
+        <section id="html-id">
+            <h2>22. HTML Id</h2>
+            <p>The id attribute is used to identify a unique element on the page. It must be unique within the page.</p>
+            <div class="code-box">
+                &lt;div id="unique"&gt;This is a div with an id.&lt;/div&gt;
+            </div>
+            <div class="output-box">
+                <div id="unique">This is a div with an id.</div>
+            </div>
+        </section>
+        <section id="html-iframes">
+            <h2>23. HTML Iframes</h2>
+            <p>Iframes allow you to embed another HTML document inside the current document.</p>
+            <div class="code-box">
+                &lt;iframe src="https://www.example.com"&gt;&lt;/iframe&gt;
+            </div>
+            <div class="output-box">
+                <iframe src="https://www.example.com" width="300" height="200"></iframe>
+            </div>
+            
+            
+               <h3>some real life example</h3>
+                <p>An iframe is used to embed another document (like a web page) within the current page. Below is a responsive example of an iframe:</p>
+            
+            
+                <h3>1. Iframe with YouTube Video (Responsive)</h3>
+                <p>This example demonstrates embedding a YouTube video inside a responsive iframe.</p>
+            
+                <div class="code-box">
+                    &lt;div class="iframe-container"&gt;<br>
+                    &nbsp;&nbsp;&lt;iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;<br>
+                    &lt;/div&gt;
+                </div>
+            
+                <p>Output:</p>
+                <div class="iframe-container">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+           
+                <h3>1. Google Maps (Responsive)</h3>
+                <p>This iframe embeds a Google Map with a specified location. It's responsive to screen size and mobile-friendly.</p>
+                
+                <div class="code-box">
+                    &lt;div class="iframe-container"&gt;<br>
+                    &nbsp;&nbsp;&lt;iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.689597548209!2d-122.41941548468197!3d37.77492977975981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808dcd1ffebd%3A0x2ed9825d28399db2!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1611119021000!5m2!1sen!2sus" frameborder="0"&gt;&lt;/iframe&gt;<br>
+                    &lt;/div&gt;
+                </div>
+            
+                <p>Output:</p>
+                <div class="iframe-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.689597548209!2d-122.41941548468197!3d37.77492977975981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808dcd1ffebd%3A0x2ed9825d28399db2!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1611119021000!5m2!1sen!2sus" frameborder="0"></iframe>
+                </div>
+            
+                <h3>2. Twitter Feed (Responsive)</h3>
+                <p>Embed a Twitter feed with this responsive iframe example:</p>
+                
+                <div class="code-box">
+                    &lt;div class="iframe-container"&gt;<br>
+                    &nbsp;&nbsp;&lt;iframe src="https://platform.twitter.com/widgets/tweet_button.html?size=l&text=Check%20out%20this%20tweet%20embed&url=https%3A%2F%2Ftwitter.com%2Ftwitterapi%2Fstatus%2F1000000000" frameborder="0"&gt;&lt;/iframe&gt;<br>
+                    &lt;/div&gt;
+                </div>
+            
+                <p>Output:</p>
+                <div class="iframe-container">
+                    <iframe src="https://platform.twitter.com/widgets/tweet_button.html?size=l&text=Check%20out%20this%20tweet%20embed&url=https%3A%2F%2Ftwitter.com%2Ftwitterapi%2Fstatus%2F1000000000" frameborder="0"></iframe>
+                </div>
+            
+                <h3>3. Vimeo Video (Responsive)</h3>
+                <p>Embed a Vimeo video in a responsive iframe:</p>
+                
+                <div class="code-box">
+                    &lt;div class="iframe-container"&gt;<br>
+                    &nbsp;&nbsp;&lt;iframe src="https://player.vimeo.com/video/76979871" frameborder="0" allow="autoplay; fullscreen" allowfullscreen&gt;&lt;/iframe&gt;<br>
+                    &lt;/div&gt;
+                </div>
+            
+                <p>Output:</p>
+                <div class="iframe-container">
+                    <iframe src="https://player.vimeo.com/video/76979871" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                </div>
+            
+                <h3>4. Instagram Post (Responsive)</h3>
+                <p>Embed an Instagram post using a responsive iframe:</p>
+                
+                <div class="code-box">
+                    &lt;div class="iframe-container"&gt;<br>
+                    &nbsp;&nbsp;&lt;iframe src="https://www.instagram.com/p/CJGH1QJlfYm/embed" frameborder="0"&gt;&lt;/iframe&gt;<br>
+                    &lt;/div&gt;
+                </div>
+            
+                <p>Output:</p>
+                <div class="iframe-container">
+                    <iframe src="https://www.instagram.com/p/CJGH1QJlfYm/embed" frameborder="0"></iframe>
+                </div>
+            
+            <style>
+                /* Style for iframe container */
+                .iframe-container {
+                    position: relative;
+                    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+                    height: 0;
+                    overflow: hidden;
+                    max-width: 100%;
+                    background: #000;
+                }
+            
+                /* Style for iframe to make it responsive */
+                .iframe-container iframe {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+            
+             
+            </style>
+            
+           
+            
+    
+        </section>
+        <section id="html-javascript">
+            <h2>24. HTML JavaScript</h2>
+            <p>JavaScript can be included in HTML to make the page interactive.</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;alert('Hello, World!');<br>
+                &lt;/script&gt;
+            </div>
+          
+        </section>
+        <section id="html-file-paths">
+            <h2>25. HTML File Paths</h2>
+            <p>File paths are used to link to files in a web page, and they can be either relative or absolute.</p>
+            <div class="code-box">
+                &lt;a href="images/photo.jpg"&gt;Click to view image&lt;/a&gt;
+            </div>
+            <div class="output-box">
+                <a href="https://via.placeholder.com/150">Click to view image</a>
+            </div>
+        </section>
+        <section id="html-head">
+            <h2>26. HTML Head</h2>
+            <p>The &lt;head&gt; section contains metadata, links to external files, and other resources for the page.</p>
+            <div class="code-box">
+                &lt;head&gt;<br>
+                &nbsp;&nbsp;&lt;title&gt;My Web Page&lt;/title&gt;<br>
+                &lt;/head&gt;
+            </div>
+            
+        </section>
+        <section id="html-layout">
+            <h2>27. HTML Layout</h2>
+            <p>HTML layout defines the structure of a webpage, often divided into header, navigation, content, and footer.</p>
+            <div class="code-box">
+                &lt;header&gt;Header Content&lt;/header&gt;<br>
+                &lt;nav&gt;Navigation Links&lt;/nav&gt;<br>
+                &lt;main&gt;Main Content&lt;/main&gt;<br>
+                &lt;footer&gt;Footer Content&lt;/footer&gt;
+            </div>
+            <div class="output-box">
+                <header>Header Content</header>
+                <nav>Navigation Links</nav>
+                <main>Main Content</main>
+                <footer>Footer Content</footer>
+            </div>
+        </section>
+        <section id="html-responsive">
+            <h2>28. HTML Responsive</h2>
+            <p>Responsive design ensures the webpage adapts to different screen sizes using CSS media queries.</p>
+            <div class="code-box">
+                &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+            </div>
+          
+        </section>
+        <section id="html-computercode">
+            <h2>29. HTML Computercode</h2>
+            <p>To display computer code in a readable format, use the &lt;pre&gt; tag, which preserves whitespace and line breaks.</p>
+            <div class="code-box">
+                &lt;pre&gt;let x = 10;<br>console.log(x);&lt;/pre&gt;
+            </div>
+            <div class="output-box">
+                <pre>let x = 10;
+        console.log(x);</pre>
+            </div>
+        </section>
+        <section id="html-semantics">
+            <h2>30. HTML Semantics</h2>
+            <p>Semantic HTML tags provide meaning to the web page and improve accessibility and SEO.</p>
+            <div class="code-box">
+                &lt;article&gt;Article Content&lt;/article&gt;<br>
+                &lt;section&gt;Section Content&lt;/section&gt;
+            </div>
+            <div class="output-box">
+                <article>Article Content</article>
+                <section>Section Content</section>
+            </div>
+        </section>
+        <section id="html-style-guide">
+            <h2>31. HTML Style Guide</h2>
+            <p>Following a style guide ensures consistency and best practices in HTML code.</p>
+            <div class="code-box">
+                &lt;!-- Always indent your code and use meaningful tag names --&gt;
+            </div>
+            
+        </section>
+        <section id="html-entities">
+            <h2>32. HTML Entities</h2>
+            <p>HTML entities are used to represent special characters that can't be typed directly in HTML.</p>
+            <div class="code-box">
+                &amp; &lt; &gt; &quot; &copy;
+            </div>
+            <div class="output-box">
+                &amp; &lt; &gt; &quot; &copy;
+            </div>
+        </section>
+        <section id="html-symbols">
+            <h2>33. HTML Symbols</h2>
+            <p>HTML symbols are used to display characters that are not part of the standard character set.</p>
+            <div class="code-box">
+                &lt;div&gt;&amp;#9733;&lt;/div&gt;
+            </div>
+            <div class="output-box">
+                <div>&#9733;</div>
+            </div>
+        </section>
+        <section id="html-emojis">
+            <h2>34. HTML Emojis</h2>
+            <p>HTML supports emojis by using Unicode or by directly typing emoji characters.</p>
+            <div class="code-box">
+                &lt;p&gt;&#128512; Smiling Face&lt;/p&gt;
+            </div>
+            <div class="output-box">
+                <p>&#128512; Smiling Face</p>
+            </div>
+        </section>
+        <section id="html-charsets">
+            <h2>35. HTML Charsets</h2>
+            <p>Character sets (charsets) define the encoding used for the document's characters. The most common charset is UTF-8.</p>
+            <div class="code-box">
+                &lt;meta charset="UTF-8"&gt;
+            </div>
+           
+        </section>
+        <section id="html-url-encode">
+            <h2>36. HTML URL Encode</h2>
+            <p>URL encoding converts characters into a valid URL format.</p>
+            <div class="code-box">
+                &lt;a href="https://example.com?name=John&amp;age=25"&gt;Click Here&lt;/a&gt;
+            </div>
+            <div class="output-box">
+                <a href="https://example.com?name=John&amp;age=25">Click Here</a>
+            </div>
+        </section>
+        <section id="html-vs-xhtml">
+            <h2>37. HTML vs. XHTML</h2>
+            <p>HTML is a loose standard, whereas XHTML is stricter and requires all tags to be closed and case-sensitive.</p>
+            <div class="code-box">
+                &lt;html&gt; (HTML)<br>
+                &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt; (XHTML)
+            </div>
+          
+        </section>
+        
+        <section id="html-forms">
+            <h2>38. HTML Forms</h2>
+            <p>Forms are used to collect user input. The data is sent to a server for processing.</p>
+            <div class="code-box">
+                &lt;form action="/submit" method="POST"&gt;<br>
+                &nbsp;&nbsp;&lt;input type="text" name="name"&gt;<br>
+                &nbsp;&nbsp;&lt;input type="submit" value="Submit"&gt;<br>
+                &lt;/form&gt;
+            </div>
+            <div class="output-box">
+                <form action="/submit" method="POST">
+                    <input type="text" name="name">
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </section>
+        <section id="html-form-attributes">
+            <h2>39. HTML Form Attributes</h2>
+            <p>Form elements can include various attributes such as action, method, target, and name.</p>
+            <div class="code-box">
+                &lt;form action="submit.php" method="POST" target="_blank"&gt;<br>
+                &nbsp;&nbsp;&lt;input type="text" name="name"&gt;<br>
+                &nbsp;&nbsp;&lt;input type="submit" value="Submit"&gt;<br>
+                &lt;/form&gt;
+            </div>
+            <div class="output-box">
+                <form action="submit.php" method="POST" target="_blank">
+                    <input type="text" name="name">
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </section>
+        <section id="html-form-elements">
+            <h2>40. HTML Form Elements</h2>
+            <p>HTML form elements include inputs, selects, textareas, and more to gather user input.</p>
+            <div class="code-box">
+                &lt;form&gt;<br>
+                &nbsp;&nbsp;&lt;input type="text"&gt;<br>
+                &nbsp;&nbsp;&lt;textarea&gt;Enter your message&lt;/textarea&gt;<br>
+                &nbsp;&nbsp;&lt;select&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;Option 1&lt;/option&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;Option 2&lt;/option&gt;<br>
+                &nbsp;&nbsp;&lt;/select&gt;<br>
+                &lt;/form&gt;
+            </div>
+            <div class="output-box">
+                <form>
+                    <input type="text">
+                    <textarea>Enter your message</textarea>
+                    <select>
+                        <option>Option 1</option>
+                        <option>Option 2</option>
+                    </select>
+                </form>
+            </div>
+        </section>
+        <section id="html-input-types">
+            <h2>41. HTML Input Types</h2>
+            <p>Different types of inputs, such as text, password, email, etc., define the behavior of form fields.</p>
+            
+            <div class="code-box">
+                &lt;input type="text"&gt;<br>
+                &lt;input type="password"&gt;<br>
+                &lt;input type="email"&gt;<br>
+                &lt;input type="number"&gt;<br>
+                &lt;input type="date"&gt;<br>
+                &lt;input type="color"&gt;<br>
+                &lt;input type="tel"&gt;<br>
+                &lt;input type="file"&gt;<br>
+                &lt;input type="radio"&gt;<br>
+                &lt;input type="checkbox"&gt;<br>
+                &lt;input type="range"&gt;<br>
+                &lt;input type="submit"&gt;
+            </div>
+        
+            <div class="output-box">
+                <input type="text" placeholder="Text Input"><br>
+                <input type="password" placeholder="Password Input"><br>
+                <input type="email" placeholder="Email Input"><br>
+                <input type="number" placeholder="Number Input"><br>
+                <input type="date" placeholder="Date Input"><br>
+                <input type="color" placeholder="Choose Color"><br>
+                <input type="tel" placeholder="Phone Number"><br>
+                <input type="file"><br>
+                <input type="radio" name="gender" value="male"> Male
+                <input type="radio" name="gender" value="female"> Female<br>
+                <input type="checkbox" value="subscribe"> Subscribe to Newsletter<br>
+                <input type="range" min="1" max="100" value="50"><br>
+                <input type="submit" value="Submit">
+            </div>
+        </section>
+        
+        <section id="html-input-attributes">
+            <h2>42. HTML Input Attributes</h2>
+            <p>Input elements support various attributes such as placeholder, value, required, and more.</p>
+            
+            <div class="code-box">
+                &lt;input type="text" placeholder="Enter name"&gt;<br>
+                &lt;input type="text" value="John"&gt;<br>
+                &lt;input type="text" required&gt;<br>
+                &lt;input type="text" maxlength="10"&gt;<br>
+                &lt;input type="text" minlength="5"&gt;<br>
+                &lt;input type="text" disabled&gt;<br>
+                &lt;input type="text" readonly&gt;<br>
+                &lt;input type="text" autofocus&gt;<br>
+                &lt;input type="text" pattern="[A-Za-z]+"&gt;<br>
+                &lt;input type="text" size="20"&gt;<br>
+                &lt;input type="text" tabindex="1"&gt;<br>
+                &lt;input type="text" name="username"&gt;
+            </div>
+        
+            <div class="output-box">
+                <input type="text" placeholder="Enter name">
+                <input type="text" value="John">
+                <input type="text" required>
+                <input type="text" maxlength="10" placeholder="Max 10 characters">
+                <input type="text" minlength="5" placeholder="Min 5 characters">
+                <input type="text" disabled placeholder="Disabled Input">
+                <input type="text" readonly value="Read-only input">
+                <input type="text" autofocus placeholder="Autofocus input">
+                <input type="text" pattern="[A-Za-z]+" placeholder="Only letters">
+                <input type="text" size="20" placeholder="Size 20">
+                <input type="text" tabindex="1" placeholder="Tab index 1">
+                <input type="text" name="username" placeholder="Username">
+            </div>
+        </section>
+        
+        <section id="input-form-attributes">
+            <h2>43. Input Form Attributes</h2>
+            <p>Input elements can also have attributes like disabled, readonly, autofocus, and more.</p>
+        
+            <div class="code-box">
+                &lt;input type="text" disabled&gt;<br>
+                &lt;input type="text" readonly&gt;<br>
+                &lt;input type="text" autofocus&gt;<br>
+                &lt;input type="text" required&gt;<br>
+                &lt;input type="text" placeholder="Enter text"&gt;<br>
+                &lt;input type="text" maxlength="15"&gt;<br>
+                &lt;input type="text" size="25"&gt;<br>
+                &lt;input type="text" pattern="[A-Za-z]{5,15}"&gt;<br>
+                &lt;input type="text" name="username"&gt;<br>
+                &lt;input type="text" value="Default Text"&gt;
+            </div>
+        
+            <div class="output-box">
+                <input type="text" disabled placeholder="Disabled Input">
+                <input type="text" readonly value="Read-only Input">
+                <input type="text" autofocus placeholder="This input is focused automatically">
+                <input type="text" required placeholder="This field is required">
+                <input type="text" placeholder="Enter text" maxlength="15">
+                <input type="text" placeholder="Size 25" size="25">
+                <input type="text" pattern="[A-Za-z]{5,15}" placeholder="Only letters, 5-15 characters">
+                <input type="text" name="username" placeholder="Enter username">
+                <input type="text" value="Default Text">
+            </div>
+        </section>
+        
+        <section id="html-graphics">
+            <h2>44. HTML Graphics</h2>
+            <p>HTML provides support for graphics using elements like &lt;canvas&gt; and &lt;svg&gt;.</p>
+            <div class="code-box">
+                &lt;canvas width="200" height="200"&gt;&lt;/canvas&gt;<br>
+                &lt;svg width="100" height="100"&gt;<br>
+                &nbsp;&nbsp;&lt;circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red"&gt;&lt;/circle&gt;<br>
+                &lt;/svg&gt;
+            </div>
+            <div class="output-box">
+                <canvas width="200" height="200"></canvas>
+                <svg width="100" height="100">
+                    <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red"></circle>
+                </svg>
+            </div>
+        </section>
+        <section id="html-canvas">
+            <h2>45. HTML Canvas</h2>
+            <p>The &lt;canvas&gt; element is used to draw graphics via JavaScript.</p>
+            <div class="code-box">
+                &lt;canvas id="myCanvas" width="200" height="200"&gt;&lt;/canvas&gt;<br>
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;var canvas = document.getElementById("myCanvas");<br>
+                &nbsp;&nbsp;var ctx = canvas.getContext("2d");<br>
+                &nbsp;&nbsp;ctx.fillStyle = "red";<br>
+                &nbsp;&nbsp;ctx.fillRect(20, 20, 150, 100);<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <canvas id="myCanvas" width="200" height="200"></canvas>
+                <script>
+                    var canvas = document.getElementById("myCanvas");
+                    var ctx = canvas.getContext("2d");
+                    ctx.fillStyle = "red";
+                    ctx.fillRect(20, 20, 150, 100);
+                </script>
+            </div>
+        </section>
+        <section id="html-svg">
+            <h2>46. HTML SVG</h2>
+            <p>Scalable Vector Graphics (SVG) allows you to define vector-based graphics in XML format.</p>
+            <div class="code-box">
+                &lt;svg width="100" height="100"&gt;<br>
+                &nbsp;&nbsp;&lt;circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red"&gt;&lt;/circle&gt;<br>
+                &lt;/svg&gt;
+            </div>
+            <div class="output-box">
+                <svg width="100" height="100">
+                    <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red"></circle>
+                </svg>
+            </div>
+        </section>
+          
+        <section id="html-media">
+            <h2>47. HTML Media</h2>
+            <p>The &lt;audio&gt; and &lt;video&gt; elements in HTML allow you to embed multimedia such as audio and video files directly into a webpage. These elements provide a user-friendly interface for media playback without the need for third-party plugins.</p>
+        
+            <div class="code-box">
+                &lt;audio controls&gt;<br>
+                &nbsp;&nbsp;&lt;source src="audio.mp3" type="audio/mpeg"&gt;<br>
+                &nbsp;&nbsp;Your browser does not support the audio element.<br>
+                &lt;/audio&gt;<br><br>
+                
+                &lt;video width="320" height="240" controls&gt;<br>
+                &nbsp;&nbsp;&lt;source src="movie.mp4" type="video/mp4"&gt;<br>
+                &nbsp;&nbsp;Your browser does not support the video element.<br>
+                &lt;/video&gt;
+            </div>
+            
+            <div class="output-box">
+                <!-- HTML Audio Example -->
+                <audio controls>
+                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio><br><br>
+                
+                <!-- HTML Video Example -->
+                <video width="320" height="240" controls>
+                    <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+                    Your browser does not support the video element.
+                </video>
+            </div>
+        
+            <h3>1. HTML Audio Element</h3>
+            <p>The &lt;audio&gt; element is used to embed audio files in a webpage. You can control the playback with attributes like <code>controls</code>, <code>autoplay</code>, and <code>loop</code>.</p>
+            
+            <div class="code-box">
+                &lt;audio controls&gt;<br>
+                &nbsp;&nbsp;&lt;source src="audio-file.mp3" type="audio/mp3"&gt;<br>
+                &nbsp;&nbsp;&lt;source src="audio-file.ogg" type="audio/ogg"&gt;<br>
+                &nbsp;&nbsp;Your browser does not support the audio element.<br>
+                &lt;/audio&gt;
+            </div>
+            <div class="output-box">
+                <audio controls>
+                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3">
+                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.ogg" type="audio/ogg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        
+            <h3>2. HTML Video Element</h3>
+            <p>The &lt;video&gt; element is used to embed video files in a webpage. You can control playback using attributes like <code>controls</code>, <code>autoplay</code>, and <code>loop</code>.</p>
+        
+            <div class="code-box">
+                &lt;video width="320" height="240" controls&gt;<br>
+                &nbsp;&nbsp;&lt;source src="movie.mp4" type="video/mp4"&gt;<br>
+                &nbsp;&nbsp;&lt;source src="movie.ogg" type="video/ogg"&gt;<br>
+                &nbsp;&nbsp;Your browser does not support the video element.<br>
+                &lt;/video&gt;
+            </div>
+            <div class="output-box">
+                <video width="320" height="240" controls>
+                    <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+                    Your browser does not support the video element.
+                </video>
+            </div>
+        
+            <h3>3. HTML Object Element (For Embedding Media)</h3>
+            <p>The &lt;object&gt; element allows you to embed media such as videos, audio, images, and PDFs in your webpage.</p>
+            
+            <div class="code-box">
+                &lt;object data="movie.mp4" type="video/mp4" width="400" height="300"&gt;&lt;/object&gt;
+            </div>
+            <div class="output-box">
+                <object data="https://www.w3schools.com/html/movie.mp4" type="video/mp4" width="400" height="300"></object>
+            </div>
+        
+            <h3>4. HTML Picture Element (For Images)</h3>
+            <p>The &lt;picture&gt; element helps you specify multiple sources for images based on screen sizes and formats. It helps make your website more responsive.</p>
+        
+            <div class="code-box">
+                &lt;picture&gt;<br>
+                &nbsp;&nbsp;&lt;source srcset="image.webp" type="image/webp"&gt;<br>
+                &nbsp;&nbsp;&lt;img src="image.jpg" alt="Sample Image"&gt;<br>
+                &lt;/picture&gt;
+            </div>
+            <div class="output-box">
+                <picture>
+                    <source srcset="https://via.placeholder.com/150.webp" type="image/webp">
+                    <img src="https://via.placeholder.com/150.jpg" alt="Sample Image">
+                </picture>
+            </div>
+        </section>
+        
+          
+        
+        <section id="html-video">
+            <h2>48. HTML Video</h2>
+            <p>The &lt;video&gt; element is used to embed a video file in an HTML document.</p>
+            <div class="code-box">
+                &lt;video width="320" height="240" controls&gt;<br>
+                &nbsp;&nbsp;&lt;source src="movie.mp4" type="video/mp4"&gt;<br>
+                &lt;/video&gt;
+            </div>
+            <div class="output-box">
+                <video width="320" height="240" controls>
+                    <source src="movie.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+        
+        
+           
+                      
+        <section id="html-audio">
+            <h2>49. HTML Audio</h2>
+            <p>The &lt;audio&gt; element is used to embed an audio file in an HTML document.</p>
+            <div class="code-box">
+                &lt;audio controls&gt;&lt;source src="audio.mp3" type="audio/mpeg"&gt;&lt;/audio&gt;
+            </div>
+            <div class="output-box">
+                <audio controls>
+                    <source src="audio.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </section>
+
+        <section id="html-plug-ins">
+            <h2>50. HTML Plug-ins</h2>
+            <p>Plug-ins are used to embed non-HTML content like Flash movies or Java applets in a web page.</p>
+            <div class="code-box">
+                &lt;object data="plugin.swf" type="application/x-shockwave-flash"&gt;&lt;/object&gt;
+            </div>
+            <div class="output-box">
+                <object data="plugin.swf" type="application/x-shockwave-flash"></object>
+            </div>
+        </section>
+        <section id="html-youtube">
+            <h2>51. HTML YouTube</h2>
+            <p>You can embed YouTube videos using the iframe element.</p>
+            <div class="code-box">
+                &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0"&gt;&lt;/iframe&gt;
+            </div>
+            <div class="output-box">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0"></iframe>
+            </div>
+        </section>
+        <section id="html-apis">
+            <h2>52. HTML APIs</h2>
+            <p>HTML provides a set of APIs for interacting with web pages and applications, such as the Geolocation API and the Web Storage API.</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;navigator.geolocation.getCurrentPosition(function(position) {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;console.log(position);<br>
+                &nbsp;&nbsp;});<br>
+                &lt;/script&gt;
+            </div>
+          
+        </section>
+        <section id="html-geolocation">
+            <h2>53. HTML Geolocation</h2>
+            <p>The Geolocation API allows you to access the user's location information.</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;if (navigator.geolocation) {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;navigator.geolocation.getCurrentPosition(function(position) {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert("Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude);<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;});<br>
+                &nbsp;&nbsp;} else {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;alert("Geolocation is not supported by this browser.");<br>
+                &nbsp;&nbsp;}<br>
+                &lt;/script&gt;
+            </div>
+          
+        </section>
+        <section id="html-drag-drop">
+            <h2>54. HTML Drag/Drop</h2>
+            <p>The Drag and Drop API enables users to drag elements within a page.</p>
+            <div class="code-box">
+                &lt;div id="drag1" draggable="true" ondragstart="drag(event)"&gt;Drag me!&lt;/div&gt;<br>
+                &lt;div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"&gt;Drop here&lt;/div&gt;<br>
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;function allowDrop(ev) {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;ev.preventDefault();<br>
+                &nbsp;&nbsp;}<br>
+                &nbsp;&nbsp;function drag(ev) {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;ev.dataTransfer.setData("text", ev.target.id);<br>
+                &nbsp;&nbsp;}<br>
+                &nbsp;&nbsp;function drop(ev) {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;ev.preventDefault();<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;var data = ev.dataTransfer.getData("text");<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;ev.target.appendChild(document.getElementById(data));<br>
+                &nbsp;&nbsp;}<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <div id="drag1" draggable="true" ondragstart="drag(event)">Drag me!</div>
+                <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">Drop here</div>
+            </div>
+        </section>
+        <section id="html-web-storage">
+            <h2>55. HTML Web Storage</h2>
+            <p>The Web Storage API allows you to store data locally within the user's browser.</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;localStorage.setItem("username", "John Doe");<br>
+                &nbsp;&nbsp;var user = localStorage.getItem("username");<br>
+                &nbsp;&nbsp;alert(user);<br>
+                &lt;/script&gt;
+            </div>
+           
+        </section>
+        <section id="html-web-workers">
+            <h2>56. HTML Web Workers</h2>
+            <p>Web Workers allow you to run scripts in the background thread without affecting the performance of the web page.</p>
+            <div class="code-box">
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;var worker = new Worker("worker.js");<br>
+                &nbsp;&nbsp;worker.onmessage = function(e) {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;alert("Message from worker: " + e.data);<br>
+                &nbsp;&nbsp;};<br>
+                &lt;/script&gt;
+            </div>
+           
+        </section>
+        <section id="html-examples">
+            <h2>57. HTML Examples</h2>
+            <p>HTML examples help to showcase the implementation of different HTML elements and techniques.</p>
+            <div class="code-box">
+                &lt;p&gt;This is an example paragraph.&lt;/p&gt;<br>
+                &lt;a href="https://example.com"&gt;Visit Example&lt;/a&gt;
+            </div>
+            <div class="output-box">
+                <p>This is an example paragraph.</p>
+                <a href="https://example.com">Visit Example</a>
+            </div>
+        </section>
+        <section id="html-editor">
+            <h2>58. HTML Editor</h2>
+            <p>An HTML editor is a tool that allows you to write and edit HTML code.</p>
+            <div class="code-box">
+                &lt;textarea rows="10" cols="50"&gt;Write your HTML code here&lt;/textarea&gt;
+            </div>
+            <div class="output-box">
+                <textarea rows="10" cols="50">Write your HTML code here</textarea>
+            </div>
+        </section>
+        <section id="html-quiz">
+            <h2>59. HTML Quiz</h2>
+            <p>HTML quizzes help to test your knowledge about HTML concepts.</p>
+            <div class="code-box">
+                &lt;form&gt;<br>
+                &nbsp;&nbsp;&lt;input type="radio" name="q1" value="a"&gt; Option A<br>
+                &nbsp;&nbsp;&lt;input type="radio" name="q1" value="b"&gt; Option B<br>
+                &nbsp;&nbsp;&lt;input type="submit" value="Submit"&gt;<br>
+                &lt;/form&gt;
+            </div>
+            <div class="output-box">
+                <form>
+                    <input type="radio" name="q1" value="a"> Option A
+                    <input type="radio" name="q1" value="b"> Option B
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </section>
+        <section id="html-exercises">
+            <h2>60. HTML Exercises</h2>
+            <p>HTML exercises help in practicing and learning HTML by writing and modifying code.</p>
+            <div class="code-box">
+                &lt;ul&gt;<br>
+                &nbsp;&nbsp;&lt;li&gt;Item 1&lt;/li&gt;<br>
+                &nbsp;&nbsp;&lt;li&gt;Item 2&lt;/li&gt;<br>
+                &lt;/ul&gt;
+            </div>
+            <div class="output-box">
+                <ul>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                </ul>
+            </div>
+        </section>
+        <section id="html-website">
+            <h2>61. HTML Website</h2>
+            <p>HTML websites consist of pages created using HTML elements to structure content.</p>
+            <div class="code-box">
+                &lt;html&gt;<br>
+                &nbsp;&nbsp;&lt;head&gt;&lt;title&gt;My Website&lt;/title&gt;&lt;/head&gt;<br>
+                &nbsp;&nbsp;&lt;body&gt;&lt;h1&gt;Welcome to My Website&lt;/h1&gt;&lt;/body&gt;<br>
+                &lt;/html&gt;
+            </div>
+            <div class="output-box">
+                <h1>Welcome to My Website</h1>
+            </div>
+        </section>
+        <section id="html-syllabus">
+            <h2>62. HTML Syllabus</h2>
+            <p>The HTML syllabus covers various topics such as elements, attributes, forms, and media.</p>
+            <div class="code-box">
+                &lt;ul&gt;<br>
+                &nbsp;&nbsp;&lt;li&gt;Basic HTML Structure&lt;/li&gt;<br>
+                &nbsp;&nbsp;&lt;li&gt;HTML Forms&lt;/li&gt;<br>
+                &nbsp;&nbsp;&lt;li&gt;HTML Media&lt;/li&gt;<br>
+                &lt;/ul&gt;
+            </div>
+            <div class="output-box">
+                <ul>
+                    <li>Basic HTML Structure</li>
+                    <li>HTML Forms</li>
+                    <li>HTML Media</li>
+                </ul>
+            </div>
+        </section>
+        <section id="html-study-plan">
+            <h2>63. HTML Study Plan</h2>
+            <p>A structured study plan helps you organize your learning process for HTML effectively.</p>
+            <div class="code-box">
+                &lt;ul&gt;<br>
+                &nbsp;&nbsp;&lt;li&gt;Learn basic HTML structure&lt;/li&gt;<br>
+                &nbsp;&nbsp;&lt;li&gt;Understand HTML elements and attributes&lt;/li&gt;<br>
+                &nbsp;&nbsp;&lt;li&gt;Practice with HTML forms and tables&lt;/li&gt;<br>
+                &nbsp;&nbsp;&lt;li&gt;Explore HTML5 new features&lt;/li&gt;<br>
+                &lt;/ul&gt;
+            </div>
+            <div class="output-box">
+                <ul>
+                    <li>Learn basic HTML structure</li>
+                    <li>Understand HTML elements and attributes</li>
+                    <li>Practice with HTML forms and tables</li>
+                    <li>Explore HTML5 new features</li>
+                </ul>
+            </div>
+        </section>
+        <section id="html-interview-prep">
+            <h2>64. HTML Interview Prep</h2>
+            <p>Prepare for HTML-related interview questions by understanding key concepts and practicing.</p>
+            <div class="code-box">
+                &lt;ol&gt;<br>
+                &nbsp;&nbsp;&lt;li&gt;What is the difference between HTML and XHTML?&lt;/li&gt;<br>
+                &nbsp;&nbsp;&lt;li&gt;Explain the structure of an HTML document.&lt;/li&gt;<br>
+                &nbsp;&nbsp;&lt;li&gt;What are semantic elements in HTML?&lt;/li&gt;<br>
+                &lt;/ol&gt;
+            </div>
+            <div class="output-box">
+                <ol>
+                    <li>What is the difference between HTML and XHTML?</li>
+                    <li>Explain the structure of an HTML document.</li>
+                    <li>What are semantic elements in HTML?</li>
+                </ol>
+            </div>
+        </section>
+        <section id="html-bootcamp">
+            <h2>65. HTML Bootcamp</h2>
+            <p>HTML Bootcamp offers intensive learning of HTML with hands-on projects and exercises.</p>
+            <div class="code-box">
+                &lt;h3&gt;Day 1: HTML Basics&lt;/h3&gt;<br>
+                &nbsp;&nbsp;&lt;p&gt;Learn the structure and basic tags.&lt;/p&gt;<br>
+                &lt;h3&gt;Day 2: Forms and Tables&lt;/h3&gt;<br>
+                &nbsp;&nbsp;&lt;p&gt;Understand forms, inputs, and table layout.&lt;/p&gt;
+            </div>
+            <div class="output-box">
+                <h3>Day 1: HTML Basics</h3>
+                <p>Learn the structure and basic tags.</p>
+                <h3>Day 2: Forms and Tables</h3>
+                <p>Understand forms, inputs, and table layout.</p>
+            </div>
+        </section>
+        <section id="html-certificate">
+            <h2>66. HTML Certificate</h2>
+            <p>Earn an HTML certificate after successfully completing a course or bootcamp.</p>
+            <div class="code-box">
+                &lt;h3&gt;Certificate of Completion&lt;/h3&gt;<br>
+                &nbsp;&nbsp;&lt;p&gt;This certifies that the learner has completed the HTML Bootcamp successfully.&lt;/p&gt;
+            </div>
+            <div class="output-box">
+                <h3>Certificate of Completion</h3>
+                <p>This certifies that the learner has completed the HTML Bootcamp successfully.</p>
+            </div>
+        </section>
+        <section id="html-summary">
+            <h2>67. HTML Summary</h2>
+            <p>HTML is the standard language for creating web pages, and it defines the structure and content of web pages.</p>
+            <div class="code-box">
+                &lt;h3&gt;HTML Basics&lt;/h3&gt;<br>
+                &nbsp;&nbsp;&lt;p&gt;HTML stands for Hypertext Markup Language.&lt;/p&gt;<br>
+                &lt;h3&gt;HTML Structure&lt;/h3&gt;<br>
+                &nbsp;&nbsp;&lt;p&gt;HTML documents are structured using tags like &lt;html&gt;, &lt;head&gt;, &lt;body&gt;.&lt;/p&gt;
+            </div>
+            <div class="output-box">
+                <h3>HTML Basics</h3>
+                <p>HTML stands for Hypertext Markup Language.</p>
+                <h3>HTML Structure</h3>
+                <p>HTML documents are structured using tags like <html>, <head>, <body>.</p>
+            </div>
+        </section>
+        <section id="html-accessibility">
+            <h2>68. HTML Accessibility</h2>
+            <p>Ensure that web content is accessible to all users, including those with disabilities, by following accessibility guidelines.</p>
+            <div class="code-box">
+                &lt;button aria-label="Close"&gt;X&lt;/button&gt;<br>
+                &lt;img src="image.jpg" alt="Description of image"&gt;
+            </div>
+            <div class="output-box">
+                <button aria-label="Close">X</button>
+                <img src="image.jpg" alt="Description of image">
+            </div>
+        </section>
+        <section id="html-references">
+            <h2>69. HTML References</h2>
+            <p>HTML references include external resources like documentation, tutorials, and books to further your learning.</p>
+            <div class="code-box">
+                &lt;a href="https://developer.mozilla.org/en-US/docs/Web/HTML"&gt;MDN Web Docs&lt;/a&gt;
+            </div>
+            <div class="output-box">
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN Web Docs</a>
+            </div>
+        </section>
+        <section id="html-tag-list">
+            <h2>70. HTML Tag List</h2>
+            <p>HTML includes a variety of tags used to structure and format web content.</p>
+            <div class="code-box">
+                &lt;div&gt;Content&lt;/div&gt;<br>
+                &lt;p&gt;Paragraph&lt;/p&gt;<br>
+                &lt;a href="https://example.com"&gt;Link&lt;/a&gt;
+            </div>
+            <div class="output-box">
+                <div>Content</div>
+                <p>Paragraph</p>
+                <a href="https://example.com">Link</a>
+            </div>
+        </section>
+        <section id="html-attributes">
+            <h2>71. HTML Attributes</h2>
+            <p>HTML attributes provide additional information about an element, such as its style, behavior, or data.</p>
+            <div class="code-box">
+                &lt;img src="image.jpg" alt="Image description"&gt;<br>
+                &lt;a href="https://example.com"&gt;Visit Example&lt;/a&gt;
+            </div>
+            <div class="output-box">
+                <img src="image.jpg" alt="Image description">
+                <a href="https://example.com">Visit Example</a>
+            </div>
+        </section>
+        <section id="html-global-attributes">
+            <h2>72. HTML Global Attributes</h2>
+            <p>Global attributes are attributes that can be applied to any HTML element.</p>
+            <div class="code-box">
+                &lt;div id="myDiv" class="example"&gt;Content&lt;/div&gt;
+            </div>
+            <div class="output-box">
+                <div id="myDiv" class="example">Content</div>
+            </div>
+        </section>
+        <section id="html-browser-support">
+            <h2>73. HTML Browser Support</h2>
+            <p>HTML elements are supported across all modern browsers, but some features may require specific browser versions.</p>
+            <div class="code-box">
+                &lt;video controls&gt;&lt;source src="video.mp4" type="video/mp4"&gt;&lt;/video&gt;
+            </div>
+            <div class="output-box">
+                <video controls>
+                    <source src="video.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+        <section id="html-events">
+            <h2>74. HTML Events</h2>
+            <p>HTML events are actions that can trigger functions, such as clicks, keypresses, or loading.</p>
+            <div class="code-box">
+                &lt;button onclick="alert('Button clicked!')"&gt;Click me&lt;/button&gt;
+            </div>
+            <div class="output-box">
+                <button onclick="alert('Button clicked!')">Click me</button>
+            </div>
+        </section>
+        <section id="html-colors">
+            <h2>75. HTML Colors</h2>
+            <p>Colors can be applied using color names, hex codes, rgb(), or rgba().</p>
+            <div class="code-box">
+                &lt;div style="background-color: #ff6347;"&gt;Tomato Color&lt;/div&gt;<br>
+                &lt;div style="background-color: rgb(255, 99, 71);"&gt;Tomato Color&lt;/div&gt;
+            </div>
+            <div class="output-box">
+                <div style="background-color: #ff6347;">Tomato Color</div>
+                <div style="background-color: rgb(255, 99, 71);">Tomato Color</div>
+            </div>
+        </section>
+        <section id="html-canvas">
+            <h2>76. HTML Canvas</h2>
+            <p>The canvas element is used to draw graphics on the fly using JavaScript.</p>
+            <div class="code-box">
+                &lt;canvas id="myCanvas" width="200" height="200"&gt;&lt;/canvas&gt;<br>
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;var ctx = document.getElementById("myCanvas").getContext("2d");<br>
+                &nbsp;&nbsp;ctx.fillStyle = "red";<br>
+                &nbsp;&nbsp;ctx.fillRect(20, 20, 150, 100);<br>
+                &lt;/script&gt;
+            </div>
+            <div class="output-box">
+                <canvas id="myCanvas" width="200" height="200"></canvas>
+            </div>
+        </section>
+        <section id="html-audio-video">
+            <h2>77. HTML Audio/Video</h2>
+            <p>HTML provides elements for embedding audio and video on web pages.</p>
+            <div class="code-box">
+                &lt;audio controls&gt;<br>
+                &nbsp;&nbsp;&lt;source src="audio.mp3" type="audio/mp3"&gt;<br>
+                &lt;/audio&gt;<br>
+                &lt;video controls&gt;<br>
+                &nbsp;&nbsp;&lt;source src="video.mp4" type="video/mp4"&gt;<br>
+                &lt;/video&gt;
+            </div>
+            <div class="output-box">
+                <audio controls>
+                    <source src="audio.mp3" type="audio/mp3">
+                </audio>
+                <video controls>
+                    <source src="video.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+        <section id="html-character-sets">
+            <h2>78. HTML Character Sets</h2>
+            <p>Character encoding ensures that characters display correctly across different platforms.</p>
+            <div class="code-box">
+                &lt;meta charset="UTF-8"&gt;
+            </div>
+            <div class="output-box">
+                <!-- No visible output, just sets character encoding -->
+            </div>
+        </section>
+        <section id="html-doctypes">
+            <h2>79. HTML Doctypes</h2>
+            <p>Doctype declaration is required to define the document type and version of HTML being used.</p>
+            <div class="code-box">
+                &lt;!DOCTYPE html&gt;
+            </div>
+          
+        </section>
+        <section id="html-url-encode">
+            <h2>80. HTML URL Encode</h2>
+            <p>URL encoding replaces characters with a special code that can be safely transmitted over the internet.</p>
+            <div class="code-box">
+                &lt;a href="https://example.com?name=John%20Doe"&gt;Visit John&lt;/a&gt;
+            </div>
+            <div class="output-box">
+                <a href="https://example.com?name=John%20Doe">Visit John</a>
+            </div>
+        </section>
+        <section id="html-language-codes">
+            <h2>81. HTML Language Codes</h2>
+            <p>Language codes are used to specify the language of the document content.</p>
+            <div class="code-box">
+                &lt;html lang="en"&gt; ... &lt;/html&gt;
+            </div>
+            
+        </section>
+        <section id="html-country-codes">
+            <h2>82. HTML Country Codes</h2>
+            <p>Country codes are used for region-specific information like language or location.</p>
+            <div class="code-box">
+                &lt;html lang="en-US"&gt; ... &lt;/html&gt;
+            </div>
+           
+        </section>
+        <section id="http-messages">
+            <h2>83. HTTP Messages</h2>
+            <p>HTTP messages consist of requests and responses that are exchanged between client and server.</p>
+            <div class="code-box">
+                &lt;!-- Example of an HTTP request -->&lt;br&gt;
+                GET /index.html HTTP/1.1<br>
+                Host: www.example.com
+            </div>
+          
+        </section>
+        <section id="http-methods">
+            <h2>84. HTTP Methods</h2>
+            <p>HTTP methods define actions to be performed on resources, such as GET, POST, PUT, and DELETE.</p>
+            <div class="code-box">
+                GET /index.html HTTP/1.1<br>
+                POST /form HTTP/1.1<br>
+                PUT /resource HTTP/1.1<br>
+                DELETE /item HTTP/1.1
+            </div>
+           
+        </section>
+        <section id="px-to-em-converter">
+            <h2>85. PX to EM Converter</h2>
+            <p>Use this converter to change pixel values to em units based on font size.</p>
+            <div class="code-box">
+                &lt;style&gt;<br>
+                &nbsp;&nbsp;body { font-size: 16px; }<br>
+                &nbsp;&nbsp;h1 { font-size: 2em; }<br>
+                &lt;/style&gt;
+            </div>
+            <div class="output-box">
+                <h1>Font size is 2em based on the body font size of 16px</h1>
+            </div>
+        </section>
+        <section id="keyboard-shortcuts">
+            <h2>86. Keyboard Shortcuts</h2>
+            <p>Keyboard shortcuts allow users to quickly perform actions without using a mouse.</p>
+            <div class="code-box">
+                &lt;ul&gt;<br>
+                &nbsp;&nbsp;&lt;li&gt;Ctrl + C: Copy&lt;/li&gt;<br>
+                &nbsp;&nbsp;&lt;li&gt;Ctrl + V: Paste&lt;/li&gt;<br>
+                &nbsp;&nbsp;&lt;li&gt;Ctrl + Z: Undo&lt;/li&gt;<br>
+                &lt;/ul&gt;
+            </div>
+            <div class="output-box">
+                <ul>
+                    <li>Ctrl + C: Copy</li>
+                    <li>Ctrl + V: Paste</li>
+                    <li>Ctrl + Z: Undo</li>
+                </ul>
+            </div>
+        </section>
+        <section id="html-div">
+            <h2>87. HTML Div</h2>
+            <p>The &lt;div&gt; tag is a block-level element used to group content.</p>
+            <div class="code-box">
+                &lt;div&gt;This is a div element&lt;/div&gt;
+            </div>
+            <div class="output-box">
+                <div>This is a div element</div>
+            </div>
+        </section>
+          
+        <section id="html-tags" >
+            <h2>88. HTML Tags names</h2>
+            <p>HTML tags are the building blocks of HTML documents. Below is a table listing various HTML tags categorized into rows and columns.</p>
+            <div>
+                <section>
+            <table border="0" >
+                <thead>
+                    <tr >
+                        <th>Tag</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&lt;!DOCTYPE&gt;</td>
+                        <td>&lt;!DOCTYPE html&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;html&gt;</td>
+                        <td>&lt;html&gt;...&lt;/html&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;head&gt;</td>
+                        <td>&lt;head&gt;...&lt;/head&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;title&gt;</td>
+                        <td>&lt;title&gt;Page Title&lt;/title&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;meta&gt;</td>
+                        <td>&lt;meta charset="UTF-8"&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;link&gt;</td>
+                        <td>&lt;link rel="stylesheet" href="style.css"&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;style&gt;</td>
+                        <td>&lt;style&gt;...&lt;/style&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;body&gt;</td>
+                        <td>&lt;body&gt;...&lt;/body&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;header&gt;</td>
+                        <td>&lt;header&gt;...&lt;/header&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;footer&gt;</td>
+                        <td>&lt;footer&gt;...&lt;/footer&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;main&gt;</td>
+                        <td>&lt;main&gt;...&lt;/main&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;nav&gt;</td>
+                        <td>&lt;nav&gt;...&lt;/nav&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;section&gt;</td>
+                        <td>&lt;section&gt;...&lt;/section&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;article&gt;</td>
+                        <td>&lt;article&gt;...&lt;/article&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;aside&gt;</td>
+                        <td>&lt;aside&gt;...&lt;/aside&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, &lt;h6&gt;</td>
+                        <td>&lt;h1&gt;Heading 1&lt;/h1&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;p&gt;</td>
+                        <td>&lt;p&gt;This is a paragraph&lt;/p&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;br&gt;</td>
+                        <td>&lt;br&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;hr&gt;</td>
+                        <td>&lt;hr&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;blockquote&gt;</td>
+                        <td>&lt;blockquote&gt;...&lt;/blockquote&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;ol&gt;, &lt;ul&gt;, &lt;li&gt;</td>
+                        <td>&lt;ul&gt;&lt;li&gt;Item 1&lt;/li&gt;&lt;/ul&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;a&gt;</td>
+                        <td>&lt;a href="https://example.com"&gt;Link&lt;/a&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;img&gt;</td>
+                        <td>&lt;img src="image.jpg" alt="Image"&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;div&gt;</td>
+                        <td>&lt;div&gt;...&lt;/div&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;span&gt;</td>
+                        <td>&lt;span&gt;...&lt;/span&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;form&gt;</td>
+                        <td>&lt;form&gt;...&lt;/form&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;input&gt;</td>
+                        <td>&lt;input type="text"&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;button&gt;</td>
+                        <td>&lt;button&gt;Click Me&lt;/button&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;textarea&gt;</td>
+                        <td>&lt;textarea&gt;...&lt;/textarea&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;select&gt;, &lt;option&gt;</td>
+                        <td>&lt;select&gt;&lt;option&gt;Option 1&lt;/option&gt;&lt;/select&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;label&gt;</td>
+                        <td>&lt;label for="name"&gt;Name:&lt;/label&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;fieldset&gt;</td>
+                        <td>&lt;fieldset&gt;...&lt;/fieldset&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;legend&gt;</td>
+                        <td>&lt;legend&gt;Form Details&lt;/legend&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, &lt;td&gt;</td>
+                        <td>&lt;table&gt;&lt;tr&gt;&lt;td&gt;Cell 1&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;caption&gt;</td>
+                        <td>&lt;caption&gt;Table Caption&lt;/caption&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;colgroup&gt;, &lt;col&gt;</td>
+                        <td>&lt;colgroup&gt;&lt;col&gt;&lt;/colgroup&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;</td>
+                        <td>&lt;thead&gt;...&lt;/thead&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;iframe&gt;</td>
+                        <td>&lt;iframe src="frame.html"&gt;&lt;/iframe&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;script&gt;</td>
+                        <td>&lt;script&gt;...&lt;/script&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;noscript&gt;</td>
+                        <td>&lt;noscript&gt;No Script&lt;/noscript&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;canvas&gt;</td>
+                        <td>&lt;canvas&gt;...&lt;/canvas&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;audio&gt;, &lt;video&gt;</td>
+                        <td>&lt;audio&gt;...&lt;/audio&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;source&gt;</td>
+                        <td>&lt;source src="audio.mp3"&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;track&gt;</td>
+                        <td>&lt;track src="subtitle_en.vtt" kind="subtitles"&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;embed&gt;</td>
+                        <td>&lt;embed src="file.pdf"&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;object&gt;</td>
+                        <td>&lt;object data="file.pdf"&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;param&gt;</td>
+                        <td>&lt;param name="autoplay" value="true"&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;cite&gt;</td>
+                        <td>&lt;cite&gt;...&lt;/cite&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;abbr&gt;</td>
+                        <td>&lt;abbr title="Hypertext Markup Language"&gt;HTML&lt;/abbr&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;q&gt;</td>
+                        <td>&lt;q&gt;Quoted text&lt;/q&gt;</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </section>
+    <style>
+        .responsive-table {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+    
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+    
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+    
+        th {
+            background-color: #f4f4f4;
+        }
+    
+        @media (max-width: 768px) {
+            th, td {
+                font-size: 12px;
+            }
+        }
+    </style>
+
+       
+        </section>
+        
+            
+    </main>
+  
+    <footer>
+        <div class="footer-container">
+          <!-- Programming Courses Links -->
+          <div class="footer-links">
+            <h3>Programming Courses</h3>
+            <ul>
+              <li><a href="#">Python</a></li>
+              <li><a href="#">JavaScript</a></li>
+              <li><a href="#">Java</a></li>
+              <li><a href="#">C++</a></li>
+              <li><a href="#">PHP</a></li>
+              <li><a href="#">Machine Learning</a></li>
+            </ul>
+          </div>
+          
+          <!-- Social Media Links -->
+          <div class="footer-social">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+    
+          <!-- Contact Information -->
+          <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <ul>
+              <li><i class="fas fa-phone"></i> 9302984613</li>
+              <li><i class="fas fa-envelope"></i><a href="mailto:codekraft1325@gmail.com">Email Us :codekraft1325@gmail.com</a>
+              </li>
+              <li><i class="fas fa-map-marker-alt"></i> katangi,balaghat(M.P)</li>
+            </ul>
+          </div>
+    
+          <!-- About Us Section -->
+          <div class="footer-about">
+            <h3>About Us</h3>
+            <p>We are a leading provider of online programming courses, helping individuals from all around the world to enhance their skills. Whether you are a beginner or an expert, we offer a wide range of courses to cater to every learning need. Our courses are designed to be interactive, fun, and easy to follow.</p>
+          </div>
+        </div>
+    
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+          <p>&copy; 2025 Online Programming Courses | All Rights Reserved</p>
+          <p ><a href="#" style="color: red;">Privacy Policy</a> | <a href="#" style="color: red;">Terms of Service</a></p>
+        </div>
+      </footer> 
+ 
+  
+    
+
+    <script>
+        const searchBar = document.getElementById('searchBar');
+        const suggestionsBox = document.getElementById('suggestionsBox');
+
+
+       
+
+        const topics = [
+            { name: 'Basic HTML Structure', id: 'basic-html-structure' },
+            { name: 'HTML Headings', id: 'html-headings' },
+            { name: 'HTML Lists', id: 'html-lists' },
+            { name: 'HTML Links', id: 'html-links' },
+
+            { name: 'HTML Editors', id: 'html-editors' },
+            { name: 'HTML Elements', id: 'html-elements' },
+            { name: 'HTML Attributes', id: 'html-attributes' },
+            { name: 'HTML Paragraphs', id: 'html-paragraphs' },
+            { name: 'HTML Styles', id: 'html-styles' },
+            { name: 'HTML Formatting', id: 'html-formatting' },
+            { name: 'HTML Quotations', id: 'html-quotations' },
+            { name: 'HTML Comments', id: 'html-comments' },
+            { name: 'HTML Colors', id: 'html-colors' },
+            { name: 'HTML CSS', id: 'html-css' },
+            { name: 'HTML Links', id: 'html-links' },
+            { name: 'HTML Images', id: 'html-images' },
+            { name: 'HTML Favicon', id: 'html-favicon' },
+            { name: 'HTML Page Title', id: 'html-page-title' },
+            { name: 'HTML Tables', id: 'html-tables' },
+            { name: 'HTML Block & Inline', id: 'html-block-inline' },
+            { name: 'HTML Classes', id: 'html-classes' },
+            { name: ' HTML Id', id: 'html-id' },
+            { name: 'HTML Iframes', id: 'html-iframes' },
+            { name: 'HTML JavaScript', id: 'html-javascript' },
+            { name: 'HTML File Paths', id: 'html-file-paths' },
+            { name: 'HTML Head', id: 'html-head' },
+            { name: 'HTML Layout', id: 'html-layout' },
+            { name: 'HTML Responsive', id: 'html-responsive' },
+            { name: 'HTML Computercode', id: 'html-computercode' },
+            { name: 'HTML Semantics', id: 'html-semantics' },
+            { name: 'HTML Style Guide', id: 'html-style-guide' },
+            { name: 'HTML Entities', id: 'html-entities' },
+            { name: 'HTML Symbols', id: 'html-symbols' },
+            { name: 'HTML Emojis', id: 'html-emojis' },
+            { name: 'HTML Charsets', id: 'html-charsets' },
+            { name: 'HTML URL Encode', id: 'html-url-encode' },
+            { name: 'HTML vs. XHTML', id: 'html-vs-xhtml' },
+            { name: 'HTML Forms', id: 'html-forms' },
+            { name: 'HTML Form Attributes', id: 'html-form-attributes' },
+            { name: 'HTML Form Elements', id: 'html-form-elements' },
+            { name: 'HTML Input Types', id: 'html-input-types' },
+            { name: 'HTML Input Attributes', id: 'html-input-attributes' },
+            { name: 'Input Form Attributes', id: 'input-form-attributes' },
+            { name: 'HTML Graphics', id: 'html-graphics' },
+            { name: 'HTML Canvas', id: 'html-canvas' },
+            { name: 'HTML SVG', id: 'html-svg' },
+            { name: 'HTML Media', id: 'html-media' },
+            { name: 'HTML Video', id: 'html-video' },
+
+            { name: 'HTML Audio', id: 'html-audio' },
+            { name: 'HTML Plug-ins', id: 'html-plug-ins' },
+            { name: 'HTML YouTube', id: 'html-youtube' },
+            { name: 'HTML APIs', id: 'html-apis' },
+            { name: 'HTML Geolocation', id: 'html-geolocation' },
+            { name: 'HTML Drag/Drop', id: 'html-drag-drop' },
+            { name: 'HTML Web Storage', id: 'html-web-storage' },
+            { name: ' HTML Web Workers', id: 'html-web-workers' },
+            { name: 'HTML Examples', id: 'html-examples' },
+            { name: 'HTML Editor', id: 'html-editor' },
+            { name: 'HTML Quiz', id: 'html-quiz' },
+            { name: 'HTML Exercises', id: 'html-exercises' },
+            { name: 'HTML Website', id: 'html-website' },
+            { name: 'HTML Syllabus', id: 'html-syllabus' },
+            { name: 'HTML Study Plan', id: 'html-study-plan' },
+            { name: 'HTML Interview Prep', id: 'html-interview-prep' },
+            { name: 'HTML Bootcamp', id: 'html-bootcamp' },
+            { name: 'HTML Certificate', id: 'html-certificate' },
+            { name: 'HTML Summary', id: 'html-summary' },
+            { name: 'HTML Accessibility', id: 'html-accessibility' },
+            { name: 'HTML References', id: 'html-references' },
+            { name: 'HTML Tag List', id: 'html-tag-list' },
+            { name: 'HTML Attributes', id: 'html-attributes' },
+            { name: 'HTML Global Attributes', id: 'html-global-attributes' },
+            { name: 'HTML Browser Support', id: 'html-browser-support' },
+            { name: 'HTML Events', id: 'html-events' },
+            { name: 'HTML Colors', id: 'html-colors' },
+            { name: 'HTML Character Sets', id: 'html-character-sets' },
+            { name: 'HTML Doctypes', id: 'html-doctypes' },
+            { name: 'HTML URL Encode', id: 'html-url-encode' },
+            { name: 'HTML Language Codes', id: 'html-language-codes' },
+            { name: 'HTML Country Codes', id: 'html-country-codes' },
+            { name: 'HTTP Messages', id: 'http-messages' },
+            { name: ' HTTP Methods', id: 'http-methods' },
+            { name: 'PX to EM Converter', id: 'px-to-em-converter' },
+            { name: 'Keyboard Shortcuts', id: 'keyboard-shortcuts' },
+            { name: '  HTML Div', id: 'html-div' },
+            { name: ' HTML Tags names', id: 'html-tags' },
+            { name: ' Introduction to HTML', id: 'html-introduction' },
+
+        ];
+
+
+    
+      // सर्च बार के "input" इवेंट को हैंडल करना
+searchBar.addEventListener('input', function () {
+    const query = searchBar.value.toLowerCase(); // यूज़र का इनपुट लोअरकेस में बदलें
+    suggestionsBox.innerHTML = ''; // पहले से मौजूद सुझाव हटाएं
+
+    if (query.length > 0) {
+        const filteredTopics = topics.filter(topic => topic.name.toLowerCase().includes(query)); // मैच खोजें
+        filteredTopics.forEach(topic => {
+            const suggestionElement = document.createElement('p'); // नया सुझाव एलीमेंट बनाएं
+            suggestionElement.textContent = topic.name; // सुझाव में टॉपिक का नाम डालें
+
+            // सुझाव पर क्लिक करने पर नेविगेशन
+            suggestionElement.addEventListener('click', () => {
+                document.getElementById(topic.id).scrollIntoView({ behavior: 'smooth' }); // संबंधित सेक्शन पर स्क्रॉल करें
+                searchBar.value = topic.name; // सर्च बार में चुना गया नाम दिखाएं
+                suggestionsBox.innerHTML = ''; // सुझाव बॉक्स को साफ करें
+            });
+
+            suggestionsBox.appendChild(suggestionElement); // सुझाव बॉक्स में सुझाव जोड़ें
+        });
+    }
+});
+
+// सर्च बार के "keypress" इवेंट को हैंडल करना
+searchBar.addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') { // यदि यूज़र "Enter" दबाता है
+        const query = searchBar.value.toLowerCase();
+        const match = topics.find(topic => topic.name.toLowerCase().includes(query)); // पहला मैच खोजें
+
+        if (match) {
+            document.getElementById(match.id).scrollIntoView({ behavior: 'smooth' }); // संबंधित सेक्शन पर स्क्रॉल करें
+            suggestionsBox.innerHTML = ''; // सुझाव बॉक्स साफ करें
+        }
+    }
+});
+keypress to navigate
+
+    </script>
+</body>
+</html>
+

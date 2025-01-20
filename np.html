@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Programming</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">   
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-row">
+            <img src="img/apple-touch-icon.png" alt="Logo" class="logo">
+            <div class="search-container">
+                <input type="search" id="searchBar" placeholder="Search... HTML topic">
+                <div class="suggestions" id="suggestionsBox"></div>
+            </div>
+        </div>
+    </header>
+
+    <div class="he">
+        <h1 class="heading">NumPy Programming</h1>
+    </div>
+
+    <main>
+        <section id="numpy-home">
+            <h2>1. NumPy HOME</h2>
+            <p>Welcome to the NumPy tutorial. NumPy is a Python library used for numerical computing and working with arrays. It is widely used in data science, machine learning, and scientific computations.</p>
+            <div class="output-box">
+                <p>(Introduction to NumPy and its importance)</p>
+            </div>
+        </section>
+        
+        <section id="numpy-intro">
+            <h2>2. NumPy Intro</h2>
+            <p>NumPy stands for Numerical Python. It provides support for multi-dimensional arrays and matrices, along with mathematical operations to work on these arrays efficiently.</p>
+            <div class="code-box">
+                <code>import numpy as np</code><br>
+                <code>arr = np.array([1, 2, 3, 4, 5])</code><br>
+                <code>print(arr)</code>
+            </div>
+            <div class="output-box">
+                <pre>[1 2 3 4 5]</pre>
+            </div>
+        </section>
+        
+        <section id="numpy-getting-started">
+            <h2>3. NumPy Getting Started</h2>
+            <p>Before using NumPy, ensure it is installed. Install NumPy using pip:</p>
+            <div class="code-box">
+                <code>pip install numpy</code>
+            </div>
+            <p>Create your first NumPy array:</p>
+            <div class="code-box">
+                <code>import numpy as np</code><br>
+                <code>arr = np.array([10, 20, 30])</code><br>
+                <code>print(arr)</code>
+            </div>
+            <div class="output-box">
+                <pre>[10 20 30]</pre>
+            </div>
+        </section>
+        
+        <section id="numpy-creating-arrays">
+            <h2>4. NumPy Creating Arrays</h2>
+            <p>Create arrays using NumPy's `array()` function.</p>
+            <div class="code-box">
+                <code>import numpy as np</code><br>
+                <code>arr = np.array([1, 2, 3, 4, 5])</code><br>
+                <code>print(arr)</code>
+            </div>
+            <div class="output-box">
+                <pre>[1 2 3 4 5]</pre>
+            </div>
+        </section>
+        
+        <section id="numpy-array-indexing">
+            <h2>5. NumPy Array Indexing</h2>
+            <p>Access elements of an array using indexing.</p>
+            <div class="code-box">
+                <code>import numpy as np</code><br>
+                <code>arr = np.array([10, 20, 30, 40, 50])</code><br>
+                <code>print(arr[1])</code>
+            </div>
+            <div class="output-box">
+                <pre>20</pre>
+            </div>
+        </section>
+        
+        <section id="numpy-array-slicing">
+            <h2>6. NumPy Array Slicing</h2>
+            <p>Slicing allows you to extract a portion of an array.</p>
+            <div class="code-box">
+                <code>import numpy as np</code><br>
+                <code>arr = np.array([10, 20, 30, 40, 50])</code><br>
+                <code>print(arr[1:4])</code>
+            </div>
+            <div class="output-box">
+                <pre>[20 30 40]</pre>
+            </div>
+        </section>
+        
+        <section id="numpy-data-types">
+            <h2>7. NumPy Data Types</h2>
+            <p>Every NumPy array has a data type, like `int`, `float`, or `string`.</p>
+            <div class="code-box">
+                <code>import numpy as np</code><br>
+                <code>arr = np.array([1, 2, 3], dtype='float')</code><br>
+                <code>print(arr)</code>
+            </div>
+            <div class="output-box">
+                <pre>[1. 2. 3.]</pre>
+            </div>
+        </section>
+        
+        <section id="numpy-copy-vs-view">
+            <h2>8. NumPy Copy vs View</h2>
+            <p>Understand the difference between copying an array and creating a view.</p>
+            <div class="code-box">
+                <code>import numpy as np</code><br>
+                <code>arr = np.array([1, 2, 3])</code><br>
+                <code>copy_arr = arr.copy()</code><br>
+                <code>view_arr = arr.view()</code><br>
+                <code>arr[0] = 10</code><br>
+                <code>print(copy_arr)</code><br>
+                <code>print(view_arr)</code>
+            </div>
+            <div class="output-box">
+                <pre>
+        [1 2 3]
+        [10 2 3]
+                </pre>
+            </div>
+        </section>
+        
+        <section id="numpy-array-shape">
+            <h2>9. NumPy Array Shape</h2>
+            <p>Check the shape of an array using the `shape` attribute.</p>
+            <div class="code-box">
+                <code>import numpy as np</code><br>
+                <code>arr = np.array([[1, 2, 3], [4, 5, 6]])</code><br>
+                <code>print(arr.shape)</code>
+            </div>
+            <div class="output-box">
+                <pre>(2, 3)</pre>
+            </div>
+        </section>
+        
+        <section id="numpy-array-reshape">
+            <h2>10. NumPy Array Reshape</h2>
+            <p>Change the shape of an array using the `reshape()` method.</p>
+            <div class="code-box">
+                <code>import numpy as np</code><br>
+                <code>arr = np.array([1, 2, 3, 4, 5, 6])</code><br>
+                <code>new_arr = arr.reshape(2, 3)</code><br>
+                <code>print(new_arr)</code>
+            </div>
+            <div class="output-box">
+                <pre>
+        [[1 2 3]
+         [4 5 6]]
+                </pre>
+            </div>
+        </section>
+        
+        <section id="numpy-random">
+            <h2>16. NumPy Random</h2>
+            <p>Generate random numbers using the `random` module in NumPy.</p>
+            <div class="code-box">
+                <code>import numpy as np</code><br>
+                <code>random_num = np.random.rand(5)</code><br>
+                <code>print(random_num)</code>
+            </div>
+            <div class="output-box">
+                <pre>[0.123 0.456 0.789 0.101 0.112]</pre>
+            </div>
+        </section>
+        
+        <section id="random-intro">
+            <h2>17. Random Intro</h2>
+            <p>The random module in NumPy provides functions for generating random numbers, arrays, and distributions.</p>
+            <div class="code-box">
+                <code>import numpy as np</code><br>
+                <code>arr = np.random.randint(0, 10, size=(3, 3))</code><br>
+                <code>print(arr)</code>
+            </div>
+            <div class="output-box">
+                <pre>
+        [[1 4 7]
+         [2 5 8]
+         [3 6 9]]
+                </pre>
+            </div>
+        </section>
+        <section id="data-distribution">
+            <h2>18. Data Distribution</h2>
+            <p>Data distribution is a function that defines the likelihood of different outcomes in a dataset. NumPy provides tools to generate and analyze various distributions.</p>
+            <div class="code-box">
+                <code>import numpy as np</code><br>
+                <code>data = np.random.normal(0, 1, 1000)</code><br>
+                <code>print(data[:10])</code> <!-- Display first 10 values -->
+            </div>
+            <div class="output-box">
+                <pre>[0.1, -0.3, 1.2, -0.5, 0.9, 0.4, -1.1, 0.7, -0.8, 1.5]</pre>
+            </div>
+        </section>
+        
+        <section id="random-permutation">
+            <h2>19. Random Permutation</h2>
+            <p>A permutation randomly changes the order of elements in an array.</p>
+            <div class="code-box">
+                <code>arr = np.array([1, 2, 3, 4, 5])</code><br>
+                <code>permuted = np.random.permutation(arr)</code><br>
+                <code>print(permuted)</code>
+            </div>
+            <div class="output-box">
+                <pre>[3, 5, 1, 4, 2]</pre>
+            </div>
+        </section>
+        
+        <section id="seaborn-module">
+            <h2>20. Seaborn Module</h2>
+            <p>Seaborn is a library used for creating statistical graphics. You can visualize distributions generated with NumPy.</p>
+            <div class="code-box">
+                <code>import seaborn as sns</code><br>
+                <code>import matplotlib.pyplot as plt</code><br>
+                <code>data = np.random.normal(0, 1, 1000)</code><br>
+                <code>sns.histplot(data, kde=True)</code><br>
+                <code>plt.show()</code>
+            </div>
+            <div class="output-box">
+                <p>(Displays a histogram with a density curve)</p>
+            </div>
+        </section>
+        
+        <section id="normal-distribution">
+            <h2>21. Normal Distribution</h2>
+            <p>A normal distribution is symmetric and describes many natural phenomena.</p>
+            <div class="code-box">
+                <code>data = np.random.normal(5, 2, 1000)</code><br>
+                <code>print(data[:10])</code> <!-- Display first 10 values -->
+            </div>
+            <div class="output-box">
+                <pre>[5.2, 3.8, 4.9, 6.1, 5.4, 3.7, 6.3, 5.0, 4.2, 6.5]</pre>
+            </div>
+        </section>
+        
+        <section id="binomial-distribution">
+            <h2>22. Binomial Distribution</h2>
+            <p>The binomial distribution describes the number of successes in a sequence of independent experiments.</p>
+            <div class="code-box">
+                <code>data = np.random.binomial(n=10, p=0.5, size=10)</code><br>
+                <code>print(data)</code>
+            </div>
+            <div class="output-box">
+                <pre>[5, 7, 4, 6, 5, 3, 7, 6, 5, 4]</pre>
+            </div>
+        </section>
+        
+        <section id="poisson-distribution">
+            <h2>23. Poisson Distribution</h2>
+            <p>The Poisson distribution describes the probability of events occurring within a fixed interval of time or space.</p>
+            <div class="code-box">
+                <code>data = np.random.poisson(3, 10)</code><br>
+                <code>print(data)</code>
+            </div>
+            <div class="output-box">
+                <pre>[2, 4, 3, 5, 3, 2, 1, 4, 3, 6]</pre>
+            </div>
+        </section>
+        
+        <section id="numpy-ufunc">
+            <h2>30. NumPy ufunc</h2>
+            <p>Universal functions (ufuncs) are used to perform element-wise operations on arrays.</p>
+        </section>
+        
+        <section id="ufunc-intro">
+            <h2>31. ufunc Intro</h2>
+            <p>A ufunc (universal function) operates on ndarrays element-wise, supporting broadcasting.</p>
+            <div class="code-box">
+                <code>arr = np.array([1, 2, 3, 4])</code><br>
+                <code>result = np.add(arr, 5)</code><br>
+                <code>print(result)</code>
+            </div>
+            <div class="output-box">
+                <pre>[6, 7, 8, 9]</pre>
+            </div>
+        </section>
+        
+        <section id="ufunc-create-function">
+            <h2>32. ufunc Create Function</h2>
+            <p>Create your own ufunc using `frompyfunc`.</p>
+            <div class="code-box">
+                <code>def multiply(x, y):</code><br>
+                <code>&nbsp;&nbsp;&nbsp;return x * y</code><br>
+                <code>ufunc = np.frompyfunc(multiply, 2, 1)</code><br>
+                <code>result = ufunc([1, 2, 3], [4, 5, 6])</code><br>
+                <code>print(result)</code>
+            </div>
+            <div class="output-box">
+                <pre>[4, 10, 18]</pre>
+            </div>
+        </section>
+        
+        <section id="ufunc-simple-arithmetic">
+            <h2>33. ufunc Simple Arithmetic</h2>
+            <p>Use ufuncs for basic arithmetic operations.</p>
+            <div class="code-box">
+                <code>arr1 = np.array([1, 2, 3])</code><br>
+                <code>arr2 = np.array([4, 5, 6])</code><br>
+                <code>result = np.add(arr1, arr2)</code><br>
+                <code>print(result)</code>
+            </div>
+            <div class="output-box">
+                <pre>[5, 7, 9]</pre>
+            </div>
+        </section>
+        
+        <section id="ufunc-rounding-decimals">
+            <h2>34. ufunc Rounding Decimals</h2>
+            <p>Round elements of an array to a specified number of decimals.</p>
+            <div class="code-box">
+                <code>arr = np.array([1.234, 5.678, 9.1011])</code><br>
+                <code>result = np.round(arr, 2)</code><br>
+                <code>print(result)</code>
+            </div>
+            <div class="output-box">
+                <pre>[1.23, 5.68, 9.1]</pre>
+            </div>
+        </section>
+        
+        <section id="ufunc-logs">
+            <h2>35. ufunc Logs</h2>
+            <p>Calculate the natural logarithm of each element in an array using `np.log`.</p>
+            <div class="code-box">
+                <code>arr = np.array([1, 2, 3, 4])</code><br>
+                <code>result = np.log(arr)</code><br>
+                <code>print(result)</code>
+            </div>
+            <div class="output-box">
+                <pre>[0.0, 0.693, 1.099, 1.386]</pre>
+            </div>
+        </section>
+        <section id="ufunc-summations">
+            <h2>36. ufunc Summations</h2>
+            <p>Use NumPy's ufuncs to calculate the sum of elements in an array.</p>
+            <div class="code-box">
+                <code>arr = np.array([1, 2, 3, 4, 5])</code><br>
+                <code>result = np.sum(arr)</code><br>
+                <code>print(result)</code>
+            </div>
+            <div class="output-box">
+                <pre>15</pre>
+            </div>
+        </section>
+        
+        <section id="ufunc-products">
+            <h2>37. ufunc Products</h2>
+            <p>Calculate the product of all elements in an array using `np.prod`.</p>
+            <div class="code-box">
+                <code>arr = np.array([1, 2, 3, 4])</code><br>
+                <code>result = np.prod(arr)</code><br>
+                <code>print(result)</code>
+            </div>
+            <div class="output-box">
+                <pre>24</pre>
+            </div>
+        </section>
+        
+        <section id="ufunc-differences">
+            <h2>38. ufunc Differences</h2>
+            <p>Find the differences between consecutive elements in an array.</p>
+            <div class="code-box">
+                <code>arr = np.array([10, 20, 30, 40])</code><br>
+                <code>result = np.diff(arr)</code><br>
+                <code>print(result)</code>
+            </div>
+            <div class="output-box">
+                <pre>[10, 10, 10]</pre>
+            </div>
+        </section>
+        
+        <section id="ufunc-finding-lcm">
+            <h2>39. ufunc Finding LCM</h2>
+            <p>Find the Least Common Multiple (LCM) of numbers in an array.</p>
+            <div class="code-box">
+                <code>arr = np.array([4, 6, 8])</code><br>
+                <code>result = np.lcm.reduce(arr)</code><br>
+                <code>print(result)</code>
+            </div>
+            <div class="output-box">
+                <pre>24</pre>
+            </div>
+        </section>
+        
+        <section id="ufunc-finding-gcd">
+            <h2>40. ufunc Finding GCD</h2>
+            <p>Find the Greatest Common Divisor (GCD) of numbers in an array.</p>
+            <div class="code-box">
+                <code>arr = np.array([8, 12, 16])</code><br>
+                <code>result = np.gcd.reduce(arr)</code><br>
+                <code>print(result)</code>
+            </div>
+            <div class="output-box">
+                <pre>4</pre>
+            </div>
+        </section>
+        
+        <section id="ufunc-trigonometric">
+            <h2>41. ufunc Trigonometric</h2>
+            <p>Perform trigonometric calculations like sine, cosine, and tangent using NumPy ufuncs.</p>
+            <div class="code-box">
+                <code>angles = np.array([0, np.pi/2, np.pi])</code><br>
+                <code>result = np.sin(angles)</code><br>
+                <code>print(result)</code>
+            </div>
+            <div class="output-box">
+                <pre>[0.0, 1.0, 0.0]</pre>
+            </div>
+        </section>
+        
+        <section id="ufunc-hyperbolic">
+            <h2>42. ufunc Hyperbolic</h2>
+            <p>Perform hyperbolic calculations like sinh, cosh, and tanh.</p>
+            <div class="code-box">
+                <code>values = np.array([1, 2, 3])</code><br>
+                <code>result = np.sinh(values)</code><br>
+                <code>print(result)</code>
+            </div>
+            <div class="output-box">
+                <pre>[1.175, 3.627, 10.018]</pre>
+            </div>
+        </section>
+        
+        <section id="ufunc-set-operations">
+            <h2>43. ufunc Set Operations</h2>
+            <p>Use NumPy for set operations like union, intersection, and difference.</p>
+            <div class="code-box">
+                <code>set1 = np.array([1, 2, 3, 4])</code><br>
+                <code>set2 = np.array([3, 4, 5, 6])</code><br>
+                <code>union = np.union1d(set1, set2)</code><br>
+                <code>intersection = np.intersect1d(set1, set2)</code><br>
+                <code>difference = np.setdiff1d(set1, set2)</code><br>
+                <code>print("Union:", union)</code><br>
+                <code>print("Intersection:", intersection)</code><br>
+                <code>print("Difference:", difference)</code>
+            </div>
+            <div class="output-box">
+                <pre>
+        Union: [1, 2, 3, 4, 5, 6]
+        Intersection: [3, 4]
+        Difference: [1, 2]
+                </pre>
+            </div>
+        </section>
+        
+        <section id="numpy-quiz">
+            <h2>44. NumPy Quiz</h2>
+            <p>Test your knowledge of NumPy with our interactive quiz.</p>
+            <div class="quiz-box">
+                <p><strong>Question:</strong> What function is used to calculate the sum of elements in a NumPy array?</p>
+                <p>A) np.add<br>B) np.sum<br>C) np.reduce<br>D) np.product</p>
+                <p><strong>Answer:</strong> B) np.sum</p>
+            </div>
+        </section>
+        
+        <section id="numpy-exercises">
+            <h2>45. NumPy Exercises</h2>
+            <p>Practice NumPy concepts with hands-on exercises.</p>
+            <div class="exercise-box">
+                <p><strong>Exercise:</strong> Create a 2D array of shape (3, 3) with random integers between 1 and 10. Calculate the sum of each row.</p>
+                <p><strong>Solution:</strong></p>
+                <div class="code-box">
+                    <code>arr = np.random.randint(1, 10, (3, 3))</code><br>
+                    <code>row_sums = np.sum(arr, axis=1)</code><br>
+                    <code>print("Array:\\n", arr)</code><br>
+                    <code>print("Row Sums:", row_sums)</code>
+                </div>
+            </div>
+        </section>
+        
+        <section id="numpy-syllabus">
+            <h2>46. NumPy Syllabus</h2>
+            <p>The NumPy syllabus covers all topics from basic array creation to advanced functions like broadcasting and ufuncs.</p>
+            <ul>
+                <li>Introduction to NumPy</li>
+                <li>Creating and Manipulating Arrays</li>
+                <li>Mathematical and Statistical Operations</li>
+                <li>Broadcasting and ufuncs</li>
+                <li>Random Numbers and Distributions</li>
+                <li>Set Operations and Logical Functions</li>
+            </ul>
+        </section>
+        
+        <section id="numpy-study-plan">
+            <h2>47. NumPy Study Plan</h2>
+            <p>A suggested study plan to master NumPy:</p>
+            <ul>
+                <li>Day 1: Basics of NumPy, Array Creation</li>
+                <li>Day 2: Array Indexing and Slicing</li>
+                <li>Day 3: Mathematical Operations and Broadcasting</li>
+                <li>Day 4: ufuncs and Set Operations</li>
+                <li>Day 5: Random Numbers and Data Distributions</li>
+                <li>Day 6: Advanced Topics and Practice Exercises</li>
+                <li>Day 7: Take the Quiz and Review Concepts</li>
+            </ul>
+        </section>
+        
+    </main>
+    <footer>
+        <div class="footer-container">
+          <!-- Programming Courses Links -->
+          <div class="footer-links">
+            <h3>Programming Courses</h3>
+            <ul>
+              <li><a href="#">Python</a></li>
+              <li><a href="#">JavaScript</a></li>
+              <li><a href="#">Java</a></li>
+              <li><a href="#">C++</a></li>
+              <li><a href="#">PHP</a></li>
+              <li><a href="#">Machine Learning</a></li>
+            </ul>
+          </div>
+          
+          <!-- Social Media Links -->
+          <div class="footer-social">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+    
+          <!-- Contact Information -->
+          <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <ul>
+              <li><i class="fas fa-phone"></i> 9302984613</li>
+              <li><i class="fas fa-envelope"></i><a href="mailto:codekraft1325@gmail.com">Email Us :codekraft1325@gmail.com</a>
+              </li>
+              <li><i class="fas fa-map-marker-alt"></i> katangi,balaghat(M.P)</li>
+            </ul>
+          </div>
+    
+          <!-- About Us Section -->
+          <div class="footer-about">
+            <h3>About Us</h3>
+            <p>We are a leading provider of online programming courses, helping individuals from all around the world to enhance their skills. Whether you are a beginner or an expert, we offer a wide range of courses to cater to every learning need. Our courses are designed to be interactive, fun, and easy to follow.</p>
+          </div>
+        </div>
+    
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+          <p>&copy; 2025 Online Programming Courses | All Rights Reserved</p>
+          <p ><a href="#" style="color: red;">Privacy Policy</a> | <a href="#" style="color: red;">Terms of Service</a></p>
+        </div>
+      </footer> 
+ 
+  
+    
+
+
+    <script >
+     
+        const searchBar = document.getElementById('searchBar');
+const suggestionsBox = document.getElementById('suggestionsBox');
+const topics = [
+{ name: 'NumPy Tutorial', id: 'numpy-tutorial' },
+{ name: 'NumPy HOME', id: 'numpy-home' },
+{ name: 'NumPy Intro', id: 'numpy-intro' },
+{ name: 'NumPy Getting Started', id: 'numpy-getting-started' },
+{ name: 'NumPy Creating Arrays', id: 'numpy-creating-arrays' },
+{ name: 'NumPy Array Indexing', id: 'numpy-array-indexing' },
+{ name: 'NumPy Array Slicing', id: 'numpy-array-slicing' },
+{ name: 'NumPy Data Types', id: 'numpy-data-types' },
+{ name: 'NumPy Copy vs View', id: 'numpy-copy-vs-view' },
+{ name: 'NumPy Array Shape', id: 'numpy-array-shape' },
+{ name: 'NumPy Array Reshape', id: 'numpy-array-reshape' },
+{ name: 'NumPy Array Iterating', id: 'numpy-array-iterating' },
+{ name: 'NumPy Array Join', id: 'numpy-array-join' },
+{ name: 'NumPy Array Split', id: 'numpy-array-split' },
+{ name: 'NumPy Array Search', id: 'numpy-array-search' },
+{ name: 'NumPy Array Sort', id: 'numpy-array-sort' },
+{ name: 'NumPy Array Filter', id: 'numpy-array-filter' },
+{ name: 'NumPy Random', id: 'numpy-random' },
+{ name: 'Random Intro', id: 'random-intro' },
+{ name: 'Data Distribution', id: 'data-distribution' },
+{ name: 'Random Permutation', id: 'random-permutation' },
+{ name: 'Seaborn Module', id: 'seaborn-module' },
+{ name: 'Normal Distribution', id: 'normal-distribution' },
+{ name: 'Binomial Distribution', id: 'binomial-distribution' },
+{ name: 'Poisson Distribution', id: 'poisson-distribution' },
+{ name: 'Uniform Distribution', id: 'uniform-distribution' },
+{ name: 'Logistic Distribution', id: 'logistic-distribution' },
+{ name: 'Multinomial Distribution', id: 'multinomial-distribution' },
+{ name: 'Exponential Distribution', id: 'exponential-distribution' },
+{ name: 'Chi Square Distribution', id: 'chi-square-distribution' },
+{ name: 'Rayleigh Distribution', id: 'rayleigh-distribution' },
+{ name: 'Pareto Distribution', id: 'pareto-distribution' },
+{ name: 'Zipf Distribution', id: 'zipf-distribution' },
+{ name: 'NumPy ufunc', id: 'numpy-ufunc' },
+{ name: 'ufunc Intro', id: 'ufunc-intro' },
+{ name: 'ufunc Create Function', id: 'ufunc-create-function' },
+{ name: 'ufunc Simple Arithmetic', id: 'ufunc-simple-arithmetic' },
+{ name: 'ufunc Rounding Decimals', id: 'ufunc-rounding-decimals' },
+{ name: 'ufunc Logs', id: 'ufunc-logs' },
+{ name: 'ufunc Summations', id: 'ufunc-summations' },
+{ name: 'ufunc Products', id: 'ufunc-products' },
+{ name: 'ufunc Differences', id: 'ufunc-differences' },
+{ name: 'ufunc Finding LCM', id: 'ufunc-finding-lcm' },
+{ name: 'ufunc Finding GCD', id: 'ufunc-finding-gcd' },
+{ name: 'ufunc Trigonometric', id: 'ufunc-trigonometric' },
+{ name: 'ufunc Hyperbolic', id: 'ufunc-hyperbolic' },
+{ name: 'ufunc Set Operations', id: 'ufunc-set-operations' },
+{ name: 'Quiz/Exercises', id: 'quiz-exercises' },
+{ name: 'NumPy Editor', id: 'numpy-editor' },
+{ name: 'NumPy Quiz', id: 'numpy-quiz' },
+{ name: 'NumPy Exercises', id: 'numpy-exercises' },
+{ name: 'NumPy Syllabus', id: 'numpy-syllabus' },
+{ name: 'NumPy Study Plan', id: 'numpy-study-plan' },
+
+
+
+    ];
+
+// Handle input for suggestions
+// सर्च बार के "input" इवेंट को हैंडल करना
+searchBar.addEventListener('input', function () {
+const query = searchBar.value.toLowerCase(); // यूज़र का इनपुट लोअरकेस में बदलें
+suggestionsBox.innerHTML = ''; // पहले से मौजूद सुझाव हटाएं
+
+if (query.length > 0) {
+const filteredTopics = topics.filter(topic => topic.name.toLowerCase().includes(query)); // मैच खोजें
+filteredTopics.forEach(topic => {
+    const suggestionElement = document.createElement('p'); // नया सुझाव एलीमेंट बनाएं
+    suggestionElement.textContent = topic.name; // सुझाव में टॉपिक का नाम डालें
+
+    // सुझाव पर क्लिक करने पर नेविगेशन
+    suggestionElement.addEventListener('click', () => {
+        document.getElementById(topic.id).scrollIntoView({ behavior: 'smooth' }); // संबंधित सेक्शन पर स्क्रॉल करें
+        searchBar.value = topic.name; // सर्च बार में चुना गया नाम दिखाएं
+        suggestionsBox.innerHTML = ''; // सुझाव बॉक्स को साफ करें
+    });
+
+    suggestionsBox.appendChild(suggestionElement); // सुझाव बॉक्स में सुझाव जोड़ें
+});
+}
+});
+
+// सर्च बार के "keypress" इवेंट को हैंडल करना
+searchBar.addEventListener('keypress', function (e) {
+if (e.key === 'Enter') { // यदि यूज़र "Enter" दबाता है
+const query = searchBar.value.toLowerCase();
+const match = topics.find(topic => topic.name.toLowerCase().includes(query)); // पहला मैच खोजें
+
+if (match) {
+    document.getElementById(match.id).scrollIntoView({ behavior: 'smooth' }); // संबंधित सेक्शन पर स्क्रॉल करें
+    suggestionsBox.innerHTML = ''; // सुझाव बॉक्स साफ करें
+}
+}
+});
+
+    </script>
+  
+</body>
+</html>

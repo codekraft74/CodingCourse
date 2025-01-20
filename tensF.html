@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Programming</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">   
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-row">
+            <img src="img/apple-touch-icon.png" alt="Logo" class="logo">
+            <div class="search-container">
+                <input type="search" id="searchBar" placeholder="Search... HTML topic">
+                <div class="suggestions" id="suggestionsBox"></div>
+            </div>
+        </div>
+    </header>
+
+    <div class="he">
+        <h1 class="heading">TensorFlow Programming</h1>
+    </div>
+
+    <main>
+        <section id="tensorflow-home">
+            <h2>1. TensorFlow - Home</h2>
+            <p>Welcome to the TensorFlow tutorial! Learn how to create machine learning and deep learning models using TensorFlow.</p>
+        </section>
+        
+        <section id="tensorflow-introduction">
+            <h2>2. TensorFlow Introduction</h2>
+            <p>TensorFlow is an open-source machine learning library developed by Google. It allows you to build and train machine learning models using dataflow graphs.</p>
+        </section>
+        
+        <section id="tensorflow-installation">
+            <h2>3. TensorFlow - Installation</h2>
+            <p>To install TensorFlow, use pip to install it from the command line:</p>
+            <div class="code-box">
+                <code>pip install tensorflow</code>
+            </div>
+            <div class="output-box">
+                <pre>Successfully installed tensorflow</pre>
+            </div>
+        </section>
+        
+        <section id="understanding-ai">
+            <h2>4. Understanding Artificial Intelligence</h2>
+            <p>Artificial Intelligence (AI) refers to the simulation of human intelligence in machines. It involves tasks such as learning, reasoning, problem-solving, and understanding.</p>
+        </section>
+        
+        <section id="mathematical-foundations">
+            <h2>5. Mathematical Foundations</h2>
+            <p>TensorFlow relies on various mathematical concepts such as linear algebra, calculus, and probability to build machine learning models.</p>
+            <p>Linear algebra helps in representing data as matrices and vectors, while calculus helps optimize functions during model training.</p>
+        </section>
+        
+        <section id="machine-learning-deep-learning">
+            <h2>6. Machine Learning & Deep Learning</h2>
+            <p>Machine learning is a subset of AI where models learn from data without being explicitly programmed. Deep learning, a subset of machine learning, uses neural networks to model complex patterns in data.</p>
+        </section>
+        
+        <section id="tensorflow-basics">
+            <h2>7. TensorFlow - Basics</h2>
+            <p>TensorFlow uses tensors (multi-dimensional arrays) as its core data structure. Operations on tensors can be expressed as graphs, and TensorFlow handles these operations efficiently.</p>
+            <div class="code-box">
+                <code>import tensorflow as tf</code><br>
+                <code>tensor = tf.constant([1, 2, 3, 4])</code><br>
+                <code>print(tensor)</code>
+            </div>
+            <div class="output-box">
+                <pre>tf.Tensor([1 2 3 4], shape=(4,), dtype=int32)</pre>
+            </div>
+        </section>
+        
+        <section id="convolutional-neural-networks">
+            <h2>8. Convolutional Neural Networks (CNNs)</h2>
+            <p>Convolutional Neural Networks (CNNs) are a type of deep learning model commonly used for image classification and computer vision tasks. They use convolutional layers to extract features from images.</p>
+            <div class="code-box">
+                <code>from tensorflow.keras.models import Sequential</code><br>
+                <code>from tensorflow.keras.layers import Conv2D, MaxPooling2D</code><br>
+                <code>model = Sequential([</code><br>
+                <code>&nbsp;&nbsp;Conv2D(32, (3, 3), activation='relu', input_shape=(64, 64, 3)),</code><br>
+                <code>&nbsp;&nbsp;MaxPooling2D((2, 2))</code><br>
+                <code>])</code>
+            </div>
+            <div class="output-box">
+                <pre>Model Summary:</pre>
+                <pre>Model: "sequential"
+        Layers:
+         - Conv2D (32 filters, 3x3 kernel, ReLU activation)
+         - MaxPooling2D (2x2 pooling)</pre>
+            </div>
+        </section>
+        
+        <section id="recurrent-neural-networks">
+            <h2>9. Recurrent Neural Networks (RNNs)</h2>
+            <p>Recurrent Neural Networks (RNNs) are a class of neural networks that are particularly effective for sequential data, such as time series or text data.</p>
+            <div class="code-box">
+                <code>from tensorflow.keras.models import Sequential</code><br>
+                <code>from tensorflow.keras.layers import SimpleRNN</code><br>
+                <code>model = Sequential([</code><br>
+                <code>&nbsp;&nbsp;SimpleRNN(50, input_shape=(100, 1))</code><br>
+                <code>])</code>
+            </div>
+            <div class="output-box">
+                <pre>Model Summary:</pre>
+                <pre>Model: "sequential"
+        Layers:
+         - SimpleRNN (50 units, input shape (100, 1))</pre>
+            </div>
+        </section>
+        
+        <section id="tensorboard-visualization">
+            <h2>10. TensorBoard Visualization</h2>
+            <p>TensorBoard is a visualization tool that helps in tracking and visualizing the training process of a model, including metrics like loss, accuracy, and more.</p>
+            <div class="code-box">
+                <code>from tensorflow.keras.callbacks import TensorBoard</code><br>
+                <code>tensorboard = TensorBoard(log_dir='./logs')</code><br>
+                <code>model.fit(X_train, y_train, epochs=10, callbacks=[tensorboard])</code>
+            </div>
+            <div class="output-box">
+                <pre>TensorBoard logging started. Open the logs directory in your browser to visualize the training.</pre>
+            </div>
+        </section>
+        <section id="single-layer-perceptron">
+            <h2>11. Single Layer Perceptron</h2>
+            <p>A Single Layer Perceptron (SLP) is the simplest type of neural network with only one layer of neurons. It is a linear classifier used for binary classification tasks.</p>
+            <div class="code-box">
+                <code>from tensorflow.keras.models import Sequential</code><br>
+                <code>from tensorflow.keras.layers import Dense</code><br>
+                <code>model = Sequential([</code><br>
+                <code>&nbsp;&nbsp;Dense(1, activation='sigmoid', input_shape=(2,))</code><br>
+                <code>])</code>
+            </div>
+            <div class="output-box">
+                <pre>Model Summary:</pre>
+                <pre>Model: "sequential"
+        Layers:
+         - Dense (1 unit, sigmoid activation)</pre>
+            </div>
+        </section>
+        
+        <section id="tensorflow-linear-regression">
+            <h2>12. TensorFlow - Linear Regression</h2>
+            <p>Linear regression is a statistical method used for modeling the relationship between a dependent variable and one or more independent variables.</p>
+            <div class="code-box">
+                <code>import tensorflow as tf</code><br>
+                <code>model = tf.keras.Sequential([</code><br>
+                <code>&nbsp;&nbsp;tf.keras.layers.Dense(1, input_dim=1, activation='linear')</code><br>
+                <code>])</code><br>
+                <code>model.compile(optimizer='adam', loss='mean_squared_error')</code>
+            </div>
+            <div class="output-box">
+                <pre>Model Summary:</pre>
+                <pre>Model: "sequential"
+        Layers:
+         - Dense (1 unit, linear activation)</pre>
+            </div>
+        </section>
+        
+        <section id="tflearn-installation">
+            <h2>13. TFLearn and its Installation</h2>
+            <p>TFLearn is a Python library built on top of TensorFlow for simplifying machine learning model creation. To install TFLearn, use pip:</p>
+            <div class="code-box">
+                <code>pip install tflearn</code>
+            </div>
+            <div class="output-box">
+                <pre>Successfully installed tflearn</pre>
+            </div>
+        </section>
+        
+        <section id="cnn-rnn-difference">
+            <h2>14. CNN and RNN Difference</h2>
+            <p>Convolutional Neural Networks (CNNs) are used for image-related tasks, as they are good at capturing spatial hierarchies in data. Recurrent Neural Networks (RNNs), on the other hand, are used for sequential data like time series or text, as they maintain memory across time steps.</p>
+        </section>
+        
+        <section id="tensorflow-keras">
+            <h2>15. TensorFlow - Keras</h2>
+            <p>Keras is an open-source neural network library written in Python. It runs on top of TensorFlow and allows for fast prototyping and easy model creation.</p>
+            <div class="code-box">
+                <code>from tensorflow import keras</code><br>
+                <code>model = keras.Sequential([</code><br>
+                <code>&nbsp;&nbsp;keras.layers.Dense(128, activation='relu', input_shape=(784,)),</code><br>
+                <code>&nbsp;&nbsp;keras.layers.Dense(10, activation='softmax')</code><br>
+                <code>])</code>
+            </div>
+            <div class="output-box">
+                <pre>Model Summary:</pre>
+                <pre>Model: "sequential"
+        Layers:
+         - Dense (128 units, ReLU activation)
+         - Dense (10 units, Softmax activation)</pre>
+            </div>
+        </section>
+        
+        <section id="tensorflow-distributed-computing">
+            <h2>16. TensorFlow Distributed Computing</h2>
+            <p>TensorFlow supports distributed computing to scale your models and training processes. You can use TensorFlow's `tf.distribute.Strategy` to distribute training across multiple devices or machines.</p>
+            <div class="code-box">
+                <code>strategy = tf.distribute.MirroredStrategy()</code><br>
+                <code>with strategy.scope():</code><br>
+                <code>&nbsp;&nbsp;model = tf.keras.Sequential([...])</code><br>
+                <code>&nbsp;&nbsp;model.fit(x_train, y_train)</code>
+            </div>
+            <div class="output-box">
+                <pre>Distributed training started using MirroredStrategy.</pre>
+            </div>
+        </section>
+        
+        <section id="tensorflow-exporting">
+            <h2>17. TensorFlow - Exporting</h2>
+            <p>TensorFlow allows you to export your trained models for deployment. You can save and restore models using the `SavedModel` format.</p>
+            <div class="code-box">
+                <code>model.save("model_path")</code>
+            </div>
+            <div class="output-box">
+                <pre>Model saved successfully to model_path.</pre>
+            </div>
+        </section>
+        
+        <section id="multi-layer-perceptron-learning">
+            <h2>18. Multi-Layer Perceptron Learning</h2>
+            <p>Multi-layer Perceptrons (MLPs) are neural networks with multiple layers, including hidden layers. They can model complex relationships between inputs and outputs, and are typically used for classification tasks.</p>
+            <div class="code-box">
+                <code>from tensorflow.keras.models import Sequential</code><br>
+                <code>from tensorflow.keras.layers import Dense</code><br>
+                <code>model = Sequential([</code><br>
+                <code>&nbsp;&nbsp;Dense(64, activation='relu', input_shape=(784,)),</code><br>
+                <code>&nbsp;&nbsp;Dense(10, activation='softmax')</code><br>
+                <code>])</code>
+            </div>
+            <div class="output-box">
+                <pre>Model Summary:</pre>
+                <pre>Model: "sequential"
+        Layers:
+         - Dense (64 units, ReLU activation)
+         - Dense (10 units, Softmax activation)</pre>
+            </div>
+        </section>
+        
+        <section id="hidden-layers-of-perceptron">
+            <h2>19. Hidden Layers of Perceptron</h2>
+            <p>Hidden layers in a perceptron are layers that are between the input and output layers. They help the model learn more complex patterns by adding non-linearity to the model.</p>
+            <div class="code-box">
+                <code>model = Sequential([</code><br>
+                <code>&nbsp;&nbsp;Dense(64, activation='relu', input_shape=(784,)),</code><br>
+                <code>&nbsp;&nbsp;Dense(32, activation='relu'),</code><br>
+                <code>&nbsp;&nbsp;Dense(10, activation='softmax')</code><br>
+                <code>])</code>
+            </div>
+            <div class="output-box">
+                <pre>Model Summary:</pre>
+                <pre>Model: "sequential"
+        Layers:
+         - Dense (64 units, ReLU activation)
+         - Dense (32 units, ReLU activation)
+         - Dense (10 units, Softmax activation)</pre>
+            </div>
+        </section>
+        
+        <section id="tensorflow-optimizers">
+            <h2>20. TensorFlow - Optimizers</h2>
+            <p>Optimizers are algorithms used to minimize the loss function during training by adjusting the weights of the model. Some common optimizers are Adam, SGD, and RMSProp.</p>
+            <div class="code-box">
+                <code>model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])</code>
+            </div>
+            <div class="output-box">
+                <pre>Optimizer set to Adam. Model is ready for training.</pre>
+            </div>
+        </section>
+        <section id="tensorflow-xor-implementation">
+            <h2>21. TensorFlow - XOR Implementation</h2>
+            <p>Implementing the XOR function with TensorFlow involves using a neural network to learn the logic behind XOR, a non-linear operation. This can be achieved with a multi-layer perceptron.</p>
+            <div class="code-box">
+                <code>import tensorflow as tf</code><br>
+                <code>model = tf.keras.Sequential([</code><br>
+                <code>&nbsp;&nbsp;tf.keras.layers.Dense(4, input_dim=2, activation='relu'),</code><br>
+                <code>&nbsp;&nbsp;tf.keras.layers.Dense(1, activation='sigmoid')</code><br>
+                <code>])</code><br>
+                <code>model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])</code><br>
+                <code>model.fit(x, y, epochs=100)</code>
+            </div>
+            <div class="output-box">
+                <pre>Model trained to learn the XOR function.</pre>
+            </div>
+        </section>
+        
+        <section id="gradient-descent-optimization">
+            <h2>22. Gradient Descent Optimization</h2>
+            <p>Gradient descent is an optimization algorithm used to minimize the loss function by updating the weights of the neural network based on the gradient of the loss.</p>
+            <div class="code-box">
+                <code>optimizer = tf.keras.optimizers.SGD(learning_rate=0.01)</code><br>
+                <code>model.compile(optimizer=optimizer, loss='mean_squared_error', metrics=['accuracy'])</code>
+            </div>
+            <div class="output-box">
+                <pre>Optimizer set to Stochastic Gradient Descent (SGD).</pre>
+            </div>
+        </section>
+        
+        <section id="tensorflow-forming-graphs">
+            <h2>23. TensorFlow - Forming Graphs</h2>
+            <p>In TensorFlow, computation is described in the form of a computational graph. This graph contains nodes representing operations and edges representing data dependencies between operations.</p>
+            <div class="code-box">
+                <code>import tensorflow as tf</code><br>
+                <code>node1 = tf.constant(3)</code><br>
+                <code>node2 = tf.constant(4)</code><br>
+                <code>sum = node1 + node2</code><br>
+                <code>with tf.Session() as sess:</code><br>
+                <code>&nbsp;&nbsp;print(sess.run(sum))</code>
+            </div>
+            <div class="output-box">
+                <pre>7</pre>
+            </div>
+        </section>
+        
+        <section id="image-recognition-tensorflow">
+            <h2>24. Image Recognition using TensorFlow</h2>
+            <p>TensorFlow can be used to create models for image recognition. The typical workflow involves using Convolutional Neural Networks (CNNs) to identify patterns in images.</p>
+            <div class="code-box">
+                <code>model = tf.keras.Sequential([</code><br>
+                <code>&nbsp;&nbsp;tf.keras.layers.Conv2D(32, (3, 3), activation='relu', input_shape=(64, 64, 3)),</code><br>
+                <code>&nbsp;&nbsp;tf.keras.layers.MaxPooling2D(pool_size=(2, 2)),</code><br>
+                <code>&nbsp;&nbsp;tf.keras.layers.Flatten(),</code><br>
+                <code>&nbsp;&nbsp;tf.keras.layers.Dense(10, activation='softmax')</code><br>
+                <code>])</code><br>
+                <code>model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])</code>
+            </div>
+            <div class="output-box">
+                <pre>Model ready for image recognition tasks.</pre>
+            </div>
+        </section>
+        
+        <section id="recommendations-neural-network-training">
+            <h2>25. Recommendations for Neural Network Training</h2>
+            <p>When training neural networks, it's important to use proper optimization techniques, monitor overfitting, and adjust hyperparameters like learning rate. Some tips include using smaller batches and normalizing the input data.</p>
+        </section>
+        
+        <section id="tensorflow-useful-resources">
+            <h2>26. TensorFlow Useful Resources</h2>
+            <p>Here are some useful resources to dive deeper into TensorFlow:</p>
+            <ul>
+                <li><a href="https://www.tensorflow.org">TensorFlow Official Documentation</a></li>
+                <li><a href="https://www.tensorflow.org/tutorials">TensorFlow Tutorials</a></li>
+                <li><a href="https://www.tensorflow.org/community">TensorFlow Community</a></li>
+            </ul>
+        </section>
+        
+        <section id="tensorflow-quick-guide">
+            <h2>27. TensorFlow - Quick Guide</h2>
+            <p>TensorFlow is a powerful open-source library used for machine learning and deep learning tasks. The quick guide provides an overview of its functionality, from basic installation to advanced model building.</p>
+        </section>
+        
+        <section id="tensorflow-useful-resources">
+            <h2>28. TensorFlow - Useful Resources</h2>
+            <p>For further learning, check out the following resources:</p>
+            <ul>
+                <li><a href="https://www.tensorflow.org/resources">TensorFlow Resources</a></li>
+                <li><a href="https://github.com/tensorflow/tensorflow">TensorFlow GitHub Repository</a></li>
+                <li><a href="https://www.tensorflow.org/community/resources">Community Resources</a></li>
+            </ul>
+        </section>
+        
+        <section id="tensorflow-discussion">
+            <h2>29. TensorFlow Discussion</h2>
+            <p>This section discusses TensorFlow’s features, usage, and community practices. It includes developer experiences, common challenges, and how TensorFlow is evolving.</p>
+        </section>
+        
+        <section id="selected-reading">
+            <h2>30. Selected Reading</h2>
+            <p>Explore handpicked resources and tutorials for in-depth understanding of TensorFlow and machine learning concepts.</p>
+            <ul>
+                <li><a href="https://www.tensorflow.org/tutorials">TensorFlow Tutorials</a></li>
+                <li><a href="https://arxiv.org/abs/1506.06122">TensorFlow: Large-Scale Machine Learning on Heterogeneous Distributed Systems</a></li>
+                <li><a href="https://www.google.com/search?q=Deep+Learning+Book+by+Ian+Goodfellow">Deep Learning - Ian Goodfellow</a></li>
+            </ul>
+        </section>
+        
+        <section id="upsc-ias-exams-notes">
+            <h2>31. UPSC IAS Exams Notes</h2>
+            <p>This section provides essential notes for those preparing for UPSC IAS exams, with a focus on topics related to artificial intelligence, machine learning, and data science.</p>
+            <ul>
+                <li><a href="https://www.insightsonindia.com">Insights on India IAS Preparation</a></li>
+                <li><a href="https://www.iasbaba.com">IAS Baba UPSC Resources</a></li>
+            </ul>
+        </section>
+        
+        <section id="developer-best-practices">
+            <h2>32. Developer's Best Practices</h2>
+            <p>Here are the best practices for TensorFlow developers, including tips for debugging, optimizing, and building robust models:</p>
+            <ul>
+                <li>Keep your code modular to facilitate easy testing and scaling.</li>
+                <li>Regularly update TensorFlow to leverage the latest features.</li>
+                <li>Use TensorFlow’s tools like TensorBoard to track training progress.</li>
+            </ul>
+        </section>
+        
+        <section id="questions-and-answers">
+            <h2>33. Questions and Answers</h2>
+            <p>This section includes frequently asked questions and expert answers about TensorFlow, machine learning, and related concepts:</p>
+            <ul>
+                <li><strong>Q:</strong> What is the difference between TensorFlow and PyTorch?<br><strong>A:</strong> TensorFlow is more production-oriented, while PyTorch is often used for research and prototyping.</li>
+                <li><strong>Q:</strong> Can TensorFlow be used for deep reinforcement learning?<br><strong>A:</strong> Yes, TensorFlow supports reinforcement learning through libraries like TF-Agents.</li>
+            </ul>
+        </section>
+        
+        <section id="effective-resume-writing">
+            <h2>34. Effective Resume Writing</h2>
+            <p>Learn how to craft a compelling resume if you are applying for positions in AI, machine learning, or TensorFlow development roles:</p>
+            <ul>
+                <li>Highlight relevant experience with deep learning frameworks.</li>
+                <li>Include projects where you applied TensorFlow to solve real-world problems.</li>
+                <li>Emphasize your ability to optimize and deploy models at scale.</li>
+            </ul>
+        </section>
+        
+        <section id="hr-interview-questions">
+            <h2>35. HR Interview Questions</h2>
+            <p>Prepare for HR interviews with these common questions related to TensorFlow and AI development roles:</p>
+            <ul>
+                <li><strong>Tell me about a time you faced a challenge when working with TensorFlow.</strong></li>
+                <li><strong>What is your approach to optimizing a neural network model?</strong></li>
+                <li><strong>How do you stay up to date with the latest advancements in AI?</strong></li>
+            </ul>
+        </section>
+        
+        <section id="computer-glossary">
+            <h2>36. Computer Glossary</h2>
+            <p>Explore key terms and definitions that every AI, machine learning, and TensorFlow developer should know:</p>
+            <ul>
+                <li><strong>Model Training:</strong> The process of teaching a machine learning algorithm by feeding it data and adjusting the model parameters.</li>
+                <li><strong>Overfitting:</strong> When a model learns the details and noise of the training data to the extent that it negatively impacts the performance of the model on new data.</
+        
+        
+    </main>
+    <footer>
+        <div class="footer-container">
+          <!-- Programming Courses Links -->
+          <div class="footer-links">
+            <h3>Programming Courses</h3>
+            <ul>
+              <li><a href="#">Python</a></li>
+              <li><a href="#">JavaScript</a></li>
+              <li><a href="#">Java</a></li>
+              <li><a href="#">C++</a></li>
+              <li><a href="#">PHP</a></li>
+              <li><a href="#">Machine Learning</a></li>
+            </ul>
+          </div>
+          
+          <!-- Social Media Links -->
+          <div class="footer-social">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+    
+          <!-- Contact Information -->
+          <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <ul>
+              <li><i class="fas fa-phone"></i> 9302984613</li>
+              <li><i class="fas fa-envelope"></i><a href="mailto:codekraft1325@gmail.com">Email Us :codekraft1325@gmail.com</a>
+              </li>
+              <li><i class="fas fa-map-marker-alt"></i> katangi,balaghat(M.P)</li>
+            </ul>
+          </div>
+    
+          <!-- About Us Section -->
+          <div class="footer-about">
+            <h3>About Us</h3>
+            <p>We are a leading provider of online programming courses, helping individuals from all around the world to enhance their skills. Whether you are a beginner or an expert, we offer a wide range of courses to cater to every learning need. Our courses are designed to be interactive, fun, and easy to follow.</p>
+          </div>
+        </div>
+    
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+          <p>&copy; 2025 Online Programming Courses | All Rights Reserved</p>
+          <p ><a href="#" style="color: red;">Privacy Policy</a> | <a href="#" style="color: red;">Terms of Service</a></p>
+        </div>
+      </footer> 
+ 
+  
+    
+
+
+    <script >
+     
+        const searchBar = document.getElementById('searchBar');
+const suggestionsBox = document.getElementById('suggestionsBox');
+const topics = [
+{ name: 'TensorFlow - Home', id: 'tensorflow-home' },
+{ name: 'TensorFlow Introduction', id: 'tensorflow-introduction' },
+{ name: 'TensorFlow - Installation', id: 'tensorflow-installation' },
+{ name: 'Understanding Artificial Intelligence', id: 'understanding-artificial-intelligence' },
+{ name: 'Mathematical Foundations', id: 'mathematical-foundations' },
+{ name: 'Machine Learning & Deep Learning', id: 'machine-learning-deep-learning' },
+{ name: 'TensorFlow - Basics', id: 'tensorflow-basics' },
+{ name: 'Convolutional Neural Networks', id: 'convolutional-neural-networks' },
+{ name: 'Recurrent Neural Networks', id: 'recurrent-neural-networks' },
+{ name: 'TensorBoard Visualization', id: 'tensorboard-visualization' },
+{ name: 'Single Layer Perceptron', id: 'single-layer-perceptron' },
+{ name: 'TensorFlow - Linear Regression', id: 'tensorflow-linear-regression' },
+{ name: 'TFLearn and its installation', id: 'tflearn-and-its-installation' },
+{ name: 'CNN and RNN Difference', id: 'cnn-and-rnn-difference' },
+{ name: 'TensorFlow - Keras', id: 'tensorflow-keras' },
+{ name: 'TensorFlow Distributed Computing', id: 'tensorflow-distributed-computing' },
+{ name: 'TensorFlow - Exporting', id: 'tensorflow-exporting' },
+{ name: 'Multi-Layer Perceptron Learning', id: 'multi-layer-perceptron-learning' },
+{ name: 'Hidden Layers of Perceptron', id: 'hidden-layers-of-perceptron' },
+{ name: 'TensorFlow - Optimizers', id: 'tensorflow-optimizers' },
+{ name: 'TensorFlow - XOR Implementation', id: 'tensorflow-xor-implementation' },
+{ name: 'Gradient Descent Optimization', id: 'gradient-descent-optimization' },
+{ name: 'TensorFlow - Forming Graphs', id: 'tensorflow-forming-graphs' },
+{ name: 'Image Recognition using TensorFlow', id: 'image-recognition-using-tensorflow' },
+{ name: 'Recommendations for Neural Network Training', id: 'recommendations-for-neural-network-training' },
+{ name: 'TensorFlow Useful Resources', id: 'tensorflow-useful-resources' },
+{ name: 'TensorFlow - Quick Guide', id: 'tensorflow-quick-guide' },
+{ name: 'TensorFlow - Useful Resources', id: 'tensorflow-useful-resources' },
+{ name: 'TensorFlow Discussion', id: 'tensorflow-discussion' },
+{ name: 'Selected Reading', id: 'selected-reading' },
+{ name: 'UPSC IAS Exams Notes', id: 'upsc-ias-exams-notes' },
+{ name: 'Developer\'s Best Practices', id: 'developers-best-practices' },
+{ name: 'Questions and Answers', id: 'questions-and-answers' },
+{ name: 'Effective Resume Writing', id: 'effective-resume-writing' },
+{ name: 'HR Interview Questions', id: 'hr-interview-questions' },
+{ name: 'Computer Glossary', id: 'computer-glossary' },
+
+
+
+    ];
+
+// Handle input for suggestions
+// सर्च बार के "input" इवेंट को हैंडल करना
+searchBar.addEventListener('input', function () {
+const query = searchBar.value.toLowerCase(); // यूज़र का इनपुट लोअरकेस में बदलें
+suggestionsBox.innerHTML = ''; // पहले से मौजूद सुझाव हटाएं
+
+if (query.length > 0) {
+const filteredTopics = topics.filter(topic => topic.name.toLowerCase().includes(query)); // मैच खोजें
+filteredTopics.forEach(topic => {
+    const suggestionElement = document.createElement('p'); // नया सुझाव एलीमेंट बनाएं
+    suggestionElement.textContent = topic.name; // सुझाव में टॉपिक का नाम डालें
+
+    // सुझाव पर क्लिक करने पर नेविगेशन
+    suggestionElement.addEventListener('click', () => {
+        document.getElementById(topic.id).scrollIntoView({ behavior: 'smooth' }); // संबंधित सेक्शन पर स्क्रॉल करें
+        searchBar.value = topic.name; // सर्च बार में चुना गया नाम दिखाएं
+        suggestionsBox.innerHTML = ''; // सुझाव बॉक्स को साफ करें
+    });
+
+    suggestionsBox.appendChild(suggestionElement); // सुझाव बॉक्स में सुझाव जोड़ें
+});
+}
+});
+
+// सर्च बार के "keypress" इवेंट को हैंडल करना
+searchBar.addEventListener('keypress', function (e) {
+if (e.key === 'Enter') { // यदि यूज़र "Enter" दबाता है
+const query = searchBar.value.toLowerCase();
+const match = topics.find(topic => topic.name.toLowerCase().includes(query)); // पहला मैच खोजें
+
+if (match) {
+    document.getElementById(match.id).scrollIntoView({ behavior: 'smooth' }); // संबंधित सेक्शन पर स्क्रॉल करें
+    suggestionsBox.innerHTML = ''; // सुझाव बॉक्स साफ करें
+}
+}
+});
+
+    </script>
+  
+</body>
+</html>

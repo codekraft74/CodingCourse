@@ -1,0 +1,4805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Programming</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">   
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-row">
+            <img src="img/apple-touch-icon.png" alt="Logo" class="logo">
+            <div class="search-container">
+                <input type="search" id="searchBar" placeholder="Search... HTML topic">
+                <div class="suggestions" id="suggestionsBox"></div>
+            </div>
+        </div>
+    </header>
+
+    <div class="he">
+        <h1 class="heading">Java</h1>
+    </div>
+
+    <main>
+        <section id="java-home">
+            <h2>1. Java - Home</h2>
+            <p>Java is a high-level, class-based, object-oriented programming language...</p>
+            <div class="code-box">
+                <pre>
+        <!-- Java Home Page Content -->
+        <h1>Welcome to the Java Programming Tutorial</h1>
+        <p>Learn Java with practical examples and tutorials.</p>
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Displays a welcome message for Java programming.</p>
+            </div>
+        </section>
+        
+        <section id="java-overview">
+            <h2>2. Java - Overview</h2>
+            <p>Java is widely used for building enterprise applications, mobile applications, and web-based applications...</p>
+            <div class="code-box">
+                <pre>
+        <!-- Overview Content -->
+        <p>Java is a versatile language that runs on multiple platforms...</p>
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Provides an overview of Java programming language.</p>
+            </div>
+        </section>
+        
+        <section id="java-history">
+            <h2>3. Java - History</h2>
+            <p>Java was developed by Sun Microsystems in 1995, and it is now owned by Oracle Corporation...</p>
+            <div class="code-box">
+                <pre>
+        <!-- History Content -->
+        <p>Java was initially called Oak and was designed for interactive television...</p>
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Displays the history of Java programming language.</p>
+            </div>
+        </section>
+        
+        <section id="java-features">
+            <h2>4. Java - Features</h2>
+            <p>Java offers several features such as platform independence, automatic memory management, and support for multithreading...</p>
+            <div class="code-box">
+                <pre>
+        <!-- Features Content -->
+        <ul>
+            <li>Platform Independence</li>
+            <li>Object-Oriented</li>
+            <li>Automatic Garbage Collection</li>
+            <li>Security</li>
+        </ul>
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Lists the key features of Java.</p>
+            </div>
+        </section>
+        
+        <section id="java-vs-cpp">
+            <h2>5. Java Vs. C++</h2>
+            <p>Java and C++ are both powerful programming languages, but they have key differences in syntax, memory management, and platform independence...</p>
+            <div class="code-box">
+                <pre>
+        <!-- Java vs C++ Comparison -->
+        <p>Java is platform-independent while C++ is not.</p>
+        <p>C++ requires manual memory management while Java has automatic garbage collection.</p>
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Compares Java and C++ based on key features.</p>
+            </div>
+        </section>
+        
+        <section id="jvm">
+            <h2>6. JVM - Java Virtual Machine</h2>
+            <p>The Java Virtual Machine (JVM) is responsible for running Java programs...</p>
+            <div class="code-box">
+                <pre>
+        <!-- JVM Explanation -->
+        <p>JVM is a virtual machine that enables Java programs to run on different hardware architectures without modification.</p>
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Describes the role of JVM in Java programming.</p>
+            </div>
+        </section>
+        
+        <section id="jdk-vs-jre-vs-jvm">
+            <h2>7. Java - JDK vs JRE vs JVM</h2>
+            <p>JDK (Java Development Kit), JRE (Java Runtime Environment), and JVM (Java Virtual Machine) are key components for Java development...</p>
+            <div class="code-box">
+                <pre>
+        <!-- JDK vs JRE vs JVM Comparison -->
+        <p>JDK includes JRE and development tools, JRE provides libraries and JVM, and JVM runs Java bytecode.</p>
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Compares JDK, JRE, and JVM based on their roles.</p>
+            </div>
+        </section>
+        
+        <section id="java-hello-world">
+            <h2>8. Java - Hello World Program</h2>
+            <p>The simplest Java program is the "Hello, World!" program, which is often used to demonstrate the basic structure of Java code...</p>
+            <div class="code-box">
+                <pre>
+        public class HelloWorld {
+            public static void main(String[] args) {
+                System.out.println("Hello, World!");
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Prints "Hello, World!" to the console.</p>
+            </div>
+        </section>
+        
+        <section id="java-environment-setup">
+            <h2>9. Java - Environment Setup</h2>
+            <p>Setting up the Java development environment involves installing JDK and configuring the system environment variables...</p>
+            <div class="code-box">
+                <pre>
+        <!-- Environment Setup Instructions -->
+        <p>1. Download JDK from the official Java website.</p>
+        <p>2. Install JDK and set the JAVA_HOME environment variable.</p>
+        <p>3. Add JDK/bin directory to the system PATH.</p>
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Provides setup instructions for Java development environment.</p>
+            </div>
+        </section>
+        
+        <section id="java-basic-syntax">
+            <h2>10. Java - Basic Syntax</h2>
+            <p>Java syntax is based on C++, making it familiar to developers who have experience with C-like languages...</p>
+            <div class="code-box">
+                <pre>
+        <!-- Java Syntax Example -->
+        public class Example {
+            public static void main(String[] args) {
+                int number = 10;
+                System.out.println("The number is: " + number);
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Prints "The number is: 10" to the console.</p>
+            </div>
+        </section>
+        
+        <section id="java-variable-types">
+            <h2>11. Java - Variable Types</h2>
+            <p>Java supports various types of variables including primitive data types (such as int, float) and object references...</p>
+            <div class="code-box">
+                <pre>
+        <!-- Java Variable Types -->
+        public class VariableTypes {
+            public static void main(String[] args) {
+                int age = 30;
+                double salary = 55000.5;
+                boolean isStudent = false;
+                String name = "John";
+                System.out.println("Name: " + name + ", Age: " + age);
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Prints "Name: John, Age: 30" to the console.</p>
+            </div>
+        </section>
+        <section id="java-data-types">
+            <h2>12. Java - Data Types</h2>
+            <p>In Java, data types define the type of data a variable can store. Java has two categories of data types: primitive and reference data types.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Java Data Types Example -->
+        public class DataTypes {
+            public static void main(String[] args) {
+                int age = 25;
+                double price = 19.99;
+                char grade = 'A';
+                boolean isStudent = true;
+                String name = "John Doe";
+                
+                System.out.println("Age: " + age + ", Price: " + price + ", Grade: " + grade + ", Student: " + isStudent + ", Name: " + name);
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Age: 25, Price: 19.99, Grade: A, Student: true, Name: John Doe</p>
+            </div>
+        </section>
+        
+        <section id="java-type-casting">
+            <h2>13. Java - Type Casting</h2>
+            <p>Type casting is the process of converting one data type into another. It can be done explicitly or implicitly in Java.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Type Casting Example -->
+        public class TypeCasting {
+            public static void main(String[] args) {
+                int num = 10;
+                double result = num; // Implicit casting (widening)
+                System.out.println("Double value: " + result);
+        
+                double decimal = 9.78;
+                int wholeNumber = (int) decimal; // Explicit casting (narrowing)
+                System.out.println("Integer value: " + wholeNumber);
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Double value: 10.0, Integer value: 9</p>
+            </div>
+        </section>
+        
+        <section id="java-unicode-system">
+            <h2>14. Java - Unicode System</h2>
+            <p>Java supports the Unicode system, which allows representation of text in any language. Java uses 16-bit Unicode characters.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Unicode Example -->
+        public class Unicode {
+            public static void main(String[] args) {
+                char ch = '\u0041'; // Unicode for 'A'
+                System.out.println("Unicode character: " + ch);
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Unicode character: A</p>
+            </div>
+        </section>
+        
+        <section id="java-basic-operators">
+            <h2>15. Java - Basic Operators</h2>
+            <p>Java supports several operators, including arithmetic, relational, logical, and assignment operators.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Basic Operators Example -->
+        public class BasicOperators {
+            public static void main(String[] args) {
+                int a = 10, b = 5;
+                System.out.println("Addition: " + (a + b));
+                System.out.println("Subtraction: " + (a - b));
+                System.out.println("Multiplication: " + (a * b));
+                System.out.println("Division: " + (a / b));
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Addition: 15, Subtraction: 5, Multiplication: 50, Division: 2</p>
+            </div>
+        </section>
+        
+        <section id="java-comments">
+            <h2>16. Java Comments</h2>
+            <p>In Java, comments are used to explain the code and make it more readable. There are three types of comments: single-line, multi-line, and documentation comments.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Java Commenting Example -->
+        public class Comments {
+            public static void main(String[] args) {
+                // Single-line comment
+                System.out.println("This is a single-line comment.");
+        
+                /* Multi-line comment
+                   that spans multiple lines */
+                System.out.println("This is a multi-line comment.");
+                
+                /**
+                 * Documentation comment
+                 * used for generating API documentation
+                 */
+                System.out.println("This is a documentation comment.");
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: This is a single-line comment. This is a multi-line comment. This is a documentation comment.</p>
+            </div>
+        </section>
+        
+        <section id="java-user-input">
+            <h2>17. Java - User Input</h2>
+            <p>Java provides several ways to take input from the user, such as using the Scanner class.</p>
+            <div class="code-box">
+                <pre>
+        <!-- User Input Example -->
+        import java.util.Scanner;
+        
+        public class UserInput {
+            public static void main(String[] args) {
+                Scanner sc = new Scanner(System.in);
+                System.out.print("Enter your name: ");
+                String name = sc.nextLine();
+                System.out.println("Hello, " + name + "!");
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Enter your name: (user enters "John"), Hello, John!</p>
+            </div>
+        </section>
+        
+        <section id="java-date-time">
+            <h2>18. Java Date & Time</h2>
+            <p>Java provides the `java.time` package for handling dates and times. This package includes classes like `LocalDate`, `LocalTime`, and `LocalDateTime`.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Date and Time Example -->
+        import java.time.LocalDate;
+        import java.time.LocalTime;
+        import java.time.LocalDateTime;
+        
+        public class DateTime {
+            public static void main(String[] args) {
+                LocalDate date = LocalDate.now();
+                LocalTime time = LocalTime.now();
+                LocalDateTime dateTime = LocalDateTime.now();
+                
+                System.out.println("Current Date: " + date);
+                System.out.println("Current Time: " + time);
+                System.out.println("Current Date and Time: " + dateTime);
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Current Date: 2025-01-19, Current Time: 14:30:15.123, Current Date and Time: 2025-01-19T14:30:15.123</p>
+            </div>
+        </section>
+        
+        <section id="java-control-statements">
+            <h2>19. Java - Control Statements</h2>
+            <p>Control statements in Java are used to control the flow of execution of the program. These include `if`, `else`, `switch`, `while`, `for`, etc.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Control Statements Example -->
+        public class ControlStatements {
+            public static void main(String[] args) {
+                int num = 10;
+                if (num > 5) {
+                    System.out.println("Number is greater than 5");
+                } else {
+                    System.out.println("Number is less than or equal to 5");
+                }
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Number is greater than 5</p>
+            </div>
+        </section>
+        
+        <section id="java-loop-control">
+            <h2>20. Java - Loop Control</h2>
+            <p>Loop control statements are used to alter the flow of a loop. These include `break`, `continue`, and `return`.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Loop Control Example -->
+        public class LoopControl {
+            public static void main(String[] args) {
+                for (int i = 0; i < 5; i++) {
+                    if (i == 3) {
+                        continue; // Skip when i equals 3
+                    }
+                    System.out.println("i = " + i);
+                }
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: i = 0, i = 1, i = 2, i = 4</p>
+            </div>
+        </section>
+        
+        <section id="java-decision-making">
+            <h2>21. Java - Decision Making</h2>
+            <p>Decision-making statements in Java allow you to execute certain parts of code based on conditions. This includes `if`, `else if`, and `switch`.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Decision Making Example -->
+        public class DecisionMaking {
+            public static void main(String[] args) {
+                int num = 20;
+                if (num > 30) {
+                    System.out.println("Number is greater than 30");
+                } else if (num > 10) {
+                    System.out.println("Number is greater than 10 but less than or equal to 30");
+                } else {
+                    System.out.println("Number is less than or equal to 10");
+                }
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Number is greater than 10 but less than or equal to 30</p>
+            </div>
+        </section>
+        <section id="java-if-else">
+            <h2>22. Java - If-else</h2>
+            <p>The `if-else` statement in Java is used to test a condition. If the condition is true, the code inside the `if` block executes; otherwise, the code inside the `else` block executes.</p>
+            <div class="code-box">
+                <pre>
+        <!-- If-else Example -->
+        public class IfElse {
+            public static void main(String[] args) {
+                int num = 10;
+                if (num > 5) {
+                    System.out.println("Number is greater than 5");
+                } else {
+                    System.out.println("Number is less than or equal to 5");
+                }
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Number is greater than 5</p>
+            </div>
+        </section>
+        
+        <section id="java-switch">
+            <h2>23. Java - Switch</h2>
+            <p>The `switch` statement is used to execute one out of multiple possible code blocks based on the value of a variable or expression.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Switch Example -->
+        public class SwitchExample {
+            public static void main(String[] args) {
+                int day = 3;
+                switch(day) {
+                    case 1: System.out.println("Monday"); break;
+                    case 2: System.out.println("Tuesday"); break;
+                    case 3: System.out.println("Wednesday"); break;
+                    default: System.out.println("Invalid day");
+                }
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Wednesday</p>
+            </div>
+        </section>
+        
+        <section id="java-for-loops">
+            <h2>24. Java - For Loops</h2>
+            <p>The `for` loop in Java is used to repeat a block of code a fixed number of times.</p>
+            <div class="code-box">
+                <pre>
+        <!-- For Loop Example -->
+        public class ForLoop {
+            public static void main(String[] args) {
+                for (int i = 0; i < 5; i++) {
+                    System.out.println("i = " + i);
+                }
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: i = 0, i = 1, i = 2, i = 3, i = 4</p>
+            </div>
+        </section>
+        
+        <section id="java-for-each-loops">
+            <h2>25. Java - For-Each Loops</h2>
+            <p>The `for-each` loop in Java is used to iterate over elements in arrays or collections.</p>
+            <div class="code-box">
+                <pre>
+        <!-- For-Each Loop Example -->
+        public class ForEachLoop {
+            public static void main(String[] args) {
+                int[] numbers = {1, 2, 3, 4, 5};
+                for (int num : numbers) {
+                    System.out.println(num);
+                }
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: 1, 2, 3, 4, 5</p>
+            </div>
+        </section>
+        
+        <section id="java-while-loops">
+            <h2>26. Java - While Loops</h2>
+            <p>The `while` loop in Java repeats a block of code as long as the specified condition is true.</p>
+            <div class="code-box">
+                <pre>
+        <!-- While Loop Example -->
+        public class WhileLoop {
+            public static void main(String[] args) {
+                int i = 0;
+                while (i < 5) {
+                    System.out.println("i = " + i);
+                    i++;
+                }
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: i = 0, i = 1, i = 2, i = 3, i = 4</p>
+            </div>
+        </section>
+        
+        <section id="java-do-while-loops">
+            <h2>27. Java - do-while Loops</h2>
+            <p>The `do-while` loop in Java guarantees that the code will be executed at least once, even if the condition is false initially.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Do-While Loop Example -->
+        public class DoWhileLoop {
+            public static void main(String[] args) {
+                int i = 0;
+                do {
+                    System.out.println("i = " + i);
+                    i++;
+                } while (i < 5);
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: i = 0, i = 1, i = 2, i = 3, i = 4</p>
+            </div>
+        </section>
+        
+        <section id="java-break">
+            <h2>28. Java Break</h2>
+            <p>The `break` statement in Java is used to exit from a loop or switch statement prematurely.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Break Example -->
+        public class BreakExample {
+            public static void main(String[] args) {
+                for (int i = 0; i < 5; i++) {
+                    if (i == 3) {
+                        break;
+                    }
+                    System.out.println("i = " + i);
+                }
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: i = 0, i = 1, i = 2</p>
+            </div>
+        </section>
+        
+        <section id="java-continue">
+            <h2>29. Java - Continue</h2>
+            <p>The `continue` statement in Java is used to skip the current iteration of a loop and continue with the next iteration.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Continue Example -->
+        public class ContinueExample {
+            public static void main(String[] args) {
+                for (int i = 0; i < 5; i++) {
+                    if (i == 2) {
+                        continue;
+                    }
+                    System.out.println("i = " + i);
+                }
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: i = 0, i = 1, i = 3, i = 4</p>
+            </div>
+        </section>
+        
+        <section id="java-oops-concepts">
+            <h2>30. Object Oriented Programming</h2>
+            <p>Object-Oriented Programming (OOP) is a programming paradigm based on the concept of objects, which can contain data and methods to operate on that data.</p>
+            <div class="code-box">
+                <pre>
+        <!-- OOP Example -->
+        class Person {
+            String name;
+            int age;
+            
+            Person(String name, int age) {
+                this.name = name;
+                this.age = age;
+            }
+            
+            void displayInfo() {
+                System.out.println("Name: " + name + ", Age: " + age);
+            }
+        }
+        
+        public class OOPExample {
+            public static void main(String[] args) {
+                Person person1 = new Person("John", 30);
+                person1.displayInfo();
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Name: John, Age: 30</p>
+            </div>
+        </section>
+        
+        <section id="java-oops-concepts">
+            <h2>31. Java OOPS Concepts</h2>
+            <p>Java supports Object-Oriented Programming (OOP) principles like inheritance, polymorphism, encapsulation, and abstraction.</p>
+            <div class="code-box">
+                <pre>
+        <!-- OOPS Example -->
+        class Animal {
+            void sound() {
+                System.out.println("Animal makes sound");
+            }
+        }
+        
+        class Dog extends Animal {
+            void sound() {
+                System.out.println("Dog barks");
+            }
+        }
+        
+        public class OOPSConcepts {
+            public static void main(String[] args) {
+                Animal animal = new Animal();
+                animal.sound();
+                
+                Dog dog = new Dog();
+                dog.sound();
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Animal makes sound, Dog barks</p>
+            </div>
+        </section>
+        <section id="java-object-classes">
+            <h2>32. Java - Object & Classes</h2>
+            <p>In Java, a class is a blueprint for objects. An object is an instance of a class. Objects can have attributes (fields) and methods (functions).</p>
+            <div class="code-box">
+                <pre>
+        <!-- Object and Class Example -->
+        class Car {
+            String model;
+            int year;
+        
+            // Method to display information
+            void displayInfo() {
+                System.out.println("Model: " + model + ", Year: " + year);
+            }
+        }
+        
+        public class ObjectClassExample {
+            public static void main(String[] args) {
+                Car car1 = new Car();
+                car1.model = "Tesla";
+                car1.year = 2022;
+                car1.displayInfo();
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Model: Tesla, Year: 2022</p>
+            </div>
+        </section>
+        
+        <section id="java-class-attributes">
+            <h2>33. Java - Class Attributes</h2>
+            <p>Class attributes (fields) are variables defined within a class. They define the state of an object.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Class Attributes Example -->
+        class Car {
+            String model; // Attribute
+            int year;     // Attribute
+        }
+        
+        public class ClassAttributes {
+            public static void main(String[] args) {
+                Car car1 = new Car();
+                car1.model = "BMW";
+                car1.year = 2021;
+                System.out.println("Model: " + car1.model + ", Year: " + car1.year);
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Model: BMW, Year: 2021</p>
+            </div>
+        </section>
+        
+        <section id="java-class-methods">
+            <h2>34. Java - Class Methods</h2>
+            <p>Class methods define the behavior of the objects of a class. They are functions inside the class.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Class Methods Example -->
+        class Car {
+            String model;
+            int year;
+        
+            // Method to display car details
+            void displayInfo() {
+                System.out.println("Model: " + model + ", Year: " + year);
+            }
+        }
+        
+        public class ClassMethods {
+            public static void main(String[] args) {
+                Car car1 = new Car();
+                car1.model = "Audi";
+                car1.year = 2020;
+                car1.displayInfo();
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Model: Audi, Year: 2020</p>
+            </div>
+        </section>
+        
+        <section id="java-methods">
+            <h2>35. Java - Methods</h2>
+            <p>Methods are blocks of code that perform a specific task. They can accept parameters and return values.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Methods Example -->
+        class Calculator {
+            // Method to add two numbers
+            int add(int a, int b) {
+                return a + b;
+            }
+        }
+        
+        public class MethodsExample {
+            public static void main(String[] args) {
+                Calculator calc = new Calculator();
+                int result = calc.add(5, 3);
+                System.out.println("Sum: " + result);
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Sum: 8</p>
+            </div>
+        </section>
+        
+        <section id="java-variables-scope">
+            <h2>36. Java - Variables Scope</h2>
+            <p>Scope of a variable refers to the region in which the variable can be accessed. Local variables are accessible only within methods, while instance variables are accessible throughout the class.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Variables Scope Example -->
+        class ScopeExample {
+            int instanceVar = 10; // Instance variable
+        
+            void display() {
+                int localVar = 5; // Local variable
+                System.out.println("Instance Variable: " + instanceVar);
+                System.out.println("Local Variable: " + localVar);
+            }
+        }
+        
+        public class VariablesScope {
+            public static void main(String[] args) {
+                ScopeExample obj = new ScopeExample();
+                obj.display();
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Instance Variable: 10, Local Variable: 5</p>
+            </div>
+        </section>
+        
+        <section id="java-constructors">
+            <h2>37. Java - Constructors</h2>
+            <p>Constructors in Java are special methods that are used to initialize objects. They have the same name as the class and are called automatically when an object is created.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Constructors Example -->
+        class Car {
+            String model;
+            int year;
+        
+            // Constructor to initialize object
+            Car(String model, int year) {
+                this.model = model;
+                this.year = year;
+            }
+        
+            void displayInfo() {
+                System.out.println("Model: " + model + ", Year: " + year);
+            }
+        }
+        
+        public class ConstructorsExample {
+            public static void main(String[] args) {
+                Car car1 = new Car("Mercedes", 2022);
+                car1.displayInfo();
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Model: Mercedes, Year: 2022</p>
+            </div>
+        </section>
+        
+        <section id="java-access-modifiers">
+            <h2>38. Java - Access Modifiers</h2>
+            <p>Access modifiers in Java determine the visibility of classes, methods, and variables. There are four types of access modifiers: `public`, `private`, `protected`, and default (no modifier).</p>
+            <div class="code-box">
+                <pre>
+        <!-- Access Modifiers Example -->
+        class Person {
+            public String name; // Public access
+            private int age;     // Private access
+        
+            void displayInfo() {
+                System.out.println("Name: " + name);
+                System.out.println("Age: " + age);
+            }
+        }
+        
+        public class AccessModifiersExample {
+            public static void main(String[] args) {
+                Person person = new Person();
+                person.name = "John";
+                // person.age = 30; // Error: age is private
+                person.displayInfo();
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Name: John, Age: 0</p>
+            </div>
+        </section>
+        
+        <section id="java-inheritance">
+            <h2>39. Java - Inheritance</h2>
+            <p>Inheritance is an OOP concept where a class inherits fields and methods from another class.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Inheritance Example -->
+        class Animal {
+            void sound() {
+                System.out.println("Animal makes a sound");
+            }
+        }
+        
+        class Dog extends Animal {
+            void sound() {
+                System.out.println("Dog barks");
+            }
+        }
+        
+        public class InheritanceExample {
+            public static void main(String[] args) {
+                Dog dog = new Dog();
+                dog.sound(); // Calls the overridden method
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Dog barks</p>
+            </div>
+        </section>
+        
+        <section id="java-aggregation">
+            <h2>40. Java - Aggregation</h2>
+            <p>Aggregation is a special type of association where one class is a part of another class. The associated object can exist independently.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Aggregation Example -->
+        class Engine {
+            void start() {
+                System.out.println("Engine started");
+            }
+        }
+        
+        class Car {
+            Engine engine; // Aggregation: Car has an Engine
+        
+            Car(Engine engine) {
+                this.engine = engine;
+            }
+        
+            void startCar() {
+                engine.start();
+                System.out.println("Car is moving");
+            }
+        }
+        
+        public class AggregationExample {
+            public static void main(String[] args) {
+                Engine engine = new Engine();
+                Car car = new Car(engine);
+                car.startCar();
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Engine started, Car is moving</p>
+            </div>
+        </section>
+        
+        <section id="java-polymorphism">
+            <h2>41. Java - Polymorphism</h2>
+            <p>Polymorphism allows objects of different classes to be treated as objects of a common superclass. The method to be invoked is determined at runtime.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Polymorphism Example -->
+        class Animal {
+            void sound() {
+                System.out.println("Animal makes a sound");
+            }
+        }
+        
+        class Dog extends Animal {
+            void sound() {
+                System.out.println("Dog barks");
+            }
+        }
+        
+        public class PolymorphismExample {
+            public static void main(String[] args) {
+                Animal animal = new Dog(); // Polymorphism
+                animal.sound(); // Calls the Dog's sound method
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Dog barks</p>
+            </div>
+        </section>
+        
+        <section id="java-overriding">
+            <h2>42. Java - Overriding</h2>
+            <p>Method overriding allows a subclass to provide a specific implementation of a method already provided by its superclass.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Method Overriding Example -->
+        class Animal {
+            void sound() {
+                System.out.println("Animal makes a sound");
+            }
+        }
+        
+        class Dog extends Animal {
+            @Override
+            void sound() {
+                System.out.println("Dog barks");
+            }
+        }
+        
+        public class OverridingExample {
+            public static void main(String[] args) {
+                Animal dog = new Dog();
+                dog.sound(); // Calls the overridden method in Dog
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Dog barks</p>
+            </div>
+        </section>
+        <section id="java-method-overloading">
+            <h2>43. Java - Method Overloading</h2>
+            <p>Method Overloading in Java allows a class to have more than one method having the same name, if their parameter lists are different.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Method Overloading Example -->
+        class Calculator {
+            // Overloaded add method with two parameters
+            int add(int a, int b) {
+                return a + b;
+            }
+        
+            // Overloaded add method with three parameters
+            int add(int a, int b, int c) {
+                return a + b + c;
+            }
+        }
+        
+        public class MethodOverloadingExample {
+            public static void main(String[] args) {
+                Calculator calc = new Calculator();
+                System.out.println("Sum of 5 and 3: " + calc.add(5, 3));
+                System.out.println("Sum of 1, 2, and 3: " + calc.add(1, 2, 3));
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Sum of 5 and 3: 8, Sum of 1, 2, and 3: 6</p>
+            </div>
+        </section>
+        
+        <section id="java-dynamic-binding">
+            <h2>44. Java - Dynamic Binding</h2>
+            <p>Dynamic binding in Java is the process of linking a method call to the method's body at runtime. It occurs when an overridden method is called using a reference variable of a superclass.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Dynamic Binding Example -->
+        class Animal {
+            void sound() {
+                System.out.println("Animal makes a sound");
+            }
+        }
+        
+        class Dog extends Animal {
+            void sound() {
+                System.out.println("Dog barks");
+            }
+        }
+        
+        public class DynamicBindingExample {
+            public static void main(String[] args) {
+                Animal animal = new Dog(); // Dynamic binding
+                animal.sound(); // Calls Dog's sound method
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Dog barks</p>
+            </div>
+        </section>
+        
+        <section id="java-static-binding">
+            <h2>45. Java - Static Binding</h2>
+            <p>Static binding occurs when the method call is resolved at compile-time. It occurs for methods that are private, final, or static.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Static Binding Example -->
+        class Animal {
+            static void sound() {
+                System.out.println("Animal makes a sound");
+            }
+        }
+        
+        class Dog extends Animal {
+            static void sound() {
+                System.out.println("Dog barks");
+            }
+        }
+        
+        public class StaticBindingExample {
+            public static void main(String[] args) {
+                Animal animal = new Dog(); // Static binding
+                animal.sound(); // Calls Animal's sound method due to static binding
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Animal makes a sound</p>
+            </div>
+        </section>
+        
+        <section id="java-instance-initializer-block">
+            <h2>46. Java Instance Initializer Block</h2>
+            <p>An instance initializer block is used to initialize an object before calling the constructor. It is executed every time an object is created.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Instance Initializer Block Example -->
+        class Person {
+            String name;
+        
+            // Instance Initializer Block
+            {
+                name = "John";
+            }
+        
+            Person() {
+                System.out.println("Constructor called");
+            }
+        
+            void displayInfo() {
+                System.out.println("Name: " + name);
+            }
+        }
+        
+        public class InstanceInitializerExample {
+            public static void main(String[] args) {
+                Person person = new Person();
+                person.displayInfo();
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Constructor called, Name: John</p>
+            </div>
+        </section>
+        
+        <section id="java-abstraction">
+            <h2>47. Java - Abstraction</h2>
+            <p>Abstraction in Java is the concept of hiding implementation details and exposing only the essential features of an object. It can be achieved using abstract classes and interfaces.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Abstraction Example -->
+        abstract class Animal {
+            abstract void sound(); // Abstract method
+        }
+        
+        class Dog extends Animal {
+            void sound() {
+                System.out.println("Dog barks");
+            }
+        }
+        
+        public class AbstractionExample {
+            public static void main(String[] args) {
+                Animal animal = new Dog();
+                animal.sound();
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Dog barks</p>
+            </div>
+        </section>
+        
+        <section id="java-encapsulation">
+            <h2>48. Java - Encapsulation</h2>
+            <p>Encapsulation is the process of wrapping data (variables) and code (methods) together as a single unit. It is achieved by using access modifiers like private, protected, etc., and providing getter and setter methods.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Encapsulation Example -->
+        class Person {
+            private String name;
+        
+            // Getter method
+            public String getName() {
+                return name;
+            }
+        
+            // Setter method
+            public void setName(String name) {
+                this.name = name;
+            }
+        }
+        
+        public class EncapsulationExample {
+            public static void main(String[] args) {
+                Person person = new Person();
+                person.setName("John");
+                System.out.println("Name: " + person.getName());
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Name: John</p>
+            </div>
+        </section>
+        
+        <section id="java-interfaces">
+            <h2>49. Java - Interfaces</h2>
+            <p>Interfaces in Java are abstract types used to specify a set of methods that a class must implement. A class can implement multiple interfaces.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Interfaces Example -->
+        interface Animal {
+            void sound(); // Abstract method
+        }
+        
+        class Dog implements Animal {
+            public void sound() {
+                System.out.println("Dog barks");
+            }
+        }
+        
+        public class InterfacesExample {
+            public static void main(String[] args) {
+                Animal animal = new Dog();
+                animal.sound();
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Dog barks</p>
+            </div>
+        </section>
+        
+        <section id="java-packages">
+            <h2>50. Java - Packages</h2>
+            <p>Packages are used to group related classes and interfaces in Java. They help in organizing the project structure.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Packages Example -->
+        package com.example;
+        
+        class Person {
+            void displayInfo() {
+                System.out.println("Person information");
+            }
+        }
+        
+        public class PackagesExample {
+            public static void main(String[] args) {
+                com.example.Person person = new com.example.Person();
+                person.displayInfo();
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Person information</p>
+            </div>
+        </section>
+        
+        <section id="java-inner-classes">
+            <h2>51. Java Inner Classes</h2>
+            <p>Inner classes are classes defined within another class. They can access the members of the outer class.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Inner Classes Example -->
+        class OuterClass {
+            private String message = "Hello from Outer Class";
+        
+            class InnerClass {
+                void display() {
+                    System.out.println(message);
+                }
+            }
+        }
+        
+        public class InnerClassesExample {
+            public static void main(String[] args) {
+                OuterClass outer = new OuterClass();
+                OuterClass.InnerClass inner = outer.new InnerClass();
+                inner.display();
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Hello from Outer Class</p>
+            </div>
+        </section>
+        
+        <section id="java-static-class">
+            <h2>52. Java - Static Class</h2>
+            <p>A static class in Java is a nested class that is declared with the static keyword. It can access only the static members of the outer class.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Static Class Example -->
+        class OuterClass {
+            static String message = "Hello from Outer Class";
+        
+            static class StaticInnerClass {
+                void display() {
+                    System.out.println(message); // Accessing static member of outer class
+                }
+            }
+        }
+        
+        public class StaticClassExample {
+            public static void main(String[] args) {
+                OuterClass.StaticInnerClass inner = new OuterClass.StaticInnerClass();
+                inner.display();
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Hello from Outer Class</p>
+            </div>
+        </section>
+        <section id="java-anonymous-class">
+            <h2>53. Java - Anonymous Class</h2>
+            <p>An anonymous class in Java is a class without a name that is used to instantiate a class or interface at the time of its declaration.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Anonymous Class Example -->
+        interface Animal {
+            void sound();
+        }
+        
+        public class AnonymousClassExample {
+            public static void main(String[] args) {
+                // Anonymous class implementing Animal interface
+                Animal animal = new Animal() {
+                    public void sound() {
+                        System.out.println("Dog barks");
+                    }
+                };
+                animal.sound();
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Dog barks</p>
+            </div>
+        </section>
+        
+        <section id="java-singleton-class">
+            <h2>54. Java - Singleton Class</h2>
+            <p>A Singleton class in Java ensures that only one instance of the class is created and provides a global access point to that instance.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Singleton Class Example -->
+        class Singleton {
+            private static Singleton instance;
+        
+            private Singleton() { }
+        
+            public static Singleton getInstance() {
+                if (instance == null) {
+                    instance = new Singleton();
+                }
+                return instance;
+            }
+        }
+        
+        public class SingletonExample {
+            public static void main(String[] args) {
+                Singleton singleton = Singleton.getInstance();
+                System.out.println("Singleton instance created: " + singleton);
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Singleton instance created: Singleton@15db9742</p>
+            </div>
+        </section>
+        
+        <section id="java-wrapper-classes">
+            <h2>55. Java - Wrapper Classes</h2>
+            <p>Wrapper classes in Java provide a way to use primitive data types as objects. Java provides wrapper classes for each primitive type like Integer, Double, etc.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Wrapper Classes Example -->
+        public class WrapperClassesExample {
+            public static void main(String[] args) {
+                int num = 10;
+                Integer wrappedNum = Integer.valueOf(num); // Wrapper class
+                System.out.println("Wrapped Number: " + wrappedNum);
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Wrapped Number: 10</p>
+            </div>
+        </section>
+        
+        <section id="java-enums">
+            <h2>56. Java Enums</h2>
+            <p>Enums in Java are special classes that represent a group of constants (unchangeable variables).</p>
+            <div class="code-box">
+                <pre>
+        <!-- Enum Example -->
+        enum Day {
+            MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY
+        }
+        
+        public class EnumExample {
+            public static void main(String[] args) {
+                Day today = Day.MONDAY;
+                System.out.println("Today is: " + today);
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Today is: MONDAY</p>
+            </div>
+        </section>
+        
+        <section id="java-enum-constructor">
+            <h2>57. Java - Enum Constructor</h2>
+            <p>Enum constructors allow you to associate additional data with each constant in the enum. The constructor is called when the enum is initialized.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Enum Constructor Example -->
+        enum Day {
+            MONDAY("Start of the week"),
+            TUESDAY("Second day"),
+            WEDNESDAY("Middle of the week");
+        
+            private String description;
+        
+            Day(String description) {
+                this.description = description;
+            }
+        
+            public String getDescription() {
+                return description;
+            }
+        }
+        
+        public class EnumConstructorExample {
+            public static void main(String[] args) {
+                System.out.println(Day.MONDAY.getDescription());
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Start of the week</p>
+            </div>
+        </section>
+        
+        <section id="java-enum-strings">
+            <h2>58. Java - Enum Strings</h2>
+            <p>Enums can be used to convert strings into enum constants and vice versa using methods like valueOf and toString.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Enum String Example -->
+        enum Day {
+            MONDAY, TUESDAY, WEDNESDAY
+        }
+        
+        public class EnumStringsExample {
+            public static void main(String[] args) {
+                String dayString = "MONDAY";
+                Day day = Day.valueOf(dayString); // Convert string to enum
+                System.out.println("Enum value: " + day);
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Enum value: MONDAY</p>
+            </div>
+        </section>
+        
+        <section id="java-built-in-classes">
+            <h2>59. Java Built-in Classes</h2>
+            <p>Java provides several built-in classes that are part of the Java standard library, such as String, Math, and System.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Built-in Classes Example -->
+        public class BuiltInClassesExample {
+            public static void main(String[] args) {
+                int result = Math.max(10, 20); // Using Math class
+                System.out.println("Max value: " + result);
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Max value: 20</p>
+            </div>
+        </section>
+        
+        <section id="java-number">
+            <h2>60. Java Number</h2>
+            <p>The Number class in Java is the superclass of classes like Integer, Double, and others that represent numerical values.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Number Example -->
+        public class NumberExample {
+            public static void main(String[] args) {
+                Integer num = 10;
+                System.out.println("Integer value: " + num);
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Integer value: 10</p>
+            </div>
+        </section>
+        
+        <section id="java-boolean">
+            <h2>61. Java Boolean</h2>
+            <p>The Boolean class in Java wraps the primitive type boolean into an object.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Boolean Example -->
+        public class BooleanExample {
+            public static void main(String[] args) {
+                Boolean isJavaFun = true;
+                System.out.println("Is Java fun? " + isJavaFun);
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Is Java fun? true</p>
+            </div>
+        </section>
+        
+        <section id="java-characters">
+            <h2>62. Java Characters</h2>
+            <p>The Character class in Java wraps a char type into an object and provides various methods for working with characters.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Character Example -->
+        public class CharacterExample {
+            public static void main(String[] args) {
+                char letter = 'A';
+                System.out.println("Character: " + letter);
+                System.out.println("Is letter a digit? " + Character.isDigit(letter));
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Character: A, Is letter a digit? false</p>
+            </div>
+        </section>
+        <section id="java-arrays">
+            <h2>63. Java - Arrays</h2>
+            <p>Arrays in Java are used to store multiple values in a single variable, instead of declaring separate variables for each value.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Arrays Example -->
+        public class ArraysExample {
+            public static void main(String[] args) {
+                int[] numbers = {1, 2, 3, 4, 5};
+                for (int i = 0; i < numbers.length; i++) {
+                    System.out.println(numbers[i]);
+                }
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: 1 2 3 4 5</p>
+            </div>
+        </section>
+        
+        <section id="java-math-class">
+            <h2>64. Java - Math Class</h2>
+            <p>The Math class in Java provides methods for performing basic numeric operations such as exponential, logarithm, square root, etc.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Math Class Example -->
+        public class MathClassExample {
+            public static void main(String[] args) {
+                double result = Math.sqrt(25); // Square root of 25
+                System.out.println("Square root: " + result);
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Square root: 5.0</p>
+            </div>
+        </section>
+        
+        <section id="java-file-handling">
+            <h2>65. Java File Handling</h2>
+            <p>File Handling in Java allows us to create, read, write, and delete files. It uses the classes from the java.io package.</p>
+            <div class="code-box">
+                <pre>
+        <!-- File Handling Example -->
+        import java.io.*;
+        
+        public class FileHandlingExample {
+            public static void main(String[] args) {
+                File file = new File("example.txt");
+                if (file.exists()) {
+                    System.out.println("File exists.");
+                } else {
+                    System.out.println("File does not exist.");
+                }
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: File does not exist.</p>
+            </div>
+        </section>
+        
+        <section id="java-files">
+            <h2>66. Java - Files</h2>
+            <p>The java.io.File class represents a file or directory path in the filesystem.</p>
+            <div class="code-box">
+                <pre>
+        <!-- File Class Example -->
+        import java.io.File;
+        
+        public class FileExample {
+            public static void main(String[] args) {
+                File file = new File("testfile.txt");
+                System.out.println("File exists: " + file.exists());
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: File exists: false</p>
+            </div>
+        </section>
+        
+        <section id="java-create-file">
+            <h2>67. Java Create a File</h2>
+            <p>This code shows how to create a new file in Java using the File class and its createNewFile() method.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Create a File Example -->
+        import java.io.File;
+        import java.io.IOException;
+        
+        public class CreateFileExample {
+            public static void main(String[] args) {
+                File file = new File("newfile.txt");
+                try {
+                    if (file.createNewFile()) {
+                        System.out.println("File created: " + file.getName());
+                    } else {
+                        System.out.println("File already exists.");
+                    }
+                } catch (IOException e) {
+                    System.out.println("An error occurred.");
+                    e.printStackTrace();
+                }
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: File created: newfile.txt</p>
+            </div>
+        </section>
+        
+        <section id="java-write-file">
+            <h2>68. Java - Write to File</h2>
+            <p>In Java, you can write to a file using FileWriter or BufferedWriter class.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Write to File Example -->
+        import java.io.File;
+        import java.io.FileWriter;
+        import java.io.IOException;
+        
+        public class WriteToFileExample {
+            public static void main(String[] args) {
+                try {
+                    FileWriter writer = new FileWriter("writefile.txt");
+                    writer.write("Hello, Java File Handling!");
+                    writer.close();
+                    System.out.println("Successfully wrote to the file.");
+                } catch (IOException e) {
+                    System.out.println("An error occurred.");
+                    e.printStackTrace();
+                }
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Successfully wrote to the file.</p>
+            </div>
+        </section>
+        
+        <section id="java-read-files">
+            <h2>69. Java - Read Files</h2>
+            <p>You can read a file in Java using FileReader or BufferedReader class.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Read from File Example -->
+        import java.io.File;
+        import java.io.FileReader;
+        import java.io.BufferedReader;
+        import java.io.IOException;
+        
+        public class ReadFileExample {
+            public static void main(String[] args) {
+                try {
+                    FileReader reader = new FileReader("writefile.txt");
+                    BufferedReader bufferedReader = new BufferedReader(reader);
+                    String line;
+                    while ((line = bufferedReader.readLine()) != null) {
+                        System.out.println(line);
+                    }
+                    bufferedReader.close();
+                } catch (IOException e) {
+                    System.out.println("An error occurred.");
+                    e.printStackTrace();
+                }
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Hello, Java File Handling!</p>
+            </div>
+        </section>
+        
+        <section id="java-delete-files">
+            <h2>70. Java - Delete Files</h2>
+            <p>To delete a file in Java, you can use the delete() method of the File class.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Delete File Example -->
+        import java.io.File;
+        
+        public class DeleteFileExample {
+            public static void main(String[] args) {
+                File file = new File("writefile.txt");
+                if (file.delete()) {
+                    System.out.println("Deleted the file: " + file.getName());
+                } else {
+                    System.out.println("Failed to delete the file.");
+                }
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Deleted the file: writefile.txt</p>
+            </div>
+        </section>
+        
+        <section id="java-directories">
+            <h2>71. Java - Directories</h2>
+            <p>You can create, list, and check directories using the File class in Java.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Create and List Directories Example -->
+        import java.io.File;
+        
+        public class DirectoryExample {
+            public static void main(String[] args) {
+                File directory = new File("newDirectory");
+                if (!directory.exists()) {
+                    directory.mkdir();
+                    System.out.println("Directory created: " + directory.getName());
+                }
+                
+                File[] files = directory.listFiles();
+                if (files != null) {
+                    System.out.println("Files in directory:");
+                    for (File file : files) {
+                        System.out.println(file.getName());
+                    }
+                }
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Directory created: newDirectory</p>
+            </div>
+        </section>
+        <section id="java-io-streams">
+            <h2>72. Java - I/O Streams</h2>
+            <p>In Java, I/O Streams are used to read from and write to files, memory, or other resources. Java provides byte and character streams.</p>
+            <div class="code-box">
+                <pre>
+        <!-- I/O Streams Example -->
+        import java.io.*;
+        
+        public class IOStreamExample {
+            public static void main(String[] args) {
+                try (FileInputStream fis = new FileInputStream("input.txt");
+                     FileOutputStream fos = new FileOutputStream("output.txt")) {
+                    int byteRead;
+                    while ((byteRead = fis.read()) != -1) {
+                        fos.write(byteRead);
+                    }
+                    System.out.println("File copy successful!");
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: File copy successful!</p>
+            </div>
+        </section>
+        
+        <section id="java-error-exceptions">
+            <h2>73. Java Error & Exceptions</h2>
+            <p>In Java, errors are abnormal conditions that are typically outside of a program’s control (e.g., JVM errors). Exceptions are issues that occur during program execution and can be caught and handled.</p>
+        </section>
+        
+        <section id="java-exceptions">
+            <h2>74. Java - Exceptions</h2>
+            <p>Exceptions are events that disrupt the normal flow of the program. Java provides mechanisms to handle exceptions and prevent crashes.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Exception Example -->
+        public class ExceptionExample {
+            public static void main(String[] args) {
+                try {
+                    int result = 10 / 0; // This will cause an ArithmeticException
+                } catch (ArithmeticException e) {
+                    System.out.println("Error: Division by zero!");
+                }
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Error: Division by zero!</p>
+            </div>
+        </section>
+        
+        <section id="java-try-catch-block">
+            <h2>75. Java - try-catch Block</h2>
+            <p>The try-catch block is used to handle exceptions in Java. Code that might throw an exception is placed in the try block, while the catch block handles the exception.</p>
+            <div class="code-box">
+                <pre>
+        <!-- try-catch Block Example -->
+        public class TryCatchExample {
+            public static void main(String[] args) {
+                try {
+                    String str = null;
+                    System.out.println(str.length());
+                } catch (NullPointerException e) {
+                    System.out.println("Caught a null pointer exception!");
+                }
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Caught a null pointer exception!</p>
+            </div>
+        </section>
+        
+        <section id="java-try-with-resources">
+            <h2>76. Java - try-with-resources</h2>
+            <p>The try-with-resources statement ensures that each resource is closed at the end of the statement. It works with classes that implement the AutoCloseable interface.</p>
+            <div class="code-box">
+                <pre>
+        <!-- try-with-resources Example -->
+        import java.io.*;
+        
+        public class TryWithResourcesExample {
+            public static void main(String[] args) {
+                try (FileReader fr = new FileReader("file.txt");
+                     BufferedReader br = new BufferedReader(fr)) {
+                    String line;
+                    while ((line = br.readLine()) != null) {
+                        System.out.println(line);
+                    }
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Contents of the file will be printed.</p>
+            </div>
+        </section>
+        
+        <section id="java-multi-catch-block">
+            <h2>77. Java - Multi-catch Block</h2>
+            <p>Java allows multiple exceptions to be caught in a single catch block using the multi-catch syntax introduced in Java 7.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Multi-catch Block Example -->
+        public class MultiCatchExample {
+            public static void main(String[] args) {
+                try {
+                    String str = null;
+                    System.out.println(str.length());
+                    int result = 10 / 0;
+                } catch (NullPointerException | ArithmeticException e) {
+                    System.out.println("Caught exception: " + e);
+                }
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Caught exception: java.lang.NullPointerException</p>
+            </div>
+        </section>
+        
+        <section id="java-nested-try-block">
+            <h2>78. Java - Nested try Block</h2>
+            <p>In Java, we can nest try-catch blocks, meaning that a try block can contain another try-catch block.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Nested try Block Example -->
+        public class NestedTryExample {
+            public static void main(String[] args) {
+                try {
+                    try {
+                        int[] arr = new int[5];
+                        arr[10] = 30; // This will throw ArrayIndexOutOfBoundsException
+                    } catch (ArrayIndexOutOfBoundsException e) {
+                        System.out.println("Inner catch: Array index out of bounds");
+                    }
+                } catch (Exception e) {
+                    System.out.println("Outer catch: Exception caught");
+                }
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Inner catch: Array index out of bounds</p>
+            </div>
+        </section>
+        
+        <section id="java-finally-block">
+            <h2>79. Java - Finally Block</h2>
+            <p>The finally block is always executed after a try-catch block, regardless of whether an exception was thrown or not.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Finally Block Example -->
+        public class FinallyExample {
+            public static void main(String[] args) {
+                try {
+                    int result = 10 / 2;
+                    System.out.println("Result: " + result);
+                } catch (ArithmeticException e) {
+                    System.out.println("Error: Division by zero!");
+                } finally {
+                    System.out.println("Finally block executed");
+                }
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Result: 5 Finally block executed</p>
+            </div>
+        </section>
+        
+        <section id="java-throw-exception">
+            <h2>80. Java - throw Exception</h2>
+            <p>The throw statement is used to explicitly throw an exception in Java.</p>
+            <div class="code-box">
+                <pre>
+        <!-- throw Exception Example -->
+        public class ThrowExceptionExample {
+            public static void main(String[] args) {
+                try {
+                    throw new Exception("This is a custom exception!");
+                } catch (Exception e) {
+                    System.out.println(e.getMessage());
+                }
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: This is a custom exception!</p>
+            </div>
+        </section>
+        
+        <section id="java-exception-propagation">
+            <h2>81. Java - Exception Propagation</h2>
+            <p>Exception propagation refers to the process of passing an exception from one method to another. If a method doesn't handle an exception, it is passed to the method that called it.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Exception Propagation Example -->
+        public class ExceptionPropagationExample {
+            public static void main(String[] args) {
+                try {
+                    methodA();
+                } catch (Exception e) {
+                    System.out.println("Exception caught in main: " + e.getMessage());
+                }
+            }
+        
+            public static void methodA() throws Exception {
+                methodB();
+            }
+        
+            public static void methodB() throws Exception {
+                throw new Exception("Exception thrown from methodB");
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Exception caught in main: Exception thrown from methodB</p>
+            </div>
+        </section>
+        <section id="java-built-in-exceptions">
+            <h2>82. Java - Built-in Exceptions</h2>
+            <p>Java provides several built-in exceptions like `NullPointerException`, `ArithmeticException`, `ArrayIndexOutOfBoundsException`, and more for handling common error scenarios.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Built-in Exception Example -->
+        public class BuiltInExceptionExample {
+            public static void main(String[] args) {
+                try {
+                    int[] arr = new int[2];
+                    arr[3] = 10; // This will cause ArrayIndexOutOfBoundsException
+                } catch (ArrayIndexOutOfBoundsException e) {
+                    System.out.println("Error: Array index out of bounds");
+                }
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Error: Array index out of bounds</p>
+            </div>
+        </section>
+        
+        <section id="java-custom-exception">
+            <h2>83. Java - Custom Exception</h2>
+            <p>Custom exceptions in Java allow you to define your own exception classes by extending the `Exception` class.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Custom Exception Example -->
+        class InvalidAgeException extends Exception {
+            public InvalidAgeException(String message) {
+                super(message);
+            }
+        }
+        
+        public class CustomExceptionExample {
+            public static void main(String[] args) {
+                try {
+                    int age = -1;
+                    if (age < 0) {
+                        throw new InvalidAgeException("Age cannot be negative!");
+                    }
+                } catch (InvalidAgeException e) {
+                    System.out.println(e.getMessage());
+                }
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Age cannot be negative!</p>
+            </div>
+        </section>
+        
+        <section id="java-multithreading">
+            <h2>84. Java - Multithreading</h2>
+            <p>Multithreading in Java allows a program to execute multiple threads concurrently. This is useful for performing multiple tasks simultaneously.</p>
+        </section>
+        
+        <section id="java-thread-life-cycle">
+            <h2>85. Java - Thread Life Cycle</h2>
+            <p>The life cycle of a thread includes states like New, Runnable, Blocked, Waiting, Timed Waiting, and Terminated.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Thread Life Cycle Example -->
+        public class ThreadLifeCycleExample extends Thread {
+            public void run() {
+                System.out.println("Thread is running");
+            }
+        
+            public static void main(String[] args) {
+                ThreadLifeCycleExample thread = new ThreadLifeCycleExample();
+                System.out.println("Thread state: " + thread.getState());
+                thread.start();
+                System.out.println("Thread state after start: " + thread.getState());
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Thread state: NEW, Thread state after start: RUNNABLE</p>
+            </div>
+        </section>
+        
+        <section id="java-creating-thread">
+            <h2>86. Java - Creating a Thread</h2>
+            <p>In Java, you can create a thread by extending the `Thread` class or implementing the `Runnable` interface.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Creating Thread Example -->
+        class MyThread extends Thread {
+            public void run() {
+                System.out.println("Thread is running...");
+            }
+        
+            public static void main(String[] args) {
+                MyThread thread = new MyThread();
+                thread.start(); // Starting the thread
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Thread is running...</p>
+            </div>
+        </section>
+        
+        <section id="java-starting-thread">
+            <h2>87. Java - Starting a Thread</h2>
+            <p>The `start()` method is used to begin the execution of a thread. It calls the `run()` method internally.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Starting Thread Example -->
+        public class StartingThreadExample {
+            public static void main(String[] args) {
+                Thread thread = new Thread(() -> {
+                    System.out.println("Thread is started");
+                });
+                thread.start(); // Starting the thread
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Thread is started</p>
+            </div>
+        </section>
+        
+        <section id="java-joining-threads">
+            <h2>88. Java - Joining Threads</h2>
+            <p>The `join()` method is used to pause the execution of the main thread until the thread it is called on finishes.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Joining Threads Example -->
+        public class JoiningThreadsExample {
+            public static void main(String[] args) {
+                Thread thread = new Thread(() -> {
+                    System.out.println("Thread is running...");
+                });
+                thread.start();
+                try {
+                    thread.join(); // Main thread waits for the thread to finish
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                System.out.println("Main thread is done");
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Thread is running... Main thread is done</p>
+            </div>
+        </section>
+        
+        <section id="java-naming-thread">
+            <h2>89. Java - Naming Thread</h2>
+            <p>You can set a name for a thread using the `setName()` method, and retrieve it using the `getName()` method.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Naming Thread Example -->
+        public class NamingThreadExample {
+            public static void main(String[] args) {
+                Thread thread = new Thread(() -> {
+                    System.out.println("Thread is running...");
+                });
+                thread.setName("MyCustomThread");
+                System.out.println("Thread name: " + thread.getName());
+                thread.start();
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Thread name: MyCustomThread Thread is running...</p>
+            </div>
+        </section>
+        
+        <section id="java-thread-scheduler">
+            <h2>90. Java - Thread Scheduler</h2>
+            <p>Thread scheduling is the process of determining which thread will run at any given time. The Java thread scheduler is responsible for managing the threads' execution.</p>
+        </section>
+        
+        <section id="java-thread-pools">
+            <h2>91. Java Thread Pools</h2>
+            <p>Thread pools manage a pool of worker threads and execute tasks in an efficient way. Java provides the `ExecutorService` interface to manage thread pools.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Thread Pool Example -->
+        import java.util.concurrent.*;
+        
+        public class ThreadPoolExample {
+            public static void main(String[] args) {
+                ExecutorService executor = Executors.newFixedThreadPool(3);
+                executor.submit(() -> {
+                    System.out.println("Task 1 is running");
+                });
+                executor.submit(() -> {
+                    System.out.println("Task 2 is running");
+                });
+                executor.submit(() -> {
+                    System.out.println("Task 3 is running");
+                });
+                executor.shutdown();
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Task 1 is running Task 2 is running Task 3 is running</p>
+            </div>
+        </section>
+        
+        <section id="java-main-thread">
+            <h2>92. Java Main Thread</h2>
+            <p>The main thread is the entry point of any Java program. It is created by the Java Virtual Machine (JVM) when the program is started.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Main Thread Example -->
+        public class MainThreadExample {
+            public static void main(String[] args) {
+                Thread mainThread = Thread.currentThread();
+                System.out.println("Main thread name: " + mainThread.getName());
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Main thread name: main</p>
+            </div>
+        </section>
+        <section id="java-thread-priority">
+            <h2>93. Java - Thread Priority</h2>
+            <p>Thread priority determines the order in which threads are scheduled for execution. The priority can be set using the `setPriority()` method.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Thread Priority Example -->
+        public class ThreadPriorityExample extends Thread {
+            public void run() {
+                System.out.println(Thread.currentThread().getName() + " is running with priority " + Thread.currentThread().getPriority());
+            }
+        
+            public static void main(String[] args) {
+                Thread thread1 = new ThreadPriorityExample();
+                Thread thread2 = new ThreadPriorityExample();
+        
+                thread1.setPriority(Thread.MIN_PRIORITY);
+                thread2.setPriority(Thread.MAX_PRIORITY);
+        
+                thread1.start();
+                thread2.start();
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: main is running with priority 5</p>
+            </div>
+        </section>
+        
+        <section id="java-daemon-threads">
+            <h2>94. Java - Daemon Threads</h2>
+            <p>Daemon threads are background threads that run in the JVM and are terminated when the main program finishes. They can be created using `setDaemon(true)`.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Daemon Thread Example -->
+        public class DaemonThreadExample {
+            public static void main(String[] args) {
+                Thread daemonThread = new Thread(() -> {
+                    while (true) {
+                        System.out.println("Daemon thread is running...");
+                    }
+                });
+                daemonThread.setDaemon(true);
+                daemonThread.start();
+        
+                try {
+                    Thread.sleep(500); // Main thread sleeps for a while before exiting
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                System.out.println("Main thread is done");
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Daemon thread is running... Main thread is done</p>
+            </div>
+        </section>
+        
+        <section id="java-thread-group">
+            <h2>95. Java - Thread Group</h2>
+            <p>Thread groups allow us to group multiple threads and manage them collectively. They are created using `ThreadGroup` class.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Thread Group Example -->
+        public class ThreadGroupExample {
+            public static void main(String[] args) {
+                ThreadGroup group = new ThreadGroup("Group1");
+        
+                Thread thread1 = new Thread(group, () -> System.out.println("Thread 1 is running"));
+                Thread thread2 = new Thread(group, () -> System.out.println("Thread 2 is running"));
+        
+                thread1.start();
+                thread2.start();
+        
+                System.out.println("Active thread count in group: " + group.activeCount());
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Active thread count in group: 2</p>
+            </div>
+        </section>
+        
+        <section id="java-shutdown-hook">
+            <h2>96. Java - Shutdown Hook</h2>
+            <p>A shutdown hook is a special thread that runs when the JVM is shutting down. It can be registered using `Runtime.addShutdownHook()`.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Shutdown Hook Example -->
+        public class ShutdownHookExample {
+            public static void main(String[] args) {
+                Runtime.getRuntime().addShutdownHook(new Thread(() -> {
+                    System.out.println("Shutdown hook is running...");
+                }));
+        
+                System.out.println("Main program is running...");
+                try {
+                    Thread.sleep(2000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Main program is running... Shutdown hook is running...</p>
+            </div>
+        </section>
+        
+        <section id="java-synchronization">
+            <h2>97. Java Synchronization</h2>
+            <p>Synchronization ensures that only one thread can access a resource at a time. This prevents thread interference and consistency issues.</p>
+        </section>
+        
+        <section id="java-synchronization-block">
+            <h2>98. Java - Block Synchronization</h2>
+            <p>Block synchronization locks a specific block of code instead of the entire method, improving performance and reducing contention.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Block Synchronization Example -->
+        public class BlockSynchronizationExample {
+            private static int counter = 0;
+        
+            public static void main(String[] args) {
+                Runnable task = () -> {
+                    synchronized (BlockSynchronizationExample.class) {
+                        counter++;
+                        System.out.println("Counter: " + counter);
+                    }
+                };
+        
+                Thread thread1 = new Thread(task);
+                Thread thread2 = new Thread(task);
+        
+                thread1.start();
+                thread2.start();
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Counter: 1 Counter: 2</p>
+            </div>
+        </section>
+        
+        <section id="java-static-synchronization">
+            <h2>99. Java - Static Synchronization</h2>
+            <p>Static synchronization ensures that only one thread can access static methods at a time.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Static Synchronization Example -->
+        public class StaticSynchronizationExample {
+            private static int counter = 0;
+        
+            public synchronized static void increment() {
+                counter++;
+            }
+        
+            public static void main(String[] args) {
+                Runnable task = () -> {
+                    increment();
+                    System.out.println("Counter: " + counter);
+                };
+        
+                Thread thread1 = new Thread(task);
+                Thread thread2 = new Thread(task);
+        
+                thread1.start();
+                thread2.start();
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Counter: 1 Counter: 2</p>
+            </div>
+        </section>
+        
+        <section id="java-inter-thread-communication">
+            <h2>100. Java Inter-thread Communication</h2>
+            <p>Inter-thread communication is the mechanism that allows threads to communicate with each other using methods like `wait()`, `notify()`, and `notifyAll()`.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Inter-thread Communication Example -->
+        public class InterThreadCommunicationExample {
+            private static final Object lock = new Object();
+        
+            public static void main(String[] args) throws InterruptedException {
+                Thread thread1 = new Thread(() -> {
+                    synchronized (lock) {
+                        try {
+                            System.out.println("Thread 1 is waiting...");
+                            lock.wait();
+                            System.out.println("Thread 1 resumed");
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                });
+        
+                Thread thread2 = new Thread(() -> {
+                    synchronized (lock) {
+                        System.out.println("Thread 2 is notifying...");
+                        lock.notify();
+                    }
+                });
+        
+                thread1.start();
+                Thread.sleep(500); // Ensure thread1 starts waiting before thread2 notifies
+                thread2.start();
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Thread 1 is waiting... Thread 2 is notifying... Thread 1 resumed</p>
+            </div>
+        </section>
+        
+        <section id="java-thread-deadlock">
+            <h2>101. Java Thread Deadlock</h2>
+            <p>A deadlock occurs when two threads are waiting for each other to release resources, causing both threads to be stuck.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Thread Deadlock Example -->
+        public class ThreadDeadlockExample {
+            private static final Object lock1 = new Object();
+            private static final Object lock2 = new Object();
+        
+            public static void main(String[] args) {
+                Thread thread1 = new Thread(() -> {
+                    synchronized (lock1) {
+                        System.out.println("Thread 1 holding lock1...");
+                        try { Thread.sleep(100); } catch (InterruptedException e) {}
+                        synchronized (lock2) {
+                            System.out.println("Thread 1 holding lock1 and lock2...");
+                        }
+                    }
+                });
+        
+                Thread thread2 = new Thread(() -> {
+                    synchronized (lock2) {
+                        System.out.println("Thread 2 holding lock2...");
+                        try { Thread.sleep(100); } catch (InterruptedException e) {}
+                        synchronized (lock1) {
+                            System.out.println("Thread 2 holding lock2 and lock1...");
+                        }
+                    }
+                });
+        
+                thread1.start();
+                thread2.start();
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Thread 1 holding lock1... Thread 2 holding lock2...</p>
+            </div>
+        </section>
+        
+        <section id="java-interrupting-thread">
+            <h2>102. Java - Interrupting a Thread</h2>
+            <p>Interrupting a thread can be done using the `interrupt()` method, which will cause the thread to stop executing when it checks for the interrupt flag.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Interrupting a Thread Example -->
+        public class InterruptingThreadExample {
+            public static void main(String[] args) {
+                Thread thread = new Thread(() -> {
+                    try {
+                        for (int i = 0; i < 5; i++) {
+                            if (Thread.currentThread().isInterrupted()) {
+                                System.out.println("Thread was interrupted.");
+                                break;
+                            }
+                            System.out.println("Thread is running...");
+                            Thread.sleep(1000);
+                        }
+                    } catch (InterruptedException e) {
+                        System.out.println("Thread was interrupted while sleeping.");
+                    }
+                });
+        
+                thread.start();
+        
+                // Interrupting the thread
+                try {
+                    Thread.sleep(2000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                thread.interrupt();
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Thread is running... Thread is running... Thread was interrupted while sleeping.</p>
+            </div>
+        </section>
+        <section id="java-thread-control">
+            <h2>103. Java - Thread Control</h2>
+            <p>Thread control allows you to pause, resume, or stop threads using methods like `sleep()`, `yield()`, and `interrupt()`.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Thread Control Example -->
+        public class ThreadControlExample {
+            public static void main(String[] args) throws InterruptedException {
+                Thread thread = new Thread(() -> {
+                    for (int i = 0; i < 5; i++) {
+                        System.out.println("Running thread: " + i);
+                        try {
+                            Thread.sleep(1000);
+                        } catch (InterruptedException e) {
+                            System.out.println("Thread interrupted.");
+                        }
+                    }
+                });
+                thread.start();
+                
+                // Pause for 3 seconds before interrupting the thread
+                Thread.sleep(3000);
+                thread.interrupt();  // Interrupting the thread
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Running thread: 0 Running thread: 1 Running thread: 2 Thread interrupted.</p>
+            </div>
+        </section>
+        
+        <section id="java-reentrant-monitor">
+            <h2>104. Java - Reentrant Monitor</h2>
+            <p>A reentrant monitor allows the same thread to acquire the lock multiple times. This can be achieved using synchronized blocks.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Reentrant Monitor Example -->
+        public class ReentrantMonitorExample {
+            private synchronized void method1() {
+                System.out.println("Method 1 is running...");
+                method2();
+            }
+        
+            private synchronized void method2() {
+                System.out.println("Method 2 is running...");
+            }
+        
+            public static void main(String[] args) {
+                ReentrantMonitorExample example = new ReentrantMonitorExample();
+                example.method1();
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Method 1 is running... Method 2 is running...</p>
+            </div>
+        </section>
+        
+        <section id="java-networking">
+            <h2>105. Java Networking</h2>
+            <p>Java Networking allows you to connect and communicate between two devices over the internet using `Socket` and `ServerSocket` classes.</p>
+        </section>
+        
+        <section id="java-socket-programming">
+            <h2>106. Java - Socket Programming</h2>
+            <p>Socket programming in Java allows you to create client-server applications using `Socket` and `ServerSocket` classes for communication.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Socket Programming Example -->
+        import java.io.*;
+        import java.net.*;
+        
+        public class SocketProgrammingExample {
+            public static void main(String[] args) throws IOException {
+                // Server side
+                ServerSocket server = new ServerSocket(1234);
+                System.out.println("Server is waiting for a connection...");
+                Socket socket = server.accept();
+                System.out.println("Client connected.");
+        
+                // Client side
+                PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
+                out.println("Hello, Client!");
+        
+                // Close connection
+                socket.close();
+                server.close();
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Server is waiting for a connection... Client connected.</p>
+            </div>
+        </section>
+        
+        <section id="java-url-processing">
+            <h2>107. Java - URL Processing</h2>
+            <p>URL Processing in Java involves parsing and handling URLs with classes like `URL` and `URLConnection` to access and manage network resources.</p>
+        </section>
+        
+        <section id="java-url-class">
+            <h2>108. Java URL Class</h2>
+            <p>The `URL` class in Java is used to represent a Uniform Resource Locator, which is a reference to a web resource.</p>
+            <div class="code-box">
+                <pre>
+        <!-- URL Class Example -->
+        import java.net.*;
+        
+        public class URLClassExample {
+            public static void main(String[] args) throws MalformedURLException {
+                URL url = new URL("https://www.example.com");
+                System.out.println("Protocol: " + url.getProtocol());
+                System.out.println("Host: " + url.getHost());
+                System.out.println("Port: " + url.getPort());
+                System.out.println("File: " + url.getFile());
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Protocol: https Host: www.example.com Port: -1 File: </p>
+            </div>
+        </section>
+        
+        <section id="java-urlconnection-class">
+            <h2>109. Java URLConnection Class</h2>
+            <p>The `URLConnection` class is used to handle communication with the resource pointed to by a URL.</p>
+            <div class="code-box">
+                <pre>
+        <!-- URLConnection Class Example -->
+        import java.net.*;
+        import java.io.*;
+        
+        public class URLConnectionClassExample {
+            public static void main(String[] args) throws IOException {
+                URL url = new URL("https://www.example.com");
+                URLConnection connection = url.openConnection();
+                InputStream inputStream = connection.getInputStream();
+        
+                int data;
+                while ((data = inputStream.read()) != -1) {
+                    System.out.print((char) data);
+                }
+        
+                inputStream.close();
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: HTML content of the webpage will be printed here.</p>
+            </div>
+        </section>
+        
+        <section id="java-httpurlconnection-class">
+            <h2>110. Java - HttpURLConnection Class</h2>
+            <p>The `HttpURLConnection` class provides a way to send HTTP requests and handle HTTP responses.</p>
+            <div class="code-box">
+                <pre>
+        <!-- HttpURLConnection Class Example -->
+        import java.net.*;
+        import java.io.*;
+        
+        public class HttpURLConnectionClassExample {
+            public static void main(String[] args) throws IOException {
+                URL url = new URL("https://www.example.com");
+                HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+                connection.setRequestMethod("GET");
+        
+                BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+                String inputLine;
+                while ((inputLine = in.readLine()) != null) {
+                    System.out.println(inputLine);
+                }
+                in.close();
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: HTTP response content will be printed here.</p>
+            </div>
+        </section>
+        
+        <section id="java-socket-class">
+            <h2>111. Java Socket Class</h2>
+            <p>The `Socket` class represents a client-side socket, used for establishing a connection to a server for data exchange.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Socket Class Example -->
+        import java.net.*;
+        import java.io.*;
+        
+        public class SocketClassExample {
+            public static void main(String[] args) throws IOException {
+                Socket socket = new Socket("localhost", 1234);
+                PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
+                out.println("Hello, Server!");
+        
+                socket.close();
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Client sends data to the server, which then responds.</p>
+            </div>
+        </section>
+        
+        <section id="java-generics">
+            <h2>112. Java Generics</h2>
+            <p>Generics in Java allow you to create classes, interfaces, and methods with type parameters, making your code more flexible and reusable.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Generics Example -->
+        public class GenericsExample {
+            public static <T> void printArray(T[] array) {
+                for (T element : array) {
+                    System.out.println(element);
+                }
+            }
+        
+            public static void main(String[] args) {
+                Integer[] intArray = {1, 2, 3, 4};
+                String[] strArray = {"A", "B", "C"};
+        
+                printArray(intArray);
+                printArray(strArray);
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: 1 2 3 4 A B C</p>
+            </div>
+        </section>
+        <section id="java-collections">
+            <h2>113. Java Collections</h2>
+            <p>Java Collections framework provides a set of interfaces and classes that implement the collection of objects. It is a part of Java's standard library.</p>
+        </section>
+        
+        <section id="java-collection-interface">
+            <h2>114. Java Collection Interface</h2>
+            <p>The `Collection` interface is the root of the Java collections framework. It defines basic operations like add, remove, and clear.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Collection Interface Example -->
+        import java.util.*;
+        
+        public class CollectionInterfaceExample {
+            public static void main(String[] args) {
+                Collection<String> collection = new ArrayList<>();
+                collection.add("Java");
+                collection.add("Python");
+                collection.add("C++");
+        
+                System.out.println("Collection: " + collection);
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Collection: [Java, Python, C++]</p>
+            </div>
+        </section>
+        
+        <section id="java-list-interface">
+            <h2>115. Java - List Interface</h2>
+            <p>The `List` interface is a part of the Java Collections framework. It represents an ordered collection of elements, allowing duplicates and null elements.</p>
+            <div class="code-box">
+                <pre>
+        <!-- List Interface Example -->
+        import java.util.*;
+        
+        public class ListInterfaceExample {
+            public static void main(String[] args) {
+                List<String> list = new ArrayList<>();
+                list.add("Java");
+                list.add("Python");
+                list.add("C++");
+        
+                System.out.println("List: " + list);
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: List: [Java, Python, C++]</p>
+            </div>
+        </section>
+        
+        <section id="java-queue-interface">
+            <h2>116. Java - Queue Interface</h2>
+            <p>The `Queue` interface is designed for holding elements before processing them. It follows the First-In-First-Out (FIFO) principle.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Queue Interface Example -->
+        import java.util.*;
+        
+        public class QueueInterfaceExample {
+            public static void main(String[] args) {
+                Queue<String> queue = new LinkedList<>();
+                queue.add("Java");
+                queue.add("Python");
+                queue.add("C++");
+        
+                System.out.println("Queue: " + queue);
+                queue.remove();
+                System.out.println("Queue after remove: " + queue);
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Queue: [Java, Python, C++] Queue after remove: [Python, C++]</p>
+            </div>
+        </section>
+        
+        <section id="java-map-interface">
+            <h2>117. Java Map Interface</h2>
+            <p>The `Map` interface represents a collection of key-value pairs, where each key is unique and maps to a single value.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Map Interface Example -->
+        import java.util.*;
+        
+        public class MapInterfaceExample {
+            public static void main(String[] args) {
+                Map<Integer, String> map = new HashMap<>();
+                map.put(1, "Java");
+                map.put(2, "Python");
+                map.put(3, "C++");
+        
+                System.out.println("Map: " + map);
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Map: {1=Java, 2=Python, 3=C++}</p>
+            </div>
+        </section>
+        
+        <section id="java-sortedmap-interface">
+            <h2>118. Java - SortedMap Interface</h2>
+            <p>The `SortedMap` interface extends `Map` and ensures that the keys are sorted in natural order or by a specified comparator.</p>
+            <div class="code-box">
+                <pre>
+        <!-- SortedMap Interface Example -->
+        import java.util.*;
+        
+        public class SortedMapInterfaceExample {
+            public static void main(String[] args) {
+                SortedMap<Integer, String> sortedMap = new TreeMap<>();
+                sortedMap.put(3, "Java");
+                sortedMap.put(1, "Python");
+                sortedMap.put(2, "C++");
+        
+                System.out.println("Sorted Map: " + sortedMap);
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Sorted Map: {1=Python, 2=C++, 3=Java}</p>
+            </div>
+        </section>
+        
+        <section id="java-set-interface">
+            <h2>119. Java - Set Interface</h2>
+            <p>The `Set` interface represents a collection of unique elements, with no duplicates allowed.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Set Interface Example -->
+        import java.util.*;
+        
+        public class SetInterfaceExample {
+            public static void main(String[] args) {
+                Set<String> set = new HashSet<>();
+                set.add("Java");
+                set.add("Python");
+                set.add("C++");
+                set.add("Java");  // Duplicate element
+        
+                System.out.println("Set: " + set);
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Set: [Java, Python, C++]</p>
+            </div>
+        </section>
+        
+        <section id="java-sortedset-interface">
+            <h2>120. Java SortedSet Interface</h2>
+            <p>The `SortedSet` interface extends `Set` and ensures that the elements are ordered in a sorted manner.</p>
+            <div class="code-box">
+                <pre>
+        <!-- SortedSet Interface Example -->
+        import java.util.*;
+        
+        public class SortedSetInterfaceExample {
+            public static void main(String[] args) {
+                SortedSet<String> sortedSet = new TreeSet<>();
+                sortedSet.add("Java");
+                sortedSet.add("Python");
+                sortedSet.add("C++");
+        
+                System.out.println("Sorted Set: " + sortedSet);
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Sorted Set: [C++, Java, Python]</p>
+            </div>
+        </section>
+        
+        <section id="java-data-structures">
+            <h2>121. Java Data Structures</h2>
+            <p>Java provides various data structures to organize and store data efficiently, including lists, sets, maps, and queues.</p>
+        </section>
+        <section id="java-enumeration">
+            <h2>122. Java - Enumeration</h2>
+            <p>The `Enumeration` interface is an older interface used to iterate over collections before the introduction of the `Iterator` interface in Java. It has methods like `hasMoreElements()` and `nextElement()`.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Enumeration Example -->
+        import java.util.*;
+        
+        public class EnumerationExample {
+            public static void main(String[] args) {
+                Vector<String> vector = new Vector<>();
+                vector.add("Java");
+                vector.add("Python");
+                vector.add("C++");
+        
+                Enumeration<String> enumeration = vector.elements();
+                while (enumeration.hasMoreElements()) {
+                    System.out.println(enumeration.nextElement());
+                }
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Java, Python, C++</p>
+            </div>
+        </section>
+        
+        <section id="java-collections-algorithms">
+            <h2>123. Java Collections Algorithms</h2>
+            <p>Java Collections framework provides a set of algorithms to operate on collections like sorting and shuffling elements. The `Collections` class provides static methods like `sort()`, `shuffle()`, and `reverse()`.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Collections Algorithms Example -->
+        import java.util.*;
+        
+        public class CollectionsAlgorithmsExample {
+            public static void main(String[] args) {
+                List<String> list = new ArrayList<>();
+                list.add("Java");
+                list.add("Python");
+                list.add("C++");
+        
+                // Sort the list
+                Collections.sort(list);
+                System.out.println("Sorted List: " + list);
+        
+                // Shuffle the list
+                Collections.shuffle(list);
+                System.out.println("Shuffled List: " + list);
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Sorted List: [C++, Java, Python] Shuffled List: [Python, Java, C++]</p>
+            </div>
+        </section>
+        
+        <section id="java-iterators">
+            <h2>124. Java Iterators</h2>
+            <p>The `Iterator` interface allows you to iterate over collections. It is more flexible than `Enumeration` and provides methods like `hasNext()`, `next()`, and `remove()`.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Iterator Example -->
+        import java.util.*;
+        
+        public class IteratorExample {
+            public static void main(String[] args) {
+                List<String> list = new ArrayList<>();
+                list.add("Java");
+                list.add("Python");
+                list.add("C++");
+        
+                Iterator<String> iterator = list.iterator();
+                while (iterator.hasNext()) {
+                    System.out.println(iterator.next());
+                }
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Java, Python, C++</p>
+            </div>
+        </section>
+        
+        <section id="java-comparators">
+            <h2>125. Java - Comparators</h2>
+            <p>The `Comparator` interface is used to define custom sorting logic. It provides the `compare()` method to compare two objects.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Comparator Example -->
+        import java.util.*;
+        
+        public class ComparatorExample {
+            public static void main(String[] args) {
+                List<String> list = new ArrayList<>();
+                list.add("Java");
+                list.add("Python");
+                list.add("C++");
+        
+                // Sorting using Comparator
+                Collections.sort(list, new Comparator<String>() {
+                    public int compare(String str1, String str2) {
+                        return str1.length() - str2.length();
+                    }
+                });
+        
+                System.out.println("Sorted by Length: " + list);
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Sorted by Length: [C++, Java, Python]</p>
+            </div>
+        </section>
+        
+        <section id="java-comparable-interface">
+            <h2>126. Java - Comparable Interface in Java</h2>
+            <p>The `Comparable` interface is used to define the natural ordering of objects. It has the `compareTo()` method that compares the current object with another object.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Comparable Interface Example -->
+        import java.util.*;
+        
+        public class ComparableExample implements Comparable<ComparableExample> {
+            String name;
+        
+            ComparableExample(String name) {
+                this.name = name;
+            }
+        
+            public int compareTo(ComparableExample obj) {
+                return this.name.compareTo(obj.name);
+            }
+        
+            public static void main(String[] args) {
+                List<ComparableExample> list = new ArrayList<>();
+                list.add(new ComparableExample("Java"));
+                list.add(new ComparableExample("Python"));
+                list.add(new ComparableExample("C++"));
+        
+                Collections.sort(list);
+                for (ComparableExample obj : list) {
+                    System.out.println(obj.name);
+                }
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: C++, Java, Python</p>
+            </div>
+        </section>
+        
+        <section id="advanced-java">
+            <h2>127. Advanced Java</h2>
+            <p>Advanced Java includes concepts like multithreading, networking, JavaBeans, JSP, servlets, JDBC, and design patterns.</p>
+        </section>
+        
+        <section id="java-command-line-arguments">
+            <h2>128. Java Command-Line Arguments</h2>
+            <p>Command-line arguments are passed to the main method in the form of an array of strings.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Command-Line Arguments Example -->
+        public class CommandLineExample {
+            public static void main(String[] args) {
+                System.out.println("Number of arguments: " + args.length);
+                for (String arg : args) {
+                    System.out.println(arg);
+                }
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Number of arguments: 2 Argument1 Argument2</p>
+            </div>
+        </section>
+        
+        <section id="java-lambda-expressions">
+            <h2>129. Java - Lambda Expressions</h2>
+            <p>Lambda expressions are a feature of Java 8 that allow you to write concise code for functional interfaces.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Lambda Expression Example -->
+        interface Greet {
+            void greet(String name);
+        }
+        
+        public class LambdaExample {
+            public static void main(String[] args) {
+                Greet greet = (name) -> System.out.println("Hello, " + name);
+                greet.greet("Java");
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Hello, Java</p>
+            </div>
+        </section>
+        
+        <section id="java-sending-email">
+            <h2>130. Java - Sending Email</h2>
+            <p>Java provides the `JavaMail` API to send emails. It requires configuring the SMTP server settings.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Sending Email Example -->
+        import java.util.*;
+        import javax.mail.*;
+        import javax.mail.internet.*;
+        
+        public class SendEmail {
+            public static void main(String[] args) {
+                String to = "recipient@example.com";
+                String from = "sender@example.com";
+                String host = "smtp.example.com";
+        
+                Properties properties = System.getProperties();
+                properties.setProperty("mail.smtp.host", host);
+        
+                Session session = Session.getDefaultInstance(properties);
+        
+                try {
+                    MimeMessage message = new MimeMessage(session);
+                    message.setFrom(new InternetAddress(from));
+                    message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
+                    message.setSubject("Test Email");
+                    message.setText("This is a test email.");
+        
+                    Transport.send(message);
+                    System.out.println("Email Sent Successfully!");
+                } catch (MessagingException mex) {
+                    mex.printStackTrace();
+                }
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Email Sent Successfully!</p>
+            </div>
+        </section>
+        
+        <section id="java-applet-basics">
+            <h2>131. Java Applet Basics</h2>
+            <p>An applet is a small Java program that runs in a web browser. Applets are used to create interactive web applications.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Java Applet Example -->
+        import java.applet.Applet;
+        import java.awt.Graphics;
+        
+        public class HelloApplet extends Applet {
+            public void paint(Graphics g) {
+                g.drawString("Hello, Applet!", 20, 20);
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Hello, Applet!</p>
+            </div>
+        </section>
+        <section id="java-javadoc-comments">
+            <h2>132. Java - Javadoc Comments</h2>
+            <p>Javadoc comments are used to generate documentation for classes, methods, and fields in Java. It is a special comment format that starts with `/**` and ends with `*/`.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Javadoc Comments Example -->
+        /**
+         * This class represents a basic example of Javadoc comments.
+         * It contains methods to perform basic operations.
+         */
+        public class JavadocExample {
+        
+            /**
+             * Adds two integers.
+             * @param a First number
+             * @param b Second number
+             * @return Sum of a and b
+             */
+            public int add(int a, int b) {
+                return a + b;
+            }
+        
+            public static void main(String[] args) {
+                JavadocExample example = new JavadocExample();
+                System.out.println(example.add(10, 20));
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: 30</p>
+            </div>
+        </section>
+        
+        <section id="java-autoboxing-unboxing">
+            <h2>133. Java - Autoboxing and Unboxing</h2>
+            <p>Autoboxing is the automatic conversion of primitive types to their corresponding wrapper classes. Unboxing is the reverse operation, converting wrapper classes to primitive types.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Autoboxing and Unboxing Example -->
+        public class AutoboxingUnboxingExample {
+            public static void main(String[] args) {
+                Integer intObj = 10; // Autoboxing
+                int primitiveInt = intObj; // Unboxing
+                
+                System.out.println("Autoboxed Integer: " + intObj);
+                System.out.println("Unboxed int: " + primitiveInt);
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Autoboxed Integer: 10 Unboxed int: 10</p>
+            </div>
+        </section>
+        
+        <section id="java-file-mismatch-method">
+            <h2>134. Java - File Mismatch Method</h2>
+            <p>The `File` class in Java provides the `mismatch()` method to compare two files and return the position of the first mismatched byte.</p>
+            <div class="code-box">
+                <pre>
+        <!-- File Mismatch Method Example -->
+        import java.io.File;
+        import java.io.IOException;
+        import java.nio.file.Files;
+        
+        public class FileMismatchExample {
+            public static void main(String[] args) throws IOException {
+                File file1 = new File("file1.txt");
+                File file2 = new File("file2.txt");
+        
+                long mismatchIndex = Files.mismatch(file1.toPath(), file2.toPath());
+                if (mismatchIndex == -1) {
+                    System.out.println("Files are identical.");
+                } else {
+                    System.out.println("Files differ at byte index: " + mismatchIndex);
+                }
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Files are identical (or Files differ at byte index: 15)</p>
+            </div>
+        </section>
+        
+        <section id="java-repl-jshell">
+            <h2>135. Java - REPL (JShell)</h2>
+            <p>JShell is an interactive REPL (Read-Eval-Print Loop) introduced in Java 9 that allows you to quickly test Java expressions, statements, and functions.</p>
+            <div class="code-box">
+                <pre>
+        <!-- JShell Example -->
+        $ jshell
+        jshell> int a = 10;
+        jshell> int b = 20;
+        jshell> a + b
+        $> 30
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: 30</p>
+            </div>
+        </section>
+        
+        <section id="java-multi-release-jar-files">
+            <h2>136. Java - Multi-Release Jar Files</h2>
+            <p>Multi-release JAR files were introduced in Java 9, allowing a JAR file to contain different versions of classes for different Java versions.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Multi-Release JAR Example -->
+        /* No code example here as it requires creating different versions of the JAR 
+        and running it across multiple Java versions */
+                </pre>
+            </div>
+        </section>
+        
+        <section id="java-private-interface-methods">
+            <h2>137. Java Private Interface Methods</h2>
+            <p>Starting from Java 9, interfaces can have private methods. These methods can be used to share code between default methods.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Private Interface Methods Example -->
+        interface MyInterface {
+            private void privateMethod() {
+                System.out.println("Private method in interface");
+            }
+        
+            default void defaultMethod() {
+                privateMethod(); // Using private method
+            }
+        }
+        
+        public class InterfaceExample implements MyInterface {
+            public static void main(String[] args) {
+                MyInterface obj = new InterfaceExample();
+                obj.defaultMethod();
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Private method in interface</p>
+            </div>
+        </section>
+        
+        <section id="java-inner-class-diamond-operator">
+            <h2>138. Java - Inner Class Diamond Operator</h2>
+            <p>The diamond operator (`<>`) can also be used with inner classes to simplify the code by inferring the type parameter of the class.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Inner Class with Diamond Operator Example -->
+        class OuterClass {
+            class InnerClass<T> {
+                T value;
+                InnerClass(T value) {
+                    this.value = value;
+                }
+                void display() {
+                    System.out.println("Value: " + value);
+                }
+            }
+            
+            public static void main(String[] args) {
+                OuterClass outer = new OuterClass();
+                OuterClass.InnerClass<Integer> inner = outer.new InnerClass<>(10);
+                inner.display();
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: Value: 10</p>
+            </div>
+        </section>
+        
+        <section id="java-multiresolution-image-api">
+            <h2>139. Java - Multiresolution Image API</h2>
+            <p>Introduced in Java 9, the Multiresolution Image API helps manage multiple versions of an image, which can be selected based on the device resolution.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Example to load image resolutions -->
+        import javax.imageio.ImageIO;
+        import java.awt.image.BufferedImage;
+        import java.io.IOException;
+        import java.net.URL;
+        
+        public class MultiresolutionImageExample {
+            public static void main(String[] args) throws IOException {
+                URL url = new URL("image.jpg"); // Image URL with multiple resolutions
+                BufferedImage image = ImageIO.read(url);
+                System.out.println("Image loaded with resolution: " + image.getWidth() + "x" + image.getHeight());
+            }
+        }
+                </pre>
+            </div>
+        </section>
+        
+        <section id="java-collection-factory-methods">
+            <h2>140. Java - Collection Factory Methods</h2>
+            <p>Java 9 introduced factory methods in the `Collections` class, allowing you to create immutable lists, sets, and maps easily.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Collection Factory Methods Example -->
+        import java.util.*;
+        
+        public class CollectionFactoryMethodsExample {
+            public static void main(String[] args) {
+                List<String> list = List.of("Java", "Python", "C++");
+                Set<String> set = Set.of("Apple", "Banana", "Cherry");
+                Map<String, String> map = Map.of("key1", "value1", "key2", "value2");
+        
+                System.out.println("List: " + list);
+                System.out.println("Set: " + set);
+                System.out.println("Map: " + map);
+            }
+        }
+                </pre>
+            </div>
+            <div class="output-box">
+                <p>Output: List: [Java, Python, C++] Set: [Apple, Banana, Cherry] Map: {key1=value1, key2=value2}</p>
+            </div>
+        </section>
+        <section id="java-module-system">
+            <h2>141. Java - Module System</h2>
+            <p>Java 9 introduced the Module System, which allows you to modularize your code into separate modules to improve readability, maintainability, and performance.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Module System Example -->
+        module com.example.module {
+            exports com.example.package;
+        }
+        
+        package com.example.package;
+        
+        public class HelloWorld {
+            public void greet() {
+                System.out.println("Hello from the module system!");
+            }
+        }
+        
+        public class Main {
+            public static void main(String[] args) {
+                HelloWorld helloWorld = new HelloWorld();
+                helloWorld.greet();
+            }
+        }
+                </pre>
+            </div>
+        </section>
+        
+        <section id="java-nashorn-javascript">
+            <h2>142. Java - Nashorn JavaScript</h2>
+            <p>Nashorn is a JavaScript engine introduced in Java 8 that allows you to embed JavaScript code in Java applications. It has since been deprecated in favor of GraalVM.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Nashorn Example -->
+        import javax.script.*;
+        
+        public class NashornExample {
+            public static void main(String[] args) throws ScriptException {
+                ScriptEngine engine = new ScriptEngineManager().getEngineByName("nashorn");
+                String script = "var a = 5; var b = 10; a + b;";
+                Object result = engine.eval(script);
+                System.out.println("Result: " + result);
+            }
+        }
+                </pre>
+            </div>
+        </section>
+        
+        <section id="java-optional-class">
+            <h2>143. Java - Optional Class</h2>
+            <p>The `Optional` class, introduced in Java 8, is used to represent values that may or may not be present. It helps avoid null pointer exceptions.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Optional Class Example -->
+        import java.util.Optional;
+        
+        public class OptionalExample {
+            public static void main(String[] args) {
+                Optional<String> name = Optional.ofNullable("John");
+                System.out.println(name.orElse("Default Name"));
+                
+                Optional<String> emptyName = Optional.ofNullable(null);
+                System.out.println(emptyName.orElse("Default Name"));
+            }
+        }
+                </pre>
+            </div>
+        </section>
+        
+        <section id="java-method-references">
+            <h2>144. Java - Method References</h2>
+            <p>Method references are a shorthand notation of a lambda expression that calls a method. They were introduced in Java 8.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Method References Example -->
+        import java.util.*;
+        
+        public class MethodReferenceExample {
+            public static void main(String[] args) {
+                List<String> list = Arrays.asList("Java", "Python", "C++");
+                
+                // Using method reference to print each item
+                list.forEach(System.out::println);
+            }
+        }
+                </pre>
+            </div>
+        </section>
+        
+        <section id="java-functional-interfaces">
+            <h2>145. Java - Functional Interfaces</h2>
+            <p>A functional interface in Java is an interface that has just one abstract method, and it can have multiple default or static methods. They are the foundation for lambda expressions.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Functional Interfaces Example -->
+        @FunctionalInterface
+        interface MyFunctionalInterface {
+            void myMethod();
+        }
+        
+        public class FunctionalInterfaceExample {
+            public static void main(String[] args) {
+                MyFunctionalInterface obj = () -> System.out.println("Method executed!");
+                obj.myMethod();
+            }
+        }
+                </pre>
+            </div>
+        </section>
+        
+        <section id="java-default-methods">
+            <h2>146. Java - Default Methods</h2>
+            <p>Introduced in Java 8, default methods allow an interface to have methods with implementation. This provides the ability to add new methods to interfaces without breaking existing implementations.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Default Methods Example -->
+        interface MyInterface {
+            default void defaultMethod() {
+                System.out.println("Default method in interface.");
+            }
+        }
+        
+        public class DefaultMethodExample implements MyInterface {
+            public static void main(String[] args) {
+                MyInterface obj = new DefaultMethodExample();
+                obj.defaultMethod();
+            }
+        }
+                </pre>
+            </div>
+        </section>
+        
+        <section id="java-base64-encode-decode">
+            <h2>147. Java - Base64 Encode Decode</h2>
+            <p>Base64 encoding is used to encode binary data into an ASCII string format. Java provides the `Base64` class for encoding and decoding Base64 data.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Base64 Encode and Decode Example -->
+        import java.util.Base64;
+        
+        public class Base64Example {
+            public static void main(String[] args) {
+                String originalInput = "Java Programming";
+                
+                // Encode to Base64
+                String encodedString = Base64.getEncoder().encodeToString(originalInput.getBytes());
+                System.out.println("Encoded: " + encodedString);
+                
+                // Decode from Base64
+                byte[] decodedBytes = Base64.getDecoder().decode(encodedString);
+                System.out.println("Decoded: " + new String(decodedBytes));
+            }
+        }
+                </pre>
+            </div>
+        </section>
+        
+        <section id="java-switch-expressions">
+            <h2>148. Java - Switch Expressions</h2>
+            <p>Switch expressions, introduced in Java 12, allow you to return values from switch blocks, making it more powerful and compact.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Switch Expressions Example -->
+        public class SwitchExpressionExample {
+            public static void main(String[] args) {
+                int day = 3;
+                String result = switch (day) {
+                    case 1 -> "Monday";
+                    case 2 -> "Tuesday";
+                    case 3 -> "Wednesday";
+                    default -> "Unknown";
+                };
+                System.out.println(result);
+            }
+        }
+                </pre>
+            </div>
+        </section>
+        
+        <section id="java-teeing-collectors">
+            <h2>149. Java - Teeing Collectors</h2>
+            <p>Teeing collectors were introduced in Java 12 and allow you to perform two separate reduction operations on the same data in a stream.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Teeing Collectors Example -->
+        import java.util.*;
+        import java.util.stream.*;
+        
+        public class TeeingCollectorsExample {
+            public static void main(String[] args) {
+                List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
+                
+                var result = numbers.stream()
+                        .collect(Collectors.teeing(
+                            Collectors.summingInt(Integer::intValue),
+                            Collectors.averagingInt(Integer::intValue),
+                            (sum, avg) -> "Sum: " + sum + ", Avg: " + avg
+                        ));
+                System.out.println(result);
+            }
+        }
+                </pre>
+            </div>
+        </section>
+        
+        <section id="java-microbenchmark">
+            <h2>150. Java - Microbenchmark</h2>
+            <p>Microbenchmarking helps you measure the performance of small code snippets in isolation. The most commonly used tool for microbenchmarking in Java is JMH (Java Microbenchmarking Harness).</p>
+            <div class="code-box">
+                <pre>
+        <!-- Microbenchmark Example -->
+        import org.openjdk.jmh.annotations.*;
+        
+        public class BenchmarkExample {
+            
+            @Benchmark
+            public void testMethod() {
+                System.out.println("Benchmarking!");
+            }
+        
+            public static void main(String[] args) throws Exception {
+                org.openjdk.jmh.Main.main(args);
+            }
+        }
+                </pre>
+            </div>
+        </section>
+        
+        <section id="java-text-blocks">
+            <h2>151. Java - Text Blocks</h2>
+            <p>Introduced in Java 13, text blocks allow you to represent multi-line string literals in a more readable way, avoiding escape sequences.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Text Blocks Example -->
+        public class TextBlocksExample {
+            public static void main(String[] args) {
+                String text = """
+                              This is a text block.
+                              It can span multiple lines.
+                              Java 13+.
+                              """;
+                System.out.println(text);
+            }
+        }
+                </pre>
+            </div>
+        </section>
+        
+        <section id="java-dynamic-cds-archive">
+            <h2>152. Java - Dynamic CDS Archive</h2>
+            <p>The CDS (Class Data Sharing) feature in Java allows you to share classes between multiple Java processes. Dynamic CDS archives were introduced in Java 12 to create archives dynamically at runtime.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Dynamic CDS Archive Example -->
+        java -Xshare:dump -XX:SharedArchiveFile=app.jsa -cp . MyApp
+                </pre>
+            </div>
+        </section>
+        <section id="java-z-garbage-collector">
+            <h2>153. Java - Z Garbage Collector (ZGC)</h2>
+            <p>Introduced in Java 11, the Z Garbage Collector (ZGC) is a low-latency garbage collector designed for large heap sizes. It aims to provide high throughput with minimal pause times.</p>
+            <div class="code-box">
+                <pre>
+        <!-- ZGC Example -->
+        java -XX:+UseZGC -jar myapp.jar
+                </pre>
+            </div>
+        </section>
+        
+        <section id="java-null-pointer-exception">
+            <h2>154. Java - Null Pointer Exception</h2>
+            <p>A Null Pointer Exception (NPE) occurs when the JVM attempts to access an object that is null. It's one of the most common runtime exceptions in Java.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Null Pointer Exception Example -->
+        public class NPEExample {
+            public static void main(String[] args) {
+                String str = null;
+                System.out.println(str.length()); // This will throw NullPointerException
+            }
+        }
+                </pre>
+            </div>
+        </section>
+        
+        <section id="java-packaging-tools">
+            <h2>155. Java - Packaging Tools</h2>
+            <p>Java packaging tools are used to bundle and distribute Java applications, including tools like JAR, WAR, and EAR. The Java Packaging API simplifies the process of creating distributable packages.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Packaging Example -->
+        jar cf MyApp.jar -C bin/ .
+                </pre>
+            </div>
+        </section>
+        
+        <section id="java-sealed-classes">
+            <h2>156. Java - Sealed Classes</h2>
+            <p>Sealed classes, introduced in Java 15, restrict which classes or interfaces can extend or implement them. This provides more control over inheritance.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Sealed Class Example -->
+        public sealed class Shape permits Circle, Rectangle { }
+        public final class Circle extends Shape { }
+        public final class Rectangle extends Shape { }
+                </pre>
+            </div>
+        </section>
+        
+        <section id="java-record-classes">
+            <h2>157. Java - Record Classes</h2>
+            <p>Record classes, introduced in Java 14, provide a compact syntax for declaring classes that are primarily used to hold data.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Record Class Example -->
+        public record Person(String name, int age) { }
+                
+        public class RecordExample {
+            public static void main(String[] args) {
+                Person person = new Person("John", 25);
+                System.out.println(person.name());
+            }
+        }
+                </pre>
+            </div>
+        </section>
+        
+        <section id="java-hidden-classes">
+            <h2>158. Java - Hidden Classes</h2>
+            <p>Hidden classes, introduced in Java 16, are classes that cannot be used directly by the bytecode. They are intended for use by the JVM and frameworks that generate dynamic code.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Hidden Class Example -->
+        MethodHandles.Lookup.lookupClass(SomeClass.class);
+                </pre>
+            </div>
+        </section>
+        
+        <section id="java-pattern-matching">
+            <h2>159. Java - Pattern Matching</h2>
+            <p>Pattern matching, introduced in Java 16 and improved in Java 17, allows you to simplify conditional logic by testing whether an object is an instance of a certain type and simultaneously casting it.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Pattern Matching Example -->
+        public class PatternMatchingExample {
+            public static void main(String[] args) {
+                Object obj = "Hello, World!";
+                
+                if (obj instanceof String s) {
+                    System.out.println(s.toUpperCase());
+                }
+            }
+        }
+                </pre>
+            </div>
+        </section>
+        
+        <section id="java-compact-number-formatting">
+            <h2>160. Java - Compact Number Formatting</h2>
+            <p>Compact number formatting, introduced in Java 12, formats numbers in a more compact form using abbreviations like "K" for thousand, "M" for million, etc.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Compact Number Formatting Example -->
+        import java.text.*;
+        import java.util.*;
+        
+        public class CompactNumberFormatExample {
+            public static void main(String[] args) {
+                NumberFormat compact = NumberFormat.getCompactNumberInstance(Locale.US, NumberFormat.Style.SHORT);
+                System.out.println(compact.format(1000000)); // Output: 1M
+            }
+        }
+                </pre>
+            </div>
+        </section>
+        
+        <section id="java-garbage-collection">
+            <h2>161. Java - Garbage Collection</h2>
+            <p>Garbage collection in Java is a process by which Java programs automatically reclaim memory that is no longer in use. The Java garbage collector (GC) works in the background to manage heap memory.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Garbage Collection Example -->
+        public class GCExample {
+            public static void main(String[] args) {
+                String str = new String("Hello, World!");
+                str = null;  // The object is eligible for garbage collection
+                System.gc(); // Suggest the JVM to run garbage collection
+            }
+        }
+                </pre>
+            </div>
+        </section>
+        
+        <section id="java-jit-compiler">
+            <h2>162. Java - JIT Compiler</h2>
+            <p>The JIT (Just-In-Time) compiler is part of the Java runtime that compiles bytecode into native machine code at runtime, improving the performance of Java applications.</p>
+            <div class="code-box">
+                <pre>
+        <!-- JIT Compiler Example -->
+        public class JITCompilerExample {
+            public static void main(String[] args) {
+                System.out.println("JIT Compiler is used by the JVM to optimize performance.");
+            }
+        }
+                </pre>
+            </div>
+        </section>
+        
+        <section id="java-miscellaneous">
+            <h2>163. Java - Miscellaneous</h2>
+            <p>This section covers various other features and utilities in Java that don't necessarily belong to a specific category but are still important for Java development.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Miscellaneous Example -->
+        public class MiscellaneousExample {
+            public static void main(String[] args) {
+                // Using the String.format() method
+                System.out.println(String.format("My name is %s, and I am %d years old.", "John", 25));
+                
+                // Converting String to Integer
+                String number = "123";
+                int num = Integer.parseInt(number);
+                System.out.println(num);
+            }
+        }
+                </pre>
+            </div>
+        </section>
+        <section id="java-miscellaneous">
+            <h2>164. Java - Miscellaneous</h2>
+            <p>This section covers various other features and utilities in Java that don't necessarily belong to a specific category but are still important for Java development.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Miscellaneous Example -->
+        public class MiscellaneousExample {
+            public static void main(String[] args) {
+                // Using the String.format() method
+                System.out.println(String.format("My name is %s, and I am %d years old.", "John", 25));
+                
+                // Converting String to Integer
+                String number = "123";
+                int num = Integer.parseInt(number);
+                System.out.println(num);
+            }
+        }
+                </pre>
+            </div>
+        </section>
+        
+        <section id="java-recursion">
+            <h2>165. Java - Recursion</h2>
+            <p>Recursion is a method of solving problems where the function calls itself. It is commonly used for problems that can be broken down into smaller sub-problems.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Recursion Example -->
+        public class RecursionExample {
+            public static void main(String[] args) {
+                System.out.println(factorial(5));  // Output: 120
+            }
+            
+            public static int factorial(int n) {
+                if (n == 0) {
+                    return 1;
+                } else {
+                    return n * factorial(n - 1);
+                }
+            }
+        }
+                </pre>
+            </div>
+        </section>
+        
+        <section id="java-regular-expressions">
+            <h2>166. Java - Regular Expressions</h2>
+            <p>Regular expressions are a powerful tool for pattern matching in strings. Java provides the `java.util.regex` package to work with regular expressions.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Regular Expressions Example -->
+        import java.util.regex.*;
+        
+        public class RegexExample {
+            public static void main(String[] args) {
+                String text = "Hello, my name is John!";
+                String regex = ".*John.*";
+                
+                Pattern pattern = Pattern.compile(regex);
+                Matcher matcher = pattern.matcher(text);
+                
+                if (matcher.matches()) {
+                    System.out.println("Text contains 'John'");
+                } else {
+                    System.out.println("Text does not contain 'John'");
+                }
+            }
+        }
+                </pre>
+            </div>
+        </section>
+        
+        <section id="java-serialization">
+            <h2>167. Java - Serialization</h2>
+            <p>Serialization is the process of converting an object's state into a byte stream. It allows for saving objects to files or sending them over a network.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Serialization Example -->
+        import java.io.*;
+        
+        public class SerializationExample {
+            public static void main(String[] args) throws IOException {
+                Person person = new Person("John", 25);
+                
+                // Serialize object to file
+                FileOutputStream fileOut = new FileOutputStream("person.ser");
+                ObjectOutputStream out = new ObjectOutputStream(fileOut);
+                out.writeObject(person);
+                out.close();
+                fileOut.close();
+                
+                System.out.println("Serialized data is saved in person.ser");
+            }
+        }
+        
+        class Person implements Serializable {
+            String name;
+            int age;
+            
+            public Person(String name, int age) {
+                this.name = name;
+                this.age = age;
+            }
+        }
+                </pre>
+            </div>
+        </section>
+        
+        <section id="java-strings">
+            <h2>168. Java - Strings</h2>
+            <p>Strings in Java are objects that represent a sequence of characters. Java provides many methods to manipulate strings, including concatenation, comparison, and searching.</p>
+            <div class="code-box">
+                <pre>
+        <!-- String Example -->
+        public class StringExample {
+            public static void main(String[] args) {
+                String str1 = "Hello";
+                String str2 = "World";
+                
+                // Concatenation
+                String result = str1 + " " + str2;
+                System.out.println(result);  // Output: Hello World
+                
+                // String Length
+                System.out.println(str1.length());  // Output: 5
+            }
+        }
+                </pre>
+            </div>
+        </section>
+        
+        <section id="java-process-api">
+            <h2>169. Java Process API</h2>
+            <p>The Process API provides methods for managing operating system processes. It includes capabilities for creating and managing subprocesses.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Process API Example -->
+        import java.io.*;
+        
+        public class ProcessAPIExample {
+            public static void main(String[] args) throws IOException {
+                Process process = Runtime.getRuntime().exec("ping www.google.com");
+                
+                BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
+                String line;
+                
+                while ((line = reader.readLine()) != null) {
+                    System.out.println(line);
+                }
+            }
+        }
+                </pre>
+            </div>
+        </section>
+        
+        <section id="java-stream-api-improvements">
+            <h2>170. Java - Stream API Improvements</h2>
+            <p>In recent versions of Java, the Stream API has been enhanced with new methods for performing operations on sequences of elements, such as filtering, mapping, and reducing.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Stream API Improvements Example -->
+        import java.util.*;
+        import java.util.stream.*;
+        
+        public class StreamAPIExample {
+            public static void main(String[] args) {
+                List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
+                
+                // Using Stream API to filter even numbers
+                numbers.stream()
+                       .filter(n -> n % 2 == 0)
+                       .forEach(System.out::println);  // Output: 2, 4
+            }
+        }
+                </pre>
+            </div>
+        </section>
+        
+        <section id="java-enhanced-deprecated-annotation">
+            <h2>171. Java - Enhanced @Deprecated Annotation</h2>
+            <p>Java 9 introduced an enhanced version of the `@Deprecated` annotation that provides additional information about the deprecated method, such as replacement methods and since version.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Enhanced @Deprecated Annotation Example -->
+        public class DeprecatedExample {
+            @Deprecated(since = "1.8", forRemoval = true)
+            public static void oldMethod() {
+                System.out.println("This method is deprecated.");
+            }
+            
+            public static void main(String[] args) {
+                oldMethod();
+            }
+        }
+                </pre>
+            </div>
+        </section>
+        
+        <section id="java-completablefuture-api-improvements">
+            <h2>172. Java CompletableFuture API Improvements</h2>
+            <p>Java's `CompletableFuture` API provides a way to handle asynchronous programming. In recent versions, it has been enhanced with additional methods to simplify asynchronous tasks.</p>
+            <div class="code-box">
+                <pre>
+        <!-- CompletableFuture API Improvements Example -->
+        import java.util.concurrent.*;
+        
+        public class CompletableFutureExample {
+            public static void main(String[] args) {
+                CompletableFuture.supplyAsync(() -> "Hello")
+                                 .thenApplyAsync(result -> result + " World")
+                                 .thenAccept(System.out::println);  // Output: Hello World
+            }
+        }
+                </pre>
+            </div>
+        </section>
+        
+        <section id="java-streams">
+            <h2>173. Java Streams</h2>
+            <p>Java Streams provide a powerful and flexible way to work with collections and sequences of data. Streams allow you to perform operations like filtering, mapping, and reducing in a declarative manner.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Java Streams Example -->
+        import java.util.*;
+        import java.util.stream.*;
+        
+        public class JavaStreamsExample {
+            public static void main(String[] args) {
+                List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
+                
+                // Using Streams to sum even numbers
+                int sum = numbers.stream()
+                                 .filter(n -> n % 2 == 0)
+                                 .mapToInt(Integer::intValue)
+                                 .sum();
+                System.out.println(sum);  // Output: 6
+            }
+        }
+                </pre>
+            </div>
+        </section>
+        <section id="java-datetime-api">
+            <h2>174. Java - DateTime API</h2>
+            <p>The DateTime API was introduced in Java 8 to simplify working with dates and times. It includes the `java.time` package that provides immutable classes for handling date, time, and durations.</p>
+            <div class="code-box">
+                <pre>
+        <!-- DateTime API Example -->
+        import java.time.*;
+        import java.time.format.DateTimeFormatter;
+        
+        public class DateTimeAPIExample {
+            public static void main(String[] args) {
+                LocalDate today = LocalDate.now();
+                System.out.println("Today: " + today);
+                
+                LocalDate birthday = LocalDate.of(1995, 5, 20);
+                System.out.println("Birthday: " + birthday);
+                
+                // Formatting date
+                DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+                String formattedDate = today.format(formatter);
+                System.out.println("Formatted date: " + formattedDate);
+            }
+        }
+                </pre>
+            </div>
+        </section>
+        
+        <section id="java-8-new-features">
+            <h2>175. Java 8 - New Features</h2>
+            <p>Java 8 introduced several major features, including lambda expressions, the Stream API, and new DateTime API enhancements.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Java 8 - Lambda Expressions -->
+        import java.util.*;
+        
+        public class Java8Example {
+            public static void main(String[] args) {
+                List<String> list = Arrays.asList("Apple", "Banana", "Cherry");
+                
+                // Lambda Expression for iteration
+                list.forEach(item -> System.out.println(item));
+            }
+        }
+                </pre>
+            </div>
+        </section>
+        
+        <section id="java-9-new-features">
+            <h2>176. Java 9 - New Features</h2>
+            <p>Java 9 brought modular programming to Java, enabling the creation of smaller, more maintainable modules. It also introduced the JShell interactive shell.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Java 9 - JShell Example -->
+        public class Java9Example {
+            public static void main(String[] args) {
+                System.out.println("Java 9 features include JShell.");
+            }
+        }
+                </pre>
+            </div>
+        </section>
+        
+        <section id="java-10-new-features">
+            <h2>177. Java 10 - New Features</h2>
+            <p>Java 10 introduced the `var` keyword for local variable type inference, reducing the need to explicitly specify the type in some cases.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Java 10 - var Example -->
+        public class Java10Example {
+            public static void main(String[] args) {
+                var name = "Java 10";
+                System.out.println(name);
+            }
+        }
+                </pre>
+            </div>
+        </section>
+        
+        <section id="java-11-new-features">
+            <h2>178. Java 11 - New Features</h2>
+            <p>Java 11 introduced new features such as HTTP client API (Standardized) and new methods for strings, collections, etc.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Java 11 - HTTP Client Example -->
+        import java.net.http.*;
+        import java.net.URI;
+        import java.io.IOException;
+        
+        public class Java11Example {
+            public static void main(String[] args) throws IOException, InterruptedException {
+                HttpClient client = HttpClient.newHttpClient();
+                HttpRequest request = HttpRequest.newBuilder()
+                                                 .uri(URI.create("https://www.example.com"))
+                                                 .build();
+                HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
+                System.out.println(response.body());
+            }
+        }
+                </pre>
+            </div>
+        </section>
+        
+        <section id="java-12-new-features">
+            <h2>179. Java 12 - New Features</h2>
+            <p>Java 12 brought the JEP 189: Shenandoah, a low-latency garbage collector, and other new enhancements.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Java 12 - String Indentation Example -->
+        public class Java12Example {
+            public static void main(String[] args) {
+                String text = "Hello\nWorld";
+                System.out.println(text.stripIndent());
+            }
+        }
+                </pre>
+            </div>
+        </section>
+        
+        <section id="java-13-new-features">
+            <h2>180. Java 13 - New Features</h2>
+            <p>Java 13 introduced JEP 350, which provided dynamic CDS archives for improved JVM performance.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Java 13 - Text Blocks Example -->
+        public class Java13Example {
+            public static void main(String[] args) {
+                String text = """
+                              This is a text block
+                              in Java 13. 
+                              You can write multiline strings
+                              without concatenation.
+                              """;
+                System.out.println(text);
+            }
+        }
+                </pre>
+            </div>
+        </section>
+        
+        <section id="java-14-new-features">
+            <h2>181. Java 14 - New Features</h2>
+            <p>Java 14 introduced helpful features like `Record` classes, the `Foreign-Function Interface` API, and helpful pattern matching syntax.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Java 14 - Record Class Example -->
+        public class Java14Example {
+            record Person(String name, int age) {}
+            
+            public static void main(String[] args) {
+                Person person = new Person("John", 30);
+                System.out.println(person);
+            }
+        }
+                </pre>
+            </div>
+        </section>
+        
+        <section id="java-15-new-features">
+            <h2>182. Java 15 - New Features</h2>
+            <p>Java 15 focused on enhancing the Java platform with features like the `Text Blocks` feature and improved performance.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Java 15 - Text Block Example -->
+        public class Java15Example {
+            public static void main(String[] args) {
+                String block = """
+                               This is a multiline
+                               string in Java 15
+                               which is much easier
+                               to read.
+                               """;
+                System.out.println(block);
+            }
+        }
+                </pre>
+            </div>
+        </section>
+        
+        <section id="java-16-new-features">
+            <h2>183. Java 16 - New Features</h2>
+            <p>Java 16 brought new features like the `JEP 395` to enable easier native code integration and pattern matching enhancements.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Java 16 - Pattern Matching Example -->
+        public class Java16Example {
+            public static void main(String[] args) {
+                Object obj = "Java 16";
+                
+                // Pattern Matching for instanceof
+                if (obj instanceof String str) {
+                    System.out.println("The string is: " + str);
+                }
+            }
+        }
+                </pre>
+            </div>
+        </section>
+        
+        <section id="java-jdbc-tutorial">
+            <h2>184. Java JDBC Tutorial</h2>
+            <p>JDBC (Java Database Connectivity) is an API for connecting and executing queries with databases. Below is an example of how to use JDBC to connect to a MySQL database and perform basic operations.</p>
+            <div class="code-box">
+                <pre>
+        <!-- JDBC Example -->
+        import java.sql.*;
+        
+        public class JdbcExample {
+            public static void main(String[] args) {
+                try {
+                    // Load JDBC driver
+                    Class.forName("com.mysql.cj.jdbc.Driver");
+        
+                    // Establish connection
+                    Connection connection = DriverManager.getConnection(
+                        "jdbc:mysql://localhost:3306/mydatabase", "root", "password");
+        
+                    // Create Statement object
+                    Statement statement = connection.createStatement();
+                    
+                    // Execute query
+                    ResultSet resultSet = statement.executeQuery("SELECT * FROM users");
+                    
+                    // Process the result set
+                    while (resultSet.next()) {
+                        System.out.println("User ID: " + resultSet.getInt("user_id"));
+                        System.out.println("User Name: " + resultSet.getString("user_name"));
+                    }
+                    
+                    // Close the connection
+                    connection.close();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+                </pre>
+            </div>
+        </section>
+        <section id="swing-tutorial">
+            <h2>185. SWING Tutorial</h2>
+            <p>SWING is a part of Java Foundation Classes (JFC) used to create window-based applications in Java. It provides a rich set of GUI components for building interactive user interfaces.</p>
+            <div class="code-box">
+                <pre>
+        <!-- SWING Example -->
+        import javax.swing.*;
+        
+        public class SwingExample {
+            public static void main(String[] args) {
+                // Create a JFrame
+                JFrame frame = new JFrame("SWING Example");
+                JButton button = new JButton("Click Me");
+        
+                // Add action listener to button
+                button.addActionListener(e -> JOptionPane.showMessageDialog(frame, "Button Clicked"));
+        
+                // Add button to frame
+                frame.add(button);
+                
+                // Set frame size and visibility
+                frame.setSize(300, 200);
+                frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                frame.setVisible(true);
+            }
+        }
+                </pre>
+            </div>
+        </section>
+        
+        <section id="awt-tutorial">
+            <h2>186. AWT Tutorial</h2>
+            <p>The Abstract Window Toolkit (AWT) is the original platform-dependent windowing, graphics, and user-interface toolkit in Java. It provides a set of interfaces for building window-based applications.</p>
+            <div class="code-box">
+                <pre>
+        <!-- AWT Example -->
+        import java.awt.*;
+        import java.awt.event.*;
+        
+        public class AWTExample {
+            public static void main(String[] args) {
+                Frame frame = new Frame("AWT Example");
+                Button button = new Button("Click Me");
+        
+                // Add action listener to button
+                button.addActionListener(e -> {
+                    System.out.println("Button Clicked");
+                    frame.setVisible(false); // Hide frame on button click
+                });
+        
+                // Add button to frame
+                frame.add(button);
+                
+                // Set frame size and visibility
+                frame.setSize(300, 200);
+                frame.setLayout(new FlowLayout());
+                frame.setVisible(true);
+            }
+        }
+                </pre>
+            </div>
+        </section>
+        
+        <section id="servlets-tutorial">
+            <h2>187. Servlets Tutorial</h2>
+            <p>Servlets are server-side Java programs that handle HTTP requests and generate dynamic responses. They are an essential part of Java-based web applications.</p>
+            <div class="code-box">
+                <pre>
+        <!-- Servlet Example -->
+        import java.io.*;
+        import javax.servlet.*;
+        import javax.servlet.http.*;
+        
+        public class HelloServlet extends HttpServlet {
+            protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+                // Set response content type
+                response.setContentType("text/html");
+        
+                // Print response
+                PrintWriter out = response.getWriter();
+                out.println("<h1>Hello, Servlet!</h1>");
+            }
+        }
+                </pre>
+            </div>
+        </section>
+        
+        <section id="jsp-tutorial">
+            <h2>188. JSP Tutorial</h2>
+            <p>Java Server Pages (JSP) is a server-side technology used for developing dynamic web pages. It allows embedding Java code directly into HTML pages.</p>
+            <div class="code-box">
+                <pre>
+        <!-- JSP Example -->
+        <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>JSP Example</title>
+        </head>
+        <body>
+            <h1>Welcome to JSP!</h1>
+            <p>The current date and time is: <%= new java.util.Date() %></p>
+        </body>
+        </html>
+                </pre>
+            </div>
+        </section>
+                                                   
+    </main>
+    <footer>
+        <div class="footer-container">
+          <!-- Programming Courses Links -->
+          <div class="footer-links">
+            <h3>Programming Courses</h3>
+            <ul>
+              <li><a href="#">Python</a></li>
+              <li><a href="#">JavaScript</a></li>
+              <li><a href="#">Java</a></li>
+              <li><a href="#">C++</a></li>
+              <li><a href="#">PHP</a></li>
+              <li><a href="#">Machine Learning</a></li>
+            </ul>
+          </div>
+          
+          <!-- Social Media Links -->
+          <div class="footer-social">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+    
+          <!-- Contact Information -->
+          <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <ul>
+              <li><i class="fas fa-phone"></i> 9302984613</li>
+              <li><i class="fas fa-envelope"></i><a href="mailto:codekraft1325@gmail.com">Email Us :codekraft1325@gmail.com</a>
+              </li>
+              <li><i class="fas fa-map-marker-alt"></i> katangi,balaghat(M.P)</li>
+            </ul>
+          </div>
+    
+          <!-- About Us Section -->
+          <div class="footer-about">
+            <h3>About Us</h3>
+            <p>We are a leading provider of online programming courses, helping individuals from all around the world to enhance their skills. Whether you are a beginner or an expert, we offer a wide range of courses to cater to every learning need. Our courses are designed to be interactive, fun, and easy to follow.</p>
+          </div>
+        </div>
+    
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+          <p>&copy; 2025 Online Programming Courses | All Rights Reserved</p>
+          <p ><a href="#" style="color: red;">Privacy Policy</a> | <a href="#" style="color: red;">Terms of Service</a></p>
+        </div>
+      </footer> 
+ 
+  
+    
+
+
+    <script >
+     
+        const searchBar = document.getElementById('searchBar');
+const suggestionsBox = document.getElementById('suggestionsBox');
+const topics = [
+{ name: 'Java - Home', id: 'java-home' },
+{ name: 'Java - Overview', id: 'java-overview' },
+{ name: 'Java - History', id: 'java-history' },
+{ name: 'Java - Features', id: 'java-features' },
+{ name: 'Java Vs. C++', id: 'java-vs-cpp' },
+{ name: 'JVM - Java Virtual Machine', id: 'jvm-java-virtual-machine' },
+{ name: 'Java - JDK vs JRE vs JVM', id: 'java-jdk-vs-jre-vs-jvm' },
+{ name: 'Java - Hello World Program', id: 'java-hello-world-program' },
+{ name: 'Java - Environment Setup', id: 'java-environment-setup' },
+{ name: 'Java - Basic Syntax', id: 'java-basic-syntax' },
+{ name: 'Java Variable Types', id: 'java-variable-types' },
+{ name: 'Java - Data Types', id: 'java-data-types' },
+{ name: 'Java - Type Casting', id: 'java-type-casting' },
+{ name: 'Java - Unicode System', id: 'java-unicode-system' },
+{ name: 'Java - Basic Operators', id: 'java-basic-operators' },
+{ name: 'Java Comments', id: 'java-comments' },
+{ name: 'Java - User Input', id: 'java-user-input' },
+{ name: 'Java Date & Time', id: 'java-date-time' },
+{ name: 'Java Control Statements', id: 'java-control-statements' },
+{ name: 'Java - Loop Control', id: 'java-loop-control' },
+{ name: 'Java - Decision Making', id: 'java-decision-making' },
+
+{ name: 'Java - If-else', id: 'java-if-else' },
+{ name: 'Java - Switch', id: 'java-switch' },
+{ name: 'Java - For Loops', id: 'java-for-loops' },
+{ name: 'Java - For-Each Loops', id: 'java-for-each-loops' },
+{ name: 'Java - While Loops', id: 'java-while-loops' },
+{ name: 'Java - do-while Loops', id: 'java-do-while-loops' },
+{ name: 'Java Break', id: 'java-break' },
+{ name: 'Java - Continue', id: 'java-continue' },
+{ name: 'Object Oriented Programming', id: 'object-oriented-programming' },
+{ name: 'Java OOPS Concepts', id: 'java-oops-concepts' },
+{ name: 'Java - Object & Classes', id: 'java-object-classes' },
+{ name: 'Java - Class Attributes', id: 'java-class-attributes' },
+{ name: 'Java - Class Methods', id: 'java-class-methods' },
+{ name: 'Java - Methods', id: 'java-methods' },
+{ name: 'Java - Variables Scope', id: 'java-variables-scope' },
+{ name: 'Java - Constructors', id: 'java-constructors' },
+{ name: 'Java - Access Modifiers', id: 'java-access-modifiers' },
+{ name: 'Java - Inheritance', id: 'java-inheritance' },
+{ name: 'Java - Aggregation', id: 'java-aggregation' },
+{ name: 'Java - Polymorphism', id: 'java-polymorphism' },
+{ name: 'Java - Overriding', id: 'java-overriding' },
+{ name: 'Java - Method Overloading', id: 'java-method-overloading' },
+{ name: 'Java - Dynamic Binding', id: 'java-dynamic-binding' },
+{ name: 'Java - Static Binding', id: 'java-static-binding' },
+{ name: 'Java Instance Initializer Block', id: 'java-instance-initializer-block' },
+{ name: 'Java Abstraction', id: 'java-abstraction' },
+{ name: 'Java - Encapsulation', id: 'java-encapsulation' },
+{ name: 'Java Interfaces', id: 'java-interfaces' },
+{ name: 'Java - Packages', id: 'java-packages' },
+{ name: 'Java Inner Classes', id: 'java-inner-classes' },
+{ name: 'Java- Static Class', id: 'java-static-class' },
+{ name: 'Java - Anonymous Class', id: 'java-anonymous-class' },
+{ name: 'Java - Singleton Class', id: 'java-singleton-class' },
+{ name: 'Java - Wrapper Classes', id: 'java-wrapper-classes' },
+{ name: 'Java Enums', id: 'java-enums' },
+{ name: 'Java - Enum Constructor', id: 'java-enum-constructor' },
+{ name: 'Java - Enum Strings', id: 'java-enum-strings' },
+{ name: 'Java Built-in Classes', id: 'java-built-in-classes' },
+{ name: 'Java Number', id: 'java-number' },
+{ name: 'Java Boolean', id: 'java-boolean' },
+{ name: 'Java Characters', id: 'java-characters' },
+{ name: 'Java - Arrays', id: 'java-arrays' },
+{ name: 'Java - Math Class', id: 'java-math-class' },
+{ name: 'Java File Handling', id: 'java-file-handling' },
+{ name: 'Java - Files', id: 'java-files' },
+{ name: 'Java Create a File', id: 'java-create-a-file' },
+{ name: 'Java - Write to File', id: 'java-write-to-file' },
+{ name: 'Java - Read Files', id: 'java-read-files' },
+{ name: 'Java - Delete Files', id: 'java-delete-files' },
+{ name: 'Java - Directories', id: 'java-directories' },
+{ name: 'Java - I/O Streams', id: 'java-io-streams' },
+{ name: 'Java Error & Exceptions', id: 'java-error-exceptions' },
+{ name: 'Java - Exceptions', id: 'java-exceptions' },
+{ name: 'Java - try-catch Block', id: 'java-try-catch-block' },
+{ name: 'Java - try-with-resources', id: 'java-try-with-resources' },
+{ name: 'Java - Multi-catch Block', id: 'java-multi-catch-block' },
+{ name: 'Java - Nested try Block', id: 'java-nested-try-block' },
+{ name: 'Java - Finally Block', id: 'java-finally-block' },
+{ name: 'Java - throw Exception', id: 'java-throw-exception' },
+{ name: 'Java - Exception Propagation', id: 'java-exception-propagation' },
+{ name: 'Java - Built-in Exceptions', id: 'java-built-in-exceptions' },
+{ name: 'Java - Custom Exception', id: 'java-custom-exception' },
+{ name: 'Java Multithreading', id: 'java-multithreading' },
+{ name: 'Java - Multithreading', id: 'java-multithreading' },
+{ name: 'Java - Thread Life Cycle', id: 'java-thread-life-cycle' },
+{ name: 'Java - Creating a Thread', id: 'java-creating-a-thread' },
+{ name: 'Java - Starting a Thread', id: 'java-starting-a-thread' },
+{ name: 'Java - Thread Priority', id: 'java-thread-priority' },
+{ name: 'Java - Daemon Threads', id: 'java-daemon-threads' },
+{ name: 'Java - Thread Group', id: 'java-thread-group' },
+{ name: 'Java - Shutdown Hook', id: 'java-shutdown-hook' },
+{ name: 'Java Synchronization', id: 'java-synchronization' },
+{ name: 'Java - Synchronization', id: 'java-synchronization' },
+{ name: 'Java - Block Synchronization', id: 'java-block-synchronization' },
+{ name: 'Java - Static Synchronization', id: 'java-static-synchronization' },
+{ name: 'Java Inter-thread Communication', id: 'java-inter-thread-communication' },
+{ name: 'Java Thread Deadlock', id: 'java-thread-deadlock' },
+{ name: 'Java - Interrupting a Thread', id: 'java-interrupting-a-thread' },
+{ name: 'Java - Thread Control', id: 'java-thread-control' },
+{ name: 'Java - Reentrant Monitor', id: 'java-reentrant-monitor' },
+{ name: 'Java Networking', id: 'java-networking' },
+{ name: 'Java - Networking', id: 'java-networking' },
+{ name: 'Java - Socket Programming', id: 'java-socket-programming' },
+{ name: 'Java - URL Processing', id: 'java-url-processing' },
+{ name: 'Java URL Class', id: 'java-url-class' },
+{ name: 'Java URLConnection Class', id: 'java-urlconnection-class' },
+{ name: 'Java - HttpURLConnection Class', id: 'java-httpurlconnection-class' },
+{ name: 'Java Socket Class', id: 'java-socket-class' },
+{ name: 'Java Generics', id: 'java-generics' },
+{ name: 'Java Collections', id: 'java-collections' },
+{ name: 'Java - Collections', id: 'java-collections' },
+{ name: 'Java Collection Interface', id: 'java-collection-interface' },
+{ name: 'Java Interfaces', id: 'java-interfaces' },
+{ name: 'Java - List Interface', id: 'java-list-interface' },
+{ name: 'Java - Queue Interface', id: 'java-queue-interface' },
+{ name: 'Java Map Interface', id: 'java-map-interface' },
+{ name: 'Java - SortedMap Interface', id: 'java-sortedmap-interface' },
+{ name: 'Java - Set Interface', id: 'java-set-interface' },
+{ name: 'Java SortedSet Interface', id: 'java-sortedset-interface' },
+{ name: 'Java Data Structures', id: 'java-data-structures' },
+{ name: 'Java - Enumeration', id: 'java-enumeration' },
+{ name: 'Java Collections Algorithms', id: 'java-collections-algorithms' },
+{ name: 'Java Iterators', id: 'java-iterators' },
+{ name: 'Java - Comparators', id: 'java-comparators' },
+{ name: 'Java - Comparable Interface in Java', id: 'java-comparable-interface' },
+{ name: 'Advanced Java', id: 'advanced-java' },
+{ name: 'Java Command-Line Arguments', id: 'java-command-line-arguments' },
+{ name: 'Java - Lambda Expressions', id: 'java-lambda-expressions' },
+{ name: 'Java - Sending Email', id: 'java-sending-email' },
+{ name: 'Java Applet Basics', id: 'java-applet-basics' },
+{ name: 'Java - Javadoc Comments', id: 'java-javadoc-comments' },
+{ name: 'Java - Autoboxing and Unboxing', id: 'java-autoboxing-unboxing' },
+{ name: 'Java - File Mismatch Method', id: 'java-file-mismatch-method' },
+{ name: 'Java - REPL (JShell)', id: 'java-repl-jshell' },
+{ name: 'Java - Multi-Release Jar Files', id: 'java-multi-release-jar-files' },
+{ name: 'Java Private Interface Methods', id: 'java-private-interface-methods' },
+{ name: 'Java - Inner Class Diamond Operator', id: 'java-inner-class-diamond-operator' },
+{ name: 'Java - Multiresolution Image API', id: 'java-multiresolution-image-api' },
+{ name: 'Java - Collection Factory Methods', id: 'java-collection-factory-methods' },
+{ name: 'Java - Module System', id: 'java-module-system' },
+{ name: 'Java - Nashorn JavaScript', id: 'java-nashorn-javascript' },
+{ name: 'Java - Optional Class', id: 'java-optional-class' },
+{ name: 'Java Method References', id: 'java-method-references' },
+{ name: 'Java Functional Interfaces', id: 'java-functional-interfaces' },
+{ name: 'Java Default Methods', id: 'java-default-methods' },
+{ name: 'Java Base64 Encode Decode', id: 'java-base64-encode-decode' },
+{ name: 'Java - Switch Expressions', id: 'java-switch-expressions' },
+{ name: 'Java Teeing Collectors', id: 'java-teeing-collectors' },
+{ name: 'Java Microbenchmark', id: 'java-microbenchmark' },
+{ name: 'Java Text Blocks', id: 'java-text-blocks' },
+{ name: 'Java Dynamic CDS Archive', id: 'java-dynamic-cds-archive' },
+{ name: 'Java - Z Garbage Collector (ZGC)', id: 'java-z-garbage-collector' },
+{ name: 'Java - Null Pointer Exception', id: 'java-null-pointer-exception' },
+{ name: 'Java - Packaging Tools', id: 'java-packaging-tools' },
+{ name: 'Java Sealed Classes', id: 'java-sealed-classes' },
+{ name: 'Java Record Classes', id: 'java-record-classes' },
+{ name: 'Java - Hidden Classes', id: 'java-hidden-classes' },
+{ name: 'Java Pattern Matching', id: 'java-pattern-matching' },
+{ name: 'Java Compact Number Formatting', id: 'java-compact-number-formatting' },
+{ name: 'Java Garbage Collection', id: 'java-garbage-collection' },
+{ name: 'Java JIT Compiler', id: 'java-jit-compiler' },
+{ name: 'Java Miscellaneous', id: 'java-miscellaneous' },
+{ name: 'Java Miscellaneous', id: 'java-miscellaneous' },
+{ name: 'Java - Recursion', id: 'java-recursion' },
+{ name: 'Java - Regular Expressions', id: 'java-regular-expressions' },
+{ name: 'Java - Serialization', id: 'java-serialization' },
+{ name: 'Java - Strings', id: 'java-strings' },
+{ name: 'Java Process API Improvements', id: 'java-process-api-improvements' },
+{ name: 'Java - Stream API Improvements', id: 'java-stream-api-improvements' },
+{ name: 'Java - Enhanced @Deprecated Annotation', id: 'java-enhanced-deprecated-annotation' },
+{ name: 'Java CompletableFuture API Improvements', id: 'java-completablefuture-api-improvements' },
+{ name: 'Java Streams', id: 'java-streams' },
+
+{ name: 'Java - Datetime Api', id: 'java-datetime-api' },
+{ name: 'Java 8 - New Features', id: 'java-8-new-features' },
+{ name: 'Java 9 - New Features', id: 'java-9-new-features' },
+{ name: 'Java 10 - New Features', id: 'java-10-new-features' },
+{ name: 'Java 11 - New Features', id: 'java-11-new-features' },
+{ name: 'Java 12 - New Features', id: 'java-12-new-features' },
+{ name: 'Java 13 - New Features', id: 'java-13-new-features' },
+{ name: 'Java 14 - New Features', id: 'java-14-new-features' },
+{ name: 'Java 15 - New Features', id: 'java-15-new-features' },
+{ name: 'Java 16 - New Features', id: 'java-16-new-features' },
+{ name: 'Java APIs & Frameworks', id: 'java-apis-frameworks' },
+{ name: 'JDBC Tutorial', id: 'jdbc-tutorial' },
+{ name: 'SWING Tutorial', id: 'swing-tutorial' },
+{ name: 'AWT Tutorial', id: 'awt-tutorial' },
+{ name: 'Servlets Tutorial', id: 'servlets-tutorial' },
+{ name: 'JSP Tutorial', id: 'jsp-tutorial' },
+
+
+    ];
+
+// Handle input for suggestions
+// सर्च बार के "input" इवेंट को हैंडल करना
+searchBar.addEventListener('input', function () {
+const query = searchBar.value.toLowerCase(); // यूज़र का इनपुट लोअरकेस में बदलें
+suggestionsBox.innerHTML = ''; // पहले से मौजूद सुझाव हटाएं
+
+if (query.length > 0) {
+const filteredTopics = topics.filter(topic => topic.name.toLowerCase().includes(query)); // मैच खोजें
+filteredTopics.forEach(topic => {
+    const suggestionElement = document.createElement('p'); // नया सुझाव एलीमेंट बनाएं
+    suggestionElement.textContent = topic.name; // सुझाव में टॉपिक का नाम डालें
+
+    // सुझाव पर क्लिक करने पर नेविगेशन
+    suggestionElement.addEventListener('click', () => {
+        document.getElementById(topic.id).scrollIntoView({ behavior: 'smooth' }); // संबंधित सेक्शन पर स्क्रॉल करें
+        searchBar.value = topic.name; // सर्च बार में चुना गया नाम दिखाएं
+        suggestionsBox.innerHTML = ''; // सुझाव बॉक्स को साफ करें
+    });
+
+    suggestionsBox.appendChild(suggestionElement); // सुझाव बॉक्स में सुझाव जोड़ें
+});
+}
+});
+
+// सर्च बार के "keypress" इवेंट को हैंडल करना
+searchBar.addEventListener('keypress', function (e) {
+if (e.key === 'Enter') { // यदि यूज़र "Enter" दबाता है
+const query = searchBar.value.toLowerCase();
+const match = topics.find(topic => topic.name.toLowerCase().includes(query)); // पहला मैच खोजें
+
+if (match) {
+    document.getElementById(match.id).scrollIntoView({ behavior: 'smooth' }); // संबंधित सेक्शन पर स्क्रॉल करें
+    suggestionsBox.innerHTML = ''; // सुझाव बॉक्स साफ करें
+}
+}
+});
+
+    </script>
+  
+</body>
+</html>
