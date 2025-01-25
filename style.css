@@ -8,17 +8,24 @@ body {
 /* Reset styles */
 body, html {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
 
 /* Header styling */
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     padding: 10px;
     background-color: white;
     text-align: center;
+    z-index: 1000; /* Header ko upar rakhne ke liye */
+    box-sizing: border-box; /* Ensure box model include padding and borders */
 }
+
+
 
 /* Logo and search bar row */
 .header-row {
@@ -56,6 +63,7 @@ header {
     margin-top: 15px; /* Heading और logo+search bar के बीच spacing */
     font-size: 24px;
     color: #333;
+    padding: 40px;
 }
 
 /* Mobile responsiveness */
@@ -123,14 +131,17 @@ header {
 }
 
 .he {
-    padding: 20px;
     background-color: rgb(28, 26, 94);
+    padding: 20px;
 }
 
 .he h1 {
     color: whitesmoke;
     font-size: 30px;
     text-align: center;
+    margin-top: 40px;
+
+
 }
 
 main {
