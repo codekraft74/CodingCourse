@@ -1,6 +1,7 @@
     // Updates array containing messages and their corresponding URLs
     const updates = [
         { message: "New feature: Machine learning blogs!", url: "blog_page.html" },
+        { message: "New feature:  C languge", url: "c.html" },
     ];
 
     // Function to display updates in the modal

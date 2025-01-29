@@ -1,0 +1,411 @@
+ /* General Reset */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: white;
+    color: white;
+    overflow-x: hidden;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    position: relative;
+  }
+  
+  /* Logo Styling */
+  .navbar .logo img {
+    height: 70px;
+    width: 70PX;
+  }
+  
+  /* Navbar Links */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li {
+    margin-right: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .nav-links a:hover {
+    color: #f1c40f;
+  }
+  
+  /* Toggle Button */
+  .toggle-btn {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+  }
+  
+  .toggle-btn .bar {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    border-radius: 2px;
+  }
+  
+  /* Mobile View */
+  @media screen and (max-width: 768px) {
+    .nav-links {
+      display: none;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      background-color: #333;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      padding: 20px 0;
+    }
+  
+    .nav-links li {
+      margin: 10px 0;
+    }
+  
+    .toggle-btn {
+      display: flex;
+    }
+  
+    .navbar.open .nav-links {
+      display: flex;
+    }
+  
+    /* Close Button for Mobile */
+    .close-btn {
+      font-size: 30px;
+      color: white;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+    }
+  }
+  
+
+  
+/* Fullscreen Video Background */
+.video-background {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    object-fit: cover;
+    z-index: -1;
+ 
+}
+
+/* Header Section */
+header {
+    color: white;
+    padding: 3px 20px;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+    
+}
+
+header h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 60px;
+   
+  
+}
+
+header p {
+    font-size: 22px;
+    font-weight: 400;
+    max-width: 700px;
+    margin: 0 auto;
+    color: #4CAF50;
+}
+
+/* Course Section */
+section {
+    padding: 80px 20px;
+    text-align: center;
+
+    background-color: #f4f4f9;
+}
+.para{
+padding-top: 80px;
+
+}
+.para p{
+    color: black;
+   
+}
+
+section h2 {
+    font-size: 45px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.course-cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.course-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    width: 300px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    transform: translateY(0);
+}
+
+.course-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.course-card h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 700;
+}
+
+.course-card p {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 25px;
+}
+
+.course-card button {
+    background-color: #f44336;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.course-card button:hover {
+    background-color: #d32f2f;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.course-card img{
+border: 2px solid greenyellow;
+width: 100%;
+height: 25vh;
+}
+
+p {
+font-size: 1.2rem;
+color: #333;
+text-align: center;
+margin: 1.5rem 1rem;
+}
+
+.container {
+max-width: 1200px;
+margin: 0 auto;
+padding: 1rem;
+}
+
+.card {
+background: white;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+border-radius: 8px;
+padding: 1.5rem;
+margin: 1rem 0;
+}
+
+.card h2 {
+text-align: center;
+color: #4CAF50;
+}
+
+.tools {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 1rem;
+margin-top: 1rem;
+}
+
+.tool {
+background-color: #f9f9f9;
+border: 1px solid #ddd;
+border-radius: 8px;
+padding: 1rem;
+text-align: center;
+width: 150px;
+transition: transform 0.2s ease;
+}
+
+.tool img {
+width: 50px;
+height: 50px;
+margin-bottom: 0.5rem;
+}
+
+.tool:hover {
+transform: scale(1.05);
+background-color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+.tool {
+width: 120px;
+padding: 0.8rem;
+}
+}
+
+
+.main-content {
+padding: 60px 20px;
+text-align: center;
+background-color: #fff;
+}
+
+.main-content h2 {
+color: #333;
+font-size: 32px;
+margin-bottom: 20px;
+}
+
+.main-content p {
+font-size: 18px;
+line-height: 1.6;
+color: #555;
+}
+
+/* Footer Styles */
+footer {
+background-color: #222;
+color: white;
+padding: 60px 20px;
+text-align: center;
+}
+
+.footer-container {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+margin-bottom: 20px;
+}
+
+.footer-links, .footer-social, .footer-contact, .footer-about {
+width: 23%;
+padding: 10px;
+box-sizing: border-box;
+}
+
+h3 {
+color: #fff;
+font-size: 20px;
+margin-bottom: 15px;
+}
+
+ul {
+list-style: none;
+padding: 0;
+}
+
+ul li {
+margin-bottom: 10px;
+}
+
+ul li a {
+color: #bbb;
+text-decoration: none;
+font-size: 16px;
+}
+
+ul li a:hover {
+color: #fff;
+text-decoration: underline;
+}
+
+.social-icons a {
+color: #bbb;
+font-size: 30px;
+margin: 0 15px;
+text-decoration: none;
+}
+
+.social-icons a:hover {
+color: #fff;
+transform: scale(1.2);
+}
+
+.footer-bottom {
+background-color: #222;
+
+padding: 20px 0;
+font-size: 14px;
+}
+.footer-bottom p{
+color: white;
+}
+
+.footer-about p {
+color: white;
+font-size: 16px;
+line-height: 1.8;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+.footer-container {
+flex-direction: column;
+align-items: center;
+}
+
+.footer-links, .footer-social, .footer-contact, .footer-about {
+width: 100%;
+text-align: center;
+margin-bottom: 20px;
+}
+}
+
+.social-icons a {
+font-size: 24px;
+margin: 0 10px;
+}
+

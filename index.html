@@ -115,63 +115,6 @@
             color: white;
             overflow-x: hidden;
         }
-        /*updat masseag*/
-        .modal {
-          display: none; /* Hidden by default */
-          position: fixed;
-          z-index: 1;
-          left: 0;
-          top: 0;
-          width: 100%;
-          height: 100%;
-          background-color: rgba(0, 0, 0, 0.5); /* Black with opacity */
-      }
-
-      .modal-content {
-          background-color: white;
-          margin: 15% auto;
-          padding: 20px;
-          border: 1px solid #888;
-          width: 80%;
-          max-width: 500px;
-          border-radius: 10px;
-          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-          color: black;
-      }
-
-      /* Close button */
-      .close {
-          color: #aaa;
-          float: right;
-          font-size: 28px;
-          font-weight: bold;
-          cursor: pointer;
-      }
-
-      .close:hover,
-      .close:focus {
-          color: black;
-      }
-
-      /* Blinking "NEW" message */
-      .blink {
-          font-weight: bold;
-          color: red;
-          animation: blink-animation 1s steps(5, start) infinite;
-      }
-
-      @keyframes blink-animation {
-          to {
-              visibility: hidden;
-          }
-      }
-
-      /* Modal open button */
-      #openModalBtn {
-          display: none;
-      }
-
-
        
         .navbar {
             display: flex;
@@ -571,9 +514,17 @@ p {
     }
   
     </style>
+    <link rel="stylesheet" href="update.css">
 </head>
 <body>
-
+  <div id="updateModal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="closeModal">&times;</span>
+        <h2>Latest Updates</h2>
+        <div id="updatesContainer"></div>
+    </div>
+</div>
+<script src="update.js"></script>
 
     <nav class="navbar">
         <!-- Toggle Button -->
@@ -597,17 +548,7 @@ p {
           <img src="img/code-removebg-preview.png" alt="Logo">
         </div>
       </nav>
-
-      <!--updat pag massage-->
-       <!-- Modal structure -->
-    <div id="updateModal" class="modal">
-      <div class="modal-content">
-          <span class="close" id="closeModal">&times;</span>
-          <h2>Latest Updates</h2>
-          <div id="updatesContainer"></div>
-      </div>
-  </div>
-
+    
 
 
     <!-- Video Background -->
@@ -645,6 +586,12 @@ p {
         <img src="https://img.icons8.com/color/96/javascript.png" alt="JavaScript Icon">
         <p>JavaScript</p>
       </div>
+      <!-- C -->
+<div class="tool" onclick="window.location.href='c.html';">
+  <img src="https://img.icons8.com/color/96/c-programming.png" alt="C Icon">
+  <p>C</p>
+</div>
+
       <!-- Node.js -->
       <div class="tool"  onclick="window.location.href='node.html';">
         <img src="https://img.icons8.com/color/96/nodejs.png" alt="Node.js Icon">
@@ -735,13 +682,7 @@ p {
     </div>
   </div>
 </div>
-
-
-
-     
-    
-    
-    
+ 
     
       <!-- Keras -->
    
@@ -889,7 +830,7 @@ p {
         function red(){
           location.href
         }
-    </script><script src="update.js"></script>
+    </script>
 
 </body>
 </html>
