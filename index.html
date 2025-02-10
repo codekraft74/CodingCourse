@@ -101,420 +101,12 @@
 
   gtag('config', 'G-EPBLNEJ28G');
 </script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">    <style>
-        /* General Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: white;
-            color: white;
-            overflow-x: hidden;
-        }
-       
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0px 30px;
-            position: relative;
-          }
-          
-          /* Logo Styling */
-          .navbar .logo img {
-            height: 70px;
-            width: 70PX;
-          }
-          
-          /* Navbar Links */
-          .nav-links {
-            list-style: none;
-            display: flex;
-            gap: 20px;
-          }
-          
-          .nav-links li {
-            margin-right: 20px;
-          }
-          
-          .nav-links a {
-            text-decoration: none;
-            color: white;
-            font-size: 18px;
-            font-weight: bold;
-          }
-          
-          .nav-links a:hover {
-            color: #f1c40f;
-          }
-          
-          /* Toggle Button */
-          .toggle-btn {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-            gap: 5px;
-          }
-          
-          .toggle-btn .bar {
-            width: 30px;
-            height: 4px;
-            background-color: white;
-            border-radius: 2px;
-          }
-          
-          /* Mobile View */
-          @media screen and (max-width: 768px) {
-            .nav-links {
-              display: none;
-              width: 100%;
-              flex-direction: column;
-              align-items: center;
-              background-color: #333;
-              position: absolute;
-              top: 60px;
-              left: 0;
-              padding: 20px 0;
-            }
-          
-            .nav-links li {
-              margin: 10px 0;
-            }
-          
-            .toggle-btn {
-              display: flex;
-            }
-          
-            .navbar.open .nav-links {
-              display: flex;
-            }
-          
-            /* Close Button for Mobile */
-            .close-btn {
-              font-size: 30px;
-              color: white;
-              position: absolute;
-              top: 10px;
-              right: 10px;
-              cursor: pointer;
-            }
-          }
-          
-       
-          
-        /* Fullscreen Video Background */
-        .video-background {
-            position: absolute;
-            top: 0px;
-            left: 0;
-            width: 100%;
-            height: 40%;
-            object-fit: cover;
-            z-index: -1;
-         
-        }
-
-        /* Header Section */
-        header {
-            color: white;
-            padding: 3px 20px;
-            text-align: center;
-            animation: fadeIn 2s ease-in-out;
-            
-        }
-
-        header h1 {
-            font-size: 40px;
-            margin-bottom: 15px;
-            text-transform: uppercase;
-            letter-spacing: 4px;
-            font-weight: 60px;
-           
-          
-        }
-
-        header p {
-            font-size: 22px;
-            font-weight: 400;
-            max-width: 700px;
-            margin: 0 auto;
-            color: #4CAF50;
-        }
-
-        /* Course Section */
-        section {
-            padding: 80px 20px;
-            text-align: center;
-
-            background-color: #f4f4f9;
-        }
-       .para{
-        padding-top: 80px;
-
-       }
-       .para p{
-            color: black;
-           
-        }
-
-        section h2 {
-            font-size: 45px;
-            color: #333;
-            margin-bottom: 20px;
-            font-weight: 700;
-        }
-
-        .course-cards {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            flex-wrap: wrap;
-        }
-
-        .course-card {
-            background-color: #fff;
-            border-radius: 10px;
-            padding: 30px;
-            width: 300px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            transform: translateY(0);
-        }
-
-        .course-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-        }
-
-        .course-card h3 {
-            font-size: 24px;
-            margin-bottom: 20px;
-            color: #333;
-            font-weight: 700;
-        }
-
-        .course-card p {
-            font-size: 16px;
-            color: #777;
-            margin-bottom: 25px;
-        }
-
-        .course-card button {
-            background-color: #f44336;
-            color: white;
-            padding: 12px 25px;
-            border: none;
-            border-radius: 5px;
-            font-size: 18px;
-            font-weight: 600;
-            transition: background-color 0.3s ease;
-            cursor: pointer;
-        }
-
-        .course-card button:hover {
-            background-color: #d32f2f;
-        }
-
-        /* Animations */
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-                transform: translateY(50px);
-            }
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        .course-card img{
-    border: 2px solid greenyellow;
-    width: 100%;
-    height: 25vh;
-}
-
-p {
-    font-size: 1.2rem;
-    color: #333;
-    text-align: center;
-    margin: 1.5rem 1rem;
-  }
-
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 1rem;
-  }
-
-  .card {
-    background: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    padding: 1.5rem;
-    margin: 1rem 0;
-  }
-
-  .card h2 {
-    text-align: center;
-    color: #4CAF50;
-  }
-
-  .tools {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 1rem;
-  }
-
-  .tool {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 1rem;
-    text-align: center;
-    width: 150px;
-    transition: transform 0.2s ease;
-  }
-
-  .tool img {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 0.5rem;
-  }
-
-  .tool:hover {
-    transform: scale(1.05);
-    background-color: #f0f0f0;
-  }
-
-  @media (max-width: 768px) {
-    .tool {
-      width: 120px;
-      padding: 0.8rem;
-    }
-  }
-
-
-  .main-content {
-    padding: 60px 20px;
-    text-align: center;
-    background-color: #fff;
-  }
-
-  .main-content h2 {
-    color: #333;
-    font-size: 32px;
-    margin-bottom: 20px;
-  }
-
-  .main-content p {
-    font-size: 18px;
-    line-height: 1.6;
-    color: #555;
-  }
-
-  /* Footer Styles */
-  footer {
-    background-color: #222;
-    color: white;
-    padding: 60px 20px;
-    text-align: center;
-  }
-
-  .footer-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-  }
-
-  .footer-links, .footer-social, .footer-contact, .footer-about {
-    width: 23%;
-    padding: 10px;
-    box-sizing: border-box;
-  }
-
-  h3 {
-    color: #fff;
-    font-size: 20px;
-    margin-bottom: 15px;
-  }
-
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-
-  ul li {
-    margin-bottom: 10px;
-  }
-
-  ul li a {
-    color: #bbb;
-    text-decoration: none;
-    font-size: 16px;
-  }
-
-  ul li a:hover {
-    color: #fff;
-    text-decoration: underline;
-  }
-
-  .social-icons a {
-    color: #bbb;
-    font-size: 30px;
-    margin: 0 15px;
-    text-decoration: none;
-  }
-
-  .social-icons a:hover {
-    color: #fff;
-    transform: scale(1.2);
-  }
-
-  .footer-bottom {
-    background-color: #222;
-    
-    padding: 20px 0;
-    font-size: 14px;
-  }
-  .footer-bottom p{
-    color: white;
-  }
-
-  .footer-about p {
-    color: white;
-    font-size: 16px;
-    line-height: 1.8;
-  }
-  
-  /* Responsive Design */
-  @media screen and (max-width: 768px) {
-    .footer-container {
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .footer-links, .footer-social, .footer-contact, .footer-about {
-      width: 100%;
-      text-align: center;
-      margin-bottom: 20px;
-    }
-}
-
-    .social-icons a {
-      font-size: 24px;
-      margin: 0 10px;
-    }
-  
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">  
+    <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="update.css">
+    <link rel="stylesheet" href="slide.css">
+    <link rel="stylesheet" href="rating.css">
+
 </head>
 <body>
   <div id="updateModal" class="modal">
@@ -548,198 +140,232 @@ p {
           <img src="img/code-removebg-preview.png" alt="Logo">
         </div>
       </nav>
-    
-
-
     <!-- Video Background -->
     <video autoplay muted loop class="video-background">
         <source src="img/Black and Orange Modern Welcome to My Channel Video (1).mp4" type="video/mp4"> <!-- Replace with your video URL -->
         Your browser does not support the video tag.
     </video>
+   
 
     <!-- Header Section -->
     <header>
         <h1>Online Programming Learning</h1>
         <p>Master Coding with Interactive Courses</p>
+        <div class="btn">
+          <h3 onclick="go()">exploreMore</h3>
+        </div>
     </header>
-
-
 <div class="para">
     <p>Ap apne interested ke anusar koe bhi language sikha sakte ho aur apne career ko naye unchaiyo tak le ja sakte ho!</p>
 </div>
-<div class="container">
-  <div class="card">
-    <h2>Full Stack Developer</h2>
-    <div class="tools">
-      <!-- HTML -->
-      <div class="tool" onclick="window.location.href='h1.html';">
-        <img src="https://img.icons8.com/color/96/html-5.png" alt="HTML Icon">
-        <p>HTML</p>
+
+ <!-- Sliders with Titles -->
+ <section class="slider-section">
+  <h2 class="slider-title">Frontend languages</h2>
+<p>  "Front-end languages, including HTML, CSS, and JavaScript, are the building blocks of web development. HTML structures the content of a webpage, CSS styles it for a visually appealing look, and JavaScript adds dynamic functionality, making websites interactive. Together, these languages form the foundation of any modern web application, ensuring an engaging and seamless user experience."</p>
+
+
+  <div class="slider-container">
+  
+    <div class="slides">
+      <div class="slide">
+        <img src="https://i0.wp.com/plopdo.com/wp-content/uploads/2021/07/Screenshot-1.png?resize=1210%2C642&ssl=1" alt="Frontend Slide 1">
+      
       </div>
-      <!-- CSS -->
-      <div class="tool" onclick="window.location.href='css.html';">
-        <img src="https://img.icons8.com/color/96/css3.png" alt="CSS Icon">
-        <p>CSS</p>
+      <div class="slide">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-Nvg7hH6wB7A0euslpofBT1XYSqOgUC3v456CBuTFwqVM-dulQ_S4XzumXi4YrZbN09o&usqp=CAU" alt="HTMLSlide 2">
+        <a href="h1.html" class="btn">Learn Frontend</a>
       </div>
-      <!-- JavaScript -->
-      <div class="tool"  onclick="window.location.href='js.html';">
-        <img src="https://img.icons8.com/color/96/javascript.png" alt="JavaScript Icon">
-        <p>JavaScript</p>
+      <div class="slide">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzShAgg8lsM9ExjF18LQLvDdd0OERKF8mfdMhmkG2Mo9MWpqOPedrPnKi3el6947OBZ4g&usqp=CAU" alt="Frontend Slide 3">
+        <a href="css.html" class="btn">Learn Frontend</a>
       </div>
-      <!-- C -->
-<div class="tool" onclick="window.location.href='c.html';">
-  <img src="https://img.icons8.com/color/96/c-programming.png" alt="C Icon">
-  <p>C</p>
-</div>
-
-      <!-- Node.js -->
-      <div class="tool"  onclick="window.location.href='node.html';">
-        <img src="https://img.icons8.com/color/96/nodejs.png" alt="Node.js Icon">
-        <p>Node.js</p>
+      <div class="slide">
+        <img src="https://northsoft.co/blog/wp-content/uploads/2022/11/image.jpeg" alt="Frontend Slide 3">
+        <a href="js.html" class="btn">Learn Frontend</a>
       </div>
-      <!-- React -->
-      <div class="tool" onclick="window.location.href='react.html';">
-        <img src="https://img.icons8.com/color/96/react-native.png" alt="React Icon">
-        <p>React</p>
-      </div>
-
-<!-- PHP -->
-<div class="tool" onclick="window.location.href='php.html';">
-  <img src="https://img.icons8.com/color/96/php.png" alt="PHP Icon">
-  <p>PHP</p>
-</div>
-
-<!-- Java -->
-<!-- Java -->
-<div class="tool" onclick="window.location.href='java.html';">
-  <img src="https://img.icons8.com/color/96/java-coffee-cup-logo.png" alt="Java Icon">
-  <p>Java</p>
-</div>
-
-
-      <!-- MongoDB -->
-      <div class="tool"  onclick="window.location.href='mongo.html';">
-        <img src="https://img.icons8.com/color/96/mongodb.png" alt="MongoDB Icon">
-        <p>MongoDB</p>
-      </div>
-
-      <!-- MySQL -->
-<div class="tool" onclick="window.location.href='mysql.html';">
-  <img src="https://img.icons8.com/color/96/mysql.png" alt="MySQL Icon">
-  <p>MySQL</p>
-</div>
-
-
     </div>
   </div>
-</div>
+  <div class="dots-container">
+    <span class="dot" data-index="0"></span>
+    <span class="dot" data-index="1"></span>
+    <span class="dot" data-index="2"></span>
+    <span class="dot" data-index="3"></span>
+  </div>
+</section>
 
-<p>Python ek bahut hi powerful aur user-friendly programming language hai. Ap Python seekh kar apne career ko naye unchaiyo tak le ja sakte ho!</p>
+<section class="slider-section">
+  <h2 class="slider-title">Backend Development</h2>
+  <p>Back-end development focuses on the server side of a web application, handling data, security, and user interactions. Languages like <strong>Python</strong>, <strong>Java</strong>, <strong>PHP</strong>, and <strong>Ruby</strong> are commonly used to build the logic that drives the functionality of websites and applications. These languages work together with databases to ensure smooth data processing, storage, and retrieval, providing the backbone for dynamic websites and web services.</p>
 
-<div class="container">
-  <div class="card">
-    <h2>Python Developer</h2>
-    <div class="tools" >
-      <!-- Python -->
-      <div class="tool"  onclick="window.location.href='python.html';">
-        <img src="https://img.icons8.com/color/96/python.png" alt="Python Icon">
-        <p>Python</p>
+  <div class="slider-container">
+    <div class="slides">
+      <div class="slide">
+        <img src="https://eluminoustechnologies.com/blog/wp-content/uploads/2023/08/7-10.jpg.webp" alt="Backend Slide 1">
       </div>
-      <!-- Django -->
-      <div class="tool" onclick="window.location.href='Django.html';">
-        <img src="https://img.icons8.com/color/96/django.png" alt="Django Icon">
-        <p>Django</p>
+      <div class="slide">
+        <img src="https://contentstatic.techgig.com/photo/84017907.cms" alt="Backend Slide 2">
+        <a href="python.html" class="btn">Learn Backend</a>
       </div>
-      <!-- Flask -->
-      <div class="tool" onclick="window.location.href='flask.html';">
-        <img src="https://img.icons8.com/ios/96/flask.png" alt="Flask Icon">
-        <p>Flask</p>
+      <div class="slide">
+        <img src="https://www.devopsschool.com/blog/wp-content/uploads/2022/03/java_logo_icon_168609.png" alt="Backend Slide 3">
+        <a href="java.html" class="btn">Learn Backend</a>
       </div>
-      <!-- Pandas -->
-      <div class="tool" onclick="window.location.href='pd.html';">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Pandas_logo.svg" alt="Pandas Icon" style="width: 60px; height: auto;">
-        <p>Pandas</p>
+      <div class="slide">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhqpzI5VZnen6AW6IcZxV4AV0BIzlD1M5_86XncdTbxVORAWOqaKFNdYIalg51tVx7zI3760AFmh7pSSsAnIxkLEMpOy1BjXj1QlbAtdq70MipKawqcgIQr5C87DfsWRlgyOesa0Xc0fww/w640-h278/c+crogramming.jpg" alt="Backend Slide 3">
+        <a href="c.html" class="btn">Learn Backend</a>
       </div>
-      <!-- NumPy -->
-      <div class="tool" onclick="window.location.href='np.html';">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/NumPy_logo_2020.svg" alt="NumPy Icon" style="width: 60px; height: auto;">
-        <p>NumPy</p>
+      <div class="slide">
+        <img src="https://training.digigrowhub.in/wp-content/uploads/2021/02/do-coding-of-any-program-by-c-plus-plus-perfectly-and-within-time.jpg" alt="Backend Slide 3">
+        <a href="#c_plush.html" class="btn">Learn Backend</a>
       </div>
-      
-      <!-- TensorFlow -->
-      <div class="tool"  onclick="window.location.href='tensF.html';">
-        <img src="https://img.icons8.com/color/96/tensorflow.png" alt="TensorFlow Icon">
-        <p>TensorFlow</p>
+      <div class="slide">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm2INgW414NFbq8gRqhefCQgbUS8_CYqWcO01TmDJKifbojq2XOXz0qif9WDt3otQlAqo&usqp=CAU" alt="Backend Slide 3">
+        <a href="#r.html" class="btn">Learn Backend</a>
       </div>
-      <!-- Tkinter -->
-      <div class="tool"  onclick="window.location.href='tk.html';">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Tkinter_logo.png" alt="Tkinter Icon" style="width: 60px; height: auto;">
-        <p>Tkinter</p>
-    </div>
-      
-      
-      
     </div>
   </div>
-</div>
- 
-    
-      <!-- Keras -->
+  <div class="dots-container">
+    <span class="dot" data-index="0"></span>
+    <span class="dot" data-index="1"></span>
+    <span class="dot" data-index="2"></span>
+    <span class="dot" data-index="3"></span>
+    <span class="dot" data-index="4"></span>
+    <span class="dot" data-index="5"></span>
+  </div>
+</section>
+
+<section class="slider-section">
+  <h2 class="slider-title">Database Management</h2>
+  <p>Database languages are used to manage and manipulate data stored in databases. Commonly used database languages include <strong>SQL</strong>, <strong>NoSQL</strong>, and <strong>MongoDB</strong>. SQL is a standard language for managing relational databases, while NoSQL is used for non-relational data storage. These languages help in creating, reading, updating, and deleting data, ensuring efficient storage, retrieval, and data integrity.</p>
+
+  <div class="slider-container">
+    <div class="slides">
+      <div class="slide">
+        <img src="https://www.smartsight.in/wp-content/uploads/2019/05/database-development.png" alt="Database Slide 1">
+      </div>
+      <div class="slide">
+        <img src="https://learn.viblo.asia/uploads/4/5/45c034af-588b-4727-8318-e0417f8dd7da.jpg" alt="Database Slide 2">
+        <a href="database_page.html" class="btn">Learn Database</a>
+      </div>
+      <div class="slide">
+        <img src="https://e7.pngegg.com/pngimages/1009/655/png-clipart-mongodb-logo-database-nosql-sql-logo-company-text-thumbnail.png" alt="Database Slide 3">
+        <a href="database_page.html" class="btn">Learn Database</a>
+      </div>
+      <div class="slide">
+        <img src="https://miro.medium.com/v2/resize:fit:1220/0*epnKnkKuLx2RAajt" alt="Database Slide 3">
+        <a href="database_page.html" class="btn">Learn Database</a>
+      </div>
+    </div>
+  </div>
+  <div class="dots-container">
+    <span class="dot" data-index="0"></span>
+    <span class="dot" data-index="1"></span>
+    <span class="dot" data-index="2"></span>
+    <span class="dot" data-index="3"></span>
+  </div>
+</section>
+
+<section class="slider-section">
+  <h2 class="slider-title">Frameworks</h2>
+  <p>Frameworks are essential tools in web development, designed to simplify the process of building web applications. Popular frameworks like <strong>Django</strong> (Python), <strong>Spring</strong> (Java), <strong>Laravel</strong> (PHP), and <strong>Rails</strong> (Ruby) provide pre-built components and libraries to accelerate development. These frameworks help developers create secure, scalable, and efficient web applications, saving time and reducing the need for writing repetitive code.</p>
+
+  <div class="slider-container">
+    <div class="slides">
+      <div class="slide">
+        <img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1731968979425/412c6bc7-e717-481b-aa9e-4962c9687115.png" alt="Framework Slide 1">
+      </div>
+      <div class="slide">
+        <img src="https://binmile.com/wp-content/uploads/2022/12/Nodejs-Application-Development-1.webp" alt="Framework Slide 2">
+        <a href="framework_page.html" class="btn">Learn Framework</a>
+      </div>
+      <div class="slide">
+        <img src="https://sourcebae.com/blog/wp-content/uploads/2023/08/what-is-react-js-developer.webp" alt="Framework Slide 3">
+        <a href="framework_page.html" class="btn">Learn Framework</a>
+      </div>
+      <div class="slide">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbhwzNrngWxm7FE7Q__Dd3jEEeuYeyewgxXA&s" alt="Framework Slide 3">
+        <a href="Django.html" class="btn">Learn Framework</a>
+      </div>
+      <div class="slide">
+        <img src="https://www.devopsschool.com/blog/wp-content/uploads/2024/01/image-9.png" alt="Framework Slide 3">
+        <a href="flask.html" class="btn">Learn Framework</a>
+      </div>
+      <div class="slide">
+        <img src="https://miro.medium.com/v2/resize:fit:783/1*Kj8Eq401fP2ecTY8r9B89Q.png" alt="Framework Slide 3">
+        <a href="framework_page.html" class="btn">Learn Framework</a>
+      </div>
+    </div>
+  </div>
+  <div class="dots-container">
+    <span class="dot" data-index="0"></span>
+    <span class="dot" data-index="1"></span>
+    <span class="dot" data-index="2"></span>
+    <span class="dot" data-index="3"></span>
+    <span class="dot" data-index="4"></span>
+  </div>
+</section>
+<!--Features-->
+<section id="features" class="features">
+  <h1> Our Features </h1>
+  <div class="feature">
+      <img src="https://img.icons8.com/fluency/96/web-design.png" alt="Interactive Learning">
+      <h2>Interactive Learning</h2>
+      <p>Learn with real-world examples and hands-on exercises.</p>
+  </div>
+  <div class="feature">
+      <img src="https://img.icons8.com/fluency/96/source-code.png" alt="Real-Time Coding">
+      <h2>Real-Time Coding</h2>
+      <p>Practice code live in the browser and see instant results.</p>
+  </div>
+  <div class="feature">
+      <img src="https://img.icons8.com/fluency/96/customer-support.png" alt="Beginner to Advanced">
+      <h2>Beginner to Advanced</h2>
+      <p>Courses for every level, from beginner to expert.</p>
+  </div>
+  <div class="feature">
+      <img src="https://img.icons8.com/fluency/96/learning.png" alt="Free and Paid">
+      <h2>Free and Paid Courses</h2>
+      <p>Choose between free tutorials and premium courses.</p>
+  </div>
+</section>
    
-    </div>
-  </div>
-</div>
 
-    <!-- Course Section -->
-    <section>
-        <h2>Our Programming Courses</h2>
-        <div class="course-cards">
-            <!-- Course 1 -->
-            <div class="course-card">
-                <img src="img/images1.jpeg" alt="">
-                <h3>Python for Beginners</h3>
-                <p>Learn Python from scratch and build strong programming skills.</p>
-            </div>
-            <!-- Course 2 -->
-            <div class="course-card">
-                <img src="img/download (1).jpeg" alt="">
-                <h3>Web Development</h3>
-                <p>Master HTML, CSS, JavaScript, and build modern websites.</p>
-            </div>
-            <!-- Course 3 -->
-            <div class="course-card">
-                <img src="img/download (2).jpeg" alt="">
-                <h3>Data Science</h3>
-                <p>Learn data analysis, machine learning, and AI using Python.</p>
-            </div>
-            <div class="course-card">
-              <img src="img/dataanalytics.jpeg" alt="">
-              <h3>Data Analytics</h3>
-              <p>Master data visualization, business intelligence, and SQL techniques.</p>
-          </div>
-         
-          <div class="course-card">
-              <img src="img/cyber.jpeg" alt="">
-              <h3>Cybersecurity</h3>
-              <p>Understand network security, ethical hacking, and cyber defense strategies.</p>
-          </div>
-          
-          <div class="course-card">
-              <img src="img/cloud.jpeg" alt="">
-              <h3>Cloud Computing</h3>
-              <p>Explore cloud services, AWS, Azure, and DevOps principles.</p>
-          </div>
-          
-          <div class="course-card">
-              <img src="img/ai.jpeg" alt="">
-              <h3>Artificial Intelligence</h3>
-              <p>Dive into neural networks, deep learning, and AI applications in real-world problems.</p>
-          </div>
-          
-        </div>
-    </section>
+    <!-- rating-->
+    <div class="rating-container">
+      <h2>Give Your Rating</h2>
+      <form id="feedbackForm" action="https://formsubmit.co/codekraft1325@gmail.com" method="POST">
+          <!-- Hidden Fields for FormSubmit -->
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_subject" value="New Rating Feedback">
 
+          <div class="stars" id="ratingContainer">
+              <input type="radio" id="star5" name="rating" value="5">
+              <label for="star5">&#9733;</label>
+              <input type="radio" id="star4" name="rating" value="4">
+              <label for="star4">&#9733;</label>
+              <input type="radio" id="star3" name="rating" value="3">
+              <label for="star3">&#9733;</label>
+              <input type="radio" id="star2" name="rating" value="2">
+              <label for="star2">&#9733;</label>
+              <input type="radio" id="star1" name="rating" value="1">
+              <label for="star1">&#9733;</label>
+          </div>
+          <p id="responseMessage" style="margin-top: 10px; color: green;"></p>
 
+          <label for="userMessage" class="message-label" style="color: black;">Massage:</label>
+          <textarea id="userMessage" name="message" rows="4" placeholder="Write your message here..." required></textarea>
+
+          <button type="submit">Submit</button>
+          <p id="feedbackResult"></p>
+      </form>
+  </div><br><br>
+  <section id="testimonials" class="testimonials">
+    <h2>What Our Users Say</h2>
+    <p class="testimonial">"This website transformed the way I learn programming!"</p>
+    <p class="testimonial">"Excellent tutorials and fantastic support."</p>
+    <p class="testimonial">"Highly recommended for beginners and experts alike."</p>
+</section>
 
     <footer>
         <div class="footer-container">
@@ -794,8 +420,6 @@ p {
     
     <script>
 
-
-      
             // Get the toggle button and navbar links
             const toggleBtn = document.getElementById('toggle-btn');
             const navLinks = document.getElementById('nav-links');
@@ -831,6 +455,14 @@ p {
           location.href
         }
     </script>
+    <script src="slide.js"></script>
+    <script src="rating.js"></script>
 
+    <script>
+      function go(){
+        window.location.href = "ex.html"; 
+      }
+    </script>
+    
 </body>
 </html>
