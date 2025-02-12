@@ -113,6 +113,13 @@ body {
     z-index: -1;
  
 }
+@media screen and (max-width: 375px) and (max-height: 667px) {
+  .video-background{
+    height: 50%;
+    width: 100%;
+
+  }
+}
 
 /* Header Section */
 header {
@@ -140,24 +147,51 @@ header p {
     margin: 0 auto;
     color: #4CAF50;
 }
-.btn{
-  padding-top: 10px;
+* Container Styling */
+.b {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.btn h3{
-  background-color: #e9dcdc;
-  padding: 10px;
-  width: 130px;
-  text-align: center;
-  margin-left: 150px;
-  border-radius: 30px;
+/* Button Styling */
+#ex {
+  background-color: white;
   color: black;
-}
-.btn h3:hover{
- background-color: #4CAF50;
+  padding: 10px 25px;
+  border: 2px solid black;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: transform 0.2s ease, background-color 0.3s;
 }
 
-  
+/* Hover Effect */
+.b .ex:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Responsive Design (for better height handling) */
+@media (max-width: 576px) {
+  .b {
+    height: 3vh;
+  }
+}
+@media screen and (max-width: 375px) and (max-height: 667px) {
+  .b .ex {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .b {
+    height: 4vh;
+  }
+}
+
+
+
 
 
 /* Course Section */
